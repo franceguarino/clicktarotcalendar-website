@@ -1,0 +1,67 @@
+---
+import { getDictionary, type Locale } from '../i18n';
+import CtaButton from '../components/CtaButton.astro';
+import { CHECKOUT_URL } from '../config';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const dict = getDictionary(locale);
+const c = dict.compareCalendly;
+---
+<section class="ct-section">
+	<div class="ct-container ct-compare-head">
+		<p class="ct-eyebrow">{c.eyebrow}</p>
+		<h1>{c.title}</h1>
+		<p class="ct-hint">{c.subtitle}</p>
+	</div>
+
+	<div class="ct-container ct-compare-table-wrap">
+		<table class="ct-compare">
+			<thead>
+				<tr>
+					<th>{c.colFeature}</th>
+					<th>{c.colClicktarot}</th>
+					<th>{c.colCalendly}</th>
+				</tr>
+			</thead>
+			<tbody>
+				{c.rows.map((row) => (
+					<tr>
+						<td>{row.feature}</td>
+						<td>{row.clicktarot}</td>
+						<td>{row.calendly}</td>
+					</tr>
+				))}
+			</tbody>
+		</table>
+	</div>
+</section>
+
+<section class="ct-section ct-section-alt">
+	<div class="ct-container ct-final-cta">
+		<h2>{c.ctaTitle}</h2>
+		<p class="ct-hint">{c.ctaBody}</p>
+		<CtaButton href={CHECKOUT_URL} external>{dict.hero.ctaPrimary}</CtaButton>
+	</div>
+</section>
+
+<style>
+	.ct-compare-head {
+		text-align: center;
+		max-width: 720px;
+		margin: 0 auto 40px;
+	}
+	.ct-compare-table-wrap {
+		overflow-x: auto;
+	}
+	.ct-final-cta {
+		text-align: center;
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	.ct-final-cta p {
+		margin: 12px 0 24px;
+	}
+</style>

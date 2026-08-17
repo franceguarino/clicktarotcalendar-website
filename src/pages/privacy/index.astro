@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PrivacyContent from '../../sections/PrivacyContent.astro';
+import { getDictionary } from '../../i18n';
+const locale = 'it' as const;
+const dict = getDictionary(locale);
+---
+<BaseLayout locale={locale} page="privacy" title={`${dict.legal.privacyTitle} — clickTarot Calendar`} description={dict.legal.privacyIntro}>
+	<PrivacyContent locale={locale} />
+</BaseLayout>

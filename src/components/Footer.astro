@@ -1,0 +1,68 @@
+---
+import { pagePath, type Locale, type PageKey } from '../i18n';
+import { getDictionary } from '../i18n';
+import { CONTACT_EMAIL } from '../config';
+
+interface Props {
+	locale: Locale;
+	page: PageKey;
+}
+const { locale } = Astro.props;
+const dict = getDictionary(locale);
+const year = new Date().getFullYear();
+---
+<footer class="ct-footer">
+	<div class="ct-container ct-footer-inner">
+		<div>
+			<div class="ct-logo">clickTarot <span>Calendar</span></div>
+			<p class="ct-hint">{dict.footer.tagline}</p>
+		</div>
+		<div class="ct-footer-links">
+			<a href={`mailto:${CONTACT_EMAIL}`}>{dict.footer.contactLabel}</a>
+			<a href={pagePath(locale, 'privacy')}>{dict.footer.privacy}</a>
+			<a href={pagePath(locale, 'terms')}>{dict.footer.terms}</a>
+		</div>
+	</div>
+	<div class="ct-container">
+		<p class="ct-hint ct-copyright">© {year} clickTarot Calendar. {dict.footer.rights}</p>
+	</div>
+</footer>
+
+<style>
+	.ct-footer {
+		border-top: 1px solid var(--ct-border);
+		padding: 40px 0 24px;
+		margin-top: 48px;
+	}
+	.ct-footer-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 24px;
+		flex-wrap: wrap;
+		padding-bottom: 20px;
+	}
+	.ct-footer .ct-logo {
+		font-weight: 800;
+		font-size: 16px;
+	}
+	.ct-footer .ct-logo span {
+		color: var(--ct-primary-dark);
+	}
+	.ct-footer-links {
+		display: flex;
+		gap: 20px;
+	}
+	.ct-footer-links a {
+		color: var(--ct-ink-soft);
+		text-decoration: none;
+		font-size: 14px;
+	}
+	.ct-footer-links a:hover {
+		color: var(--ct-primary-dark);
+	}
+	.ct-copyright {
+		margin: 0;
+		font-size: 13px;
+	}
+</style>

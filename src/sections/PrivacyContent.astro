@@ -1,0 +1,39 @@
+---
+import { getDictionary, type Locale } from '../i18n';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const dict = getDictionary(locale);
+---
+<section class="ct-section">
+	<div class="ct-container ct-legal-wrap">
+		<h1>{dict.legal.privacyTitle}</h1>
+		<p class="ct-hint">{dict.legal.privacyIntro}</p>
+		{dict.legal.privacyBody.map((block) => (
+			<div class="ct-legal-block">
+				<h2>{block.heading}</h2>
+				<p>{block.body}</p>
+			</div>
+		))}
+	</div>
+</section>
+
+<style>
+	.ct-legal-wrap {
+		max-width: 720px;
+		margin: 0 auto;
+	}
+	.ct-legal-block {
+		margin-top: 28px;
+	}
+	.ct-legal-block h2 {
+		font-size: 18px;
+		margin: 0 0 8px;
+	}
+	.ct-legal-block p {
+		margin: 0;
+		color: var(--ct-ink-soft);
+	}
+</style>

@@ -1,0 +1,139 @@
+---
+import { getDictionary, pagePath, type Locale } from '../i18n';
+import CtaButton from '../components/CtaButton.astro';
+import FeatureCard from '../components/FeatureCard.astro';
+import { CHECKOUT_URL } from '../config';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const dict = getDictionary(locale);
+---
+<section class="ct-section ct-hero">
+	<div class="ct-container ct-hero-grid">
+		<div>
+			<p class="ct-eyebrow">{dict.hero.eyebrow}</p>
+			<h1>{dict.hero.title}</h1>
+			<p class="ct-hero-subtitle">{dict.hero.subtitle}</p>
+			<div class="ct-hero-actions">
+				<CtaButton href={CHECKOUT_URL} external>{dict.hero.ctaPrimary}</CtaButton>
+				<CtaButton href={pagePath(locale, 'compare')} variant="secondary">{dict.hero.ctaSecondary}</CtaButton>
+			</div>
+		</div>
+		<div class="ct-hero-image">
+			<img src={dict.screenshots.items[0].src} alt={dict.screenshots.items[0].alt} />
+		</div>
+	</div>
+</section>
+
+<section class="ct-section">
+	<div class="ct-container">
+		<h2>{dict.features.title}</h2>
+		<div class="ct-features-grid">
+			{dict.features.items.map((item) => (
+				<FeatureCard title={item.title} description={item.description} />
+			))}
+		</div>
+	</div>
+</section>
+
+<section class="ct-section ct-section-alt">
+	<div class="ct-container">
+		<h2>{dict.screenshots.title}</h2>
+		<div class="ct-screens-grid">
+			{dict.screenshots.items.map((s) => (
+				<figure class="ct-card">
+					<img src={s.src} alt={s.alt} />
+				</figure>
+			))}
+		</div>
+	</div>
+</section>
+
+<section class="ct-section">
+	<div class="ct-container ct-audience">
+		<h2>{dict.audience.title}</h2>
+		<p class="ct-hint">{dict.audience.body}</p>
+	</div>
+</section>
+
+<section class="ct-section ct-section-alt">
+	<div class="ct-container ct-final-cta">
+		<h2>{dict.pricing.title}</h2>
+		<p class="ct-hint">{dict.pricing.subtitle}</p>
+		<CtaButton href={CHECKOUT_URL} external>{dict.pricing.ctaLabel}</CtaButton>
+	</div>
+</section>
+
+<style>
+	.ct-hero-grid {
+		display: grid;
+		grid-template-columns: 1.1fr 1fr;
+		gap: 40px;
+		align-items: center;
+	}
+	.ct-hero h1 {
+		font-size: clamp(32px, 4vw, 44px);
+		margin: 0 0 16px;
+	}
+	.ct-hero-subtitle {
+		font-size: 18px;
+		color: var(--ct-ink-soft);
+		margin: 0 0 28px;
+	}
+	.ct-hero-actions {
+		display: flex;
+		gap: 14px;
+		flex-wrap: wrap;
+	}
+	.ct-hero-image img {
+		border-radius: var(--ct-radius);
+		box-shadow: var(--ct-shadow);
+		border: 1px solid var(--ct-border);
+	}
+	.ct-section-alt {
+		background: var(--ct-surface);
+	}
+	.ct-features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 20px;
+		margin-top: 32px;
+	}
+	.ct-screens-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 20px;
+		margin-top: 32px;
+	}
+	.ct-screens-grid figure {
+		margin: 0;
+		padding: 8px;
+	}
+	.ct-audience {
+		max-width: 760px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.ct-audience p {
+		font-size: 17px;
+	}
+	.ct-final-cta {
+		text-align: center;
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	.ct-final-cta p {
+		margin: 12px 0 24px;
+	}
+
+	@media (max-width: 780px) {
+		.ct-hero-grid {
+			grid-template-columns: 1fr;
+		}
+		.ct-hero-image {
+			order: -1;
+		}
+	}
+</style>

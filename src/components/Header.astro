@@ -1,0 +1,106 @@
+---
+import { locales, localeNames, pagePath, type Locale, type PageKey } from '../i18n';
+import { getDictionary } from '../i18n';
+import { CHECKOUT_URL } from '../config';
+
+interface Props {
+	locale: Locale;
+	page: PageKey;
+}
+const { locale, page } = Astro.props;
+const dict = getDictionary(locale);
+---
+<header class="ct-header">
+	<div class="ct-container ct-header-inner">
+		<a href={pagePath(locale, 'home')} class="ct-logo">clickTarot <span>Calendar</span></a>
+
+		<nav class="ct-nav" aria-label="Main">
+			<a href={pagePath(locale, 'home')}>{dict.nav.home}</a>
+			<a href={pagePath(locale, 'pricing')}>{dict.nav.pricing}</a>
+			<a href={pagePath(locale, 'compare')}>{dict.nav.compare}</a>
+			<a href={pagePath(locale, 'faq')}>{dict.nav.faq}</a>
+		</nav>
+
+		<div class="ct-header-actions">
+			<div class="ct-lang-switch" aria-label="Language">
+				{locales.map((l) => (
+					<a
+						href={pagePath(l, page)}
+						class={l === locale ? 'is-active' : ''}
+						aria-current={l === locale ? 'true' : undefined}
+					>
+						{l.toUpperCase()}
+					</a>
+				))}
+			</div>
+			<a class="ct-btn ct-btn-primary ct-header-cta" href={CHECKOUT_URL} target="_blank" rel="noopener">
+				{dict.nav.cta}
+			</a>
+		</div>
+	</div>
+</header>
+
+<style>
+	.ct-header {
+		border-bottom: 1px solid var(--ct-border);
+		background: var(--ct-surface);
+		position: sticky;
+		top: 0;
+		z-index: 10;
+	}
+	.ct-header-inner {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		flex-wrap: wrap;
+	}
+	.ct-logo {
+		font-weight: 800;
+		font-size: 18px;
+		color: var(--ct-ink);
+		text-decoration: none;
+		white-space: nowrap;
+	}
+	.ct-logo span {
+		color: var(--ct-primary-dark);
+	}
+	.ct-nav {
+		display: flex;
+		gap: 20px;
+		flex: 1;
+		flex-wrap: wrap;
+	}
+	.ct-nav a {
+		color: var(--ct-ink-soft);
+		text-decoration: none;
+		font-size: 15px;
+		font-weight: 500;
+	}
+	.ct-nav a:hover {
+		color: var(--ct-primary-dark);
+	}
+	.ct-header-actions {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+	.ct-lang-switch {
+		display: flex;
+		gap: 8px;
+		font-size: 13px;
+	}
+	.ct-lang-switch a {
+		color: var(--ct-ink-soft);
+		text-decoration: none;
+		font-weight: 600;
+	}
+	.ct-lang-switch a.is-active {
+		color: var(--ct-primary-dark);
+	}
+	.ct-header-cta {
+		padding: 9px 18px;
+		font-size: 14px;
+	}
+</style>

@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import CompareContent from '../../../../sections/CompareContent.astro';
+import { getDictionary } from '../../../../i18n';
+const locale = 'es' as const;
+const dict = getDictionary(locale);
+---
+<BaseLayout locale={locale} page="compare" title={`${dict.compareCalendly.title} — clickTarot Calendar`} description={dict.compareCalendly.subtitle}>
+	<CompareContent locale={locale} />
+</BaseLayout>
