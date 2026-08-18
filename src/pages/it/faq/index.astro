@@ -2,9 +2,11 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import FaqContent from '../../../sections/FaqContent.astro';
 import { getDictionary } from '../../../i18n';
+import { faqPageSchema } from '../../../lib/schema';
 const locale = 'it' as const;
 const dict = getDictionary(locale);
+const schema = [faqPageSchema(dict.faq.items)];
 ---
-<BaseLayout locale={locale} page="faq" title={`${dict.faq.title} — clickTarot Calendar`} description={dict.meta.description}>
+<BaseLayout locale={locale} page="faq" title={`${dict.faq.title} — clickTarot Calendar`} description={dict.meta.description} schema={schema}>
 	<FaqContent locale={locale} />
 </BaseLayout>

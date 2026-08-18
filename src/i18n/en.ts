@@ -2,14 +2,15 @@ import type { Dictionary } from './types';
 
 const en: Dictionary = {
 	meta: {
-		title: 'clickTarot Calendar — Booking calendar for tarot readers and astrologers',
+		title: 'WordPress Booking Plugin & Calendly Alternative | clickTarot Calendar',
 		description:
-			'The booking calendar built for tarot readers, astrologers and holistic counselors. PayPal and Stripe payments, automatic invoicing, prepaid packages. Try it today.',
+			'A WordPress booking plugin for tarot readers, astrologers and consultants selling paid sessions. Built-in payments, invoicing and packages — a real Calendly alternative.',
 	},
 	nav: {
 		home: 'Home',
 		pricing: 'Pricing',
 		faq: 'FAQ',
+		about: 'About',
 	},
 	hero: {
 		eyebrow: 'WordPress plugin for spiritual & wellness professionals',
@@ -85,25 +86,6 @@ const en: Dictionary = {
 			'Updates and support included',
 		],
 		guarantee: 'Money-back guarantee handled directly by Freemius at checkout.',
-	},
-	compareCalendly: {
-		eyebrow: 'Comparison',
-		title: 'clickTarot Calendar vs Calendly',
-		subtitle:
-			'Calendly is a great generic tool for meetings of every kind. clickTarot Calendar is built specifically for people selling paid consultations: the difference shows up in the details.',
-		colFeature: 'Feature',
-		colClicktarot: 'clickTarot Calendar',
-		colCalendly: 'Calendly',
-		rows: [
-			{ feature: 'Invoice data collection (Tax ID/VAT number, address)', clicktarot: 'Automatic, built into the form', calendly: 'Not available' },
-			{ feature: 'Multi-session prepaid packages', clicktarot: 'Included', calendly: 'Not available' },
-			{ feature: 'Form color & branding', clicktarot: 'Customizable in one click', calendly: 'Limited to higher-priced plans' },
-			{ feature: 'Built for', clicktarot: 'A single consultation practitioner', calendly: 'Teams and companies of every kind' },
-			{ feature: 'Where it runs', clicktarot: 'On your own WordPress site, your data stays yours', calendly: 'External platform' },
-			{ feature: 'Pricing model', clicktarot: 'Single license, no per-seat cost', calendly: 'Monthly subscription, often per seat' },
-		],
-		ctaTitle: 'Ready to try something built just for you?',
-		ctaBody: 'Install clickTarot Calendar on your WordPress site in a few minutes, no technical skills required.',
 	},
 	faq: {
 		title: 'Frequently asked questions',
@@ -183,6 +165,36 @@ const en: Dictionary = {
 				body: 'This site is provided "as is". For technical support on the plugin, please refer to the channels listed in the Freemius dashboard after purchase.',
 			},
 		],
+	},
+	about: {
+		eyebrow: 'About',
+		title: 'Not a team of developers. A tarot reader who uses this tool every day.',
+		subtitle:
+			'clickTarot Calendar wasn’t built by a software company. It was built out of a real problem — mine — and a job I do every day.',
+		bioTitle: 'Who I am',
+		bioBody: [
+			'My name is Francesco Guarino. I’m a speaker, a student of social psychology, and for years I’ve worked to build a bridge between science and spirituality. Before any of that, I studied directly with master card-makers the tradition of card production itself.',
+			'I founded Scuola TdM, Italy’s leading training hub for Tarot de Marseille, and created the TdM Method, a study and interaction model for the Tarot de Marseille that I’ve taught across Europe and Asia since 2011, and in America since 2017.',
+			'I’m the webmaster of tarocchi.blog, considered the best tarot blog in Italy, and I created clickTarot, a community built to be as inclusive as possible. Across my sites I reach a million and a half tarot students, enthusiasts and lovers every year. I’ve also produced the documentary “Oltre il Tarot” and regularly write books on psychology and spirituality.',
+		],
+		searchTitle: 'Why I built clickTarot Calendar',
+		searchBody: [
+			'For years I looked for a booking tool that fit my work: paid, one-on-one consultations, with clients who come back over time. I never found one.',
+			'I tried Booknetic — it didn’t have the features I actually needed. I moved to Booknetic SaaS, but it was full of bugs, and since its developers make money selling paid add-ons, they seemed more interested in shipping new ones than fixing what was already broken. I even joined their Discord community hoping to find help: it was a graveyard of complaints, with no answers.',
+			'I tried TidyCal — it kept throwing 404 errors on my calendars, and customer support was practically nonexistent, the same story as every product from the “Sumo family”. If you use SendFox for your emails, you know exactly what I mean.',
+			'I’d also used a plugin from the CodePeople team for a long time. It worked, until it started conflicting with other major WordPress plugins. They built me a custom version, which was never updated again — until a WordPress update finally broke it for good.',
+			'At that point I gathered my team and built it myself. Then I decided to open it up to anyone else who, like me, had never found the right tool.',
+		],
+		whyTitle: 'Why I know it works',
+		whyBody: [
+			'Not because there’s a team of professional developers behind it — there isn’t, and I’m not going to pretend otherwise. clickTarot Calendar works because it’s the exact tool I use, every day, to run the consultations in my own business.',
+			'That’s why the main focus is on updates and constant improvement: this isn’t a product we just sell and move on from. It’s the tool my own daily work depends on, so it has to work — always.',
+		],
+		linksTitle: 'Read more',
+		bookneticLinkLabel: 'Our comparison with Booknetic',
+		tidycalLinkLabel: 'Our comparison with TidyCal',
+		ctaTitle: 'Try it for yourself',
+		ctaBody: 'The same tool I use every day for my own work, now available for yours.',
 	},
 };
 

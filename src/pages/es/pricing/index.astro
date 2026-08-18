@@ -2,9 +2,11 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PricingContent from '../../../sections/PricingContent.astro';
 import { getDictionary } from '../../../i18n';
+import { softwareApplicationSchema } from '../../../lib/schema';
 const locale = 'es' as const;
 const dict = getDictionary(locale);
+const schema = [softwareApplicationSchema(locale, dict.meta.title, dict.meta.description)];
 ---
-<BaseLayout locale={locale} page="pricing" title={`${dict.pricing.title} — clickTarot Calendar`} description={dict.pricing.subtitle}>
+<BaseLayout locale={locale} page="pricing" title={`${dict.pricing.title} — clickTarot Calendar`} description={dict.pricing.subtitle} schema={schema}>
 	<PricingContent locale={locale} />
 </BaseLayout>

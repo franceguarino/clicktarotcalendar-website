@@ -7,6 +7,7 @@ export interface Dictionary {
 		home: string;
 		pricing: string;
 		faq: string;
+		about: string;
 	};
 	hero: {
 		eyebrow: string;
@@ -36,17 +37,6 @@ export interface Dictionary {
 		included: string[];
 		guarantee: string;
 	};
-	compareCalendly: {
-		eyebrow: string;
-		title: string;
-		subtitle: string;
-		colFeature: string;
-		colClicktarot: string;
-		colCalendly: string;
-		rows: { feature: string; clicktarot: string; calendly: string }[];
-		ctaTitle: string;
-		ctaBody: string;
-	};
 	faq: {
 		title: string;
 		items: { q: string; a: string }[];
@@ -65,5 +55,21 @@ export interface Dictionary {
 		termsTitle: string;
 		termsIntro: string;
 		termsBody: { heading: string; body: string }[];
+	};
+	about: {
+		eyebrow: string;
+		title: string;
+		subtitle: string;
+		bioTitle: string;
+		bioBody: string[];
+		searchTitle: string;
+		searchBody: string[];
+		whyTitle: string;
+		whyBody: string[];
+		linksTitle: string;
+		bookneticLinkLabel: string;
+		tidycalLinkLabel: string;
+		ctaTitle: string;
+		ctaBody: string;
 	};
 }

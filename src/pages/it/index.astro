@@ -2,9 +2,11 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import HomeContent from '../../sections/HomeContent.astro';
 import { getDictionary } from '../../i18n';
+import { softwareApplicationSchema } from '../../lib/schema';
 const locale = 'it' as const;
 const dict = getDictionary(locale);
+const schema = [softwareApplicationSchema(locale, dict.meta.title, dict.meta.description)];
 ---
-<BaseLayout locale={locale} page="home" title={dict.meta.title} description={dict.meta.description}>
+<BaseLayout locale={locale} page="home" title={dict.meta.title} description={dict.meta.description} schema={schema}>
 	<HomeContent locale={locale} />
 </BaseLayout>

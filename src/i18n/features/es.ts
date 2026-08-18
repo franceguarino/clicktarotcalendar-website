@@ -15,6 +15,8 @@ const es: FeatureDetailDictionary = {
 	calendar: {
 		title: 'Calendario Visual Mensual',
 		tagline: 'Deja de intercambiar mensajes solo para encontrar una hora libre.',
+		metaDescription:
+			'Descubre cómo el calendario visual mensual de clickTarot Calendar deja que los clientes reserven solos, sin mensajes de ida y vuelta.',
 		painPoint:
 			'Reservar por DM o email significa una decena de mensajes de ida y vuelta antes de que alguien acuerde un horario — y la mitad preguntan "¿tienes algo libre la semana que viene?" después de que ya se lo has dicho dos veces.',
 		howItWorks:
@@ -25,6 +27,8 @@ const es: FeatureDetailDictionary = {
 	payments: {
 		title: 'Pagos Integrados',
 		tagline: 'Cobra antes de la sesión, no después.',
+		metaDescription:
+			'Pagos con PayPal y Stripe integrados en clickTarot Calendar: el cliente paga al reservar, el dinero llega a tu cuenta.',
 		painPoint:
 			'Perseguir un pago después de una consulta es incómodo para ambas partes. Y enviar manualmente un enlace de pago por cada reserva es un paso más que puede olvidarse — o ignorarse.',
 		howItWorks:
@@ -35,6 +39,8 @@ const es: FeatureDetailDictionary = {
 	invoicing: {
 		title: 'Datos de Facturación Automáticos',
 		tagline: 'Los datos fiscales que necesitas ya están en tu panel.',
+		metaDescription:
+			'clickTarot Calendar recoge NIF/IVA y dirección automáticamente al reservar, para facturar sin trabajo extra.',
 		painPoint:
 			'Emitir una factura suele significar escribir al cliente después para pedirle el NIF y la dirección de facturación — y esperar la respuesta antes de poder facturar de verdad.',
 		howItWorks:
@@ -45,6 +51,8 @@ const es: FeatureDetailDictionary = {
 	packages: {
 		title: 'Bonos Prepagados',
 		tagline: 'Vende tres sesiones hoy, deja que reserve la tercera en marzo.',
+		metaDescription:
+			'Vende bonos prepagados multisesión con clickTarot Calendar: un pago, el cliente reserva sus sesiones cuando quiera.',
 		painPoint:
 			'Los clientes habituales son los mejores clientes — pero sin un sistema de bonos, cada visita repetida significa pasar de nuevo por el checkout, sin una forma sencilla de premiar a quien reserva por adelantado.',
 		howItWorks:
@@ -55,6 +63,8 @@ const es: FeatureDetailDictionary = {
 	coupons: {
 		title: 'Cupones de Descuento',
 		tagline: 'Lanza una promoción real sin hacer cálculos mentales en el checkout.',
+		metaDescription:
+			'Crea cupones de descuento porcentuales o fijos en clickTarot Calendar, listos para tu próxima promo en redes sociales.',
 		painPoint:
 			'Los descuentos manuales significan ajustar un precio a mano, o confiar en tu memoria para recordar quién tiene el 20% y quién no — no es precisamente algo que quieras llevar en un cuaderno.',
 		howItWorks:
@@ -65,6 +75,8 @@ const es: FeatureDetailDictionary = {
 	reschedule: {
 		title: 'Reprogramación y Cancelación Autónoma',
 		tagline: 'Deja que los clientes muevan su propia cita — no eres su asistente de calendario.',
+		metaDescription:
+			'Deja que los clientes reprogramen o cancelen su cita desde el email de confirmación, sin escribirte.',
 		painPoint:
 			'"¿Podemos mover el martes al jueves?" es una petición normal y razonable — y también el quinto mensaje del día que no tiene nada que ver con una consulta real.',
 		howItWorks:
@@ -75,6 +87,8 @@ const es: FeatureDetailDictionary = {
 	international: {
 		title: 'Facturación para Clientes Internacionales',
 		tagline: 'Un solo formulario, correcto tanto para un cliente en Roma como en Berlín.',
+		metaDescription:
+			'clickTarot Calendar adapta los campos de facturación automáticamente para clientes fuera de Italia: NIF/IVA, código postal libre y más.',
 		painPoint:
 			'Los campos de facturación pensados solo para un país — NIF italiano, formato de código postal italiano — o no funcionan para un cliente en el extranjero, o recogen silenciosamente datos erróneos o inutilizables.',
 		howItWorks:
@@ -85,6 +99,8 @@ const es: FeatureDetailDictionary = {
 	multilingual: {
 		title: 'Plugin Multilingüe',
 		tagline: 'Tu formulario de reserva habla el idioma de tu cliente — literalmente.',
+		metaDescription:
+			'El formulario de reserva, los emails y el panel de clickTarot Calendar están traducidos a inglés, español, alemán e italiano.',
 		painPoint:
 			'Un formulario de reserva en un idioma que el cliente no lee genera fricción justo en el momento en que quieres cero fricción: justo antes de que pague.',
 		howItWorks:

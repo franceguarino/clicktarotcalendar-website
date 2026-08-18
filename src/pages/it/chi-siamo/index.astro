@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AboutContent from '../../../sections/AboutContent.astro';
+import { getDictionary } from '../../../i18n';
+const locale = 'it' as const;
+const dict = getDictionary(locale);
+---
+<BaseLayout locale={locale} page="about" title="Chi è Francesco Guarino — clickTarot Calendar" description={dict.about.subtitle}>
+	<AboutContent locale={locale} />
+</BaseLayout>

@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import CompetitorClarificationContent from '../../../../sections/CompetitorClarificationContent.astro';
+import { getBookneticSaasClarification, bookneticSaasAlternateLinks } from '../../../../i18n/competitors';
+
+const locale = 'es' as const;
+const content = getBookneticSaasClarification(locale);
+const alternates = bookneticSaasAlternateLinks();
+const langLinks = Object.fromEntries(alternates.map((a) => [a.locale, a.href]));
+---
+<BaseLayout
+	locale={locale}
+	page="compare"
+	title={`${content.title} — clickTarot Calendar`}
+	description={content.subtitle}
+	alternates={alternates}
+	langLinks={langLinks}
+>
+	<CompetitorClarificationContent locale={locale} content={content} />
+</BaseLayout>

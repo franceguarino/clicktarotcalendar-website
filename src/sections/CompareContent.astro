@@ -1,14 +1,17 @@
 ---
 import { getDictionary, type Locale } from '../i18n';
+import { competitorKeys, competitorNames, competitorPath, bookneticSaasPath, type CompetitorDetail, type CompetitorKey } from '../i18n/competitors';
 import CtaButton from '../components/CtaButton.astro';
 import { CHECKOUT_URL } from '../config';
 
 interface Props {
 	locale: Locale;
+	competitorKey: CompetitorKey;
+	competitor: CompetitorDetail;
 }
-const { locale } = Astro.props;
+const { locale, competitorKey, competitor: c } = Astro.props;
 const dict = getDictionary(locale);
-const c = dict.compareCalendly;
+const otherKeys = competitorKeys.filter((k) => k !== competitorKey);
 ---
 <section class="ct-section">
 	<div class="ct-container ct-compare-head">
@@ -16,14 +19,16 @@ const c = dict.compareCalendly;
 		<h1>{c.title}</h1>
 		<p class="ct-hint">{c.subtitle}</p>
 	</div>
+</section>
 
+<section class="ct-section">
 	<div class="ct-container ct-compare-table-wrap">
 		<table class="ct-compare">
 			<thead>
 				<tr>
 					<th>{c.colFeature}</th>
 					<th>{c.colClicktarot}</th>
-					<th>{c.colCalendly}</th>
+					<th>{c.colCompetitor}</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -31,13 +36,58 @@ const c = dict.compareCalendly;
 					<tr>
 						<td>{row.feature}</td>
 						<td>{row.clicktarot}</td>
-						<td>{row.calendly}</td>
+						<td>{row.competitor}</td>
 					</tr>
 				))}
 			</tbody>
 		</table>
 	</div>
 </section>
+
+<section class="ct-section ct-section-alt">
+	<div class="ct-container ct-pain-points">
+		<h2>{c.painPointsTitle}</h2>
+		<p class="ct-hint">{c.painPointsIntro}</p>
+		<ul>
+			{c.painPoints.map((point) => (
+				<li>{point}</li>
+			))}
+		</ul>
+	</div>
+</section>
+
+{c.faq.length > 0 && (
+	<section class="ct-section">
+		<div class="ct-container ct-compare-faq">
+			{c.faq.map((item) => (
+				<div class="ct-card">
+					<h3>{item.q}</h3>
+					<p class="ct-hint">{item.a}</p>
+				</div>
+			))}
+		</div>
+	</section>
+)}
+
+{otherKeys.length > 0 && (
+	<section class="ct-section">
+		<div class="ct-container">
+			<h2>{c.otherComparisonsTitle}</h2>
+			<ul class="ct-other-compare-list">
+				{otherKeys.map((k) => (
+					<li>
+						<a href={competitorPath(locale, k)}>vs {competitorNames[k]}</a>
+					</li>
+				))}
+				{competitorKey === 'booknetic' && (
+					<li>
+						<a href={bookneticSaasPath(locale)}>vs Booknetic SaaS</a>
+					</li>
+				)}
+			</ul>
+		</div>
+	</section>
+)}
 
 <section class="ct-section ct-section-alt">
 	<div class="ct-container ct-final-cta">
@@ -51,10 +101,36 @@ const c = dict.compareCalendly;
 	.ct-compare-head {
 		text-align: center;
 		max-width: 720px;
-		margin: 0 auto 40px;
+		margin: 0 auto;
 	}
 	.ct-compare-table-wrap {
 		overflow-x: auto;
+	}
+	.ct-pain-points {
+		max-width: 760px;
+		margin: 0 auto;
+	}
+	.ct-pain-points ul {
+		margin: 20px 0 0;
+		padding-left: 20px;
+		display: grid;
+		gap: 12px;
+	}
+	.ct-pain-points li {
+		color: var(--ct-ink-soft);
+	}
+	.ct-compare-faq {
+		display: grid;
+		gap: 16px;
+		max-width: 760px;
+		margin: 0 auto;
+	}
+	.ct-compare-faq h3 {
+		margin: 0 0 8px;
+		font-size: 17px;
+	}
+	.ct-compare-faq p {
+		margin: 0;
 	}
 	.ct-final-cta {
 		text-align: center;
@@ -63,5 +139,26 @@ const c = dict.compareCalendly;
 	}
 	.ct-final-cta p {
 		margin: 12px 0 24px;
+	}
+	.ct-other-compare-list {
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 12px;
+		margin: 24px 0 0;
+		padding: 0;
+	}
+	.ct-other-compare-list a {
+		display: block;
+		padding: 14px 16px;
+		border: 1px solid var(--ct-border);
+		border-radius: var(--ct-radius);
+		color: var(--ct-ink);
+		text-decoration: none;
+		font-weight: 600;
+	}
+	.ct-other-compare-list a:hover {
+		border-color: var(--ct-primary-dark);
+		color: var(--ct-primary-dark);
 	}
 </style>

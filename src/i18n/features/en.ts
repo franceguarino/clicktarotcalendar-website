@@ -15,6 +15,8 @@ const en: FeatureDetailDictionary = {
 	calendar: {
 		title: 'Visual Monthly Calendar',
 		tagline: "Stop trading messages just to find a free hour.",
+		metaDescription:
+			"See how clickTarot Calendar's visual monthly calendar lets clients book their own consultation slot instantly, with no back-and-forth messages.",
 		painPoint:
 			"Booking by DM or email means a dozen back-and-forth messages before anyone agrees on a time — and half of them ask “do you have anything free next week?” after you've already answered that twice.",
 		howItWorks:
@@ -25,6 +27,8 @@ const en: FeatureDetailDictionary = {
 	payments: {
 		title: 'Built-in Payments',
 		tagline: 'Get paid before the session, not after.',
+		metaDescription:
+			'PayPal and Stripe payments built into clickTarot Calendar: clients pay when they book, and the money goes straight to your own account.',
 		painPoint:
 			"Chasing payment after a reading is awkward for everyone involved. And manually sending a payment link for each booking is one more step that can be forgotten — or ignored.",
 		howItWorks:
@@ -35,6 +39,8 @@ const en: FeatureDetailDictionary = {
 	invoicing: {
 		title: 'Automatic Invoice Data',
 		tagline: 'The tax details you need are already sitting in your dashboard.',
+		metaDescription:
+			'clickTarot Calendar collects Tax ID/VAT number and billing address automatically at booking time, so invoicing your clients takes no extra work.',
 		painPoint:
 			"Issuing an invoice usually means emailing the client afterward to ask for their tax ID and billing address — then waiting for a reply before you can actually bill them.",
 		howItWorks:
@@ -45,6 +51,8 @@ const en: FeatureDetailDictionary = {
 	packages: {
 		title: 'Prepaid Packages',
 		tagline: 'Sell three sessions today, let them book the third one in March.',
+		metaDescription:
+			'Sell prepaid multi-session packages with clickTarot Calendar: clients pay once, then book their sessions whenever they like.',
 		painPoint:
 			"Repeat clients are the best clients — but without a package system, every return visit means going through checkout again, with no easy way to reward someone for booking ahead.",
 		howItWorks:
@@ -55,6 +63,8 @@ const en: FeatureDetailDictionary = {
 	coupons: {
 		title: 'Discount Coupons',
 		tagline: 'Run a real promotion without doing the math in your head at checkout.',
+		metaDescription:
+			'Create percentage or fixed-amount discount coupons in clickTarot Calendar, ready for your next social media promotion.',
 		painPoint:
 			"Manual discounts mean manually adjusting a price, or trusting yourself to remember who gets 20% off and who doesn't — not something you want to be tracking in a notebook.",
 		howItWorks:
@@ -65,6 +75,8 @@ const en: FeatureDetailDictionary = {
 	reschedule: {
 		title: 'Self-Service Rescheduling & Cancellation',
 		tagline: "Let clients move their own appointment — you shouldn't be their calendar assistant.",
+		metaDescription:
+			'Let clients reschedule or cancel their own appointment straight from the confirmation email — clickTarot Calendar handles it without you.',
 		painPoint:
 			"“Can we move Tuesday to Thursday?” is a normal, reasonable request — and also the fifth message today that has nothing to do with an actual reading.",
 		howItWorks:
@@ -75,6 +87,8 @@ const en: FeatureDetailDictionary = {
 	international: {
 		title: 'Billing for International Customers',
 		tagline: 'One form, correct for a client in Rome and a client in Berlin.',
+		metaDescription:
+			'clickTarot Calendar adapts its billing fields automatically for clients outside Italy: VAT/Tax ID, free-format postal code and more.',
 		painPoint:
 			"Billing fields built for only one country — an Italian Tax Code, an Italian postal code format — either don't work for a client abroad, or quietly collect wrong, unusable data from them.",
 		howItWorks:
@@ -85,6 +99,8 @@ const en: FeatureDetailDictionary = {
 	multilingual: {
 		title: 'Multilingual Plugin',
 		tagline: "Your booking form speaks your client's language — literally.",
+		metaDescription:
+			"clickTarot Calendar's booking form, emails and admin dashboard are translated into English, Spanish, German and Italian.",
 		painPoint:
 			"A booking form in a language your client doesn't read creates friction at exactly the moment you want zero friction: right before they pay.",
 		howItWorks:

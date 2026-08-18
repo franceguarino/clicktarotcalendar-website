@@ -2,14 +2,15 @@ import type { Dictionary } from './types';
 
 const de: Dictionary = {
 	meta: {
-		title: 'clickTarot Calendar — Buchungskalender für Kartenleger und Astrologen',
+		title: 'WordPress Buchungsplugin, Calendly-Alternative | clickTarot Calendar',
 		description:
-			'Der Buchungskalender für Kartenleger, Astrologen und ganzheitliche Coaches. PayPal- und Stripe-Zahlungen, automatische Rechnungsstellung, Prepaid-Pakete. Jetzt testen.',
+			'Buchungsplugin für WordPress, gebaut für Kartenleger:innen und Astrolog:innen. Zahlungen und Pakete inklusive — DSGVO-freundlich auf deiner eigenen Website.',
 	},
 	nav: {
 		home: 'Start',
 		pricing: 'Preise',
 		faq: 'FAQ',
+		about: 'Über uns',
 	},
 	hero: {
 		eyebrow: 'WordPress-Plugin für spirituelle Fachleute',
@@ -85,25 +86,6 @@ const de: Dictionary = {
 			'Updates und Support inklusive',
 		],
 		guarantee: 'Geld-zurück-Garantie, direkt von Freemius beim Checkout abgewickelt.',
-	},
-	compareCalendly: {
-		eyebrow: 'Vergleich',
-		title: 'clickTarot Calendar vs Calendly',
-		subtitle:
-			'Calendly ist ein gutes generisches Tool für Meetings aller Art. clickTarot Calendar ist speziell für alle gebaut, die kostenpflichtige Beratungen verkaufen — der Unterschied zeigt sich in den Details.',
-		colFeature: 'Funktion',
-		colClicktarot: 'clickTarot Calendar',
-		colCalendly: 'Calendly',
-		rows: [
-			{ feature: 'Erfassung der Rechnungsdaten (Steuernummer/USt-IdNr., Adresse)', clicktarot: 'Automatisch, ins Formular integriert', calendly: 'Nicht vorgesehen' },
-			{ feature: 'Prepaid-Pakete mit mehreren Sitzungen', clicktarot: 'Enthalten', calendly: 'Nicht verfügbar' },
-			{ feature: 'Farbe & Branding des Formulars', clicktarot: 'Mit einem Klick anpassbar', calendly: 'Nur in teureren Tarifen' },
-			{ feature: 'Gemacht für', clicktarot: 'Einzelne Berater mit Kundenterminen', calendly: 'Teams und Unternehmen jeder Art' },
-			{ feature: 'Wo es läuft', clicktarot: 'Auf deiner eigenen WordPress-Website, deine Daten bleiben bei dir', calendly: 'Externe Plattform' },
-			{ feature: 'Preismodell', clicktarot: 'Einzellizenz, keine Kosten pro Nutzer', calendly: 'Monatsabo, oft pro Sitzplatz' },
-		],
-		ctaTitle: 'Bereit, etwas auszuprobieren, das genau für dich gemacht ist?',
-		ctaBody: 'Installiere clickTarot Calendar in wenigen Minuten auf deiner WordPress-Website — ganz ohne technische Kenntnisse.',
 	},
 	faq: {
 		title: 'Häufig gestellte Fragen',
@@ -183,6 +165,35 @@ const de: Dictionary = {
 				body: 'Diese Website wird "wie besehen" bereitgestellt. Für technischen Support zum Plugin nutze bitte die Kanäle, die nach dem Kauf im Freemius-Dashboard angegeben sind.',
 			},
 		],
+	},
+	about: {
+		eyebrow: 'Über mich',
+		title: 'Kein Entwicklerteam. Ein Tarot-Leser, der dieses Tool jeden Tag selbst nutzt.',
+		subtitle: 'clickTarot Calendar wurde nicht von einem Softwareunternehmen gebaut. Es entstand aus einem echten Problem — meinem — und aus einer Arbeit, die ich jeden Tag mache.',
+		bioTitle: 'Wer ich bin',
+		bioBody: [
+			'Ich heiße Francesco Guarino. Ich bin Redner, Sozialpsychologie-Forscher und arbeite seit Jahren daran, eine Brücke zwischen Wissenschaft und Spiritualität zu bauen. Davor habe ich direkt bei Kartenmeistern die Tradition der Kartenherstellung studiert.',
+			'Ich habe die Scuola TdM gegründet, Italiens führendes Ausbildungszentrum für das Tarot de Marseille, und die TdM-Methode entwickelt, ein Lern- und Interaktionsmodell für das Tarot de Marseille, das ich seit 2011 in Europa und Asien und seit 2017 auch in Amerika unterrichte.',
+			'Ich bin Webmaster von tarocchi.blog, das als bester Tarot-Blog Italiens gilt, und habe clickTarot gegründet, eine Community, die so inklusiv wie möglich sein soll. Über meine Websites erreiche ich jedes Jahr anderthalb Millionen Tarot-Studierende, Liebhaber:innen und Fans. Ich habe außerdem den Dokumentarfilm „Oltre il Tarot" produziert und schreibe regelmäßig Bücher zu Psychologie und Spiritualität.',
+		],
+		searchTitle: 'Warum ich clickTarot Calendar gebaut habe',
+		searchBody: [
+			'Jahrelang habe ich nach einem Buchungstool gesucht, das zu meiner Arbeit passt: bezahlte Einzelberatungen, mit Kund:innen, die über die Zeit wiederkommen. Ich habe nie eines gefunden.',
+			'Ich habe Booknetic ausprobiert — es hatte nicht die Funktionen, die ich wirklich brauchte. Ich bin zu Booknetic SaaS gewechselt, aber das war voller Fehler — und da die Entwickler mit kostenpflichtigen Add-ons Geld verdienen, schienen sie mehr daran interessiert, neue herauszubringen, als bestehende Probleme zu beheben. Ich bin sogar ihrer Discord-Community beigetreten, in der Hoffnung, Hilfe zu finden: Es war ein Friedhof voller Beschwerden, ohne Antworten.',
+			'Ich habe TidyCal ausprobiert — es warf ständig 404-Fehler auf meinen Kalendern, und der Kundensupport war praktisch nicht vorhanden — die gleiche Geschichte wie bei allen Produkten der „Sumo-Familie". Wer SendFox für seine E-Mails nutzt, weiß genau, wovon ich spreche.',
+			'Ich hatte außerdem lange ein Plugin des CodePeople-Teams genutzt. Es funktionierte, bis es mit anderen wichtigen WordPress-Plugins in Konflikt geriet. Man baute mir eine individuelle Version, die aber nie wieder aktualisiert wurde — bis ein WordPress-Update sie endgültig unbrauchbar machte.',
+			'An diesem Punkt habe ich mein Team zusammengerufen und es selbst gebaut. Danach habe ich beschlossen, es auch für alle anderen zu öffnen, die wie ich nie das richtige Tool gefunden hatten.',
+		],
+		whyTitle: 'Warum ich weiß, dass es funktioniert',
+		whyBody: [
+			'Nicht, weil dahinter ein Team professioneller Entwickler:innen steht — das ist nicht der Fall, und ich werde nicht so tun, als wäre es anders. clickTarot Calendar funktioniert, weil es genau das Tool ist, das ich selbst jeden Tag nutze, um die Beratungen in meinem eigenen Geschäft abzuwickeln.',
+			'Deshalb liegt der Hauptfokus auf Updates und ständiger Verbesserung: Das ist kein Produkt, das wir einfach verkaufen und dann vergessen. Es ist das Tool, von dem meine eigene tägliche Arbeit abhängt — also muss es funktionieren. Immer.',
+		],
+		linksTitle: 'Mehr erfahren',
+		bookneticLinkLabel: 'Unser Vergleich mit Booknetic',
+		tidycalLinkLabel: 'Unser Vergleich mit TidyCal',
+		ctaTitle: 'Probier es selbst aus',
+		ctaBody: 'Das gleiche Tool, das ich jeden Tag für meine eigene Arbeit nutze, jetzt auch für deine verfügbar.',
 	},
 };
 

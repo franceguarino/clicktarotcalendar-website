@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CompareContent from '../../../sections/CompareContent.astro';
+import { competitorKeys, competitorSlugs, competitorAlternateLinks, getCompetitorDetail } from '../../../i18n/competitors';
+import { faqPageSchema } from '../../../lib/schema';
+
+export function getStaticPaths() {
+	return competitorKeys.map((competitorKey) => ({
+		params: { slug: competitorSlugs[competitorKey] },
+		props: { competitorKey },
+	}));
+}
+
+const locale = 'es' as const;
+const { competitorKey } = Astro.props;
+const competitor = getCompetitorDetail(locale, competitorKey);
+const alternates = competitorAlternateLinks(competitorKey);
+const langLinks = Object.fromEntries(alternates.map((a) => [a.locale, a.href]));
+const schema = [faqPageSchema(competitor.faq)];
+---
+<BaseLayout
+	locale={locale}
+	page="compare"
+	title={competitor.title}
+	description={competitor.subtitle}
+	alternates={alternates}
+	langLinks={langLinks}
+	schema={schema}
+>
+	<CompareContent locale={locale} competitorKey={competitorKey} competitor={competitor} />
+</BaseLayout>

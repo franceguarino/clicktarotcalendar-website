@@ -15,6 +15,8 @@ const de: FeatureDetailDictionary = {
 	calendar: {
 		title: 'Visueller Monatskalender',
 		tagline: 'Schluss mit Nachrichten hin und her nur, um eine freie Stunde zu finden.',
+		metaDescription:
+			'So lässt der visuelle Monatskalender von clickTarot Calendar Kund:innen selbstständig buchen — ganz ohne Nachrichten hin und her.',
 		painPoint:
 			'Buchungen per DM oder E-Mail bedeuten ein Dutzend Nachrichten hin und her, bevor sich überhaupt jemand auf einen Termin einigt — und die Hälfte fragt „hast du nächste Woche was frei?", obwohl du das schon zweimal beantwortet hast.',
 		howItWorks:
@@ -25,6 +27,8 @@ const de: FeatureDetailDictionary = {
 	payments: {
 		title: 'Integrierte Zahlungen',
 		tagline: 'Bezahlt werden vor der Sitzung, nicht danach.',
+		metaDescription:
+			'PayPal- und Stripe-Zahlungen direkt in clickTarot Calendar integriert: Kund:innen zahlen bei der Buchung, das Geld geht auf dein Konto.',
 		painPoint:
 			'Einer Zahlung nach der Lesung hinterherzulaufen ist für beide Seiten unangenehm. Und für jede Buchung manuell einen Zahlungslink zu verschicken ist ein zusätzlicher Schritt, der vergessen — oder ignoriert — werden kann.',
 		howItWorks:
@@ -35,6 +39,8 @@ const de: FeatureDetailDictionary = {
 	invoicing: {
 		title: 'Automatische Rechnungsdaten',
 		tagline: 'Die Steuerdaten, die du brauchst, stehen schon in deinem Dashboard.',
+		metaDescription:
+			'clickTarot Calendar erfasst Steuernummer/USt-IdNr. und Adresse automatisch bei der Buchung — Rechnungsstellung ohne Mehraufwand.',
 		painPoint:
 			'Eine Rechnung zu stellen bedeutet meist, dem Kunden im Nachhinein zu schreiben und nach Steuernummer und Rechnungsadresse zu fragen — und auf die Antwort zu warten, bevor du überhaupt abrechnen kannst.',
 		howItWorks:
@@ -45,6 +51,8 @@ const de: FeatureDetailDictionary = {
 	packages: {
 		title: 'Vorausbezahlte Pakete',
 		tagline: 'Verkaufe heute drei Sitzungen, lass die dritte im März gebucht werden.',
+		metaDescription:
+			'Verkaufe Prepaid-Pakete mit mehreren Sitzungen über clickTarot Calendar: eine Zahlung, Kund:innen buchen ihre Termine flexibel.',
 		painPoint:
 			'Stammkund:innen sind die besten Kund:innen — aber ohne Paketsystem bedeutet jeder erneute Besuch, den kompletten Checkout noch einmal zu durchlaufen, ohne eine einfache Möglichkeit, Vorausbuchungen zu belohnen.',
 		howItWorks:
@@ -55,6 +63,8 @@ const de: FeatureDetailDictionary = {
 	coupons: {
 		title: 'Rabattgutscheine',
 		tagline: 'Starte eine echte Aktion, ohne beim Checkout im Kopf zu rechnen.',
+		metaDescription:
+			'Erstelle prozentuale oder feste Rabattgutscheine in clickTarot Calendar, bereit für deine nächste Social-Media-Aktion.',
 		painPoint:
 			'Manuelle Rabatte bedeuten, einen Preis von Hand anzupassen oder sich darauf zu verlassen, im Kopf zu behalten, wer 20 % Rabatt bekommt und wer nicht — nichts, was man in einem Notizbuch nachhalten möchte.',
 		howItWorks:
@@ -65,6 +75,8 @@ const de: FeatureDetailDictionary = {
 	reschedule: {
 		title: 'Eigenständige Terminverschiebung & Stornierung',
 		tagline: 'Lass Kund:innen ihren eigenen Termin verschieben — du bist nicht ihre Kalenderassistenz.',
+		metaDescription:
+			'Kund:innen verschieben oder stornieren ihren Termin selbst über den E-Mail-Link — clickTarot Calendar übernimmt das für dich.',
 		painPoint:
 			'„Können wir Dienstag auf Donnerstag verschieben?" ist eine normale, nachvollziehbare Bitte — und gleichzeitig die fünfte Nachricht des Tages, die nichts mit einer echten Lesung zu tun hat.',
 		howItWorks:
@@ -75,6 +87,8 @@ const de: FeatureDetailDictionary = {
 	international: {
 		title: 'Abrechnung für internationale Kund:innen',
 		tagline: 'Ein Formular, korrekt für Kund:innen in Rom genauso wie in Berlin.',
+		metaDescription:
+			'clickTarot Calendar passt die Rechnungsfelder für Kund:innen außerhalb Italiens automatisch an: USt-IdNr., freie Postleitzahl und mehr.',
 		painPoint:
 			'Rechnungsfelder, die nur für ein Land ausgelegt sind — italienische Steuernummer, italienisches Postleitzahlformat — funktionieren für Kund:innen im Ausland entweder nicht, oder erfassen still falsche, unbrauchbare Daten.',
 		howItWorks:
@@ -85,6 +99,8 @@ const de: FeatureDetailDictionary = {
 	multilingual: {
 		title: 'Mehrsprachiges Plugin',
 		tagline: 'Dein Buchungsformular spricht die Sprache deiner Kund:innen — wörtlich.',
+		metaDescription:
+			'Buchungsformular, E-Mails und Admin-Dashboard von clickTarot Calendar sind auf Englisch, Spanisch, Deutsch und Italienisch verfügbar.',
 		painPoint:
 			'Ein Buchungsformular in einer Sprache, die der Kunde nicht liest, erzeugt genau in dem Moment Reibung, in dem du null Reibung willst: kurz vor der Zahlung.',
 		howItWorks:

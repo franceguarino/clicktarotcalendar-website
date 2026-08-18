@@ -26,6 +26,7 @@ export const featureSlugs: Record<FeatureKey, string> = {
 export interface FeatureDetail {
 	title: string;
 	tagline: string;
+	metaDescription: string;
 	painPoint: string;
 	howItWorks: string;
 	benefit: string;

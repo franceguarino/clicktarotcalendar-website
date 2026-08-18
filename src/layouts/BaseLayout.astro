@@ -12,8 +12,9 @@ interface Props {
 	description: string;
 	alternates?: { locale: Locale; href: string }[];
 	langLinks?: Partial<Record<Locale, string>>;
+	schema?: Record<string, unknown>[];
 }
-const { locale, page, title, description, alternates: alternatesOverride, langLinks } = Astro.props;
+const { locale, page, title, description, alternates: alternatesOverride, langLinks, schema } = Astro.props;
 const alternates = alternatesOverride ?? alternateLinks(page);
 const canonical = new URL(alternates.find((a) => a.locale === locale)!.href, SITE_URL).toString();
 ---
@@ -38,6 +39,10 @@ const canonical = new URL(alternates.find((a) => a.locale === locale)!.href, SIT
 		<meta name="twitter:card" content="summary_large_image" />
 
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		{schema?.map((item) => (
+			<script type="application/ld+json" set:html={JSON.stringify(item)} />
+		))}
 	</head>
 	<body>
 		<Header locale={locale} page={page} langLinks={langLinks} />

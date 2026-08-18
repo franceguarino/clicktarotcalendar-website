@@ -2,14 +2,15 @@ import type { Dictionary } from './types';
 
 const it: Dictionary = {
 	meta: {
-		title: 'clickTarot Calendar — Calendario di prenotazione per cartomanti e astrologi',
+		title: 'Plugin di Prenotazione WordPress, Alternativa a Calendly | clickTarot Calendar',
 		description:
-			'Il calendario di prenotazione pensato per cartomanti, astrologi e counselor olistici. Pagamenti PayPal e Stripe, fatturazione automatica, pacchetti prepagati. Provalo oggi.',
+			'Plugin di prenotazione per WordPress pensato per cartomanti, astrologi e counselor. Pagamenti, fatturazione e pacchetti inclusi — una vera alternativa a Calendly.',
 	},
 	nav: {
 		home: 'Home',
 		pricing: 'Prezzi',
 		faq: 'FAQ',
+		about: 'Chi siamo',
 	},
 	hero: {
 		eyebrow: 'Plugin WordPress per professionisti dell’esoterico',
@@ -85,25 +86,6 @@ const it: Dictionary = {
 			'Aggiornamenti e supporto inclusi',
 		],
 		guarantee: 'Garanzia soddisfatti o rimborsati gestita direttamente da Freemius al momento del checkout.',
-	},
-	compareCalendly: {
-		eyebrow: 'Confronto',
-		title: 'clickTarot Calendar vs Calendly',
-		subtitle:
-			'Calendly è un ottimo tool generico per meeting di ogni tipo. clickTarot Calendar è costruito specificamente per chi vende consulti a pagamento: la differenza si vede nei dettagli.',
-		colFeature: 'Funzionalità',
-		colClicktarot: 'clickTarot Calendar',
-		colCalendly: 'Calendly',
-		rows: [
-			{ feature: 'Raccolta dati fatturazione (Codice Fiscale/Partita IVA, indirizzo)', clicktarot: 'Automatica, integrata nel form', calendly: 'Non prevista' },
-			{ feature: 'Pacchetti prepagati multi-sessione', clicktarot: 'Incluso', calendly: 'Non disponibile' },
-			{ feature: 'Colore e branding del form', clicktarot: 'Personalizzabile in un click', calendly: 'Limitato ai piani più costosi' },
-			{ feature: 'Pensato per', clicktarot: 'Un singolo professionista dei consulti', calendly: 'Team e aziende di ogni settore' },
-			{ feature: 'Dove gira', clicktarot: 'Sul tuo sito WordPress, i dati restano tuoi', calendly: 'Piattaforma esterna' },
-			{ feature: 'Modello di prezzo', clicktarot: 'Licenza singola, senza costo per utente', calendly: 'Abbonamento mensile, spesso per posto' },
-		],
-		ctaTitle: 'Pronto a provare qualcosa fatto apposta per te?',
-		ctaBody: 'Installa clickTarot Calendar sul tuo sito WordPress in pochi minuti, senza competenze tecniche.',
 	},
 	faq: {
 		title: 'Domande frequenti',
@@ -183,6 +165,35 @@ const it: Dictionary = {
 				body: 'Il sito viene fornito "così com’è". Per il supporto tecnico sul plugin fai riferimento ai canali indicati nella dashboard Freemius dopo l’acquisto.',
 			},
 		],
+	},
+	about: {
+		eyebrow: 'Chi siamo',
+		title: 'Non un team di sviluppatori. Un cartomante che usa questo strumento ogni giorno.',
+		subtitle: 'clickTarot Calendar non nasce da un’azienda software. Nasce da un problema vero, il mio, e da un lavoro che faccio ogni giorno.',
+		bioTitle: 'Chi sono',
+		bioBody: [
+			'Mi chiamo Francesco Guarino. Sono conferenziere, studioso di psicologia sociale e da anni lavoro per costruire un ponte tra scienza e spiritualità. Prima di tutto questo, ho studiato direttamente con i Mastri Cartai la tradizione dei produttori di carte.',
+			'Ho fondato Scuola TdM, il principale polo di formazione sui Tarocchi di Marsiglia in Italia, e ho ideato il Metodo TdM, un modello di studio e interazione con i Tarocchi di Marsiglia che insegno dal 2011 tra Europa e Asia, e dal 2017 anche in America.',
+			'Sono il webmaster di tarocchi.blog, considerato il miglior blog italiano sui Tarocchi, e ho creato clickTarot, una community pensata per essere il più inclusiva possibile. Attraverso i miei domini raggiungo un milione e mezzo di studiosi, amanti e appassionati di Tarocchi ogni anno. Ho anche prodotto il documentario "Oltre il Tarot" e scrivo regolarmente libri di natura psicologica e spirituale.',
+		],
+		searchTitle: 'Perché ho creato clickTarot Calendar',
+		searchBody: [
+			'Per anni ho cercato uno strumento di prenotazione adatto al mio lavoro: consulti a pagamento, uno alla volta, con clienti che tornano nel tempo. Non l’ho mai trovato.',
+			'Ho provato Booknetic: non aveva le funzionalità che mi servivano davvero. Sono passato a Booknetic SaaS, ma era pieno di bug — e dato che gli sviluppatori guadagnano vendendo componenti aggiuntivi a pagamento, sembravano più interessati a produrne di nuovi che a sistemare quelli esistenti. Ho anche frequentato la loro community su Discord, sperando di trovare aiuto: era un cimitero di lamentele, senza risposte.',
+			'Ho provato TidyCal: mi restituiva errori 404 sui miei calendari, e l’assistenza clienti era praticamente inesistente — la stessa storia di tutti i prodotti della "famiglia Sumo". Se usi SendFox per le tue email, sai esattamente di cosa parlo.',
+			'Avevo anche usato per molto tempo un plugin del team di CodePeople. Funzionava, finché non è entrato in conflitto con altri plugin importanti di WordPress. Mi avevano preparato una versione personalizzata, che però non è mai stata aggiornata — fino a quando un aggiornamento di WordPress non l’ha resa definitivamente inutilizzabile.',
+			'A quel punto ho riunito il mio team e l’ho costruito da solo. Poi ho deciso di aprirlo anche a chi, come me, non aveva mai trovato lo strumento giusto.',
+		],
+		whyTitle: 'Perché so che funziona',
+		whyBody: [
+			'Non perché dietro c’è un team di sviluppatori professionisti — non è così, e non ho intenzione di far finta che lo sia. clickTarot Calendar funziona perché è lo stesso strumento che uso io, ogni giorno, per gestire i consulti della mia attività.',
+			'È per questo che il focus principale è sugli aggiornamenti e sui miglioramenti costanti: non è un prodotto che vendiamo e basta. È lo strumento da cui dipende il mio lavoro quotidiano, quindi deve funzionare, sempre.',
+		],
+		linksTitle: 'Approfondisci',
+		bookneticLinkLabel: 'Il confronto con Booknetic',
+		tidycalLinkLabel: 'Il confronto con TidyCal',
+		ctaTitle: 'Provalo anche tu',
+		ctaBody: 'Lo stesso strumento che uso ogni giorno per il mio lavoro, ora disponibile anche per il tuo.',
 	},
 };
 

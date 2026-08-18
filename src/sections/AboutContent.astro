@@ -1,0 +1,125 @@
+---
+import { getDictionary, type Locale } from '../i18n';
+import { competitorPath } from '../i18n/competitors';
+import CtaButton from '../components/CtaButton.astro';
+import { CHECKOUT_URL } from '../config';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const dict = getDictionary(locale);
+const a = dict.about;
+---
+<section class="ct-section ct-about-hero">
+	<div class="ct-container ct-about-head">
+		<p class="ct-eyebrow">{a.eyebrow}</p>
+		<h1>{a.title}</h1>
+		<p class="ct-hint ct-about-subtitle">{a.subtitle}</p>
+	</div>
+</section>
+
+<section class="ct-section">
+	<div class="ct-container ct-about-block">
+		<h2>{a.bioTitle}</h2>
+		{a.bioBody.map((p) => (
+			<p>{p}</p>
+		))}
+	</div>
+</section>
+
+<section class="ct-section ct-section-alt">
+	<div class="ct-container ct-about-block">
+		<h2>{a.searchTitle}</h2>
+		{a.searchBody.map((p) => (
+			<p>{p}</p>
+		))}
+		<div class="ct-about-links">
+			<a href={competitorPath(locale, 'booknetic')}>{a.bookneticLinkLabel}</a>
+			<a href={competitorPath(locale, 'tidycal')}>{a.tidycalLinkLabel}</a>
+		</div>
+	</div>
+</section>
+
+<section class="ct-section">
+	<div class="ct-container ct-about-block ct-about-why">
+		<h2>{a.whyTitle}</h2>
+		{a.whyBody.map((p) => (
+			<p>{p}</p>
+		))}
+	</div>
+</section>
+
+<section class="ct-section ct-section-alt">
+	<div class="ct-container ct-final-cta">
+		<h2>{a.ctaTitle}</h2>
+		<p class="ct-hint">{a.ctaBody}</p>
+		<CtaButton href={CHECKOUT_URL} external>{dict.pricing.ctaLabel}</CtaButton>
+	</div>
+</section>
+
+<style>
+	.ct-about-hero {
+		padding-bottom: 0;
+	}
+	.ct-about-head {
+		text-align: center;
+		max-width: 760px;
+		margin: 0 auto;
+	}
+	.ct-about-head h1 {
+		font-size: clamp(28px, 4vw, 38px);
+		margin: 8px 0 16px;
+	}
+	.ct-about-subtitle {
+		font-size: 18px;
+	}
+	.ct-about-block {
+		max-width: 720px;
+		margin: 0 auto;
+	}
+	.ct-about-block h2 {
+		margin: 0 0 16px;
+		font-size: 22px;
+	}
+	.ct-about-block p {
+		color: var(--ct-ink-soft);
+		line-height: 1.7;
+		margin: 0 0 16px;
+	}
+	.ct-about-block p:last-of-type {
+		margin-bottom: 0;
+	}
+	.ct-about-why {
+		border-left: 3px solid var(--ct-primary-dark);
+		padding-left: 24px;
+	}
+	.ct-about-links {
+		display: flex;
+		gap: 12px;
+		flex-wrap: wrap;
+		margin-top: 24px;
+	}
+	.ct-about-links a {
+		display: inline-block;
+		padding: 10px 16px;
+		border: 1px solid var(--ct-border);
+		border-radius: var(--ct-radius);
+		color: var(--ct-ink);
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 14px;
+	}
+	.ct-about-links a:hover {
+		border-color: var(--ct-primary-dark);
+		color: var(--ct-primary-dark);
+	}
+	.ct-final-cta {
+		text-align: center;
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	.ct-final-cta p {
+		margin: 12px 0 24px;
+	}
+</style>
