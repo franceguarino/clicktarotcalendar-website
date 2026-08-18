@@ -186,7 +186,7 @@ const it: CompetitorDictionary = {
 			},
 			{
 				q: 'Booknetic è pensato specificamente per i professionisti dei consulti come clickTarot Calendar?',
-				a: 'No — Booknetic è un plugin di prenotazione generico rivolto a saloni, cliniche, agenzie e molti altri tipi di attività. clickTarot Calendar è costruito specificamente attorno al flusso di lavoro di un singolo professionista dei consulti: cartomanti, astrologi, counselor.',
+				a: 'No — Booknetic è un plugin di prenotazione generico rivolto a saloni, cliniche, agenzie e molti altri tipi di attività. clickTarot Calendar è costruito specificamente attorno al flusso di lavoro di un singolo professionista dei consulti: tarologi, astrologi, counselor.',
 			},
 		],
 		otherComparisonsTitle: 'Scopri come ci confrontiamo con altri strumenti di prenotazione',
@@ -200,7 +200,7 @@ export const bookneticSaasClarification = {
 		'Booknetic SaaS risolve un problema diverso da clickTarot Calendar. Ecco cos’è realmente — e dove guardare se stai confrontando strumenti di prenotazione per il tuo studio.',
 	whatItIsTitle: 'Cos’è realmente Booknetic SaaS',
 	whatItIsBody:
-		'Booknetic SaaS non è uno strumento per gestire i tuoi appuntamenti — è una piattaforma white-label per costruire e rivendere un’attività di software di prenotazione ad altre aziende. Lo installi, poi iscrivi altre attività come "tenant" paganti, ognuna con il proprio sistema di prenotazione sotto il tuo marchio. È pensato per imprenditori che lanciano un prodotto SaaS, non per cartomanti, astrologi o consulenti che ricevono prenotazioni dai propri clienti.',
+		'Booknetic SaaS non è uno strumento per gestire i tuoi appuntamenti — è una piattaforma white-label per costruire e rivendere un’attività di software di prenotazione ad altre aziende. Lo installi, poi iscrivi altre attività come "tenant" paganti, ognuna con il proprio sistema di prenotazione sotto il tuo marchio. È pensato per imprenditori che lanciano un prodotto SaaS, non per tarologi, astrologi o consulenti che ricevono prenotazioni dai propri clienti.',
 	whyNotFitTitle: 'Perché non forziamo un confronto a tabella',
 	whyNotFitBody:
 		'Se stai confrontando strumenti per gestire gli appuntamenti dei tuoi clienti, Booknetic SaaS risolve un problema completamente diverso — e ha un prezzo diverso, con piani pensati per gestire un’attività di rivendita multi-tenant, non uno studio singolo. Una tabella funzionalità-per-funzionalità contro clickTarot Calendar non sarebbe un confronto onesto, quindi non ne inventiamo uno.',

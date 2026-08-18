@@ -108,6 +108,54 @@ const en: FeatureDetailDictionary = {
 		benefit:
 			"You don't need a separate site, a translation plugin, or a developer to serve clients in more than one language. It's already there.",
 	},
+	availability: {
+		title: 'Flexible Availability Management',
+		tagline: 'Block off entire days or single time slots whenever you need to.',
+		metaDescription:
+			'clickTarot Calendar lets you block entire days or single time slots in seconds, so your calendar always matches your real availability.',
+		painPoint:
+			"Your availability doesn't look the same every week — a retreat, a family emergency, a fully booked Tuesday. A booking tool that only lets you set fixed weekly hours forces you to either turn away bookings you can't honor, or manually message clients to cancel.",
+		howItWorks:
+			"Set your regular weekly working hours once, then block off any single day or time slot whenever something changes — a doctor's appointment, a workshop you're attending, a week off. Blocked time simply disappears from what clients can book, with no separate cancellation step.",
+		benefit:
+			"You stay in control of your own time without becoming your calendar's full-time administrator. Block what you need to block, in a few clicks, and get back to your actual work.",
+	},
+	notifications: {
+		title: 'Automatic Email Notifications',
+		tagline: 'Confirmation and reminder emails sent automatically, fully customizable in your own words.',
+		metaDescription:
+			"clickTarot Calendar sends confirmation and reminder emails automatically, with text you write yourself — no generic, robotic messages.",
+		painPoint:
+			"Clients forget appointments. Without a reminder, a forgotten booking means a wasted time slot and an awkward conversation about whether to charge for it. But most booking tools either skip reminders entirely or send emails so generic they don't sound like you.",
+		howItWorks:
+			'Every booking automatically triggers a confirmation email to the client and a notification to you, and you can turn on a reminder email sent a configurable number of hours before the appointment. All three are fully editable — write them in your own voice, not a template’s.',
+		benefit:
+			"Fewer no-shows, fewer last-minute “wait, when was my appointment again?” messages, and every email a client receives actually sounds like it came from you — not from a piece of software.",
+	},
+	socialLink: {
+		title: 'Dedicated Booking Link',
+		tagline: 'A public booking link ready for your Instagram or TikTok bio — no extra page to build.',
+		metaDescription:
+			'Every clickTarot Calendar service gets its own public booking link, ready to drop straight into your Instagram or TikTok bio.',
+		painPoint:
+			"Most of your bookings probably start on social media, not on your website's homepage. But sending a follower to a generic contact page — where they then have to find the right service, scroll, and figure out what to do — loses people who would have booked on the spot.",
+		howItWorks:
+			'Every calendar you create gets its own dedicated public booking link automatically, with no separate page to design or publish. Put it straight in your Instagram or TikTok bio, or share it directly in a DM, and the person lands exactly on the booking form for that specific service.',
+		benefit:
+			"The gap between “someone sees your content” and “someone books a session” gets as short as possible — which matters most exactly when someone's interest is highest, right after they've found you.",
+	},
+	statistics: {
+		title: 'Revenue Statistics',
+		tagline: 'See what you earn each month and which service performs best, right in your dashboard.',
+		metaDescription:
+			'Track monthly revenue, confirmed bookings and which service earns the most, directly in your clickTarot Calendar dashboard.',
+		painPoint:
+			"If you're running consultations as a real business, you need to know if it's actually working — which service is worth your time, whether this month was better than last, whether a coupon campaign paid off. Digging that out of a spreadsheet you have to update by hand is a chore most people just... don't do.",
+		howItWorks:
+			'Every confirmed booking and payment is tracked automatically. Your dashboard shows total revenue, revenue from single sessions versus packages, confirmed bookings, your cancellation rate, a month-by-month trend, and a breakdown by individual calendar — no manual bookkeeping required.',
+		benefit:
+			"You can make real decisions — raise a price, retire an underperforming service, double down on what's working — based on actual numbers instead of a gut feeling. That's worth more than the plugin costs on its own.",
+	},
 };
 
 export default en;

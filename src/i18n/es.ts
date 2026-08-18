@@ -2,7 +2,7 @@ import type { Dictionary } from './types';
 
 const es: Dictionary = {
 	meta: {
-		title: 'Plugin de Reservas WordPress, Alternativa a Calendly | clickTarot Calendar',
+		title: 'Plugin de Reservas WordPress para Tarotistas | clickTarot Calendar',
 		description:
 			'Plugin de reservas para WordPress pensado para tarotistas, astrólogos y consultores. Pagos, facturación y bonos incluidos — una alternativa real a Calendly.',
 	},

@@ -2,7 +2,7 @@ import type { Dictionary } from './types';
 
 const en: Dictionary = {
 	meta: {
-		title: 'WordPress Booking Plugin & Calendly Alternative | clickTarot Calendar',
+		title: 'WordPress Booking Plugin for Tarot Readers | clickTarot Calendar',
 		description:
 			'A WordPress booking plugin for tarot readers, astrologers and consultants selling paid sessions. Built-in payments, invoicing and packages — a real Calendly alternative.',
 	},

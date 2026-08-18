@@ -108,6 +108,54 @@ const it: FeatureDetailDictionary = {
 		benefit:
 			'Non ti serve un sito separato, un plugin di traduzione o uno sviluppatore per servire clienti in più lingue. È già tutto pronto.',
 	},
+	availability: {
+		title: 'Gestione Disponibilità Flessibile',
+		tagline: 'Blocca giornate intere o singole fasce orarie ogni volta che ti serve.',
+		metaDescription:
+			'clickTarot Calendar ti permette di bloccare giornate intere o singole fasce orarie in pochi secondi, così il calendario riflette sempre la tua disponibilità reale.',
+		painPoint:
+			'La tua disponibilità non è uguale ogni settimana — un ritiro, un imprevisto familiare, un martedì già pieno. Uno strumento di prenotazione che permette solo orari settimanali fissi ti costringe a rifiutare prenotazioni che non puoi onorare, oppure a scrivere a mano ai clienti per annullare.',
+		howItWorks:
+			'Imposti una volta i tuoi orari di lavoro settimanali standard, poi blocchi qualsiasi giorno o fascia oraria quando qualcosa cambia — una visita medica, un workshop a cui partecipi, una settimana di pausa. Il tempo bloccato scompare semplicemente da ciò che i clienti possono prenotare, senza bisogno di cancellazioni separate.',
+		benefit:
+			'Resti tu al comando del tuo tempo, senza diventare l’amministratore a tempo pieno del tuo calendario. Blocchi quello che ti serve, in pochi click, e torni al tuo lavoro vero.',
+	},
+	notifications: {
+		title: 'Email Automatiche Personalizzabili',
+		tagline: 'Conferme e promemoria inviati in automatico, con testo personalizzabile a tuo piacimento.',
+		metaDescription:
+			'clickTarot Calendar invia email di conferma e promemoria in automatico, con un testo scritto da te — niente messaggi generici e robotici.',
+		painPoint:
+			'I clienti dimenticano gli appuntamenti. Senza un promemoria, una prenotazione dimenticata significa una fascia oraria persa e una conversazione scomoda su se addebitarla o meno. Ma molti strumenti di prenotazione saltano del tutto i promemoria, oppure mandano email così generiche da non sembrare scritte da te.',
+		howItWorks:
+			'Ogni prenotazione attiva automaticamente un’email di conferma al cliente e una notifica a te, e puoi attivare un promemoria inviato un numero configurabile di ore prima dell’appuntamento. Tutte e tre sono completamente modificabili — le scrivi con le tue parole, non con un template.',
+		benefit:
+			'Meno assenze, meno messaggi dell’ultimo minuto tipo "scusa, a che ora era il mio appuntamento?", e ogni email che il cliente riceve suona davvero come se venisse da te — non da un software.',
+	},
+	socialLink: {
+		title: 'Link di Prenotazione Dedicato',
+		tagline: 'Un link pubblico pronto per la bio di Instagram o TikTok, senza dover creare nessuna pagina.',
+		metaDescription:
+			'Ogni servizio di clickTarot Calendar ha il proprio link pubblico di prenotazione, pronto da mettere direttamente nella bio di Instagram o TikTok.',
+		painPoint:
+			'Probabilmente la maggior parte delle tue prenotazioni parte dai social, non dalla home del tuo sito. Ma mandare chi ti segue verso una pagina di contatto generica — dove poi deve trovare il servizio giusto, scorrere e capire cosa fare — fa perdere persone che avrebbero prenotato su due piedi.',
+		howItWorks:
+			'Ogni calendario che crei ottiene automaticamente un proprio link pubblico dedicato, senza nessuna pagina da progettare o pubblicare a parte. Lo metti direttamente nella bio di Instagram o TikTok, o lo condividi in un DM, e la persona atterra esattamente sul modulo di prenotazione di quel servizio specifico.',
+		benefit:
+			'Il passaggio tra "qualcuno vede il tuo contenuto" e "qualcuno prenota una seduta" diventa il più breve possibile — proprio nel momento in cui l’interesse è più alto, appena dopo averti scoperto.',
+	},
+	statistics: {
+		title: 'Statistiche sugli Incassi',
+		tagline: 'Guarda quanto guadagni ogni mese e quale servizio va meglio, direttamente in dashboard.',
+		metaDescription:
+			'Monitora incassi mensili, prenotazioni confermate e quale servizio rende di più, direttamente nella dashboard di clickTarot Calendar.',
+		painPoint:
+			'Se gestisci i consulti come un’attività vera, devi sapere se sta davvero funzionando — quale servizio vale il tuo tempo, se questo mese è andato meglio del precedente, se una campagna coupon ha ripagato. Estrarre questi dati da un foglio di calcolo da aggiornare a mano è una fatica che quasi nessuno fa davvero.',
+		howItWorks:
+			'Ogni prenotazione confermata e ogni pagamento vengono tracciati in automatico. La tua dashboard mostra incasso totale, incasso da sedute singole rispetto ai pacchetti, prenotazioni confermate, tasso di cancellazione, un andamento mese per mese e una ripartizione per singolo calendario — nessuna contabilità manuale.',
+		benefit:
+			'Puoi prendere decisioni vere — alzare un prezzo, ritirare un servizio che non rende, puntare su ciò che funziona — basandoti su numeri reali invece che su una sensazione. Vale più di quanto costi il plugin da solo.',
+	},
 };
 
 export default it;

@@ -108,6 +108,54 @@ const es: FeatureDetailDictionary = {
 		benefit:
 			'No necesitas un sitio aparte, un plugin de traducción ni un desarrollador para atender a clientes en más de un idioma. Ya está todo listo.',
 	},
+	availability: {
+		title: 'Disponibilidad Flexible',
+		tagline: 'Bloquea días completos o franjas horarias sueltas cuando lo necesites.',
+		metaDescription:
+			'clickTarot Calendar te permite bloquear días completos o franjas horarias sueltas en segundos, para que tu calendario refleje siempre tu disponibilidad real.',
+		painPoint:
+			'Tu disponibilidad no es igual cada semana — un retiro, una urgencia familiar, un martes ya completo. Una herramienta de reservas que solo permite horarios semanales fijos te obliga a rechazar reservas que no puedes cumplir, o a escribir a mano a los clientes para cancelar.',
+		howItWorks:
+			'Configuras una vez tus horarios de trabajo semanales habituales, y luego bloqueas cualquier día o franja horaria cuando algo cambia — una cita médica, un taller al que asistes, una semana libre. El tiempo bloqueado simplemente desaparece de lo que los clientes pueden reservar, sin necesidad de cancelaciones aparte.',
+		benefit:
+			'Sigues teniendo el control de tu propio tiempo, sin convertirte en la administradora a tiempo completo de tu calendario. Bloqueas lo que necesitas, en unos clics, y vuelves a tu trabajo de verdad.',
+	},
+	notifications: {
+		title: 'Emails Automáticos Personalizables',
+		tagline: 'Correos de confirmación y recordatorio enviados en automático, con texto totalmente personalizable.',
+		metaDescription:
+			'clickTarot Calendar envía emails de confirmación y recordatorio de forma automática, con texto que escribes tú — nada de mensajes genéricos y robóticos.',
+		painPoint:
+			'Los clientes olvidan las citas. Sin un recordatorio, una reserva olvidada significa una franja horaria perdida y una conversación incómoda sobre si cobrarla o no. Pero la mayoría de las herramientas de reservas o se saltan los recordatorios por completo, o envían correos tan genéricos que no suenan a ti.',
+		howItWorks:
+			'Cada reserva activa automáticamente un email de confirmación al cliente y una notificación para ti, y puedes activar un recordatorio enviado un número configurable de horas antes de la cita. Los tres son totalmente editables — los escribes con tus propias palabras, no con una plantilla.',
+		benefit:
+			'Menos ausencias, menos mensajes de última hora del tipo "¿a qué hora era mi cita?", y cada email que recibe el cliente suena de verdad a ti — no a un software.',
+	},
+	socialLink: {
+		title: 'Enlace de Reserva Dedicado',
+		tagline: 'Un enlace público de reserva listo para tu bio de Instagram o TikTok, sin crear ninguna página.',
+		metaDescription:
+			'Cada servicio de clickTarot Calendar tiene su propio enlace público de reserva, listo para poner directamente en tu bio de Instagram o TikTok.',
+		painPoint:
+			'Probablemente la mayoría de tus reservas empiezan en redes sociales, no en la portada de tu web. Pero mandar a quien te sigue a una página de contacto genérica — donde luego tiene que encontrar el servicio correcto, hacer scroll y averiguar qué hacer — hace que pierdas personas que habrían reservado en el momento.',
+		howItWorks:
+			'Cada calendario que creas obtiene automáticamente su propio enlace público dedicado, sin ninguna página que diseñar ni publicar aparte. Lo pones directamente en tu bio de Instagram o TikTok, o lo compartes en un DM, y la persona llega exactamente al formulario de reserva de ese servicio concreto.',
+		benefit:
+			'El paso entre "alguien ve tu contenido" y "alguien reserva una sesión" se hace lo más corto posible — justo en el momento en que el interés es más alto, justo después de descubrirte.',
+	},
+	statistics: {
+		title: 'Estadísticas de Ingresos',
+		tagline: 'Consulta cuánto ganas cada mes y qué servicio funciona mejor, directamente en el panel.',
+		metaDescription:
+			'Controla los ingresos mensuales, las reservas confirmadas y qué servicio rinde más, directamente en el panel de clickTarot Calendar.',
+		painPoint:
+			'Si llevas las consultas como un negocio de verdad, necesitas saber si realmente está funcionando — qué servicio merece tu tiempo, si este mes fue mejor que el anterior, si una campaña de cupones dio resultado. Sacar eso de una hoja de cálculo que hay que actualizar a mano es una tarea que la mayoría de la gente simplemente... no hace.',
+		howItWorks:
+			'Cada reserva confirmada y cada pago se registran automáticamente. Tu panel muestra los ingresos totales, ingresos por sesiones sueltas frente a bonos, reservas confirmadas, tu tasa de cancelación, una tendencia mes a mes y un desglose por cada calendario — sin contabilidad manual.',
+		benefit:
+			'Puedes tomar decisiones reales — subir un precio, retirar un servicio que no rinde, apostar por lo que funciona — basándote en números reales en vez de una intuición. Eso vale más de lo que cuesta el plugin por sí solo.',
+	},
 };
 
 export default es;

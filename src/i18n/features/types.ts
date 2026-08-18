@@ -7,6 +7,10 @@ export const featureKeys = [
 	'reschedule',
 	'international',
 	'multilingual',
+	'availability',
+	'notifications',
+	'socialLink',
+	'statistics',
 ] as const;
 export type FeatureKey = (typeof featureKeys)[number];
 
@@ -21,6 +25,10 @@ export const featureSlugs: Record<FeatureKey, string> = {
 	reschedule: 'self-service-rescheduling',
 	international: 'international-billing',
 	multilingual: 'multilingual-plugin',
+	availability: 'flexible-availability',
+	notifications: 'automatic-email-notifications',
+	socialLink: 'dedicated-booking-link',
+	statistics: 'revenue-statistics',
 };
 
 export interface FeatureDetail {

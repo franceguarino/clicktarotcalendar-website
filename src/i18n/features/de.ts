@@ -108,6 +108,54 @@ const de: FeatureDetailDictionary = {
 		benefit:
 			'Du brauchst keine separate Website, kein Übersetzungs-Plugin und keine Entwicklerin, um Kund:innen in mehreren Sprachen zu bedienen. Es ist bereits alles da.',
 	},
+	availability: {
+		title: 'Flexible Verfügbarkeit',
+		tagline: 'Blockiere ganze Tage oder einzelne Zeitfenster, wann immer du willst.',
+		metaDescription:
+			'Mit clickTarot Calendar blockierst du ganze Tage oder einzelne Zeitfenster in Sekunden, damit dein Kalender immer deine echte Verfügbarkeit zeigt.',
+		painPoint:
+			'Deine Verfügbarkeit sieht nicht jede Woche gleich aus — ein Retreat, ein familiärer Notfall, ein bereits voller Dienstag. Ein Buchungstool, das nur feste wöchentliche Zeiten erlaubt, zwingt dich entweder dazu, Buchungen abzulehnen, die du nicht einhalten kannst, oder Kund:innen manuell anzuschreiben, um abzusagen.',
+		howItWorks:
+			'Du legst deine regulären wöchentlichen Arbeitszeiten einmal fest und blockierst dann jeden einzelnen Tag oder Zeitraum, sobald sich etwas ändert — ein Arzttermin, ein Workshop, eine freie Woche. Blockierte Zeit verschwindet einfach aus dem, was Kund:innen buchen können, ganz ohne separate Stornierung.',
+		benefit:
+			'Du behältst die Kontrolle über deine eigene Zeit, ohne zur Vollzeit-Verwalterin deines Kalenders zu werden. Blockiere, was du blockieren musst, in wenigen Klicks, und widme dich wieder deiner eigentlichen Arbeit.',
+	},
+	notifications: {
+		title: 'Automatische E-Mail-Benachrichtigungen',
+		tagline: 'Bestätigungs- und Erinnerungs-E-Mails werden automatisch verschickt, komplett individuell anpassbar.',
+		metaDescription:
+			'clickTarot Calendar verschickt Bestätigungs- und Erinnerungs-E-Mails automatisch, mit Text, den du selbst schreibst — keine generischen, roboterhaften Nachrichten.',
+		painPoint:
+			'Kund:innen vergessen Termine. Ohne Erinnerung bedeutet eine vergessene Buchung eine verlorene Zeitschiene und ein unangenehmes Gespräch darüber, ob sie trotzdem berechnet wird. Die meisten Buchungstools lassen Erinnerungen aber entweder ganz weg oder verschicken E-Mails, die so generisch klingen, dass sie nicht nach dir klingen.',
+		howItWorks:
+			'Jede Buchung löst automatisch eine Bestätigungs-E-Mail an den Kunden und eine Benachrichtigung an dich aus, und du kannst eine Erinnerungs-E-Mail aktivieren, die eine einstellbare Anzahl Stunden vor dem Termin verschickt wird. Alle drei sind vollständig editierbar — du schreibst sie mit deinen eigenen Worten, nicht mit einer Vorlage.',
+		benefit:
+			'Weniger versäumte Termine, weniger Last-Minute-Nachrichten wie „Moment, wann war noch mal mein Termin?", und jede E-Mail, die eine Kundin erhält, klingt wirklich nach dir — nicht nach einer Software.',
+	},
+	socialLink: {
+		title: 'Eigener Buchungslink',
+		tagline: 'Ein öffentlicher Buchungslink, bereit für deine Instagram- oder TikTok-Bio — ohne zusätzliche Seite.',
+		metaDescription:
+			'Jeder Service in clickTarot Calendar bekommt einen eigenen öffentlichen Buchungslink, bereit für deine Instagram- oder TikTok-Bio.',
+		painPoint:
+			'Die meisten deiner Buchungen starten wahrscheinlich in den sozialen Medien, nicht auf der Startseite deiner Website. Aber jemanden, der dir folgt, auf eine allgemeine Kontaktseite zu schicken — wo diese Person dann den richtigen Service finden, scrollen und herausfinden muss, was zu tun ist — kostet dich Leute, die spontan gebucht hätten.',
+		howItWorks:
+			'Jeder Kalender, den du erstellst, bekommt automatisch seinen eigenen öffentlichen Buchungslink, ganz ohne separate Seite zu gestalten oder zu veröffentlichen. Setz ihn direkt in deine Instagram- oder TikTok-Bio oder teile ihn per DM — die Person landet exakt auf dem Buchungsformular für diesen einen Service.',
+		benefit:
+			'Der Abstand zwischen „jemand sieht deinen Content" und „jemand bucht eine Sitzung" wird so kurz wie möglich — genau dann, wenn das Interesse am größten ist, direkt nachdem dich jemand entdeckt hat.',
+	},
+	statistics: {
+		title: 'Umsatzstatistiken',
+		tagline: 'Sieh direkt im Dashboard, was du jeden Monat verdienst und welcher Service am besten läuft.',
+		metaDescription:
+			'Verfolge monatlichen Umsatz, bestätigte Buchungen und den erfolgreichsten Service direkt im clickTarot Calendar Dashboard.',
+		painPoint:
+			'Wenn du Beratungen als echtes Business betreibst, musst du wissen, ob es wirklich funktioniert — welcher Service deine Zeit wert ist, ob dieser Monat besser lief als der letzte, ob sich eine Gutschein-Aktion gelohnt hat. Das aus einer von Hand gepflegten Tabelle herauszuholen, ist eine Aufgabe, die die meisten Menschen einfach... nicht machen.',
+		howItWorks:
+			'Jede bestätigte Buchung und Zahlung wird automatisch erfasst. Dein Dashboard zeigt Gesamtumsatz, Umsatz aus Einzelsitzungen gegenüber Paketen, bestätigte Buchungen, deine Stornoquote, einen Monat-für-Monat-Trend und eine Aufschlüsselung nach einzelnem Kalender — ganz ohne manuelle Buchhaltung.',
+		benefit:
+			'Du kannst echte Entscheidungen treffen — einen Preis erhöhen, einen schwach laufenden Service einstellen, auf das setzen, was funktioniert — basierend auf echten Zahlen statt auf einem Bauchgefühl. Das ist mehr wert, als das Plugin selbst kostet.',
+	},
 };
 
 export default de;

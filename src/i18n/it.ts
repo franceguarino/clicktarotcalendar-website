@@ -2,9 +2,9 @@ import type { Dictionary } from './types';
 
 const it: Dictionary = {
 	meta: {
-		title: 'Plugin di Prenotazione WordPress, Alternativa a Calendly | clickTarot Calendar',
+		title: 'Plugin di Prenotazione WordPress per Lettori di Tarocchi | clickTarot Calendar',
 		description:
-			'Plugin di prenotazione per WordPress pensato per cartomanti, astrologi e counselor. Pagamenti, fatturazione e pacchetti inclusi — una vera alternativa a Calendly.',
+			'Plugin di prenotazione per WordPress pensato per tarologi, astrologi e counselor. Pagamenti, fatturazione e pacchetti inclusi — una vera alternativa a Calendly.',
 	},
 	nav: {
 		home: 'Home',
@@ -191,7 +191,7 @@ const it: Dictionary = {
 	},
 	about: {
 		eyebrow: 'Chi siamo',
-		title: 'Non un team di sviluppatori. Un cartomante che usa questo strumento ogni giorno.',
+		title: 'Non un team di sviluppatori. Un tarologo che usa questo strumento ogni giorno.',
 		subtitle: 'clickTarot Calendar non nasce da un’azienda software. Nasce da un problema vero, il mio, e da un lavoro che faccio ogni giorno.',
 		bioTitle: 'Chi sono',
 		bioBody: [
