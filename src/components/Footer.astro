@@ -15,7 +15,7 @@ const year = new Date().getFullYear();
 	<div class="ct-container ct-footer-inner">
 		<div>
 			<div class="ct-logo">clickTarot <span>Calendar</span></div>
-			<p class="ct-hint">{dict.footer.tagline}</p>
+			<p class="ct-hint" set:html={dict.footer.tagline} />
 		</div>
 		<div class="ct-footer-links">
 			<a href={`mailto:${CONTACT_EMAIL}`}>{dict.footer.contactLabel}</a>
@@ -25,6 +25,7 @@ const year = new Date().getFullYear();
 	</div>
 	<div class="ct-container">
 		<p class="ct-hint ct-copyright">© {year} clickTarot Calendar. {dict.footer.rights}</p>
+		<p class="ct-hint ct-copyright ct-freemius-note">{dict.footer.freemiusNote}</p>
 	</div>
 </footer>
 
@@ -64,5 +65,9 @@ const year = new Date().getFullYear();
 	.ct-copyright {
 		margin: 0;
 		font-size: 13px;
+	}
+	.ct-freemius-note {
+		margin-top: 4px;
+		opacity: 0.75;
 	}
 </style>

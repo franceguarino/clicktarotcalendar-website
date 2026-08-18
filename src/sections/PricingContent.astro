@@ -16,6 +16,23 @@ const dict = getDictionary(locale);
 		<p class="ct-hint">{dict.pricing.subtitle}</p>
 	</div>
 
+	<div class="ct-container ct-tiers-grid">
+		{dict.pricing.tiers.map((tier) => (
+			<div class={`ct-card ct-tier-card${tier.highlighted ? ' ct-tier-highlighted' : ''}`}>
+				{tier.highlighted && <p class="ct-tier-badge">{dict.pricing.recommendedLabel}</p>}
+				<h2 class="ct-tier-label">{tier.label}</h2>
+				<p class="ct-tier-price">
+					<span class="ct-tier-amount">{tier.price}</span>
+					<span class="ct-tier-period">{tier.period}</span>
+				</p>
+				<p class="ct-hint ct-tier-note">{tier.note}</p>
+				<div class="ct-pricing-cta">
+					<CtaButton href={CHECKOUT_URL} external variant={tier.highlighted ? 'primary' : 'secondary'}>{dict.pricing.ctaLabel}</CtaButton>
+				</div>
+			</div>
+		))}
+	</div>
+
 	<div class="ct-container ct-pricing-card-wrap">
 		<div class="ct-card ct-pricing-card">
 			<h2>{dict.pricing.planName}</h2>
@@ -25,7 +42,6 @@ const dict = getDictionary(locale);
 					<li>{item}</li>
 				))}
 			</ul>
-			<CtaButton href={CHECKOUT_URL} external>{dict.pricing.ctaLabel}</CtaButton>
 			<p class="ct-hint ct-guarantee">{dict.pricing.guarantee}</p>
 		</div>
 	</div>
@@ -36,6 +52,62 @@ const dict = getDictionary(locale);
 		text-align: center;
 		max-width: 680px;
 		margin: 0 auto 40px;
+	}
+	.ct-tiers-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 20px;
+		max-width: 900px;
+		margin: 0 auto 40px;
+	}
+	.ct-tier-card {
+		text-align: center;
+		position: relative;
+	}
+	.ct-tier-highlighted {
+		border-color: var(--ct-primary-dark);
+		box-shadow: 0 0 0 2px var(--ct-primary-dark);
+	}
+	.ct-tier-badge {
+		position: absolute;
+		top: -12px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: var(--ct-primary-dark);
+		color: #fff;
+		font-size: 12px;
+		font-weight: 700;
+		padding: 4px 12px;
+		border-radius: 999px;
+		margin: 0;
+	}
+	.ct-tier-label {
+		margin: 8px 0 4px;
+		font-size: 18px;
+	}
+	.ct-tier-price {
+		margin: 0 0 8px;
+	}
+	.ct-tier-amount {
+		font-size: 32px;
+		font-weight: 800;
+	}
+	.ct-tier-period {
+		font-size: 14px;
+		color: var(--ct-ink-soft);
+	}
+	.ct-tier-note {
+		font-size: 14px;
+		min-height: 40px;
+	}
+	.ct-pricing-cta {
+		display: flex;
+		justify-content: center;
+		margin-top: 8px;
+	}
+	.ct-pricing-cta .ct-btn {
+		min-width: 160px;
+		text-align: center;
 	}
 	.ct-pricing-card-wrap {
 		display: flex;
@@ -66,9 +138,6 @@ const dict = getDictionary(locale);
 		left: 0;
 		color: var(--ct-primary);
 		font-weight: 700;
-	}
-	.ct-pricing-card .ct-btn {
-		width: 100%;
 	}
 	.ct-guarantee {
 		margin: 16px 0 0;

@@ -29,7 +29,7 @@ const es: CompetitorDictionary = {
 		faq: [
 			{
 				q: '¿clickTarot Calendar es realmente más económico que Calendly para un consultor individual?',
-				a: 'clickTarot Calendar es una única licencia anual con todas las funciones incluidas, sin importar cuántas reservas recibas. Los planes de pago de Calendly se facturan mensualmente y dejan funciones como la marca personalizada tras planes más caros — para un solo profesional, en un año suele sumar más que una licencia única.',
+				a: 'clickTarot Calendar es un único plan con todas las funciones incluidas, sea cual sea la forma de pago que elijas — mensual, anual o una compra única de por vida. Los planes de pago de Calendly se facturan mensualmente y dejan funciones como la marca personalizada tras planes más caros, así que para un solo profesional el coste suele acabar sumando más con el tiempo que el plan anual o de por vida de clickTarot Calendar.',
 			},
 			{
 				q: '¿Puedo recoger el NIF o número de IVA del cliente al reservar, como con clickTarot Calendar?',
@@ -109,7 +109,7 @@ const es: CompetitorDictionary = {
 			},
 			{
 				q: '¿Es fácil prever de antemano el precio de SimplyBook.me?',
-				a: 'No del todo — el coste mensual depende de tu volumen de reservas, del número de proveedores y de cuántos complementos de pago actives, así que el precio final puede acabar siendo más alto que la cifra de partida anunciada. clickTarot Calendar es una única licencia anual fija, sin importar cuántas reservas recibas.',
+				a: 'No del todo — el coste mensual depende de tu volumen de reservas, del número de proveedores y de cuántos complementos de pago actives, así que el precio final puede acabar siendo más alto que la cifra de partida anunciada. clickTarot Calendar es un único plan fijo — mensual, anual o de por vida — al mismo precio sin importar cuántas reservas recibas.',
 			},
 		],
 		otherComparisonsTitle: 'Descubre cómo nos comparamos con otras herramientas de reservas',
@@ -144,7 +144,7 @@ const es: CompetitorDictionary = {
 		faq: [
 			{
 				q: '¿TidyCal es realmente un pago único en lugar de una suscripción, a diferencia de clickTarot Calendar?',
-				a: 'En parte — TidyCal ofrece planes de pago único de por vida (unos 29-79$) junto a una suscripción de 12$/mes, y para un solo usuario esa opción de por vida es genuinamente económica. clickTarot Calendar es en cambio una única licencia anual, pero incluye la recogida automática de datos de facturación que TidyCal no tiene de forma nativa.',
+				a: 'En realidad, clickTarot Calendar también ofrece una opción de por vida de pago único, además de la facturación mensual y anual, así que no estás limitado a una suscripción en ninguno de los dos casos. La verdadera diferencia está en lo que incluye: clickTarot Calendar tiene la recogida automática de NIF/IVA y datos de facturación integrada desde el primer día, en todos los planes, algo que TidyCal no tiene de forma nativa.',
 			},
 			{
 				q: '¿TidyCal recoge el NIF o número de IVA del cliente al reservar, como hace clickTarot Calendar?',
@@ -166,7 +166,7 @@ const es: CompetitorDictionary = {
 			{ feature: 'Cupones de descuento', clicktarot: 'Incluido', competitor: 'También limitados al plan Premium — ausentes en los planes más económicos' },
 			{ feature: 'Pensado para', clicktarot: 'Un único profesional de consultas', competitor: 'Uso genérico, multisector (salones, clínicas, agencias)' },
 			{ feature: 'Dónde funciona', clicktarot: 'En tu propio sitio WordPress', competitor: 'También en tu propio sitio WordPress — mismo modelo de alojamiento que clickTarot Calendar' },
-			{ feature: 'Modelo de precios', clicktarot: 'Licencia anual única, todas las funciones incluidas', competitor: 'Precios por niveles — los planes más económicos (45-99$/año) excluyen funciones que probablemente necesites' },
+			{ feature: 'Modelo de precios', clicktarot: 'Un solo plan, todas las funciones incluidas — mensual, anual o de por vida', competitor: 'Precios por niveles — los planes más económicos (45-99$/año) excluyen funciones que probablemente necesites' },
 			{ feature: 'Soporte', clicktarot: 'Incluido con la licencia', competitor: '6-12 meses incluidos según el canal de compra, después renovación de pago' },
 		],
 		painPointsTitle: 'Con qué se encuentran quienes trabajan solos en Booknetic',

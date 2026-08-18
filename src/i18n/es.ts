@@ -86,10 +86,10 @@ const es: Dictionary = {
 	},
 	pricing: {
 		eyebrow: 'Precio sencillo',
-		title: 'Un precio, todas las funciones',
-		subtitle: 'Sin planes ocultos, sin coste por usuario adicional: pagas por tu consulta, no por un puesto de trabajo extra que no tienes.',
+		title: 'Un solo plan, todas las funciones',
+		subtitle: 'Sin niveles de funciones ocultos, sin coste por usuario adicional: cada plan incluye todo. Elige solo cómo prefieres pagar.',
 		planName: 'clickTarot Calendar',
-		priceNote: 'Licencia anual, actualizaciones y soporte incluidos',
+		priceNote: 'Todas las funciones incluidas, actualizaciones y soporte en cada plan',
 		ctaLabel: 'Comprar ahora',
 		included: [
 			'Calendarios ilimitados para servicios distintos',
@@ -101,6 +101,12 @@ const es: Dictionary = {
 			'Actualizaciones y soporte incluidos',
 		],
 		guarantee: 'Garantía de devolución gestionada directamente por Freemius en el checkout.',
+		recommendedLabel: 'Recomendado',
+		tiers: [
+			{ label: 'Mensual', price: '16,99$', period: '/mes', note: 'Pagas mes a mes, cancela cuando quieras.', highlighted: false },
+			{ label: 'Anual', price: '180$', period: '/año', note: 'La mejor relación calidad-precio — equivale a 15$/mes.', highlighted: true },
+			{ label: 'Lifetime', price: '1.499$', period: 'pago único', note: 'Pagas una vez y lo usas para siempre.', highlighted: false },
+		],
 	},
 	faq: {
 		title: 'Preguntas frecuentes',
@@ -132,7 +138,9 @@ const es: Dictionary = {
 		],
 	},
 	footer: {
-		tagline: 'El calendario de reservas para profesionales de la consulta.',
+		tagline:
+			'El calendario de reservas para profesionales de la consulta de Tarot (y no solo) by Francesco <span style="color:var(--ct-primary-dark);font-weight:700">Guarino</span>.',
+		freemiusNote: 'Ventas y facturación gestionadas por Freemius, nuestro distribuidor oficial.',
 		contactLabel: 'Contacto',
 		privacy: 'Privacidad',
 		terms: 'Términos',
@@ -187,7 +195,7 @@ const es: Dictionary = {
 		subtitle: 'clickTarot Calendar no lo construyó una empresa de software. Nació de un problema real — el mío — y de un trabajo que hago cada día.',
 		bioTitle: 'Quién soy',
 		bioBody: [
-			'Me llamo Francesco Guarino. Soy conferenciante, estudioso de psicología social y llevo años trabajando para construir un puente entre ciencia y espiritualidad. Antes de todo esto, estudié directamente con los Maestros Cartistas la tradición de fabricación de cartas.',
+			'Me llamo Francesco Guarino. Soy investigador independiente, estudioso de psicología social y llevo años trabajando para construir un puente entre ciencia y espiritualidad. Antes de todo esto, estudié directamente con los Maestros Cartistas la tradición de fabricación de cartas.',
 			'Fundé <a href="https://scuolatdm.com/" target="_blank" rel="noopener">Scuola TdM</a>, el principal centro de formación en Tarot de Marsella de Italia, y creé el Método TdM, un modelo de estudio e interacción con el Tarot de Marsella que enseño desde 2011 entre Europa y Asia, y desde 2017 también en América.',
 			'Soy el webmaster de <a href="https://www.tarocchi.blog/" target="_blank" rel="noopener">tarocchi.blog</a>, considerado el mejor blog de tarot de Italia, y creé <a href="https://www.clicktarot.net/" target="_blank" rel="noopener">clickTarot</a>, una comunidad pensada para ser lo más inclusiva posible. A través de mis sitios llego a un millón y medio de estudiosos, aficionados y amantes del tarot cada año. También he producido el documental "<a href="https://www.tarocchi.blog/oltre-il-tarot/" target="_blank" rel="noopener">Oltre il Tarot</a>" y escribo regularmente libros de psicología y espiritualidad.',
 		],

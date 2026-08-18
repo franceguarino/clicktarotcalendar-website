@@ -29,7 +29,7 @@ const de: CompetitorDictionary = {
 		faq: [
 			{
 				q: 'Ist clickTarot Calendar für eine einzelne Beraterin wirklich günstiger als Calendly?',
-				a: 'clickTarot Calendar ist eine einzige Jahreslizenz mit allen Funktionen inklusive, unabhängig davon, wie viele Buchungen du erhältst. Calendlys kostenpflichtige Tarife werden monatlich abgerechnet und stecken Funktionen wie individuelles Branding hinter teureren Stufen — für eine Einzelperson summiert sich das über ein Jahr meist auf mehr als eine Einzellizenz.',
+				a: 'clickTarot Calendar ist ein einziger Plan mit allen Funktionen inklusive, egal wie du bezahlst — monatlich, jährlich oder als einmaligen Lifetime-Kauf. Calendlys kostenpflichtige Tarife werden monatlich abgerechnet und stecken Funktionen wie individuelles Branding hinter teureren Stufen, sodass sich das für eine Einzelperson über die Zeit meist auf mehr summiert als der Jahres- oder Lifetime-Plan von clickTarot Calendar.',
 			},
 			{
 				q: 'Kann ich bei der Buchung die Steuernummer oder USt-IdNr. des Kunden erfassen, so wie bei clickTarot Calendar?',
@@ -109,7 +109,7 @@ const de: CompetitorDictionary = {
 			},
 			{
 				q: 'Ist der Preis von SimplyBook.me im Voraus leicht vorherzusagen?',
-				a: 'Nicht ganz — die monatlichen Kosten hängen von deinem Buchungsvolumen, der Anzahl der Anbieter und der Anzahl aktivierter kostenpflichtiger Zusatzfunktionen ab, sodass der Endpreis höher ausfallen kann als der beworbene Startpreis. clickTarot Calendar ist eine einzige feste Jahreslizenz, unabhängig davon, wie viele Buchungen du erhältst.',
+				a: 'Nicht ganz — die monatlichen Kosten hängen von deinem Buchungsvolumen, der Anzahl der Anbieter und der Anzahl aktivierter kostenpflichtiger Zusatzfunktionen ab, sodass der Endpreis höher ausfallen kann als der beworbene Startpreis. clickTarot Calendar ist ein fester Plan — monatlich, jährlich oder lebenslang — zum gleichen Preis, unabhängig davon, wie viele Buchungen du erhältst.',
 			},
 		],
 		otherComparisonsTitle: 'So schneiden wir im Vergleich zu anderen Terminplanungs-Tools ab',
@@ -144,7 +144,7 @@ const de: CompetitorDictionary = {
 		faq: [
 			{
 				q: 'Ist TidyCal wirklich eine einmalige Zahlung statt eines Abos, anders als clickTarot Calendar?',
-				a: 'Teilweise — TidyCal bietet einmalige Lifetime-Tarife (etwa 29-79 $) neben einem Abo für 12 $/Monat, und für eine einzelne Person ist die Lifetime-Option wirklich günstig. clickTarot Calendar ist dagegen eine einzige Jahreslizenz, enthält aber die automatische Erfassung von Rechnungsdaten, die TidyCal nicht nativ hat.',
+				a: 'Tatsächlich bietet auch clickTarot Calendar eine einmalige Lifetime-Option, neben monatlicher und jährlicher Abrechnung — du bist also in keinem der beiden Fälle an ein Abo gebunden. Der eigentliche Unterschied liegt im Funktionsumfang: clickTarot Calendar hat die automatische Erfassung von Steuernummer/USt-IdNr. und Rechnungsdaten von Anfang an in jedem Plan integriert — etwas, das TidyCal nicht nativ bietet.',
 			},
 			{
 				q: 'Erfasst TidyCal bei der Buchung Steuernummer oder USt-IdNr. des Kunden, so wie clickTarot Calendar?',
@@ -166,7 +166,7 @@ const de: CompetitorDictionary = {
 			{ feature: 'Rabattgutscheine', clicktarot: 'Enthalten', competitor: 'Ebenfalls nur im Premium-Tarif — nicht in den günstigeren Tarifen' },
 			{ feature: 'Gemacht für', clicktarot: 'Einzelne Berater mit Kundenterminen', competitor: 'Allgemein, branchenübergreifend (Salons, Kliniken, Agenturen)' },
 			{ feature: 'Wo es läuft', clicktarot: 'Auf deiner eigenen WordPress-Website', competitor: 'Ebenfalls auf deiner eigenen WordPress-Website — gleiches Hosting-Modell wie clickTarot Calendar' },
-			{ feature: 'Preismodell', clicktarot: 'Einzige Jahreslizenz, alle Funktionen enthalten', competitor: 'Gestaffelte Preise — die günstigsten Tarife (45-99 $/Jahr) schließen Funktionen aus, die du wahrscheinlich brauchst' },
+			{ feature: 'Preismodell', clicktarot: 'Ein Plan, alle Funktionen enthalten — monatlich, jährlich oder einmalig lebenslang', competitor: 'Gestaffelte Preise — die günstigsten Tarife (45-99 $/Jahr) schließen Funktionen aus, die du wahrscheinlich brauchst' },
 			{ feature: 'Support', clicktarot: 'Im Lizenzpreis enthalten', competitor: '6-12 Monate enthalten je nach Kaufkanal, danach kostenpflichtige Verlängerung' },
 		],
 		painPointsTitle: 'Was Einzelunternehmer:innen bei Booknetic erleben',

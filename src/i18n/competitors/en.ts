@@ -29,7 +29,7 @@ const en: CompetitorDictionary = {
 		faq: [
 			{
 				q: 'Is clickTarot Calendar really more affordable than Calendly for a single consultant?',
-				a: 'clickTarot Calendar is a single annual license with every feature included, regardless of how many bookings you take. Calendly’s paid plans bill monthly and gate features like custom branding behind higher tiers — for one practitioner, that usually adds up to more over a year than a single license.',
+				a: 'clickTarot Calendar is one plan with every feature included, however you choose to pay — monthly, annual, or a one-time lifetime purchase. Calendly’s paid plans bill monthly and gate features like custom branding behind higher tiers, so for one practitioner the cost usually adds up to more over time than clickTarot Calendar’s annual or lifetime option.',
 			},
 			{
 				q: 'Can I collect a client’s Tax ID or VAT number when they book, like I can with clickTarot Calendar?',
@@ -109,7 +109,7 @@ const en: CompetitorDictionary = {
 			},
 			{
 				q: 'Is SimplyBook.me’s pricing easy to predict in advance?',
-				a: 'Not entirely — the monthly cost depends on your booking volume, number of providers, and how many paid add-on features you activate, so the final price can end up higher than the advertised starting figure. clickTarot Calendar is a single flat annual license regardless of how many bookings you take.',
+				a: 'Not entirely — the monthly cost depends on your booking volume, number of providers, and how many paid add-on features you activate, so the final price can end up higher than the advertised starting figure. clickTarot Calendar is one flat plan — monthly, annual, or lifetime — at the same price regardless of how many bookings you take.',
 			},
 		],
 		otherComparisonsTitle: 'See how we compare to other scheduling tools',
@@ -144,7 +144,7 @@ const en: CompetitorDictionary = {
 		faq: [
 			{
 				q: 'Is TidyCal really a one-time payment instead of a subscription, unlike clickTarot Calendar?',
-				a: 'Partly — TidyCal offers one-time lifetime tiers (roughly $29–$79) alongside a $12/month subscription plan, and for a single user that lifetime option is genuinely inexpensive. clickTarot Calendar is a single annual license instead, but it includes automatic invoicing data collection that TidyCal doesn’t have natively.',
+				a: 'Actually, clickTarot Calendar also offers a one-time lifetime option, alongside monthly and annual billing, so you’re not limited to a subscription either way. The real difference is what’s included: clickTarot Calendar has automatic Tax ID/VAT and invoicing data collection built in from day one, on every plan, which TidyCal doesn’t have natively.',
 			},
 			{
 				q: 'Does TidyCal collect a client’s Tax ID or VAT number when they book, like clickTarot Calendar does?',
@@ -166,7 +166,7 @@ const en: CompetitorDictionary = {
 			{ feature: 'Discount coupons', clicktarot: 'Included', competitor: 'Also gated behind the Premium tier — not in the cheaper plans' },
 			{ feature: 'Built for', clicktarot: 'A single consultation practitioner', competitor: 'General-purpose, multi-industry (salons, clinics, agencies)' },
 			{ feature: 'Where it runs', clicktarot: 'On your own WordPress site', competitor: 'Also on your own WordPress site — same hosting model as clickTarot Calendar' },
-			{ feature: 'Pricing model', clicktarot: 'Single annual license, every feature included', competitor: 'Tiered pricing — the cheapest plans ($45–$99/year) exclude features you’d likely need' },
+			{ feature: 'Pricing model', clicktarot: 'One plan, every feature included — pay monthly, annually, or once for lifetime', competitor: 'Tiered pricing — the cheapest plans ($45–$99/year) exclude features you’d likely need' },
 			{ feature: 'Support', clicktarot: 'Included with the license', competitor: '6–12 months included depending on purchase channel, then a paid renewal' },
 		],
 		painPointsTitle: 'What solo practitioners run into with Booknetic',

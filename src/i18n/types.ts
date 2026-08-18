@@ -35,6 +35,8 @@ export interface Dictionary {
 		ctaLabel: string;
 		included: string[];
 		guarantee: string;
+		recommendedLabel: string;
+		tiers: { label: string; price: string; period: string; note: string; highlighted: boolean }[];
 	};
 	faq: {
 		title: string;
@@ -42,6 +44,7 @@ export interface Dictionary {
 	};
 	footer: {
 		tagline: string;
+		freemiusNote: string;
 		contactLabel: string;
 		privacy: string;
 		terms: string;
