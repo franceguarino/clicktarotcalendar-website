@@ -34,9 +34,9 @@ const otherKeys = competitorKeys.filter((k) => k !== competitorKey);
 			<tbody>
 				{c.rows.map((row) => (
 					<tr>
-						<td>{row.feature}</td>
-						<td>{row.clicktarot}</td>
-						<td>{row.competitor}</td>
+						<td class="ct-compare-feature">{row.feature}</td>
+						<td class="ct-compare-us" data-label={c.colClicktarot}>{row.clicktarot}</td>
+						<td class="ct-compare-them" data-label={c.colCompetitor}>{row.competitor}</td>
 					</tr>
 				))}
 			</tbody>
@@ -105,6 +105,86 @@ const otherKeys = competitorKeys.filter((k) => k !== competitorKey);
 	}
 	.ct-compare-table-wrap {
 		overflow-x: auto;
+	}
+	table.ct-compare {
+		border: none;
+	}
+	table.ct-compare th {
+		background: var(--ct-primary-dark);
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
+	}
+	table.ct-compare th:first-child {
+		border-top-left-radius: var(--ct-radius);
+	}
+	table.ct-compare th:last-child {
+		border-top-right-radius: var(--ct-radius);
+	}
+	td.ct-compare-feature {
+		font-weight: 700;
+		background: var(--ct-surface);
+	}
+	td.ct-compare-us {
+		background: var(--ct-primary-tint);
+		border-left: 3px solid var(--ct-primary);
+		color: var(--ct-ink);
+	}
+	td.ct-compare-them {
+		background: var(--ct-bg);
+		color: var(--ct-ink-soft);
+	}
+
+	@media (max-width: 720px) {
+		.ct-compare-table-wrap {
+			overflow-x: visible;
+		}
+		table.ct-compare,
+		table.ct-compare thead,
+		table.ct-compare tbody,
+		table.ct-compare tr,
+		table.ct-compare td {
+			display: block;
+			width: 100%;
+		}
+		table.ct-compare thead {
+			display: none;
+		}
+		table.ct-compare tr {
+			margin-bottom: 16px;
+			border: 1px solid var(--ct-border);
+			border-radius: var(--ct-radius);
+			overflow: hidden;
+		}
+		table.ct-compare tr:last-child {
+			margin-bottom: 0;
+		}
+		table.ct-compare td {
+			border-bottom: 1px solid var(--ct-border);
+			border-left: none;
+		}
+		td.ct-compare-feature {
+			font-size: 15px;
+		}
+		td.ct-compare-us,
+		td.ct-compare-them {
+			border-bottom: none;
+		}
+		td.ct-compare-us::before,
+		td.ct-compare-them::before {
+			content: attr(data-label);
+			display: block;
+			font-size: 11px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.04em;
+			margin-bottom: 4px;
+			opacity: 0.75;
+		}
+		td.ct-compare-us {
+			border-left: 3px solid var(--ct-primary);
+		}
 	}
 	.ct-pain-points {
 		max-width: 760px;

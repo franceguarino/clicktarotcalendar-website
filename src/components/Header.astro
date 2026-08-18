@@ -186,6 +186,27 @@ const dict = getDictionary(locale);
 		}
 		.ct-menu-toggle {
 			display: flex;
+			flex-shrink: 0;
+		}
+		.ct-header-inner {
+			gap: 10px;
+		}
+		.ct-logo {
+			font-size: 16px;
+			min-width: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.ct-header-actions {
+			gap: 8px;
+			flex-shrink: 0;
+		}
+		.ct-lang-select {
+			max-width: 84px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			padding: 7px 6px;
+			font-size: 12px;
 		}
 		.ct-mobile-nav {
 			display: none;
