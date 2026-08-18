@@ -9,16 +9,13 @@ const en: Dictionary = {
 	nav: {
 		home: 'Home',
 		pricing: 'Pricing',
-		compare: 'vs Calendly',
 		faq: 'FAQ',
-		cta: 'Try clickTarot',
 	},
 	hero: {
 		eyebrow: 'WordPress plugin for spiritual & wellness professionals',
 		title: 'The booking calendar built for your consultation practice',
 		subtitle:
 			'Turn your site into an always-open studio: customers book and pay on their own, you just get the notifications. No more endless back-and-forth messages.',
-		ctaPrimary: 'Try clickTarot',
 		ctaSecondary: 'Compare with Calendly',
 	},
 	features: {

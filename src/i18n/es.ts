@@ -9,16 +9,13 @@ const es: Dictionary = {
 	nav: {
 		home: 'Inicio',
 		pricing: 'Precios',
-		compare: 'vs Calendly',
 		faq: 'FAQ',
-		cta: 'Probar clickTarot',
 	},
 	hero: {
 		eyebrow: 'Plugin de WordPress para profesionales del bienestar',
 		title: 'El calendario de reservas hecho a medida para tu consulta',
 		subtitle:
 			'Convierte tu sitio en un estudio siempre abierto: los clientes reservan y pagan por su cuenta, tú solo recibes las notificaciones. Se acabaron los mensajes interminables.',
-		ctaPrimary: 'Probar clickTarot',
 		ctaSecondary: 'Comparar con Calendly',
 	},
 	features: {

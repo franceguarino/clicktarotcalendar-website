@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TermsContent from '../../sections/TermsContent.astro';
 import { getDictionary } from '../../i18n';
-const locale = 'it' as const;
+const locale = 'en' as const;
 const dict = getDictionary(locale);
 ---
 <BaseLayout locale={locale} page="terms" title={`${dict.legal.termsTitle} — clickTarot Calendar`} description={dict.legal.termsIntro}>

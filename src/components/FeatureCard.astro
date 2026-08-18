@@ -2,20 +2,30 @@
 interface Props {
 	title: string;
 	description: string;
+	href?: string;
 }
-const { title, description } = Astro.props;
+const { title, description, href } = Astro.props;
+const Tag = href ? 'a' : 'div';
 ---
-<div class="ct-card feature-card">
+<Tag class="ct-card feature-card" href={href}>
 	<h3>{title}</h3>
 	<p class="ct-hint">{description}</p>
-</div>
+</Tag>
 
 <style>
+	.feature-card {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+	}
 	.feature-card h3 {
 		margin: 0 0 8px;
 		font-size: 18px;
 	}
 	.feature-card p {
 		margin: 0;
+	}
+	a.feature-card:hover {
+		border-color: var(--ct-primary-dark);
 	}
 </style>

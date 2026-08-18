@@ -20,26 +20,30 @@ export function getDictionary(locale: Locale): Dictionary {
 	return dictionaries[locale];
 }
 
-export type PageKey = 'home' | 'pricing' | 'compare' | 'faq' | 'privacy' | 'terms';
+export type PageKey = 'home' | 'pricing' | 'compare' | 'faq' | 'privacy' | 'terms' | 'feature';
 
-// Un'unica fonte di verità per gli slug per pagina/lingua: solo l'italiano ha
-// slug localizzati (prezzi, termini), le altre lingue condividono gli slug
-// inglesi per tenere il v1 semplice (vedi piano del sito).
+// Un'unica fonte di verità per gli slug per pagina/lingua: l'inglese è la
+// lingua di default (mercato primario), quindi è quella "senza slug tradotto"
+// in root; solo l'italiano ha slug localizzati (prezzi, termini).
+// 'feature' non ha una pagina indice propria: lo slug qui è solo un fallback
+// perché il tipo PageKey lo richiede — i percorsi reali delle singole pagine
+// funzionalità sono calcolati da featurePath() in ./features/index.ts.
 const slugs: Record<Exclude<PageKey, 'home'>, Record<Locale, string>> = {
 	pricing: { it: 'prezzi', en: 'pricing', de: 'pricing', es: 'pricing' },
 	compare: { it: 'vs/calendly', en: 'vs/calendly', de: 'vs/calendly', es: 'vs/calendly' },
 	faq: { it: 'faq', en: 'faq', de: 'faq', es: 'faq' },
 	privacy: { it: 'privacy', en: 'privacy', de: 'privacy', es: 'privacy' },
 	terms: { it: 'termini', en: 'terms', de: 'terms', es: 'terms' },
+	feature: { it: 'features', en: 'features', de: 'features', es: 'features' },
 };
 
 export function localePrefix(locale: Locale): string {
-	return locale === 'it' ? '' : `/${locale}`;
+	return locale === 'en' ? '' : `/${locale}`;
 }
 
 export function pagePath(locale: Locale, page: PageKey): string {
 	if (page === 'home') {
-		return locale === 'it' ? '/' : `/${locale}/`;
+		return locale === 'en' ? '/' : `/${locale}/`;
 	}
 	return `${localePrefix(locale)}/${slugs[page][locale]}/`;
 }

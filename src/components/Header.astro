@@ -6,8 +6,9 @@ import { CHECKOUT_URL } from '../config';
 interface Props {
 	locale: Locale;
 	page: PageKey;
+	langLinks?: Partial<Record<Locale, string>>;
 }
-const { locale, page } = Astro.props;
+const { locale, page, langLinks } = Astro.props;
 const dict = getDictionary(locale);
 ---
 <header class="ct-header">
@@ -17,30 +18,67 @@ const dict = getDictionary(locale);
 		<nav class="ct-nav" aria-label="Main">
 			<a href={pagePath(locale, 'home')}>{dict.nav.home}</a>
 			<a href={pagePath(locale, 'pricing')}>{dict.nav.pricing}</a>
-			<a href={pagePath(locale, 'compare')}>{dict.nav.compare}</a>
 			<a href={pagePath(locale, 'faq')}>{dict.nav.faq}</a>
 		</nav>
 
 		<div class="ct-header-actions">
-			<div class="ct-lang-switch" aria-label="Language">
-				{locales.map((l) => (
-					<a
-						href={pagePath(l, page)}
-						class={l === locale ? 'is-active' : ''}
-						aria-current={l === locale ? 'true' : undefined}
-					>
-						{l.toUpperCase()}
-					</a>
-				))}
-			</div>
+			<label class="ct-lang-switch-label">
+				<span class="sr-only">Language</span>
+				<select class="ct-lang-select" data-lang-select>
+					{locales.map((l) => (
+						<option value={langLinks?.[l] ?? pagePath(l, page)} selected={l === locale}>
+							{l.toUpperCase()} — {localeNames[l]}
+						</option>
+					))}
+				</select>
+			</label>
 			<a class="ct-btn ct-btn-primary ct-header-cta" href={CHECKOUT_URL} target="_blank" rel="noopener">
-				{dict.nav.cta}
+				{dict.pricing.ctaLabel}
 			</a>
+			<button type="button" class="ct-menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="ct-mobile-nav">
+				<span class="sr-only">Menu</span>
+				<span class="ct-menu-icon"></span>
+			</button>
 		</div>
+	</div>
+
+	<div class="ct-mobile-nav" id="ct-mobile-nav" data-mobile-nav>
+		<a href={pagePath(locale, 'home')}>{dict.nav.home}</a>
+		<a href={pagePath(locale, 'pricing')}>{dict.nav.pricing}</a>
+		<a href={pagePath(locale, 'faq')}>{dict.nav.faq}</a>
+		<a class="ct-btn ct-btn-primary ct-mobile-cta" href={CHECKOUT_URL} target="_blank" rel="noopener">
+			{dict.pricing.ctaLabel}
+		</a>
 	</div>
 </header>
 
+<script>
+	document.querySelectorAll<HTMLSelectElement>('[data-lang-select]').forEach((select) => {
+		select.addEventListener('change', () => {
+			const url = select.value;
+			if (url) window.location.href = url;
+		});
+	});
+
+	document.querySelectorAll<HTMLButtonElement>('[data-menu-toggle]').forEach((btn) => {
+		btn.addEventListener('click', () => {
+			const expanded = btn.getAttribute('aria-expanded') === 'true';
+			btn.setAttribute('aria-expanded', String(!expanded));
+			const nav = document.querySelector('[data-mobile-nav]');
+			nav?.classList.toggle('is-open', !expanded);
+		});
+	});
+</script>
+
 <style>
+	.sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+	}
 	.ct-header {
 		border-bottom: 1px solid var(--ct-border);
 		background: var(--ct-surface);
@@ -54,7 +92,6 @@ const dict = getDictionary(locale);
 		gap: 24px;
 		padding-top: 14px;
 		padding-bottom: 14px;
-		flex-wrap: wrap;
 	}
 	.ct-logo {
 		font-weight: 800;
@@ -70,7 +107,6 @@ const dict = getDictionary(locale);
 		display: flex;
 		gap: 20px;
 		flex: 1;
-		flex-wrap: wrap;
 	}
 	.ct-nav a {
 		color: var(--ct-ink-soft);
@@ -84,23 +120,92 @@ const dict = getDictionary(locale);
 	.ct-header-actions {
 		display: flex;
 		align-items: center;
-		gap: 16px;
+		gap: 12px;
 	}
-	.ct-lang-switch {
-		display: flex;
-		gap: 8px;
+	.ct-lang-select {
+		appearance: none;
+		background: var(--ct-bg);
+		border: 1px solid var(--ct-border);
+		border-radius: 8px;
+		color: var(--ct-ink);
 		font-size: 13px;
-	}
-	.ct-lang-switch a {
-		color: var(--ct-ink-soft);
-		text-decoration: none;
 		font-weight: 600;
-	}
-	.ct-lang-switch a.is-active {
-		color: var(--ct-primary-dark);
+		padding: 7px 10px;
+		cursor: pointer;
 	}
 	.ct-header-cta {
 		padding: 9px 18px;
 		font-size: 14px;
+		white-space: nowrap;
+	}
+	.ct-menu-toggle {
+		display: none;
+		width: 36px;
+		height: 36px;
+		align-items: center;
+		justify-content: center;
+		background: transparent;
+		border: 1px solid var(--ct-border);
+		border-radius: 8px;
+		cursor: pointer;
+		padding: 0;
+	}
+	.ct-menu-icon,
+	.ct-menu-icon::before,
+	.ct-menu-icon::after {
+		display: block;
+		width: 18px;
+		height: 2px;
+		background: var(--ct-ink);
+		position: relative;
+		transition: transform 0.15s ease;
+	}
+	.ct-menu-icon::before,
+	.ct-menu-icon::after {
+		content: '';
+		position: absolute;
+	}
+	.ct-menu-icon::before {
+		top: -6px;
+	}
+	.ct-menu-icon::after {
+		top: 6px;
+	}
+	.ct-mobile-nav {
+		display: none;
+	}
+
+	@media (max-width: 780px) {
+		.ct-nav {
+			display: none;
+		}
+		.ct-header-cta {
+			display: none;
+		}
+		.ct-menu-toggle {
+			display: flex;
+		}
+		.ct-mobile-nav {
+			display: none;
+			flex-direction: column;
+			gap: 2px;
+			border-top: 1px solid var(--ct-border);
+			padding: 8px 24px 16px;
+		}
+		.ct-mobile-nav.is-open {
+			display: flex;
+		}
+		.ct-mobile-nav a {
+			color: var(--ct-ink);
+			text-decoration: none;
+			font-weight: 600;
+			padding: 12px 4px;
+			border-bottom: 1px solid var(--ct-border);
+		}
+		.ct-mobile-cta {
+			margin-top: 10px;
+			text-align: center;
+			border-bottom: none !important;
+		}
 	}
 </style>

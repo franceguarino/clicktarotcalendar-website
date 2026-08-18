@@ -1,0 +1,129 @@
+---
+import { getDictionary, pagePath, type Locale } from '../i18n';
+import { featureKeys, featurePath, getFeatureUi, type FeatureDetail, type FeatureKey } from '../i18n/features';
+import CtaButton from '../components/CtaButton.astro';
+import { CHECKOUT_URL } from '../config';
+
+interface Props {
+	locale: Locale;
+	featureKey: FeatureKey;
+	detail: FeatureDetail;
+}
+const { locale, featureKey, detail } = Astro.props;
+const dict = getDictionary(locale);
+const ui = getFeatureUi(locale);
+const otherKeys = featureKeys.filter((k) => k !== featureKey);
+---
+<section class="ct-section ct-feature-hero">
+	<div class="ct-container ct-feature-head">
+		<p class="ct-eyebrow">{ui.eyebrow}</p>
+		<h1>{detail.title}</h1>
+		<p class="ct-hint ct-feature-tagline">{detail.tagline}</p>
+	</div>
+</section>
+
+<section class="ct-section">
+	<div class="ct-container ct-feature-body">
+		<article class="ct-card ct-feature-block">
+			<h2>{ui.painPointLabel}</h2>
+			<p>{detail.painPoint}</p>
+		</article>
+		<article class="ct-card ct-feature-block">
+			<h2>{ui.howItWorksLabel}</h2>
+			<p>{detail.howItWorks}</p>
+		</article>
+		<article class="ct-card ct-feature-block">
+			<h2>{ui.benefitLabel}</h2>
+			<p>{detail.benefit}</p>
+		</article>
+	</div>
+</section>
+
+<section class="ct-section ct-section-alt">
+	<div class="ct-container ct-final-cta">
+		<h2>{ui.ctaTitle}</h2>
+		<p class="ct-hint">{ui.ctaBody}</p>
+		<div class="ct-feature-cta-actions">
+			<CtaButton href={CHECKOUT_URL} external>{dict.pricing.ctaLabel}</CtaButton>
+			<CtaButton href={pagePath(locale, 'home')} variant="secondary">{ui.backToHome}</CtaButton>
+		</div>
+	</div>
+</section>
+
+<section class="ct-section">
+	<div class="ct-container">
+		<h2>{ui.otherFeaturesTitle}</h2>
+		<ul class="ct-feature-list">
+			{otherKeys.map((k) => (
+				<li>
+					<a href={featurePath(locale, k)}>{dict.features.items[featureKeys.indexOf(k)].title}</a>
+				</li>
+			))}
+		</ul>
+	</div>
+</section>
+
+<style>
+	.ct-feature-hero {
+		padding-bottom: 0;
+	}
+	.ct-feature-head {
+		text-align: center;
+		max-width: 720px;
+		margin: 0 auto;
+	}
+	.ct-feature-head h1 {
+		font-size: clamp(28px, 4vw, 38px);
+		margin: 8px 0 16px;
+	}
+	.ct-feature-tagline {
+		font-size: 18px;
+	}
+	.ct-feature-body {
+		display: grid;
+		gap: 20px;
+	}
+	.ct-feature-block h2 {
+		margin: 0 0 10px;
+		font-size: 18px;
+	}
+	.ct-feature-block p {
+		margin: 0;
+		color: var(--ct-ink-soft);
+	}
+	.ct-final-cta {
+		text-align: center;
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	.ct-final-cta p {
+		margin: 12px 0 24px;
+	}
+	.ct-feature-cta-actions {
+		display: flex;
+		justify-content: center;
+		gap: 14px;
+		flex-wrap: wrap;
+	}
+	.ct-feature-list {
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 12px;
+		margin: 24px 0 0;
+		padding: 0;
+	}
+	.ct-feature-list a {
+		display: block;
+		padding: 14px 16px;
+		border: 1px solid var(--ct-border);
+		border-radius: var(--ct-radius);
+		color: var(--ct-ink);
+		text-decoration: none;
+		font-weight: 600;
+	}
+	.ct-feature-list a:hover {
+		border-color: var(--ct-primary-dark);
+		color: var(--ct-primary-dark);
+	}
+</style>

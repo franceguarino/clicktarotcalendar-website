@@ -9,16 +9,13 @@ const de: Dictionary = {
 	nav: {
 		home: 'Start',
 		pricing: 'Preise',
-		compare: 'vs Calendly',
 		faq: 'FAQ',
-		cta: 'clickTarot testen',
 	},
 	hero: {
 		eyebrow: 'WordPress-Plugin für spirituelle Fachleute',
 		title: 'Der Buchungskalender, gemacht für deine Beratungspraxis',
 		subtitle:
 			'Verwandle deine Website in ein rund um die Uhr geöffnetes Studio: Kunden buchen und bezahlen selbstständig, du bekommst nur die Benachrichtigung. Ganz ohne endlose Nachrichten hin und her.',
-		ctaPrimary: 'clickTarot testen',
 		ctaSecondary: 'Mit Calendly vergleichen',
 	},
 	features: {

@@ -6,15 +6,12 @@ export interface Dictionary {
 	nav: {
 		home: string;
 		pricing: string;
-		compare: string;
 		faq: string;
-		cta: string;
 	};
 	hero: {
 		eyebrow: string;
 		title: string;
 		subtitle: string;
-		ctaPrimary: string;
 		ctaSecondary: string;
 	};
 	features: {

@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import FeatureDetailContent from '../../../sections/FeatureDetailContent.astro';
+import { featureKeys, featureSlugs, featureAlternateLinks, getFeatureDetail } from '../../../i18n/features';
+
+export function getStaticPaths() {
+	return featureKeys.map((featureKey) => ({
+		params: { slug: featureSlugs[featureKey] },
+		props: { featureKey },
+	}));
+}
+
+const locale = 'de' as const;
+const { featureKey } = Astro.props;
+const detail = getFeatureDetail(locale, featureKey);
+const alternates = featureAlternateLinks(featureKey);
+const langLinks = Object.fromEntries(alternates.map((a) => [a.locale, a.href]));
+---
+<BaseLayout
+	locale={locale}
+	page="feature"
+	title={`${detail.title} — clickTarot Calendar`}
+	description={detail.tagline}
+	alternates={alternates}
+	langLinks={langLinks}
+>
+	<FeatureDetailContent locale={locale} featureKey={featureKey} detail={detail} />
+</BaseLayout>

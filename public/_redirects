@@ -1,0 +1,10 @@
+# Redirect dai vecchi URL (IT in root, EN sotto /en/) alla nuova struttura
+# con l'inglese come lingua di default (mercato primario) e l'italiano su /it/.
+/en/                 /                     301
+/en/pricing/          /pricing/             301
+/en/vs/calendly/      /vs/calendly/         301
+/en/faq/               /faq/                 301
+/en/privacy/          /privacy/             301
+/en/terms/            /terms/               301
+/prezzi/              /it/prezzi/           301
+/termini/             /it/termini/          301

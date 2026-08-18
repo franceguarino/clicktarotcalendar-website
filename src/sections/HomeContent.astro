@@ -2,6 +2,7 @@
 import { getDictionary, pagePath, type Locale } from '../i18n';
 import CtaButton from '../components/CtaButton.astro';
 import FeatureCard from '../components/FeatureCard.astro';
+import { featureKeys, featurePath } from '../i18n/features';
 import { CHECKOUT_URL } from '../config';
 
 interface Props {
@@ -17,7 +18,7 @@ const dict = getDictionary(locale);
 			<h1>{dict.hero.title}</h1>
 			<p class="ct-hero-subtitle">{dict.hero.subtitle}</p>
 			<div class="ct-hero-actions">
-				<CtaButton href={CHECKOUT_URL} external>{dict.hero.ctaPrimary}</CtaButton>
+				<CtaButton href={CHECKOUT_URL} external>{dict.pricing.ctaLabel}</CtaButton>
 				<CtaButton href={pagePath(locale, 'compare')} variant="secondary">{dict.hero.ctaSecondary}</CtaButton>
 			</div>
 		</div>
@@ -31,8 +32,8 @@ const dict = getDictionary(locale);
 	<div class="ct-container">
 		<h2>{dict.features.title}</h2>
 		<div class="ct-features-grid">
-			{dict.features.items.map((item) => (
-				<FeatureCard title={item.title} description={item.description} />
+			{dict.features.items.map((item, i) => (
+				<FeatureCard title={item.title} description={item.description} href={featurePath(locale, featureKeys[i])} />
 			))}
 		</div>
 	</div>
