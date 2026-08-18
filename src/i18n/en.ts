@@ -17,42 +17,57 @@ const en: Dictionary = {
 		title: 'The booking calendar built for your consultation practice',
 		subtitle:
 			'Turn your site into an always-open studio: customers book and pay on their own, you just get the notifications. No more endless back-and-forth messages.',
-		ctaSecondary: 'Compare with Calendly',
 	},
 	features: {
 		title: 'Everything you need, nothing you don’t',
 		items: [
 			{
-				title: 'Visual monthly calendar',
+				title: '📅 Visual monthly calendar',
 				description: 'The customer picks the date and time on their own, fully independently: no more back-and-forth messages.',
 			},
 			{
-				title: 'Built-in payments',
+				title: '💳 Built-in payments',
 				description: 'PayPal and credit card (Stripe), connected directly to your own account. The money goes straight to you.',
 			},
 			{
-				title: 'Automatic invoice data',
+				title: '🧾 Automatic invoice data',
 				description: 'Tax ID and address collected automatically at booking time: everything you need to issue an invoice.',
 			},
 			{
-				title: 'Prepaid packages',
+				title: '📦 Prepaid packages',
 				description: 'Sell bundles of multiple sessions at a discounted price: the customer pays once, books whenever they like.',
 			},
 			{
-				title: 'Discount coupons',
+				title: '🎟️ Discount coupons',
 				description: 'Promo codes with expiry and usage limits, ready for your social media campaigns.',
 			},
 			{
-				title: 'Self-service rescheduling',
+				title: '🔄 Self-service rescheduling',
 				description: 'The customer moves or cancels the appointment on their own from the email link, without writing to you.',
 			},
 			{
-				title: 'Billing for international customers too',
+				title: '🌍 Billing for international customers too',
 				description: 'A Country selector on the form: VAT number/Tax ID, postal code and state adapt automatically outside Italy.',
 			},
 			{
-				title: 'Multilingual plugin',
+				title: '🌐 Multilingual plugin',
 				description: 'Booking form, emails and admin panel translated into English, Spanish, German and Italian.',
+			},
+			{
+				title: '🕒 Flexible availability',
+				description: 'Block off entire days or single time slots whenever you need to — your calendar, your rules.',
+			},
+			{
+				title: '✉️ Automatic email notifications',
+				description: 'Confirmation and reminder emails sent automatically, fully customizable in your own words.',
+			},
+			{
+				title: '🔗 Dedicated booking link',
+				description: 'A public booking link ready for your Instagram or TikTok bio — no extra page to build.',
+			},
+			{
+				title: '📊 Revenue statistics',
+				description: 'See what you earn each month and which service performs best, right in your dashboard.',
 			},
 		],
 	},
@@ -174,8 +189,8 @@ const en: Dictionary = {
 		bioTitle: 'Who I am',
 		bioBody: [
 			'My name is Francesco Guarino. I’m a speaker, a student of social psychology, and for years I’ve worked to build a bridge between science and spirituality. Before any of that, I studied directly with master card-makers the tradition of card production itself.',
-			'I founded Scuola TdM, Italy’s leading training hub for Tarot de Marseille, and created the TdM Method, a study and interaction model for the Tarot de Marseille that I’ve taught across Europe and Asia since 2011, and in America since 2017.',
-			'I’m the webmaster of tarocchi.blog, considered the best tarot blog in Italy, and I created clickTarot, a community built to be as inclusive as possible. Across my sites I reach a million and a half tarot students, enthusiasts and lovers every year. I’ve also produced the documentary “Oltre il Tarot” and regularly write books on psychology and spirituality.',
+			'I founded <a href="https://scuolatdm.com/" target="_blank" rel="noopener">Scuola TdM</a>, Italy’s leading training hub for Tarot de Marseille, and created the TdM Method, a study and interaction model for the Tarot de Marseille that I’ve taught across Europe and Asia since 2011, and in America since 2017.',
+			'I’m the webmaster of <a href="https://www.tarocchi.blog/" target="_blank" rel="noopener">tarocchi.blog</a>, considered the best tarot blog in Italy, and I created <a href="https://www.clicktarot.net/" target="_blank" rel="noopener">clickTarot</a>, a community built to be as inclusive as possible. Across my sites I reach a million and a half tarot students, enthusiasts and lovers every year. I’ve also produced the documentary “<a href="https://www.tarocchi.blog/oltre-il-tarot/" target="_blank" rel="noopener">Oltre il Tarot</a>” and regularly write books on psychology and spirituality.',
 		],
 		searchTitle: 'Why I built clickTarot Calendar',
 		searchBody: [

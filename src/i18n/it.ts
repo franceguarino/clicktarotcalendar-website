@@ -17,42 +17,57 @@ const it: Dictionary = {
 		title: 'Il calendario di prenotazione fatto su misura per il tuo studio di consulti',
 		subtitle:
 			'Trasforma il tuo sito in uno studio sempre aperto: i clienti prenotano e pagano da soli, tu ricevi solo le notifiche. Nessuno scambio infinito di messaggi.',
-		ctaSecondary: 'Confronta con Calendly',
 	},
 	features: {
 		title: 'Tutto quello che serve, niente di superfluo',
 		items: [
 			{
-				title: 'Calendario visuale a vista mensile',
+				title: '📅 Calendario visuale a vista mensile',
 				description: 'Il cliente sceglie data e ora da solo, in piena autonomia: niente più messaggi avanti e indietro.',
 			},
 			{
-				title: 'Pagamenti integrati',
+				title: '💳 Pagamenti integrati',
 				description: 'PayPal e carta di credito (Stripe), collegati direttamente al tuo account. Il denaro arriva a te.',
 			},
 			{
-				title: 'Fatturazione automatica',
+				title: '🧾 Fatturazione automatica',
 				description: 'Codice Fiscale e indirizzo raccolti in automatico in fase di prenotazione: pronto per emettere fattura.',
 			},
 			{
-				title: 'Pacchetti prepagati',
+				title: '📦 Pacchetti prepagati',
 				description: 'Vendi blocchi di più sessioni a prezzo scontato: il cliente paga una volta, prenota quando vuole.',
 			},
 			{
-				title: 'Coupon sconto',
+				title: '🎟️ Coupon sconto',
 				description: 'Codici promozionali con scadenza e limite di utilizzi, per le tue campagne sui social.',
 			},
 			{
-				title: 'Riprogrammazione self-service',
+				title: '🔄 Riprogrammazione self-service',
 				description: 'Il cliente sposta o annulla l’appuntamento da solo dal link nell’email, senza scriverti.',
 			},
 			{
-				title: 'Fatturazione anche per l’estero',
+				title: '🌍 Fatturazione anche per l’estero',
 				description: 'Selettore Paese nel form: Partita IVA/Tax ID, codice postale e provincia/stato si adattano fuori dall’Italia.',
 			},
 			{
-				title: 'Plugin multilingua',
+				title: '🌐 Plugin multilingua',
 				description: 'Form, email e pannello di amministrazione tradotti in italiano, inglese, spagnolo e tedesco.',
+			},
+			{
+				title: '🕒 Disponibilità flessibile',
+				description: 'Blocca giornate intere o singole fasce orarie ogni volta che ti serve: il calendario si adatta a te.',
+			},
+			{
+				title: '✉️ Email automatiche personalizzabili',
+				description: 'Conferme e promemoria inviati in automatico, con testo personalizzabile a tuo piacimento.',
+			},
+			{
+				title: '🔗 Link di prenotazione dedicato',
+				description: 'Un link pubblico pronto per la bio di Instagram o TikTok, senza dover creare nessuna pagina.',
+			},
+			{
+				title: '📊 Statistiche sugli incassi',
+				description: 'Guarda quanto guadagni ogni mese e quale servizio va meglio, direttamente in dashboard.',
 			},
 		],
 	},
@@ -173,8 +188,8 @@ const it: Dictionary = {
 		bioTitle: 'Chi sono',
 		bioBody: [
 			'Mi chiamo Francesco Guarino. Sono conferenziere, studioso di psicologia sociale e da anni lavoro per costruire un ponte tra scienza e spiritualità. Prima di tutto questo, ho studiato direttamente con i Mastri Cartai la tradizione dei produttori di carte.',
-			'Ho fondato Scuola TdM, il principale polo di formazione sui Tarocchi di Marsiglia in Italia, e ho ideato il Metodo TdM, un modello di studio e interazione con i Tarocchi di Marsiglia che insegno dal 2011 tra Europa e Asia, e dal 2017 anche in America.',
-			'Sono il webmaster di tarocchi.blog, considerato il miglior blog italiano sui Tarocchi, e ho creato clickTarot, una community pensata per essere il più inclusiva possibile. Attraverso i miei domini raggiungo un milione e mezzo di studiosi, amanti e appassionati di Tarocchi ogni anno. Ho anche prodotto il documentario "Oltre il Tarot" e scrivo regolarmente libri di natura psicologica e spirituale.',
+			'Ho fondato <a href="https://scuolatdm.com/" target="_blank" rel="noopener">Scuola TdM</a>, il principale polo di formazione sui Tarocchi di Marsiglia in Italia, e ho ideato il Metodo TdM, un modello di studio e interazione con i Tarocchi di Marsiglia che insegno dal 2011 tra Europa e Asia, e dal 2017 anche in America.',
+			'Sono il webmaster di <a href="https://www.tarocchi.blog/" target="_blank" rel="noopener">tarocchi.blog</a>, considerato il miglior blog italiano sui Tarocchi, e ho creato <a href="https://www.clicktarot.net/" target="_blank" rel="noopener">clickTarot</a>, una community pensata per essere il più inclusiva possibile. Attraverso i miei domini raggiungo un milione e mezzo di studiosi, amanti e appassionati di Tarocchi ogni anno. Ho anche prodotto il documentario "<a href="https://www.tarocchi.blog/oltre-il-tarot/" target="_blank" rel="noopener">Oltre il Tarot</a>" e scrivo regolarmente libri di natura psicologica e spirituale.',
 		],
 		searchTitle: 'Perché ho creato clickTarot Calendar',
 		searchBody: [

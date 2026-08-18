@@ -23,7 +23,7 @@ const a = dict.about;
 	<div class="ct-container ct-about-block">
 		<h2>{a.bioTitle}</h2>
 		{a.bioBody.map((p) => (
-			<p>{p}</p>
+			<p set:html={p} />
 		))}
 	</div>
 </section>
@@ -89,6 +89,11 @@ const a = dict.about;
 	}
 	.ct-about-block p:last-of-type {
 		margin-bottom: 0;
+	}
+	.ct-about-block p :global(a) {
+		color: var(--ct-primary-dark);
+		text-decoration: underline;
+		font-weight: 600;
 	}
 	.ct-about-why {
 		border-left: 3px solid var(--ct-primary-dark);

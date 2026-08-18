@@ -3,7 +3,6 @@ import { getDictionary, pagePath, type Locale } from '../i18n';
 import CtaButton from '../components/CtaButton.astro';
 import FeatureCard from '../components/FeatureCard.astro';
 import { featureKeys, featurePath } from '../i18n/features';
-import { competitorPath } from '../i18n/competitors';
 import { CHECKOUT_URL } from '../config';
 
 interface Props {
@@ -20,7 +19,6 @@ const dict = getDictionary(locale);
 			<p class="ct-hero-subtitle">{dict.hero.subtitle}</p>
 			<div class="ct-hero-actions">
 				<CtaButton href={CHECKOUT_URL} external>{dict.pricing.ctaLabel}</CtaButton>
-				<CtaButton href={competitorPath(locale, 'calendly')} variant="secondary">{dict.hero.ctaSecondary}</CtaButton>
 			</div>
 		</div>
 		<div class="ct-hero-image">
@@ -34,7 +32,11 @@ const dict = getDictionary(locale);
 		<h2>{dict.features.title}</h2>
 		<div class="ct-features-grid">
 			{dict.features.items.map((item, i) => (
-				<FeatureCard title={item.title} description={item.description} href={featurePath(locale, featureKeys[i])} />
+				<FeatureCard
+					title={item.title}
+					description={item.description}
+					href={i < featureKeys.length ? featurePath(locale, featureKeys[i]) : undefined}
+				/>
 			))}
 		</div>
 	</div>

@@ -17,42 +17,57 @@ const de: Dictionary = {
 		title: 'Der Buchungskalender, gemacht für deine Beratungspraxis',
 		subtitle:
 			'Verwandle deine Website in ein rund um die Uhr geöffnetes Studio: Kunden buchen und bezahlen selbstständig, du bekommst nur die Benachrichtigung. Ganz ohne endlose Nachrichten hin und her.',
-		ctaSecondary: 'Mit Calendly vergleichen',
 	},
 	features: {
 		title: 'Alles, was du brauchst — nichts, was du nicht brauchst',
 		items: [
 			{
-				title: 'Visueller Monatskalender',
+				title: '📅 Visueller Monatskalender',
 				description: 'Der Kunde wählt Datum und Uhrzeit selbstständig, ganz ohne Hin und Her.',
 			},
 			{
-				title: 'Integrierte Zahlungen',
+				title: '💳 Integrierte Zahlungen',
 				description: 'PayPal und Kreditkarte (Stripe), direkt mit deinem eigenen Konto verbunden. Das Geld geht direkt an dich.',
 			},
 			{
-				title: 'Automatische Rechnungsdaten',
+				title: '🧾 Automatische Rechnungsdaten',
 				description: 'Steuernummer und Adresse werden bei der Buchung automatisch erfasst — alles, was du für eine Rechnung brauchst.',
 			},
 			{
-				title: 'Prepaid-Pakete',
+				title: '📦 Prepaid-Pakete',
 				description: 'Verkaufe Blöcke mit mehreren Sitzungen zu einem vergünstigten Preis: einmal zahlen, buchen wann immer gewünscht.',
 			},
 			{
-				title: 'Rabattgutscheine',
+				title: '🎟️ Rabattgutscheine',
 				description: 'Aktionscodes mit Ablaufdatum und Nutzungslimit, bereit für deine Social-Media-Kampagnen.',
 			},
 			{
-				title: 'Selbstbedienungs-Terminverschiebung',
+				title: '🔄 Selbstbedienungs-Terminverschiebung',
 				description: 'Der Kunde verschiebt oder storniert den Termin selbst über den Link in der E-Mail, ohne dir schreiben zu müssen.',
 			},
 			{
-				title: 'Rechnungsstellung auch für internationale Kunden',
+				title: '🌍 Rechnungsstellung auch für internationale Kunden',
 				description: 'Länderauswahl im Formular: USt-IdNr./Steuer-ID, Postleitzahl und Bundesland passen sich außerhalb Italiens automatisch an.',
 			},
 			{
-				title: 'Mehrsprachiges Plugin',
+				title: '🌐 Mehrsprachiges Plugin',
 				description: 'Buchungsformular, E-Mails und Admin-Panel auf Deutsch, Englisch, Spanisch und Italienisch verfügbar.',
+			},
+			{
+				title: '🕒 Flexible Verfügbarkeit',
+				description: 'Blockiere ganze Tage oder einzelne Zeitfenster, wann immer du willst — dein Kalender, deine Regeln.',
+			},
+			{
+				title: '✉️ Automatische E-Mail-Benachrichtigungen',
+				description: 'Bestätigungs- und Erinnerungs-E-Mails werden automatisch verschickt, komplett individuell anpassbar.',
+			},
+			{
+				title: '🔗 Eigener Buchungslink',
+				description: 'Ein öffentlicher Buchungslink, bereit für deine Instagram- oder TikTok-Bio — ohne zusätzliche Seite.',
+			},
+			{
+				title: '📊 Umsatzstatistiken',
+				description: 'Sieh direkt im Dashboard, was du jeden Monat verdienst und welcher Service am besten läuft.',
 			},
 		],
 	},
@@ -173,8 +188,8 @@ const de: Dictionary = {
 		bioTitle: 'Wer ich bin',
 		bioBody: [
 			'Ich heiße Francesco Guarino. Ich bin Redner, Sozialpsychologie-Forscher und arbeite seit Jahren daran, eine Brücke zwischen Wissenschaft und Spiritualität zu bauen. Davor habe ich direkt bei Kartenmeistern die Tradition der Kartenherstellung studiert.',
-			'Ich habe die Scuola TdM gegründet, Italiens führendes Ausbildungszentrum für das Tarot de Marseille, und die TdM-Methode entwickelt, ein Lern- und Interaktionsmodell für das Tarot de Marseille, das ich seit 2011 in Europa und Asien und seit 2017 auch in Amerika unterrichte.',
-			'Ich bin Webmaster von tarocchi.blog, das als bester Tarot-Blog Italiens gilt, und habe clickTarot gegründet, eine Community, die so inklusiv wie möglich sein soll. Über meine Websites erreiche ich jedes Jahr anderthalb Millionen Tarot-Studierende, Liebhaber:innen und Fans. Ich habe außerdem den Dokumentarfilm „Oltre il Tarot" produziert und schreibe regelmäßig Bücher zu Psychologie und Spiritualität.',
+			'Ich habe die <a href="https://scuolatdm.com/" target="_blank" rel="noopener">Scuola TdM</a> gegründet, Italiens führendes Ausbildungszentrum für das Tarot de Marseille, und die TdM-Methode entwickelt, ein Lern- und Interaktionsmodell für das Tarot de Marseille, das ich seit 2011 in Europa und Asien und seit 2017 auch in Amerika unterrichte.',
+			'Ich bin Webmaster von <a href="https://www.tarocchi.blog/" target="_blank" rel="noopener">tarocchi.blog</a>, das als bester Tarot-Blog Italiens gilt, und habe <a href="https://www.clicktarot.net/" target="_blank" rel="noopener">clickTarot</a> gegründet, eine Community, die so inklusiv wie möglich sein soll. Über meine Websites erreiche ich jedes Jahr anderthalb Millionen Tarot-Studierende, Liebhaber:innen und Fans. Ich habe außerdem den Dokumentarfilm „<a href="https://www.tarocchi.blog/oltre-il-tarot/" target="_blank" rel="noopener">Oltre il Tarot</a>" produziert und schreibe regelmäßig Bücher zu Psychologie und Spiritualität.',
 		],
 		searchTitle: 'Warum ich clickTarot Calendar gebaut habe',
 		searchBody: [

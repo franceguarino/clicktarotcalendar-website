@@ -17,42 +17,57 @@ const es: Dictionary = {
 		title: 'El calendario de reservas hecho a medida para tu consulta',
 		subtitle:
 			'Convierte tu sitio en un estudio siempre abierto: los clientes reservan y pagan por su cuenta, tú solo recibes las notificaciones. Se acabaron los mensajes interminables.',
-		ctaSecondary: 'Comparar con Calendly',
 	},
 	features: {
 		title: 'Todo lo que necesitas, nada de más',
 		items: [
 			{
-				title: 'Calendario visual con vista mensual',
+				title: '📅 Calendario visual con vista mensual',
 				description: 'El cliente elige fecha y hora por su cuenta, sin ida y vuelta de mensajes.',
 			},
 			{
-				title: 'Pagos integrados',
+				title: '💳 Pagos integrados',
 				description: 'PayPal y tarjeta de crédito (Stripe), conectados directamente a tu propia cuenta. El dinero llega a ti.',
 			},
 			{
-				title: 'Datos de facturación automáticos',
+				title: '🧾 Datos de facturación automáticos',
 				description: 'NIF/DNI y dirección recogidos automáticamente al reservar: todo lo que necesitas para emitir factura.',
 			},
 			{
-				title: 'Paquetes prepagados',
+				title: '📦 Paquetes prepagados',
 				description: 'Vende bloques de varias sesiones a un precio con descuento: el cliente paga una vez, reserva cuando quiera.',
 			},
 			{
-				title: 'Cupones de descuento',
+				title: '🎟️ Cupones de descuento',
 				description: 'Códigos promocionales con caducidad y límite de usos, listos para tus campañas en redes sociales.',
 			},
 			{
-				title: 'Reprogramación de autoservicio',
+				title: '🔄 Reprogramación de autoservicio',
 				description: 'El cliente cambia o cancela la cita por su cuenta desde el enlace del correo, sin escribirte.',
 			},
 			{
-				title: 'Facturación también para clientes internacionales',
+				title: '🌍 Facturación también para clientes internacionales',
 				description: 'Selector de país en el formulario: NIF/IVA, código postal y provincia/estado se adaptan fuera de Italia.',
 			},
 			{
-				title: 'Plugin multilingüe',
+				title: '🌐 Plugin multilingüe',
 				description: 'Formulario, correos y panel de administración disponibles en español, inglés, alemán e italiano.',
+			},
+			{
+				title: '🕒 Disponibilidad flexible',
+				description: 'Bloquea días completos o franjas horarias sueltas cuando lo necesites: tu calendario, tus reglas.',
+			},
+			{
+				title: '✉️ Emails automáticos personalizables',
+				description: 'Correos de confirmación y recordatorio enviados en automático, con texto totalmente personalizable.',
+			},
+			{
+				title: '🔗 Enlace de reserva dedicado',
+				description: 'Un enlace público de reserva listo para tu bio de Instagram o TikTok, sin crear ninguna página.',
+			},
+			{
+				title: '📊 Estadísticas de ingresos',
+				description: 'Consulta cuánto ganas cada mes y qué servicio funciona mejor, directamente en el panel.',
 			},
 		],
 	},
@@ -173,8 +188,8 @@ const es: Dictionary = {
 		bioTitle: 'Quién soy',
 		bioBody: [
 			'Me llamo Francesco Guarino. Soy conferenciante, estudioso de psicología social y llevo años trabajando para construir un puente entre ciencia y espiritualidad. Antes de todo esto, estudié directamente con los Maestros Cartistas la tradición de fabricación de cartas.',
-			'Fundé Scuola TdM, el principal centro de formación en Tarot de Marsella de Italia, y creé el Método TdM, un modelo de estudio e interacción con el Tarot de Marsella que enseño desde 2011 entre Europa y Asia, y desde 2017 también en América.',
-			'Soy el webmaster de tarocchi.blog, considerado el mejor blog de tarot de Italia, y creé clickTarot, una comunidad pensada para ser lo más inclusiva posible. A través de mis sitios llego a un millón y medio de estudiosos, aficionados y amantes del tarot cada año. También he producido el documental "Oltre il Tarot" y escribo regularmente libros de psicología y espiritualidad.',
+			'Fundé <a href="https://scuolatdm.com/" target="_blank" rel="noopener">Scuola TdM</a>, el principal centro de formación en Tarot de Marsella de Italia, y creé el Método TdM, un modelo de estudio e interacción con el Tarot de Marsella que enseño desde 2011 entre Europa y Asia, y desde 2017 también en América.',
+			'Soy el webmaster de <a href="https://www.tarocchi.blog/" target="_blank" rel="noopener">tarocchi.blog</a>, considerado el mejor blog de tarot de Italia, y creé <a href="https://www.clicktarot.net/" target="_blank" rel="noopener">clickTarot</a>, una comunidad pensada para ser lo más inclusiva posible. A través de mis sitios llego a un millón y medio de estudiosos, aficionados y amantes del tarot cada año. También he producido el documental "<a href="https://www.tarocchi.blog/oltre-il-tarot/" target="_blank" rel="noopener">Oltre il Tarot</a>" y escribo regularmente libros de psicología y espiritualidad.',
 		],
 		searchTitle: 'Por qué creé clickTarot Calendar',
 		searchBody: [
