@@ -14,7 +14,7 @@ const it: Dictionary = {
 	},
 	hero: {
 		eyebrow: 'Plugin WordPress per professionisti dell’esoterico',
-		title: 'Il calendario di prenotazione fatto su misura per il tuo studio di consulti',
+		title: 'Il calendario di prenotazione fatto su misura per il tuo sito di consulti',
 		subtitle:
 			'Trasforma il tuo sito in uno studio sempre aperto: i clienti prenotano e pagano da soli, tu ricevi solo le notifiche. Nessuno scambio infinito di messaggi.',
 	},
