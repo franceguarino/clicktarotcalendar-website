@@ -128,8 +128,8 @@ const en: Dictionary = {
 				a: 'Yes, you can create multi-session prepaid packages: the customer pays once and books their sessions whenever they like.',
 			},
 			{
-				q: 'Does it work for customers outside Italy too?',
-				a: 'Yes: the form adapts automatically for international customers (VAT number/Tax ID instead of Italian Tax Code, free-format postal code), and the whole plugin is available in English, Spanish, German and Italian.',
+				q: 'Does the billing form adapt for clients in different countries?',
+				a: 'Yes — a country selector adapts the billing fields automatically: the standard Tax Code, postal code and province fields for Italy, and a VAT number/Tax ID with a free-format postal code and region for every other country. The whole plugin is also available in English, Spanish, German and Italian.',
 			},
 			{
 				q: 'Is my data and my customers’ data safe?',
@@ -195,6 +195,8 @@ const en: Dictionary = {
 		subtitle:
 			'clickTarot Calendar wasn’t built by a software company. It was built out of a real problem — mine — and a job I do every day.',
 		bioTitle: 'Who I am',
+		photoAlt: 'Francesco Guarino working with a Tarot de Marseille deck',
+		photo2Alt: 'Francesco Guarino reviewing tarot card meanings',
 		bioBody: [
 			'My name is Francesco Guarino. I’m an independent researcher, a student of social psychology, and for years I’ve worked to build a bridge between science and spirituality. Before any of that, I studied directly with master card-makers the tradition of card production itself.',
 			'I founded <a href="https://scuolatdm.com/" target="_blank" rel="noopener">Scuola TdM</a>, Italy’s leading training hub for Tarot de Marseille, and created the TdM Method, a study and interaction model for the Tarot de Marseille that I’ve taught across Europe and Asia since 2011, and in America since 2017.',

@@ -194,6 +194,8 @@ const it: Dictionary = {
 		title: 'Non un team di sviluppatori. Un tarologo che usa questo strumento ogni giorno.',
 		subtitle: 'clickTarot Calendar non nasce da un’azienda software. Nasce da un problema vero, il mio, e da un lavoro che faccio ogni giorno.',
 		bioTitle: 'Chi sono',
+		photoAlt: 'Francesco Guarino al lavoro con un mazzo di Tarocchi di Marsiglia',
+		photo2Alt: 'Francesco Guarino mentre analizza il significato delle carte',
 		bioBody: [
 			'Mi chiamo Francesco Guarino. Sono un ricercatore indipendente, studioso di psicologia sociale e da anni lavoro per costruire un ponte tra scienza e spiritualità. Prima di tutto questo, ho studiato direttamente con i Mastri Cartai la tradizione dei produttori di carte.',
 			'Ho fondato <a href="https://scuolatdm.com/" target="_blank" rel="noopener">Scuola TdM</a>, il principale polo di formazione sui Tarocchi di Marsiglia in Italia, e ho ideato il Metodo TdM, un modello di studio e interazione con i Tarocchi di Marsiglia che insegno dal 2011 tra Europa e Asia, e dal 2017 anche in America.',

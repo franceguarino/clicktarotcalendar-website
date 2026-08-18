@@ -128,8 +128,8 @@ const de: Dictionary = {
 				a: 'Ja, du kannst Prepaid-Pakete mit mehreren Sitzungen erstellen: der Kunde bezahlt einmal und bucht seine Sitzungen, wann immer er möchte.',
 			},
 			{
-				q: 'Funktioniert es auch für Kunden außerhalb Italiens?',
-				a: 'Ja: Das Formular passt sich für internationale Kunden automatisch an (USt-IdNr./Steuer-ID statt italienischer Steuernummer, freies Postleitzahlformat), und das gesamte Plugin ist auf Deutsch, Englisch, Spanisch und Italienisch verfügbar.',
+				q: 'Passt sich das Rechnungsformular für Kund:innen aus verschiedenen Ländern an?',
+				a: 'Ja — eine Länderauswahl passt die Felder automatisch an: die Standardfelder Steuernummer, Postleitzahl und Provinz für Italien, und eine USt-IdNr./Steuer-ID mit freiem Postleitzahlformat und Region für jedes andere Land. Das gesamte Plugin ist außerdem auf Deutsch, Englisch, Spanisch und Italienisch verfügbar.',
 			},
 			{
 				q: 'Sind meine Daten und die meiner Kunden sicher?',
@@ -194,6 +194,8 @@ const de: Dictionary = {
 		title: 'Kein Entwicklerteam. Ein Tarot-Leser, der dieses Tool jeden Tag selbst nutzt.',
 		subtitle: 'clickTarot Calendar wurde nicht von einem Softwareunternehmen gebaut. Es entstand aus einem echten Problem — meinem — und aus einer Arbeit, die ich jeden Tag mache.',
 		bioTitle: 'Wer ich bin',
+		photoAlt: 'Francesco Guarino bei der Arbeit mit einem Tarot-de-Marseille-Kartendeck',
+		photo2Alt: 'Francesco Guarino beim Überprüfen von Tarotkarten-Bedeutungen',
 		bioBody: [
 			'Ich heiße Francesco Guarino. Ich bin unabhängiger Forscher mit Schwerpunkt Sozialpsychologie und arbeite seit Jahren daran, eine Brücke zwischen Wissenschaft und Spiritualität zu bauen. Davor habe ich direkt bei Kartenmeistern die Tradition der Kartenherstellung studiert.',
 			'Ich habe die <a href="https://scuolatdm.com/" target="_blank" rel="noopener">Scuola TdM</a> gegründet, Italiens führendes Ausbildungszentrum für das Tarot de Marseille, und die TdM-Methode entwickelt, ein Lern- und Interaktionsmodell für das Tarot de Marseille, das ich seit 2011 in Europa und Asien und seit 2017 auch in Amerika unterrichte.',

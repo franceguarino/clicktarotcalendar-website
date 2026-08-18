@@ -20,11 +20,16 @@ const a = dict.about;
 </section>
 
 <section class="ct-section">
-	<div class="ct-container ct-about-block">
-		<h2>{a.bioTitle}</h2>
-		{a.bioBody.map((p) => (
-			<p set:html={p} />
-		))}
+	<div class="ct-container ct-about-bio-grid">
+		<div class="ct-about-photo">
+			<img src="/francesco-1.jpg" alt={a.photoAlt} width="800" height="1000" loading="lazy" />
+		</div>
+		<div class="ct-about-block ct-about-bio-text">
+			<h2>{a.bioTitle}</h2>
+			{a.bioBody.map((p) => (
+				<p set:html={p} />
+			))}
+		</div>
 	</div>
 </section>
 
@@ -42,11 +47,16 @@ const a = dict.about;
 </section>
 
 <section class="ct-section">
-	<div class="ct-container ct-about-block ct-about-why">
-		<h2>{a.whyTitle}</h2>
-		{a.whyBody.map((p) => (
-			<p>{p}</p>
-		))}
+	<div class="ct-container ct-about-why-grid">
+		<div class="ct-about-block ct-about-why">
+			<h2>{a.whyTitle}</h2>
+			{a.whyBody.map((p) => (
+				<p>{p}</p>
+			))}
+		</div>
+		<div class="ct-about-photo ct-about-photo-secondary">
+			<img src="/francesco-2.jpg" alt={a.photo2Alt} width="800" height="1000" loading="lazy" />
+		</div>
 	</div>
 </section>
 
@@ -77,6 +87,49 @@ const a = dict.about;
 	.ct-about-block {
 		max-width: 720px;
 		margin: 0 auto;
+	}
+	.ct-about-bio-grid,
+	.ct-about-why-grid {
+		display: grid;
+		grid-template-columns: 280px 1fr;
+		gap: 40px;
+		align-items: start;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.ct-about-why-grid {
+		grid-template-columns: 1fr 260px;
+	}
+	.ct-about-bio-text,
+	.ct-about-why-grid .ct-about-block {
+		max-width: none;
+		margin: 0;
+	}
+	.ct-about-photo img {
+		width: 100%;
+		aspect-ratio: 4 / 5;
+		object-fit: cover;
+		border-radius: var(--ct-radius);
+		box-shadow: var(--ct-shadow);
+		border: 1px solid var(--ct-border);
+	}
+	.ct-about-photo-secondary {
+		align-self: center;
+	}
+	@media (max-width: 720px) {
+		.ct-about-bio-grid,
+		.ct-about-why-grid {
+			grid-template-columns: 1fr;
+		}
+		.ct-about-why-grid {
+			display: flex;
+			flex-direction: column-reverse;
+			gap: 24px;
+		}
+		.ct-about-photo {
+			max-width: 240px;
+			margin: 0 auto;
+		}
 	}
 	.ct-about-block h2 {
 		margin: 0 0 16px;

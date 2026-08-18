@@ -64,6 +64,8 @@ export interface Dictionary {
 		subtitle: string;
 		bioTitle: string;
 		bioBody: string[];
+		photoAlt: string;
+		photo2Alt: string;
 		searchTitle: string;
 		searchBody: string[];
 		whyTitle: string;

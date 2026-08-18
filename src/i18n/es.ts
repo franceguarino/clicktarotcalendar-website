@@ -128,8 +128,8 @@ const es: Dictionary = {
 				a: 'Sí, puedes crear paquetes prepagados multisesión: el cliente paga una vez y reserva sus sesiones cuando quiera.',
 			},
 			{
-				q: '¿Funciona también para clientes fuera de Italia?',
-				a: 'Sí: el formulario se adapta automáticamente para clientes internacionales (NIF/IVA en lugar de Código Fiscal italiano, código postal en formato libre), y todo el plugin está disponible en español, inglés, alemán e italiano.',
+				q: '¿El formulario de facturación se adapta a clientes de distintos países?',
+				a: 'Sí — un selector de país adapta los campos automáticamente: los campos estándar de Código Fiscal, código postal y provincia para Italia, y un NIF/número de IVA con código postal en formato libre y región para cualquier otro país. Todo el plugin está disponible además en español, inglés, alemán e italiano.',
 			},
 			{
 				q: '¿Mis datos y los de mis clientes están seguros?',
@@ -194,6 +194,8 @@ const es: Dictionary = {
 		title: 'No un equipo de desarrolladores. Un tarotista que usa esta herramienta cada día.',
 		subtitle: 'clickTarot Calendar no lo construyó una empresa de software. Nació de un problema real — el mío — y de un trabajo que hago cada día.',
 		bioTitle: 'Quién soy',
+		photoAlt: 'Francesco Guarino trabajando con una baraja de Tarot de Marsella',
+		photo2Alt: 'Francesco Guarino revisando el significado de las cartas de tarot',
 		bioBody: [
 			'Me llamo Francesco Guarino. Soy investigador independiente, estudioso de psicología social y llevo años trabajando para construir un puente entre ciencia y espiritualidad. Antes de todo esto, estudié directamente con los Maestros Cartistas la tradición de fabricación de cartas.',
 			'Fundé <a href="https://scuolatdm.com/" target="_blank" rel="noopener">Scuola TdM</a>, el principal centro de formación en Tarot de Marsella de Italia, y creé el Método TdM, un modelo de estudio e interacción con el Tarot de Marsella que enseño desde 2011 entre Europa y Asia, y desde 2017 también en América.',
