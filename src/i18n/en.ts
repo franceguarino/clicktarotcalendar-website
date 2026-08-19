@@ -4,7 +4,7 @@ const en: Dictionary = {
 	meta: {
 		title: 'WordPress Booking Plugin for Tarot Readers | clickTarot Calendar',
 		description:
-			'A WordPress booking plugin for tarot readers, astrologers and consultants selling paid sessions. Built-in payments, invoicing and packages — a real Calendly alternative.',
+			'A WordPress booking plugin for tarot readers, astrologers and consultants selling paid sessions. Built-in payments, invoicing and packages: a real Calendly alternative.',
 	},
 	nav: {
 		home: 'Home',
@@ -13,37 +13,37 @@ const en: Dictionary = {
 		about: 'About',
 	},
 	hero: {
-		eyebrow: 'WordPress plugin for spiritual & wellness professionals',
-		title: 'The booking calendar built for your consultation practice',
+		eyebrow: 'The plugin for people who sell consultations, not people who sell software',
+		title: 'Stop chasing clients on Instagram. Make them book with you instead.',
 		subtitle:
-			'Turn your site into an always-open studio: customers book and pay on their own, you just get the notifications. No more endless back-and-forth messages.',
+			'Every message you answer late is a client booking somewhere else. clickTarot Calendar turns your site into a studio that never closes: the client picks a date, a time, and pays on their own; you just get the notification.',
 	},
 	features: {
-		title: 'Everything you need, nothing you don’t',
+		title: 'Everything you need to stop losing clients',
 		items: [
 			{
 				title: '📅 Visual monthly calendar',
-				description: 'The customer picks the date and time on their own, fully independently: no more back-and-forth messages.',
+				description: 'No more "are you free Thursday?": the client sees your real availability and books on their own, fully independently.',
 			},
 			{
 				title: '💳 Built-in payments',
-				description: 'PayPal and credit card (Stripe), connected directly to your own account. The money goes straight to you.',
+				description: 'PayPal and credit card (Stripe), connected directly to your own account. The money goes straight to you, instantly, no middleman.',
 			},
 			{
 				title: '🧾 Automatic invoice data',
-				description: 'Tax ID and address collected automatically at booking time: everything you need to issue an invoice.',
+				description: 'Tax ID and address collected automatically at booking time: the invoice is already ready to issue.',
 			},
 			{
 				title: '📦 Prepaid packages',
-				description: 'Sell bundles of multiple sessions at a discounted price: the customer pays once, books whenever they like.',
+				description: 'Sell bundles of multiple sessions at a discounted price: you get paid now, the client books whenever they like.',
 			},
 			{
 				title: '🎟️ Discount coupons',
-				description: 'Promo codes with expiry and usage limits, ready for your social media campaigns.',
+				description: 'Promo codes with expiry and usage limits, ready for your next social media campaign.',
 			},
 			{
 				title: '🔄 Self-service rescheduling',
-				description: 'The customer moves or cancels the appointment on their own from the email link, without writing to you.',
+				description: 'The client moves or cancels the appointment on their own from the email link; you stop being their calendar assistant.',
 			},
 			{
 				title: '🌍 Billing for international customers too',
@@ -51,23 +51,23 @@ const en: Dictionary = {
 			},
 			{
 				title: '🌐 Multilingual plugin',
-				description: 'Booking form, emails and admin panel translated into English, Spanish, German and Italian.',
+				description: 'Booking form, emails and admin panel translated into English, Spanish, German and Italian: you speak the client’s language.',
 			},
 			{
 				title: '🕒 Flexible availability',
-				description: 'Block off entire days or single time slots whenever you need to — your calendar, your rules.',
+				description: 'Block off entire days or single time slots whenever you need to: your calendar adapts to you, not the other way around.',
 			},
 			{
 				title: '✉️ Automatic email notifications',
-				description: 'Confirmation and reminder emails sent automatically, fully customizable in your own words.',
+				description: 'Confirmation and reminder emails sent automatically, with text you wrote yourself: no robotic messages.',
 			},
 			{
 				title: '🔗 Dedicated booking link',
-				description: 'A public booking link ready for your Instagram or TikTok bio — no extra page to build.',
+				description: 'A public booking link ready for your Instagram or TikTok bio: whoever finds you books right away, no searching required.',
 			},
 			{
 				title: '📊 Revenue statistics',
-				description: 'See what you earn each month and which service performs best, right in your dashboard.',
+				description: 'See what you earn each month and which service performs best, in real numbers, not gut feeling.',
 			},
 		],
 	},
@@ -80,14 +80,14 @@ const en: Dictionary = {
 		],
 	},
 	audience: {
-		title: 'Built for consultation practices, not corporate offices',
+		title: 'You’re not a corporation. Why should your booking tool treat you like one?',
 		body:
-			'Tarot readers, astrologers, holistic counselors and personal growth professionals: clickTarot Calendar handles exactly the workflow you need as a single practitioner taking clients online or in person, without the complexity of a tool built for corporate teams.',
+			'Tarot readers, astrologers, holistic counselors and personal growth professionals: clickTarot Calendar handles exactly the workflow you need as a single practitioner taking clients online or in person, without the complexity of a tool built for corporate teams you’ll never be.',
 	},
 	pricing: {
 		eyebrow: 'Simple pricing',
 		title: 'One plan, every feature',
-		subtitle: 'No hidden feature tiers, no per-seat pricing: every plan includes everything. Just pick the billing that works for you.',
+		subtitle: 'No feature locked behind a pricier plan, no per-seat pricing: every plan includes everything you actually need. Just pick how you’d rather pay.',
 		planName: 'clickTarot Calendar',
 		priceNote: 'Every feature included, updates and support on every plan',
 		ctaLabel: 'Buy now',
@@ -104,7 +104,7 @@ const en: Dictionary = {
 		recommendedLabel: 'Recommended',
 		tiers: [
 			{ label: 'Monthly', price: '$16.99', period: '/month', note: 'Pay as you go, cancel anytime.', highlighted: false },
-			{ label: 'Annual', price: '$180', period: '/year', note: 'Best value — works out to $15/month.', highlighted: true },
+			{ label: 'Annual', price: '$180', period: '/year', note: 'Best value, works out to $15/month.', highlighted: true },
 			{ label: 'Lifetime', price: '$1,499', period: 'one-time', note: 'Pay once, use it for as long as you like.', highlighted: false },
 		],
 	},
@@ -129,7 +129,7 @@ const en: Dictionary = {
 			},
 			{
 				q: 'Does the billing form adapt for clients in different countries?',
-				a: 'Yes — a country selector adapts the billing fields automatically: the standard Tax Code, postal code and province fields for Italy, and a VAT number/Tax ID with a free-format postal code and region for every other country. The whole plugin is also available in English, Spanish, German and Italian.',
+				a: 'Yes, a country selector adapts the billing fields automatically: the standard Tax Code, postal code and province fields for Italy, and a VAT number/Tax ID with a free-format postal code and region for every other country. The whole plugin is also available in English, Spanish, German and Italian.',
 			},
 			{
 				q: 'Is my data and my customers’ data safe?',
@@ -191,35 +191,35 @@ const en: Dictionary = {
 	},
 	about: {
 		eyebrow: 'About',
-		title: 'Not a team of developers. A tarot reader who uses this tool every day.',
+		title: 'I’m not a company. I’m one of you, and I got sick of looking for a tool that didn’t exist.',
 		subtitle:
-			'clickTarot Calendar wasn’t built by a software company. It was built out of a real problem — mine — and a job I do every day.',
+			'clickTarot Calendar wasn’t built in a marketing office. It was built out of a real problem, mine, and a job I do every day.',
 		bioTitle: 'Who I am',
 		photoAlt: 'Francesco Guarino working with a Tarot de Marseille deck',
 		photo2Alt: 'Francesco Guarino reviewing tarot card meanings',
 		bioBody: [
 			'My name is Francesco Guarino. I’m an independent researcher, a student of social psychology, and for years I’ve worked to build a bridge between science and spirituality. Before any of that, I studied directly with master card-makers the tradition of card production itself.',
 			'I founded <a href="https://scuolatdm.com/" target="_blank" rel="noopener">Scuola TdM</a>, Italy’s leading training hub for Tarot de Marseille, and created the TdM Method, a study and interaction model for the Tarot de Marseille that I’ve taught across Europe and Asia since 2011, and in America since 2017.',
-			'I’m the webmaster of <a href="https://www.tarocchi.blog/" target="_blank" rel="noopener">tarocchi.blog</a>, considered the best tarot blog in Italy, and I created <a href="https://www.clicktarot.net/" target="_blank" rel="noopener">clickTarot</a>, a community built to be as inclusive as possible. Across my sites I reach a million and a half tarot students, enthusiasts and lovers every year. I’ve also produced the documentary “<a href="https://www.tarocchi.blog/oltre-il-tarot/" target="_blank" rel="noopener">Oltre il Tarot</a>” and regularly write books on psychology and spirituality.',
+			'I’m the webmaster of <a href="https://www.tarocchi.blog/" target="_blank" rel="noopener">tarocchi.blog</a>, considered the best tarot blog in Italy, and I created <a href="https://www.clicktarot.net/" target="_blank" rel="noopener">clickTarot</a>, a community of a few hundred people, small but real, that I run myself. Across my sites I reach a million and a half tarot students, enthusiasts and lovers every year. I’ve also produced the documentary “<a href="https://www.tarocchi.blog/oltre-il-tarot/" target="_blank" rel="noopener">Oltre il Tarot</a>” and regularly write books on psychology and spirituality.',
 		],
 		searchTitle: 'Why I built clickTarot Calendar',
 		searchBody: [
-			'For years I looked for a booking tool that fit my work: paid, one-on-one consultations, with clients who come back over time. I never found one.',
-			'I tried Booknetic — it didn’t have the features I actually needed. I moved to Booknetic SaaS, but it was full of bugs, and since its developers make money selling paid add-ons, they seemed more interested in shipping new ones than fixing what was already broken. I even joined their Discord community hoping to find help: it was a graveyard of complaints, with no answers.',
-			'I tried TidyCal — it kept throwing 404 errors on my calendars, and customer support was practically nonexistent, the same story as every product from the “Sumo family”. If you use SendFox for your emails, you know exactly what I mean.',
-			'I’d also used a plugin from the CodePeople team for a long time. It worked, until it started conflicting with other major WordPress plugins. They built me a custom version, which was never updated again — until a WordPress update finally broke it for good.',
-			'At that point I gathered my team and built it myself. Then I decided to open it up to anyone else who, like me, had never found the right tool.',
+			'For years I looked for a booking tool that fit my work: paid, one-on-one consultations, with clients who come back over time. I never found one. And I’ll say this straight away, because I can’t stand people who oversell: it’s not the reading itself that’s the real bottleneck in this line of work. It’s the missed messages, the appointments you have to confirm by hand, the client who’s waiting for a reply and books somewhere else in the meantime.',
+			'I tried Booknetic: it didn’t have the features I actually needed. I moved to Booknetic SaaS, but it was full of bugs, and since its developers make money selling paid add-ons, they seemed more interested in shipping new ones than fixing what was already broken. I even joined their Discord community hoping to find help: it was a graveyard of complaints, with no answers.',
+			'I tried TidyCal: it kept throwing 404 errors on my calendars, and customer support was practically nonexistent, the same story as every product from the “Sumo family”. If you use SendFox for your emails, you know exactly what I mean.',
+			'I’d also used a plugin from the CodePeople team for a long time. It worked, until it started conflicting with other major WordPress plugins. They built me a custom version, which was never updated again, until a WordPress update finally broke it for good.',
+			'At that point I stopped looking. I gathered my team and built it myself. Then I did something that, from a business standpoint, I probably shouldn’t have: I opened it up to you too.',
 		],
 		whyTitle: 'Why I know it works',
 		whyBody: [
-			'Not because there’s a team of professional developers behind it — there isn’t, and I’m not going to pretend otherwise. clickTarot Calendar works because it’s the exact tool I use, every day, to run the consultations in my own business.',
-			'That’s why the main focus is on updates and constant improvement: this isn’t a product we just sell and move on from. It’s the tool my own daily work depends on, so it has to work — always.',
+			'Not because there’s a team of professional developers behind it: there isn’t, and I’m not going to pretend otherwise. clickTarot Calendar works because I’m the one using it, every day, for the consultations in my own real business, with real clients, who pay real money.',
+			'That’s exactly why the main focus is on updates and constant improvement: this isn’t a product I just sell and move on from. It’s the tool my own daily work depends on, so it has to work, always.',
 		],
 		linksTitle: 'Read more',
 		bookneticLinkLabel: 'Our comparison with Booknetic',
 		tidycalLinkLabel: 'Our comparison with TidyCal',
-		ctaTitle: 'Try it for yourself',
-		ctaBody: 'The same tool I use every day for my own work, now available for yours.',
+		ctaTitle: 'I’m not selling you software. I’m handing you my own tool.',
+		ctaBody: 'The same one I use every day for my own work, now available for yours.',
 	},
 };
 

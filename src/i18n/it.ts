@@ -4,7 +4,7 @@ const it: Dictionary = {
 	meta: {
 		title: 'Plugin di Prenotazione WordPress per Lettori di Tarocchi | clickTarot Calendar',
 		description:
-			'Plugin di prenotazione per WordPress pensato per tarologi, astrologi e counselor. Pagamenti, fatturazione e pacchetti inclusi — una vera alternativa a Calendly.',
+			'Plugin di prenotazione per WordPress pensato per tarologi, astrologi e counselor. Pagamenti, fatturazione e pacchetti inclusi: una vera alternativa a Calendly.',
 	},
 	nav: {
 		home: 'Home',
@@ -13,61 +13,61 @@ const it: Dictionary = {
 		about: 'Chi siamo',
 	},
 	hero: {
-		eyebrow: 'Plugin WordPress per professionisti dell’esoterico',
-		title: 'Il calendario di prenotazione fatto su misura per il tuo sito di consulti',
+		eyebrow: 'Il plugin per chi vende consulti, non per chi vende software',
+		title: 'Smetti di rincorrere clienti su Instagram. Fai in modo che siano loro a prenotare da te.',
 		subtitle:
-			'Trasforma il tuo sito in uno studio sempre aperto: i clienti prenotano e pagano da soli, tu ricevi solo le notifiche. Nessuno scambio infinito di messaggi.',
+			'Ogni messaggio a cui rispondi in ritardo è un cliente che prenota altrove. clickTarot Calendar trasforma il tuo sito in uno studio aperto ventiquattr’ore su ventiquattro: il cliente sceglie data, ora e paga da solo; tu ricevi solo la notifica.',
 	},
 	features: {
-		title: 'Tutto quello che serve, niente di superfluo',
+		title: 'Tutto quello che ti serve per non perdere più un cliente',
 		items: [
 			{
 				title: '📅 Calendario visuale a vista mensile',
-				description: 'Il cliente sceglie data e ora da solo, in piena autonomia: niente più messaggi avanti e indietro.',
+				description: 'Niente più "sei libera giovedì?": il cliente vede la tua disponibilità vera e prenota da solo, in piena autonomia.',
 			},
 			{
 				title: '💳 Pagamenti integrati',
-				description: 'PayPal e carta di credito (Stripe), collegati direttamente al tuo account. Il denaro arriva a te.',
+				description: 'PayPal e carta di credito (Stripe), collegati direttamente al tuo account. Il denaro arriva a te, subito, senza intermediari.',
 			},
 			{
 				title: '🧾 Fatturazione automatica',
-				description: 'Codice Fiscale e indirizzo raccolti in automatico in fase di prenotazione: pronto per emettere fattura.',
+				description: 'Codice Fiscale e indirizzo raccolti in automatico in fase di prenotazione: la fattura è già pronta da fare.',
 			},
 			{
 				title: '📦 Pacchetti prepagati',
-				description: 'Vendi blocchi di più sessioni a prezzo scontato: il cliente paga una volta, prenota quando vuole.',
+				description: 'Vendi blocchi di più sessioni a prezzo scontato: incassi subito, il cliente prenota quando vuole.',
 			},
 			{
 				title: '🎟️ Coupon sconto',
-				description: 'Codici promozionali con scadenza e limite di utilizzi, per le tue campagne sui social.',
+				description: 'Codici promozionali con scadenza e limite di utilizzi, pronti per la tua prossima promo sui social.',
 			},
 			{
 				title: '🔄 Riprogrammazione self-service',
-				description: 'Il cliente sposta o annulla l’appuntamento da solo dal link nell’email, senza scriverti.',
+				description: 'Il cliente sposta o annulla l’appuntamento da solo dal link nell’email; tu non devi più fare da segretaria.',
 			},
 			{
 				title: '🌍 Fatturazione anche per l’estero',
-				description: 'Selettore Paese nel form: Partita IVA/Tax ID, codice postale e provincia/stato si adattano fuori dall’Italia.',
+				description: 'Selettore Paese nel form: Partita IVA/Tax ID, codice postale e provincia si adattano da soli fuori dall’Italia.',
 			},
 			{
 				title: '🌐 Plugin multilingua',
-				description: 'Form, email e pannello di amministrazione tradotti in italiano, inglese, spagnolo e tedesco.',
+				description: 'Form, email e pannello di amministrazione tradotti in italiano, inglese, spagnolo e tedesco: parli la lingua del cliente.',
 			},
 			{
 				title: '🕒 Disponibilità flessibile',
-				description: 'Blocca giornate intere o singole fasce orarie ogni volta che ti serve: il calendario si adatta a te.',
+				description: 'Blocca giornate intere o singole fasce orarie ogni volta che ti serve: il calendario si adatta a te, non il contrario.',
 			},
 			{
 				title: '✉️ Email automatiche personalizzabili',
-				description: 'Conferme e promemoria inviati in automatico, con testo personalizzabile a tuo piacimento.',
+				description: 'Conferme e promemoria inviati in automatico, con testo scritto da te: nessun messaggio robotico.',
 			},
 			{
 				title: '🔗 Link di prenotazione dedicato',
-				description: 'Un link pubblico pronto per la bio di Instagram o TikTok, senza dover creare nessuna pagina.',
+				description: 'Un link pubblico pronto per la bio di Instagram o TikTok: chi ti scopre, prenota subito, senza cercarti altrove.',
 			},
 			{
 				title: '📊 Statistiche sugli incassi',
-				description: 'Guarda quanto guadagni ogni mese e quale servizio va meglio, direttamente in dashboard.',
+				description: 'Guarda quanto guadagni ogni mese e quale servizio va meglio, in numeri veri, non a sensazione.',
 			},
 		],
 	},
@@ -80,14 +80,14 @@ const it: Dictionary = {
 		],
 	},
 	audience: {
-		title: 'Pensato per chi lavora con i consulti, non per uffici aziendali',
+		title: 'Non sei un’azienda. Perché il tuo strumento di prenotazione dovrebbe trattarti come tale?',
 		body:
-			'Cartomanti, astrologi, tarologi, counselor olistici e professionisti della crescita personale: clickTarot Calendar gestisce esattamente i flussi di cui hai bisogno tu, un singolo professionista che riceve clienti online o in presenza, senza le complicazioni di un tool pensato per team aziendali.',
+			'Tarologi, astrologi, counselor olistici e professionisti della crescita personale: clickTarot Calendar gestisce esattamente i flussi di cui hai bisogno tu, un singolo professionista che riceve clienti online o in presenza, senza le complicazioni di un tool pensato per team aziendali che non sarai mai.',
 	},
 	pricing: {
 		eyebrow: 'Prezzo semplice',
 		title: 'Un solo piano, tutte le funzionalità',
-		subtitle: 'Nessun piano a funzionalità limitate, nessun costo per utente aggiuntivo: ogni piano include tutto. Scegli solo come preferisci pagare.',
+		subtitle: 'Niente funzionalità bloccate dietro un piano più caro, niente costo per utente aggiuntivo: ogni piano include tutto quello che serve davvero. Scegli solo come preferisci pagare.',
 		planName: 'clickTarot Calendar',
 		priceNote: 'Tutte le funzionalità incluse, aggiornamenti e supporto su ogni piano',
 		ctaLabel: 'Acquista ora',
@@ -104,7 +104,7 @@ const it: Dictionary = {
 		recommendedLabel: 'Consigliato',
 		tiers: [
 			{ label: 'Mensile', price: '16,99$', period: '/mese', note: 'Paghi mese per mese, disdici quando vuoi.', highlighted: false },
-			{ label: 'Annuale', price: '180$', period: '/anno', note: 'Il più conveniente — equivale a 15$/mese.', highlighted: true },
+			{ label: 'Annuale', price: '180$', period: '/anno', note: 'Il più conveniente, equivale a 15$/mese.', highlighted: true },
 			{ label: 'Lifetime', price: '1.499$', period: 'pagamento unico', note: 'Paghi una volta sola, lo usi per sempre.', highlighted: false },
 		],
 	},
@@ -191,34 +191,34 @@ const it: Dictionary = {
 	},
 	about: {
 		eyebrow: 'Chi siamo',
-		title: 'Non un team di sviluppatori. Un tarologo che usa questo strumento ogni giorno.',
-		subtitle: 'clickTarot Calendar non nasce da un’azienda software. Nasce da un problema vero, il mio, e da un lavoro che faccio ogni giorno.',
+		title: 'Non sono un’azienda. Sono uno di voi, e mi sono rotto le scatole di cercare uno strumento che non esisteva.',
+		subtitle: 'clickTarot Calendar non nasce in un ufficio marketing. Nasce da un problema vero, il mio, e da un lavoro che faccio ogni giorno.',
 		bioTitle: 'Chi sono',
 		photoAlt: 'Francesco Guarino al lavoro con un mazzo di Tarocchi di Marsiglia',
 		photo2Alt: 'Francesco Guarino mentre analizza il significato delle carte',
 		bioBody: [
 			'Mi chiamo Francesco Guarino. Sono un ricercatore indipendente, studioso di psicologia sociale e da anni lavoro per costruire un ponte tra scienza e spiritualità. Prima di tutto questo, ho studiato direttamente con i Mastri Cartai la tradizione dei produttori di carte.',
 			'Ho fondato <a href="https://scuolatdm.com/" target="_blank" rel="noopener">Scuola TdM</a>, il principale polo di formazione sui Tarocchi di Marsiglia in Italia, e ho ideato il Metodo TdM, un modello di studio e interazione con i Tarocchi di Marsiglia che insegno dal 2011 tra Europa e Asia, e dal 2017 anche in America.',
-			'Sono il webmaster di <a href="https://www.tarocchi.blog/" target="_blank" rel="noopener">tarocchi.blog</a>, considerato il miglior blog italiano sui Tarocchi, e ho creato <a href="https://www.clicktarot.net/" target="_blank" rel="noopener">clickTarot</a>, una community pensata per essere il più inclusiva possibile. Attraverso i miei domini raggiungo un milione e mezzo di studiosi, amanti e appassionati di Tarocchi ogni anno. Ho anche prodotto il documentario "<a href="https://www.tarocchi.blog/oltre-il-tarot/" target="_blank" rel="noopener">Oltre il Tarot</a>" e scrivo regolarmente libri di natura psicologica e spirituale.',
+			'Sono il webmaster di <a href="https://www.tarocchi.blog/" target="_blank" rel="noopener">tarocchi.blog</a>, considerato il miglior blog italiano sui Tarocchi, e ho creato <a href="https://www.clicktarot.net/" target="_blank" rel="noopener">clickTarot</a>, una community di qualche centinaio di persone, piccola ma vera, che curo personalmente. Attraverso i miei domini raggiungo un milione e mezzo di studiosi, amanti e appassionati di Tarocchi ogni anno. Ho anche prodotto il documentario "<a href="https://www.tarocchi.blog/oltre-il-tarot/" target="_blank" rel="noopener">Oltre il Tarot</a>" e scrivo regolarmente libri di natura psicologica e spirituale.',
 		],
 		searchTitle: 'Perché ho creato clickTarot Calendar',
 		searchBody: [
-			'Per anni ho cercato uno strumento di prenotazione adatto al mio lavoro: consulti a pagamento, uno alla volta, con clienti che tornano nel tempo. Non l’ho mai trovato.',
-			'Ho provato Booknetic: non aveva le funzionalità che mi servivano davvero. Sono passato a Booknetic SaaS, ma era pieno di bug — e dato che gli sviluppatori guadagnano vendendo componenti aggiuntivi a pagamento, sembravano più interessati a produrne di nuovi che a sistemare quelli esistenti. Ho anche frequentato la loro community su Discord, sperando di trovare aiuto: era un cimitero di lamentele, senza risposte.',
-			'Ho provato TidyCal: mi restituiva errori 404 sui miei calendari, e l’assistenza clienti era praticamente inesistente — la stessa storia di tutti i prodotti della "famiglia Sumo". Se usi SendFox per le tue email, sai esattamente di cosa parlo.',
-			'Avevo anche usato per molto tempo un plugin del team di CodePeople. Funzionava, finché non è entrato in conflitto con altri plugin importanti di WordPress. Mi avevano preparato una versione personalizzata, che però non è mai stata aggiornata — fino a quando un aggiornamento di WordPress non l’ha resa definitivamente inutilizzabile.',
-			'A quel punto ho riunito il mio team e l’ho costruito da solo. Poi ho deciso di aprirlo anche a chi, come me, non aveva mai trovato lo strumento giusto.',
+			'Per anni ho cercato uno strumento di prenotazione adatto al mio lavoro: consulti a pagamento, uno alla volta, con clienti che tornano nel tempo. Non l’ho mai trovato. E te lo dico subito, perché odio chi vende fumo: non è la lettura delle carte il vero collo di bottiglia di questo mestiere. Sono i messaggi persi, gli appuntamenti da confermare a mano, il cliente che aspetta una risposta e nel frattempo prenota altrove.',
+			'Ho provato Booknetic: non aveva le funzionalità che mi servivano davvero. Sono passato a Booknetic SaaS, ma era pieno di bug; e dato che gli sviluppatori guadagnano vendendo componenti aggiuntivi a pagamento, sembravano più interessati a produrne di nuovi che a sistemare quelli esistenti. Ho anche frequentato la loro community su Discord, sperando di trovare aiuto: era un cimitero di lamentele, senza risposte.',
+			'Ho provato TidyCal: mi restituiva errori 404 sui miei calendari, e l’assistenza clienti era praticamente inesistente, la stessa storia di tutti i prodotti della "famiglia Sumo". Se usi SendFox per le tue email, sai esattamente di cosa parlo.',
+			'Avevo anche usato per molto tempo un plugin del team di CodePeople. Funzionava, finché non è entrato in conflitto con altri plugin importanti di WordPress. Mi avevano preparato una versione personalizzata, che però non è mai stata aggiornata, fino a quando un aggiornamento di WordPress non l’ha resa definitivamente inutilizzabile.',
+			'A quel punto ho smesso di cercare. Ho riunito il mio team e l’ho costruito io. Poi ho fatto una cosa che, dal punto di vista del business, forse non avrei dovuto fare: l’ho aperto anche a te.',
 		],
 		whyTitle: 'Perché so che funziona',
 		whyBody: [
-			'Non perché dietro c’è un team di sviluppatori professionisti — non è così, e non ho intenzione di far finta che lo sia. clickTarot Calendar funziona perché è lo stesso strumento che uso io, ogni giorno, per gestire i consulti della mia attività.',
-			'È per questo che il focus principale è sugli aggiornamenti e sui miglioramenti costanti: non è un prodotto che vendiamo e basta. È lo strumento da cui dipende il mio lavoro quotidiano, quindi deve funzionare, sempre.',
+			'Non perché dietro ci sono sviluppatori professionisti: non è così, e non ho intenzione di far finta che lo sia. clickTarot Calendar funziona perché ci sono io, ogni giorno, a usarlo per i consulti della mia attività vera, con clienti veri, che pagano soldi veri.',
+			'Ed è per questo che il focus principale è sugli aggiornamenti e sui miglioramenti costanti: non è un prodotto che vendo e basta. È lo strumento da cui dipende il mio lavoro quotidiano, quindi deve funzionare, sempre.',
 		],
 		linksTitle: 'Approfondisci',
 		bookneticLinkLabel: 'Il confronto con Booknetic',
 		tidycalLinkLabel: 'Il confronto con TidyCal',
-		ctaTitle: 'Provalo anche tu',
-		ctaBody: 'Lo stesso strumento che uso ogni giorno per il mio lavoro, ora disponibile anche per il tuo.',
+		ctaTitle: 'Non ti sto vendendo un software. Ti sto passando il mio strumento.',
+		ctaBody: 'Lo stesso che uso ogni giorno per il mio lavoro, ora disponibile anche per il tuo.',
 	},
 };
 

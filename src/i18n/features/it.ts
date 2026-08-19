@@ -1,4 +1,4 @@
-import type { FeatureDetailDictionary, FeatureUiText } from './types';
+﻿import type { FeatureDetailDictionary, FeatureUiText } from './types';
 
 export const featureUi: FeatureUiText = {
 	eyebrow: 'Funzionalità',
@@ -18,11 +18,11 @@ const it: FeatureDetailDictionary = {
 		metaDescription:
 			'Scopri come il calendario visuale mensile di clickTarot Calendar permette ai clienti di prenotare da soli, senza messaggi avanti e indietro.',
 		painPoint:
-			'Prenotare via DM o email significa una decina di messaggi avanti e indietro prima che qualcuno concordi un orario — e metà chiedono "sei libero la prossima settimana?" dopo che gliel’hai già detto due volte.',
+			'Prenotare via DM o email significa una decina di messaggi avanti e indietro prima che qualcuno concordi un orario, e metà chiedono "sei libero la prossima settimana?" dopo che gliel’hai già detto due volte.',
 		howItWorks:
 			'Il cliente vede la tua disponibilità reale, in tempo reale, mostrata come un vero calendario: giorni in cui lavori, giorni in cui non lavori, orari già occupati. Sceglie un giorno, sceglie un orario, ed è prenotato. Niente avanti e indietro, niente doppie prenotazioni, niente controlli manuali da parte tua.',
 		benefit:
-			'Ogni ora che non passi a rispondere "sei libero martedì?" è un’ora che puoi dedicare alle consulenze — o a niente. Questo è il vero ritorno di uno strumento di prenotazione: tempo recuperato, non solo un modulo più bello.',
+			'Ogni ora che non passi a rispondere "sei libero martedì?" è un’ora che puoi dedicare alle consulenze, o a niente. Questo è il vero ritorno di uno strumento di prenotazione: tempo recuperato, non solo un modulo più bello.',
 	},
 	payments: {
 		title: 'Pagamenti Integrati',
@@ -30,11 +30,11 @@ const it: FeatureDetailDictionary = {
 		metaDescription:
 			'Pagamenti PayPal e Stripe integrati in clickTarot Calendar: il cliente paga alla prenotazione, il denaro arriva sul tuo account.',
 		painPoint:
-			'Sollecitare un pagamento dopo una consulenza è imbarazzante per tutti. E mandare manualmente un link di pagamento per ogni prenotazione è un passaggio in più che può essere dimenticato — o ignorato.',
+			'Sollecitare un pagamento dopo una consulenza è imbarazzante per tutti. E mandare manualmente un link di pagamento per ogni prenotazione è un passaggio in più che può essere dimenticato, o ignorato.',
 		howItWorks:
-			'PayPal e Stripe si collegano direttamente al tuo account. Il cliente paga nel momento in cui prenota, dallo stesso modulo — nessuna fattura separata, nessun link a parte, nessun passaggio in più.',
+			'PayPal e Stripe si collegano direttamente al tuo account. Il cliente paga nel momento in cui prenota, dallo stesso modulo: nessuna fattura separata, nessun link a parte, nessun passaggio in più.',
 		benefit:
-			'Il denaro arriva sul tuo account, non su quello del plugin — clickTarot non tocca né trattiene mai un centesimo. Vieni pagato in tempo, ogni volta, senza doverlo chiedere.',
+			'Il denaro arriva sul tuo account, non su quello del plugin; clickTarot non tocca né trattiene mai un centesimo. Vieni pagato in tempo, ogni volta, senza doverlo chiedere.',
 	},
 	invoicing: {
 		title: 'Dati di Fatturazione Automatici',
@@ -42,11 +42,11 @@ const it: FeatureDetailDictionary = {
 		metaDescription:
 			'clickTarot Calendar raccoglie automaticamente codice fiscale/partita IVA e indirizzo alla prenotazione, per fatturare senza lavoro extra.',
 		painPoint:
-			'Emettere una fattura di solito significa scrivere al cliente dopo la seduta per chiedere codice fiscale e indirizzo di fatturazione — e aspettare la risposta prima di poter fatturare davvero.',
+			'Emettere una fattura di solito significa scrivere al cliente dopo la seduta per chiedere codice fiscale e indirizzo di fatturazione, e aspettare la risposta prima di poter fatturare davvero.',
 		howItWorks:
 			'Codice fiscale (o partita IVA fuori dall’Italia) e indirizzo di fatturazione sono campi obbligatori nello stesso modulo di prenotazione. Quando l’appuntamento è confermato, tutto ciò che serve per fatturare è già registrato accanto alla prenotazione.',
 		benefit:
-			'Niente scambi di email per la burocrazia. Se lo fai come attività vera — e se paghi per un software probabilmente è così — la fatturazione corretta non dovrebbe essere la parte che ti rallenta.',
+			'Niente scambi di email per la burocrazia. Se lo fai come attività vera, e se paghi per un software probabilmente è così, la fatturazione corretta non dovrebbe essere la parte che ti rallenta.',
 	},
 	packages: {
 		title: 'Pacchetti Prepagati',
@@ -54,9 +54,9 @@ const it: FeatureDetailDictionary = {
 		metaDescription:
 			'Vendi pacchetti prepagati multi-sessione con clickTarot Calendar: un pagamento, il cliente prenota le sedute quando vuole.',
 		painPoint:
-			'I clienti abituali sono i migliori — ma senza un sistema di pacchetti, ogni ritorno significa rifare il checkout da capo, senza un modo semplice per premiare chi prenota in anticipo.',
+			'I clienti abituali sono i migliori, ma senza un sistema di pacchetti, ogni ritorno significa rifare il checkout da capo, senza un modo semplice per premiare chi prenota in anticipo.',
 		howItWorks:
-			'Crea un pacchetto — ad esempio 3 sedute a un prezzo scontato rispetto a pagarle singolarmente. Il cliente paga una volta sola e il credito resta legato alla sua email: alla prenotazione successiva il plugin lo riconosce e salta automaticamente il pagamento.',
+			'Crea un pacchetto, ad esempio 3 sedute a un prezzo scontato rispetto a pagarle singolarmente. Il cliente paga una volta sola e il credito resta legato alla sua email: alla prenotazione successiva il plugin lo riconosce e salta automaticamente il pagamento.',
 		benefit:
 			'I pacchetti trasformano clienti occasionali in un incasso ricorrente che hai già ottenuto, e danno ai clienti più fedeli un motivo per tornare da te invece di provare qualcun altro la prossima volta.',
 	},
@@ -66,23 +66,23 @@ const it: FeatureDetailDictionary = {
 		metaDescription:
 			'Crea codici sconto percentuali o fissi in clickTarot Calendar, pronti per la tua prossima promozione sui social.',
 		painPoint:
-			'Gli sconti manuali significano modificare a mano un prezzo, o fidarsi della propria memoria per ricordare chi ha diritto al 20% e chi no — non proprio qualcosa da tenere su un quaderno.',
+			'Gli sconti manuali significano modificare a mano un prezzo, o fidarsi della propria memoria per ricordare chi ha diritto al 20% e chi no; non proprio qualcosa da tenere su un quaderno.',
 		howItWorks:
-			'Crea un codice — percentuale o importo fisso — con scadenza e limite di utilizzo opzionali. Il cliente lo inserisce nel modulo di prenotazione e vede subito il nuovo prezzo, prima di pagare.',
+			'Crea un codice (percentuale o importo fisso) con scadenza e limite di utilizzo opzionali. Il cliente lo inserisce nel modulo di prenotazione e vede subito il nuovo prezzo, prima di pagare.',
 		benefit:
 			'I coupon sono uno dei modi più economici per trasformare i follower dei social in clienti paganti. Averli integrati significa che una promo su Instagram richiede cinque minuti, non un pomeriggio.',
 	},
 	reschedule: {
 		title: 'Riprogrammazione e Cancellazione Autonoma',
-		tagline: 'Lascia che i clienti spostino da soli l’appuntamento — non devi fare da segretaria al loro calendario.',
+		tagline: 'Lascia che i clienti spostino da soli l’appuntamento; non devi fare da segretaria al loro calendario.',
 		metaDescription:
 			'Lascia che i clienti riprogrammino o cancellino da soli l’appuntamento dall’email di conferma, senza scriverti.',
 		painPoint:
-			'"Possiamo spostare martedì a giovedì?" è una richiesta normale e ragionevole — ed è anche il quinto messaggio della giornata che non ha nulla a che fare con una consulenza vera.',
+			'"Possiamo spostare martedì a giovedì?" è una richiesta normale e ragionevole, ed è anche il quinto messaggio della giornata che non ha nulla a che fare con una consulenza vera.',
 		howItWorks:
-			'Ogni email di conferma e promemoria include un link di gestione. Il cliente può riprogrammare su un altro orario libero o cancellare da solo, fino alla soglia minima di preavviso che hai configurato — dopo quella soglia, viene invitato a contattarti direttamente.',
+			'Ogni email di conferma e promemoria include un link di gestione. Il cliente può riprogrammare su un altro orario libero o cancellare da solo, fino alla soglia minima di preavviso che hai configurato; dopo quella soglia, viene invitato a contattarti direttamente.',
 		benefit:
-			'Le richieste che prima interrompevano la tua giornata ora si risolvono da sole. Mantieni comunque piena visibilità e controllo — semplicemente non sei più tu a dover agire per ogni piccola variazione.',
+			'Le richieste che prima interrompevano la tua giornata ora si risolvono da sole. Mantieni comunque piena visibilità e controllo; semplicemente non sei più tu a dover agire per ogni piccola variazione.',
 	},
 	international: {
 		title: 'Fatturazione per Clienti Internazionali',
@@ -90,21 +90,21 @@ const it: FeatureDetailDictionary = {
 		metaDescription:
 			'clickTarot Calendar adatta automaticamente i campi di fatturazione per i clienti fuori dall’Italia: partita IVA, CAP libero e altro.',
 		painPoint:
-			'Campi di fatturazione pensati solo per un paese — codice fiscale italiano, formato del CAP italiano — o non funzionano per un cliente all’estero, o raccolgono silenziosamente dati sbagliati o inutilizzabili.',
+			'Campi di fatturazione pensati solo per un paese (codice fiscale italiano, formato del CAP italiano) non funzionano per un cliente all’estero, o raccolgono silenziosamente dati sbagliati o inutilizzabili.',
 		howItWorks:
 			'Un selettore del paese nel modulo di prenotazione adatta i campi automaticamente: per l’Italia restano i campi standard di codice fiscale, CAP e provincia; per ogni altro paese passa a partita IVA/tax ID opzionale, CAP in formato libero e provincia o stato in testo libero.',
 		benefit:
-			'Puoi dire sì a un cliente ovunque, senza soluzioni di ripiego. Se stai costruendo una clientela internazionale — o ce l’hai già — questa è la differenza tra un modulo che funziona per tutti e uno che silenziosamente allontana chi non è in Italia.',
+			'Puoi dire sì a un cliente ovunque, senza soluzioni di ripiego. Se stai costruendo una clientela internazionale, o ce l’hai già, questa è la differenza tra un modulo che funziona per tutti e uno che silenziosamente allontana chi non è in Italia.',
 	},
 	multilingual: {
 		title: 'Plugin Multilingua',
-		tagline: 'Il tuo modulo di prenotazione parla la lingua del cliente — letteralmente.',
+		tagline: 'Il tuo modulo di prenotazione parla la lingua del cliente. Letteralmente.',
 		metaDescription:
 			'Il modulo di prenotazione, le email e la dashboard di clickTarot Calendar sono tradotti in inglese, spagnolo, tedesco e italiano.',
 		painPoint:
 			'Un modulo di prenotazione in una lingua che il cliente non legge crea attrito proprio nel momento in cui vuoi zero attrito: subito prima che paghi.',
 		howItWorks:
-			'Il modulo di prenotazione, le email di conferma e la tua dashboard di amministrazione sono tutti tradotti — inglese, spagnolo, tedesco e italiano — e cambiano automaticamente in base alla lingua configurata sul tuo sito.',
+			'Il modulo di prenotazione, le email di conferma e la tua dashboard di amministrazione sono tutti tradotti: inglese, spagnolo, tedesco e italiano, e cambiano automaticamente in base alla lingua configurata sul tuo sito.',
 		benefit:
 			'Non ti serve un sito separato, un plugin di traduzione o uno sviluppatore per servire clienti in più lingue. È già tutto pronto.',
 	},
@@ -114,9 +114,9 @@ const it: FeatureDetailDictionary = {
 		metaDescription:
 			'clickTarot Calendar ti permette di bloccare giornate intere o singole fasce orarie in pochi secondi, così il calendario riflette sempre la tua disponibilità reale.',
 		painPoint:
-			'La tua disponibilità non è uguale ogni settimana — un ritiro, un imprevisto familiare, un martedì già pieno. Uno strumento di prenotazione che permette solo orari settimanali fissi ti costringe a rifiutare prenotazioni che non puoi onorare, oppure a scrivere a mano ai clienti per annullare.',
+			'La tua disponibilità non è uguale ogni settimana: un ritiro, un imprevisto familiare, un martedì già pieno. Uno strumento di prenotazione che permette solo orari settimanali fissi ti costringe a rifiutare prenotazioni che non puoi onorare, oppure a scrivere a mano ai clienti per annullare.',
 		howItWorks:
-			'Imposti una volta i tuoi orari di lavoro settimanali standard, poi blocchi qualsiasi giorno o fascia oraria quando qualcosa cambia — una visita medica, un workshop a cui partecipi, una settimana di pausa. Il tempo bloccato scompare semplicemente da ciò che i clienti possono prenotare, senza bisogno di cancellazioni separate.',
+			'Imposti una volta i tuoi orari di lavoro settimanali standard, poi blocchi qualsiasi giorno o fascia oraria quando qualcosa cambia: una visita medica, un workshop a cui partecipi, una settimana di pausa. Il tempo bloccato scompare semplicemente da ciò che i clienti possono prenotare, senza bisogno di cancellazioni separate.',
 		benefit:
 			'Resti tu al comando del tuo tempo, senza diventare l’amministratore a tempo pieno del tuo calendario. Blocchi quello che ti serve, in pochi click, e torni al tuo lavoro vero.',
 	},
@@ -124,13 +124,13 @@ const it: FeatureDetailDictionary = {
 		title: 'Email Automatiche Personalizzabili',
 		tagline: 'Conferme e promemoria inviati in automatico, con testo personalizzabile a tuo piacimento.',
 		metaDescription:
-			'clickTarot Calendar invia email di conferma e promemoria in automatico, con un testo scritto da te — niente messaggi generici e robotici.',
+			'clickTarot Calendar invia email di conferma e promemoria in automatico, con un testo scritto da te. Niente messaggi generici e robotici.',
 		painPoint:
 			'I clienti dimenticano gli appuntamenti. Senza un promemoria, una prenotazione dimenticata significa una fascia oraria persa e una conversazione scomoda su se addebitarla o meno. Ma molti strumenti di prenotazione saltano del tutto i promemoria, oppure mandano email così generiche da non sembrare scritte da te.',
 		howItWorks:
-			'Ogni prenotazione attiva automaticamente un’email di conferma al cliente e una notifica a te, e puoi attivare un promemoria inviato un numero configurabile di ore prima dell’appuntamento. Tutte e tre sono completamente modificabili — le scrivi con le tue parole, non con un template.',
+			'Ogni prenotazione attiva automaticamente un’email di conferma al cliente e una notifica a te, e puoi attivare un promemoria inviato un numero configurabile di ore prima dell’appuntamento. Tutte e tre sono completamente modificabili; le scrivi con le tue parole, non con un template.',
 		benefit:
-			'Meno assenze, meno messaggi dell’ultimo minuto tipo "scusa, a che ora era il mio appuntamento?", e ogni email che il cliente riceve suona davvero come se venisse da te — non da un software.',
+			'Meno assenze, meno messaggi dell’ultimo minuto tipo "scusa, a che ora era il mio appuntamento?", e ogni email che il cliente riceve suona davvero come se venisse da te, non da un software.',
 	},
 	socialLink: {
 		title: 'Link di Prenotazione Dedicato',
@@ -138,11 +138,11 @@ const it: FeatureDetailDictionary = {
 		metaDescription:
 			'Ogni servizio di clickTarot Calendar ha il proprio link pubblico di prenotazione, pronto da mettere direttamente nella bio di Instagram o TikTok.',
 		painPoint:
-			'Probabilmente la maggior parte delle tue prenotazioni parte dai social, non dalla home del tuo sito. Ma mandare chi ti segue verso una pagina di contatto generica — dove poi deve trovare il servizio giusto, scorrere e capire cosa fare — fa perdere persone che avrebbero prenotato su due piedi.',
+			'Probabilmente la maggior parte delle tue prenotazioni parte dai social, non dalla home del tuo sito. Ma mandare chi ti segue verso una pagina di contatto generica (dove poi deve trovare il servizio giusto, scorrere e capire cosa fare) fa perdere persone che avrebbero prenotato su due piedi.',
 		howItWorks:
-			'Ogni calendario che crei ottiene automaticamente un proprio link pubblico dedicato, senza nessuna pagina da progettare o pubblicare a parte. Lo metti direttamente nella bio di Instagram o TikTok, o lo condividi in un DM, e la persona atterra esattamente sul modulo di prenotazione di quel servizio specifico.',
+			'Ogni calendario che crei ottiene automaticamente un proprio link pubblico dedicato, senza nessuna pagina da progettare o pubblicare a parte. Certo, avrai il tuo shortcode per inserire il calendario nelle pagine e nei post del tuo sito, ma potrai beneficiare anche di un link dedicato immediato. Lo metti direttamente nella bio di Instagram o TikTok, o lo condividi in un DM, e la persona atterra esattamente sul modulo di prenotazione di quel servizio specifico.',
 		benefit:
-			'Il passaggio tra "qualcuno vede il tuo contenuto" e "qualcuno prenota una seduta" diventa il più breve possibile — proprio nel momento in cui l’interesse è più alto, appena dopo averti scoperto.',
+			'Il passaggio tra "qualcuno vede il tuo contenuto" e "qualcuno prenota una seduta" diventa il più breve possibile; proprio nel momento in cui l’interesse è più alto, appena dopo averti scoperto.',
 	},
 	statistics: {
 		title: 'Statistiche sugli Incassi',
@@ -150,11 +150,11 @@ const it: FeatureDetailDictionary = {
 		metaDescription:
 			'Monitora incassi mensili, prenotazioni confermate e quale servizio rende di più, direttamente nella dashboard di clickTarot Calendar.',
 		painPoint:
-			'Se gestisci i consulti come un’attività vera, devi sapere se sta davvero funzionando — quale servizio vale il tuo tempo, se questo mese è andato meglio del precedente, se una campagna coupon ha ripagato. Estrarre questi dati da un foglio di calcolo da aggiornare a mano è una fatica che quasi nessuno fa davvero.',
+			'Se gestisci i consulti come un’attività vera, devi sapere se sta davvero funzionando: quale servizio vale il tuo tempo, se questo mese è andato meglio del precedente, se una campagna coupon ha ripagato. Estrarre questi dati da un foglio di calcolo da aggiornare a mano è una fatica che quasi nessuno fa davvero.',
 		howItWorks:
-			'Ogni prenotazione confermata e ogni pagamento vengono tracciati in automatico. La tua dashboard mostra incasso totale, incasso da sedute singole rispetto ai pacchetti, prenotazioni confermate, tasso di cancellazione, un andamento mese per mese e una ripartizione per singolo calendario — nessuna contabilità manuale.',
+			'Ogni prenotazione confermata e ogni pagamento vengono tracciati in automatico. La tua dashboard mostra incasso totale, incasso da sedute singole rispetto ai pacchetti, prenotazioni confermate, tasso di cancellazione, un andamento mese per mese e una ripartizione per singolo calendario, nessuna contabilità manuale.',
 		benefit:
-			'Puoi prendere decisioni vere — alzare un prezzo, ritirare un servizio che non rende, puntare su ciò che funziona — basandoti su numeri reali invece che su una sensazione. Vale più di quanto costi il plugin da solo.',
+			'Puoi prendere decisioni vere (alzare un prezzo, ritirare un servizio che non rende, puntare su ciò che funziona) basandoti su numeri reali invece che su una sensazione. Vale più di quanto costi il plugin da solo.',
 	},
 };
 

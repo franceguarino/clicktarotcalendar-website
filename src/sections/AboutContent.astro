@@ -91,14 +91,14 @@ const a = dict.about;
 	.ct-about-bio-grid,
 	.ct-about-why-grid {
 		display: grid;
-		grid-template-columns: 280px 1fr;
+		grid-template-columns: 220px 1fr;
 		gap: 40px;
-		align-items: start;
+		align-items: center;
 		max-width: 900px;
 		margin: 0 auto;
 	}
 	.ct-about-why-grid {
-		grid-template-columns: 1fr 260px;
+		grid-template-columns: 1fr 220px;
 	}
 	.ct-about-bio-text,
 	.ct-about-why-grid .ct-about-block {
@@ -107,14 +107,13 @@ const a = dict.about;
 	}
 	.ct-about-photo img {
 		width: 100%;
-		aspect-ratio: 4 / 5;
+		height: auto;
+		aspect-ratio: 1 / 1;
 		object-fit: cover;
+		object-position: top;
 		border-radius: var(--ct-radius);
 		box-shadow: var(--ct-shadow);
 		border: 1px solid var(--ct-border);
-	}
-	.ct-about-photo-secondary {
-		align-self: center;
 	}
 	@media (max-width: 720px) {
 		.ct-about-bio-grid,
@@ -127,7 +126,7 @@ const a = dict.about;
 			gap: 24px;
 		}
 		.ct-about-photo {
-			max-width: 240px;
+			max-width: 200px;
 			margin: 0 auto;
 		}
 	}
