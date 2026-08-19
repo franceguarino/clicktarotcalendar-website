@@ -14,7 +14,7 @@ export const featureUi: FeatureUiText = {
 const it: FeatureDetailDictionary = {
 	calendar: {
 		title: 'Calendario Visuale Mensile',
-		tagline: 'Basta scambiarsi messaggi solo per trovare un’ora libera.',
+		tagline: 'Basta scambiarsi messaggi solo per trovare <span class="ct-accent">un’ora libera</span>.',
 		metaDescription:
 			'Scopri come il calendario visuale mensile di clickTarot Calendar permette ai clienti di prenotare da soli, senza messaggi avanti e indietro.',
 		painPoint:
@@ -26,7 +26,7 @@ const it: FeatureDetailDictionary = {
 	},
 	payments: {
 		title: 'Pagamenti Integrati',
-		tagline: 'Vieni pagato prima della seduta, non dopo.',
+		tagline: 'Vieni pagato <span class="ct-accent">prima</span> della seduta, non dopo.',
 		metaDescription:
 			'Pagamenti PayPal e Stripe integrati in clickTarot Calendar: il cliente paga alla prenotazione, il denaro arriva sul tuo account.',
 		painPoint:
@@ -38,7 +38,7 @@ const it: FeatureDetailDictionary = {
 	},
 	invoicing: {
 		title: 'Dati di Fatturazione Automatici',
-		tagline: 'I dati fiscali che ti servono sono già nella tua dashboard.',
+		tagline: 'I dati fiscali che ti servono sono <span class="ct-accent">già</span> nella tua dashboard.',
 		metaDescription:
 			'clickTarot Calendar raccoglie automaticamente codice fiscale/partita IVA e indirizzo alla prenotazione, per fatturare senza lavoro extra.',
 		painPoint:
@@ -50,7 +50,7 @@ const it: FeatureDetailDictionary = {
 	},
 	packages: {
 		title: 'Pacchetti Prepagati',
-		tagline: 'Vendi tre sedute oggi, lascia che prenoti la terza a marzo.',
+		tagline: 'Vendi tre sedute <span class="ct-accent">oggi</span>, lascia che prenoti la terza a marzo.',
 		metaDescription:
 			'Vendi pacchetti prepagati multi-sessione con clickTarot Calendar: un pagamento, il cliente prenota le sedute quando vuole.',
 		painPoint:
@@ -62,7 +62,7 @@ const it: FeatureDetailDictionary = {
 	},
 	coupons: {
 		title: 'Codici Sconto',
-		tagline: 'Fai una vera promozione senza fare i conti a mente al checkout.',
+		tagline: 'Fai una <span class="ct-accent">vera</span> promozione senza fare i conti a mente al checkout.',
 		metaDescription:
 			'Crea codici sconto percentuali o fissi in clickTarot Calendar, pronti per la tua prossima promozione sui social.',
 		painPoint:
@@ -74,7 +74,7 @@ const it: FeatureDetailDictionary = {
 	},
 	reschedule: {
 		title: 'Riprogrammazione e Cancellazione Autonoma',
-		tagline: 'Lascia che i clienti spostino da soli l’appuntamento; non devi fare da segretaria al loro calendario.',
+		tagline: 'Lascia che i clienti spostino <span class="ct-accent">da soli</span> l’appuntamento; non devi fare da segretaria al loro calendario.',
 		metaDescription:
 			'Lascia che i clienti riprogrammino o cancellino da soli l’appuntamento dall’email di conferma, senza scriverti.',
 		painPoint:
@@ -86,7 +86,7 @@ const it: FeatureDetailDictionary = {
 	},
 	international: {
 		title: 'Fatturazione per Clienti Internazionali',
-		tagline: 'Un solo modulo, corretto sia per un cliente a Roma che per uno a Berlino.',
+		tagline: '<span class="ct-accent">Un solo modulo</span>, corretto sia per un cliente a Roma che per uno a Berlino.',
 		metaDescription:
 			'clickTarot Calendar adatta automaticamente i campi di fatturazione per i clienti fuori dall’Italia: partita IVA, CAP libero e altro.',
 		painPoint:
@@ -98,7 +98,7 @@ const it: FeatureDetailDictionary = {
 	},
 	multilingual: {
 		title: 'Plugin Multilingua',
-		tagline: 'Il tuo modulo di prenotazione parla la lingua del cliente. Letteralmente.',
+		tagline: 'Il tuo modulo di prenotazione parla la lingua del cliente. <span class="ct-accent">Letteralmente.</span>',
 		metaDescription:
 			'Il modulo di prenotazione, le email e la dashboard di clickTarot Calendar sono tradotti in inglese, spagnolo, tedesco e italiano.',
 		painPoint:
@@ -110,7 +110,7 @@ const it: FeatureDetailDictionary = {
 	},
 	availability: {
 		title: 'Gestione Disponibilità Flessibile',
-		tagline: 'Blocca giornate intere o singole fasce orarie ogni volta che ti serve.',
+		tagline: 'Blocca giornate intere o singole fasce orarie <span class="ct-accent">ogni volta che ti serve</span>.',
 		metaDescription:
 			'clickTarot Calendar ti permette di bloccare giornate intere o singole fasce orarie in pochi secondi, così il calendario riflette sempre la tua disponibilità reale.',
 		painPoint:
@@ -122,7 +122,7 @@ const it: FeatureDetailDictionary = {
 	},
 	notifications: {
 		title: 'Email Automatiche Personalizzabili',
-		tagline: 'Conferme e promemoria inviati in automatico, con testo personalizzabile a tuo piacimento.',
+		tagline: 'Conferme e promemoria inviati in automatico, con testo personalizzabile <span class="ct-accent">a tuo piacimento</span>.',
 		metaDescription:
 			'clickTarot Calendar invia email di conferma e promemoria in automatico, con un testo scritto da te. Niente messaggi generici e robotici.',
 		painPoint:
@@ -134,7 +134,7 @@ const it: FeatureDetailDictionary = {
 	},
 	socialLink: {
 		title: 'Link di Prenotazione Dedicato',
-		tagline: 'Un link pubblico pronto per la bio di Instagram o TikTok, senza dover creare nessuna pagina.',
+		tagline: 'Un link pubblico pronto per la bio di Instagram o TikTok, <span class="ct-accent">senza dover creare nessuna pagina</span>.',
 		metaDescription:
 			'Ogni servizio di clickTarot Calendar ha il proprio link pubblico di prenotazione, pronto da mettere direttamente nella bio di Instagram o TikTok.',
 		painPoint:
@@ -146,7 +146,7 @@ const it: FeatureDetailDictionary = {
 	},
 	statistics: {
 		title: 'Statistiche sugli Incassi',
-		tagline: 'Guarda quanto guadagni ogni mese e quale servizio va meglio, direttamente in dashboard.',
+		tagline: 'Guarda quanto guadagni ogni mese e quale servizio va meglio, <span class="ct-accent">direttamente in dashboard</span>.',
 		metaDescription:
 			'Monitora incassi mensili, prenotazioni confermate e quale servizio rende di più, direttamente nella dashboard di clickTarot Calendar.',
 		painPoint:

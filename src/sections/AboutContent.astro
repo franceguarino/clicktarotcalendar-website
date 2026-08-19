@@ -14,7 +14,7 @@ const a = dict.about;
 <section class="ct-section ct-about-hero">
 	<div class="ct-container ct-about-head">
 		<p class="ct-eyebrow">{a.eyebrow}</p>
-		<h1>{a.title}</h1>
+		<h1 set:html={a.title} />
 		<p class="ct-hint ct-about-subtitle">{a.subtitle}</p>
 	</div>
 </section>

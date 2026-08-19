@@ -141,6 +141,10 @@ img {
 	margin: 0 0 10px;
 }
 
+.ct-accent {
+	color: var(--ct-primary);
+}
+
 .ct-hint {
 	color: var(--ct-ink-soft);
 	font-size: 15px;

@@ -14,13 +14,13 @@ const en: Dictionary = {
 	},
 	hero: {
 		eyebrow: 'The plugin for people who sell consultations, not people who sell software',
-		title: 'Stop chasing clients on Instagram. Make them book with you instead.',
+		title: 'Stop chasing clients on Instagram. Make them <span class="ct-accent">book</span> with you instead.',
 		subtitle:
 			'Every message you answer late is a client booking somewhere else. clickTarot Calendar turns your site into a studio that never closes: the client picks a date, a time, and pays on their own; you just get the notification.',
 		imageAlt: 'A client booking a consultation over the phone',
 	},
 	features: {
-		title: 'Everything you need to stop losing clients',
+		title: 'Everything you need to stop losing <span class="ct-accent">clients</span>',
 		items: [
 			{
 				title: '📅 Visual monthly calendar',
@@ -93,13 +93,13 @@ const en: Dictionary = {
 		],
 	},
 	audience: {
-		title: 'You’re not a corporation. Why should your booking tool treat you like one?',
+		title: 'You’re not a <span class="ct-accent">corporation</span>. Why should your booking tool treat you like one?',
 		body:
 			'Tarot readers, astrologers, holistic counselors and personal growth professionals: clickTarot Calendar handles exactly the workflow you need as a single practitioner taking clients online or in person, without the complexity of a tool built for corporate teams you’ll never be.',
 	},
 	pricing: {
 		eyebrow: 'Simple pricing',
-		title: 'One plan, every feature',
+		title: 'One plan, every <span class="ct-accent">feature</span>',
 		subtitle: 'No feature locked behind a pricier plan, no per-seat pricing: every plan includes everything you actually need. Just pick how you’d rather pay.',
 		planName: 'clickTarot Calendar',
 		priceNote: 'Every feature included, updates and support on every plan',
@@ -204,7 +204,7 @@ const en: Dictionary = {
 	},
 	about: {
 		eyebrow: 'About',
-		title: 'I’m not a company. I’m one of you, and I got sick of looking for a tool that didn’t exist.',
+		title: 'I’m not a company. I’m <span class="ct-accent">one of you</span>, and I got sick of looking for a tool that didn’t exist.',
 		subtitle:
 			'clickTarot Calendar wasn’t built in a marketing office. It was built out of a real problem, mine, and a job I do every day.',
 		bioTitle: 'Who I am',

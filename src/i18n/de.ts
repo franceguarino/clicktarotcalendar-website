@@ -14,13 +14,13 @@ const de: Dictionary = {
 	},
 	hero: {
 		eyebrow: 'Das Plugin für alle, die Beratungen verkaufen, nicht Software',
-		title: 'Schluss mit Nachrichten hin und her auf Instagram: Lass Kund:innen direkt bei dir buchen.',
+		title: 'Schluss mit Nachrichten hin und her auf Instagram: Lass Kund:innen direkt bei dir <span class="ct-accent">buchen</span>.',
 		subtitle:
 			'Jede Nachricht, die du erst spät beantwortest, ist eine Buchung, die woanders landet. clickTarot Calendar macht aus deiner Website ein Studio, das nie schließt: Kund:innen wählen Datum und Uhrzeit und bezahlen selbstständig, du bekommst nur die Benachrichtigung.',
 		imageAlt: 'Eine Kundin bucht eine Beratung am Telefon',
 	},
 	features: {
-		title: 'Alles, was du brauchst, um keine Kund:innen mehr zu verlieren',
+		title: 'Alles, was du brauchst, um keine <span class="ct-accent">Kund:innen</span> mehr zu verlieren',
 		items: [
 			{
 				title: '📅 Visueller Monatskalender',
@@ -93,13 +93,13 @@ const de: Dictionary = {
 		],
 	},
 	audience: {
-		title: 'Du bist kein Konzern. Warum sollte dein Buchungstool dich wie einen behandeln?',
+		title: 'Du bist kein <span class="ct-accent">Konzern</span>. Warum sollte dein Buchungstool dich wie einen behandeln?',
 		body:
 			'Kartenleger:innen, Astrolog:innen, ganzheitliche Coaches und Fachleute für persönliche Weiterentwicklung: clickTarot Calendar deckt genau den Ablauf ab, den du als einzelne Beraterin mit Online- oder Präsenzterminen brauchst, ohne die Komplexität eines Tools, das für Unternehmensteams gebaut wurde, die du nie sein wirst.',
 	},
 	pricing: {
 		eyebrow: 'Einfache Preise',
-		title: 'Ein Plan, alle Funktionen',
+		title: 'Ein Plan, alle <span class="ct-accent">Funktionen</span>',
 		subtitle: 'Keine Funktion hinter einem teureren Plan versteckt, keine Kosten pro Nutzer: Jeder Plan enthält alles, was du wirklich brauchst. Wähl einfach die Zahlungsweise, die zu dir passt.',
 		planName: 'clickTarot Calendar',
 		priceNote: 'Alle Funktionen inklusive, Updates und Support bei jedem Plan',
@@ -204,7 +204,7 @@ const de: Dictionary = {
 	},
 	about: {
 		eyebrow: 'Über mich',
-		title: 'Ich bin kein Unternehmen. Ich bin einer von euch, und ich hatte es satt, nach einem Tool zu suchen, das es nicht gab.',
+		title: 'Ich bin kein Unternehmen. Ich bin <span class="ct-accent">einer von euch</span>, und ich hatte es satt, nach einem Tool zu suchen, das es nicht gab.',
 		subtitle: 'clickTarot Calendar wurde nicht in einer Marketingabteilung entwickelt. Es entstand aus einem echten Problem, meinem, und aus einer Arbeit, die ich jeden Tag mache.',
 		bioTitle: 'Wer ich bin',
 		photoAlt: 'Francesco Guarino bei der Arbeit mit einem Tarot-de-Marseille-Kartendeck',

@@ -15,7 +15,7 @@ const dict = getDictionary(locale);
 	<div class="ct-container ct-hero-grid">
 		<div>
 			<p class="ct-eyebrow">{dict.hero.eyebrow}</p>
-			<h1>{dict.hero.title}</h1>
+			<h1 set:html={dict.hero.title} />
 			<p class="ct-hero-subtitle">{dict.hero.subtitle}</p>
 			<div class="ct-hero-actions">
 				<CtaButton href={CHECKOUT_URL} external>{dict.pricing.ctaLabel}</CtaButton>
@@ -29,7 +29,7 @@ const dict = getDictionary(locale);
 
 <section class="ct-section">
 	<div class="ct-container">
-		<h2>{dict.features.title}</h2>
+		<h2 set:html={dict.features.title} />
 		<div class="ct-features-grid">
 			{dict.features.items.map((item, i) => (
 				<FeatureCard
@@ -61,14 +61,14 @@ const dict = getDictionary(locale);
 
 <section class="ct-section">
 	<div class="ct-container ct-audience">
-		<h2>{dict.audience.title}</h2>
+		<h2 set:html={dict.audience.title} />
 		<p class="ct-hint">{dict.audience.body}</p>
 	</div>
 </section>
 
 <section class="ct-section ct-section-alt">
 	<div class="ct-container ct-final-cta">
-		<h2>{dict.pricing.title}</h2>
+		<h2 set:html={dict.pricing.title} />
 		<p class="ct-hint">{dict.pricing.subtitle}</p>
 		<CtaButton href={CHECKOUT_URL} external>{dict.pricing.ctaLabel}</CtaButton>
 	</div>

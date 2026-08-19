@@ -14,13 +14,13 @@ const it: Dictionary = {
 	},
 	hero: {
 		eyebrow: 'Il plugin per chi vende consulti, non per chi vende software',
-		title: 'Smetti di rincorrere clienti su Instagram. Fai in modo che siano loro a prenotare da te.',
+		title: 'Smetti di rincorrere clienti su Instagram. Fai in modo che siano loro a <span class="ct-accent">prenotare</span> da te.',
 		subtitle:
 			'Ogni messaggio a cui rispondi in ritardo è un cliente che prenota altrove. clickTarot Calendar trasforma il tuo sito in uno studio aperto ventiquattr’ore su ventiquattro: il cliente sceglie data, ora e paga in autonomia; tu ricevi solo la notifica.',
 		imageAlt: 'Una cliente prenota una consulenza al telefono',
 	},
 	features: {
-		title: 'Tutto quello che ti serve per non perdere più un cliente',
+		title: 'Tutto quello che ti serve per non perdere più un <span class="ct-accent">cliente</span>',
 		items: [
 			{
 				title: '📅 Calendario visuale a vista mensile',
@@ -93,13 +93,13 @@ const it: Dictionary = {
 		],
 	},
 	audience: {
-		title: 'Non sei un’azienda. Perché il tuo strumento di prenotazione dovrebbe trattarti come tale?',
+		title: 'Non sei un’<span class="ct-accent">azienda</span>. Perché il tuo strumento di prenotazione dovrebbe trattarti come tale?',
 		body:
 			'Tarologi, astrologi, counselor olistici e professionisti della crescita personale: clickTarot Calendar gestisce esattamente i flussi di cui hai bisogno tu, un singolo professionista che riceve clienti online o in presenza, senza le complicazioni di un tool pensato per progetti immensi, ma che sarà pieno di bug e roba che non userai mai!',
 	},
 	pricing: {
 		eyebrow: 'Prezzo semplice',
-		title: 'Un solo piano, tutte le funzionalità',
+		title: 'Un solo piano, tutte le <span class="ct-accent">funzionalità</span>',
 		subtitle: 'Niente funzionalità bloccate dietro un piano più caro, niente costo per utente aggiuntivo: ogni piano include tutto quello che serve davvero. Scegli solo come preferisci pagare.',
 		planName: 'clickTarot Calendar',
 		priceNote: 'Tutte le funzionalità incluse, aggiornamenti e supporto su ogni piano',
@@ -204,7 +204,7 @@ const it: Dictionary = {
 	},
 	about: {
 		eyebrow: 'Chi siamo',
-		title: 'Non sono un’azienda. Sono uno di voi, e mi sono rotto le scatole di cercare uno strumento che non esisteva.',
+		title: 'Non sono un’azienda. Sono <span class="ct-accent">uno di voi</span>, e mi sono rotto le scatole di cercare uno strumento che non esisteva.',
 		subtitle: 'clickTarot Calendar non nasce in un ufficio marketing. Nasce da un problema vero, il mio, e da un lavoro che faccio ogni giorno.',
 		bioTitle: 'Chi sono',
 		photoAlt: 'Francesco Guarino al lavoro con un mazzo di Tarocchi di Marsiglia',

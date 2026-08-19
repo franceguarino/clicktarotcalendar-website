@@ -18,7 +18,7 @@ const otherKeys = featureKeys.filter((k) => k !== featureKey);
 	<div class="ct-container ct-feature-head">
 		<p class="ct-eyebrow">{ui.eyebrow}</p>
 		<h1>{detail.title}</h1>
-		<p class="ct-hint ct-feature-tagline">{detail.tagline}</p>
+		<p class="ct-hint ct-feature-tagline" set:html={detail.tagline} />
 	</div>
 </section>
 

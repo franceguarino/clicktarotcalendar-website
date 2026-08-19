@@ -7,6 +7,6 @@ const locale = 'de' as const;
 const dict = getDictionary(locale);
 const schema = [softwareApplicationSchema(locale, dict.meta.title, dict.meta.description)];
 ---
-<BaseLayout locale={locale} page="pricing" title={`${dict.pricing.title} — clickTarot Calendar`} description={dict.pricing.subtitle} schema={schema}>
+<BaseLayout locale={locale} page="pricing" title={`${dict.pricing.title.replace(/<[^>]+>/g, '')} — clickTarot Calendar`} description={dict.pricing.subtitle} schema={schema}>
 	<PricingContent locale={locale} />
 </BaseLayout>

@@ -12,7 +12,7 @@ const dict = getDictionary(locale);
 <section class="ct-section">
 	<div class="ct-container ct-pricing-head">
 		<p class="ct-eyebrow">{dict.pricing.eyebrow}</p>
-		<h1>{dict.pricing.title}</h1>
+		<h1 set:html={dict.pricing.title} />
 		<p class="ct-hint">{dict.pricing.subtitle}</p>
 	</div>
 
