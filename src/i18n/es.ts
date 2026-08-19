@@ -17,6 +17,7 @@ const es: Dictionary = {
 		title: 'Deja de perseguir clientes por Instagram. Haz que sean ellos quienes reserven contigo.',
 		subtitle:
 			'Cada mensaje que respondes tarde es un cliente que reserva en otro sitio. clickTarot Calendar convierte tu web en un estudio que nunca cierra: el cliente elige día, hora y paga por su cuenta; tú solo recibes la notificación.',
+		imageAlt: 'Una clienta reservando una consulta por teléfono',
 	},
 	features: {
 		title: 'Todo lo que necesitas para dejar de perder clientes',

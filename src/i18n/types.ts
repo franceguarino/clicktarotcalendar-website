@@ -13,6 +13,7 @@ export interface Dictionary {
 		eyebrow: string;
 		title: string;
 		subtitle: string;
+		imageAlt: string;
 	};
 	features: {
 		title: string;

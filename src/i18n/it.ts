@@ -17,6 +17,7 @@ const it: Dictionary = {
 		title: 'Smetti di rincorrere clienti su Instagram. Fai in modo che siano loro a prenotare da te.',
 		subtitle:
 			'Ogni messaggio a cui rispondi in ritardo è un cliente che prenota altrove. clickTarot Calendar trasforma il tuo sito in uno studio aperto ventiquattr’ore su ventiquattro: il cliente sceglie data, ora e paga in autonomia; tu ricevi solo la notifica.',
+		imageAlt: 'Una cliente prenota una consulenza al telefono',
 	},
 	features: {
 		title: 'Tutto quello che ti serve per non perdere più un cliente',

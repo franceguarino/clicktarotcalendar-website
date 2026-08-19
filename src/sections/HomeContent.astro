@@ -10,7 +10,6 @@ interface Props {
 }
 const { locale } = Astro.props;
 const dict = getDictionary(locale);
-const heroScreenshot = dict.screenshots.items.find((s) => s.src.includes('screenshot-1')) ?? dict.screenshots.items[0];
 ---
 <section class="ct-section ct-hero">
 	<div class="ct-container ct-hero-grid">
@@ -23,7 +22,7 @@ const heroScreenshot = dict.screenshots.items.find((s) => s.src.includes('screen
 			</div>
 		</div>
 		<div class="ct-hero-image">
-			<img src={heroScreenshot.src} alt={heroScreenshot.alt} />
+			<img src="/hero-customer.png" alt={dict.hero.imageAlt} />
 		</div>
 	</div>
 </section>

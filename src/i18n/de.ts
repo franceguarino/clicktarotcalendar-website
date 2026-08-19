@@ -17,6 +17,7 @@ const de: Dictionary = {
 		title: 'Schluss mit Nachrichten hin und her auf Instagram: Lass Kund:innen direkt bei dir buchen.',
 		subtitle:
 			'Jede Nachricht, die du erst spät beantwortest, ist eine Buchung, die woanders landet. clickTarot Calendar macht aus deiner Website ein Studio, das nie schließt: Kund:innen wählen Datum und Uhrzeit und bezahlen selbstständig, du bekommst nur die Benachrichtigung.',
+		imageAlt: 'Eine Kundin bucht eine Beratung am Telefon',
 	},
 	features: {
 		title: 'Alles, was du brauchst, um keine Kund:innen mehr zu verlieren',

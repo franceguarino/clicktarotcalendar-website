@@ -17,6 +17,7 @@ const en: Dictionary = {
 		title: 'Stop chasing clients on Instagram. Make them book with you instead.',
 		subtitle:
 			'Every message you answer late is a client booking somewhere else. clickTarot Calendar turns your site into a studio that never closes: the client picks a date, a time, and pays on their own; you just get the notification.',
+		imageAlt: 'A client booking a consultation over the phone',
 	},
 	features: {
 		title: 'Everything you need to stop losing clients',
