@@ -16,7 +16,7 @@ const it: Dictionary = {
 		eyebrow: 'Il plugin per chi vende consulti, non per chi vende software',
 		title: 'Smetti di rincorrere clienti su Instagram. Fai in modo che siano loro a prenotare da te.',
 		subtitle:
-			'Ogni messaggio a cui rispondi in ritardo è un cliente che prenota altrove. clickTarot Calendar trasforma il tuo sito in uno studio aperto ventiquattr’ore su ventiquattro: il cliente sceglie data, ora e paga da solo; tu ricevi solo la notifica.',
+			'Ogni messaggio a cui rispondi in ritardo è un cliente che prenota altrove. clickTarot Calendar trasforma il tuo sito in uno studio aperto ventiquattr’ore su ventiquattro: il cliente sceglie data, ora e paga in autonomia; tu ricevi solo la notifica.',
 	},
 	features: {
 		title: 'Tutto quello che ti serve per non perdere più un cliente',
@@ -74,15 +74,27 @@ const it: Dictionary = {
 	screenshots: {
 		title: 'Come funziona, in pratica',
 		items: [
-			{ src: '/screenshots/screenshot-1.png', alt: 'Calendario di prenotazione pubblico con vista mensile e fasce orarie' },
-			{ src: '/screenshots/screenshot-2.png', alt: 'Pannello Calendari per creare e personalizzare i tuoi servizi' },
-			{ src: '/screenshots/screenshot-3.png', alt: 'Dashboard Statistiche con incassi e andamento mensile' },
+			{
+				src: '/screenshots/screenshot-2.png',
+				alt: 'Pannello Calendari per creare e personalizzare i tuoi servizi',
+				caption: 'Crea il tuo prodotto e organizza l’agenda',
+			},
+			{
+				src: '/screenshots/screenshot-1.png',
+				alt: 'Calendario di prenotazione pubblico con vista mensile e fasce orarie',
+				caption: 'Condividi il tuo calendario per ricevere prenotazioni e pagamenti',
+			},
+			{
+				src: '/screenshots/screenshot-3.png',
+				alt: 'Dashboard Statistiche con incassi e andamento mensile',
+				caption: 'Controlla le statistiche per vedere cosa va e cosa non va',
+			},
 		],
 	},
 	audience: {
 		title: 'Non sei un’azienda. Perché il tuo strumento di prenotazione dovrebbe trattarti come tale?',
 		body:
-			'Tarologi, astrologi, counselor olistici e professionisti della crescita personale: clickTarot Calendar gestisce esattamente i flussi di cui hai bisogno tu, un singolo professionista che riceve clienti online o in presenza, senza le complicazioni di un tool pensato per team aziendali che non sarai mai.',
+			'Tarologi, astrologi, counselor olistici e professionisti della crescita personale: clickTarot Calendar gestisce esattamente i flussi di cui hai bisogno tu, un singolo professionista che riceve clienti online o in presenza, senza le complicazioni di un tool pensato per progetti immensi, ma che sarà pieno di bug e roba che non userai mai!',
 	},
 	pricing: {
 		eyebrow: 'Prezzo semplice',

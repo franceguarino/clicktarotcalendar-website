@@ -74,9 +74,21 @@ const en: Dictionary = {
 	screenshots: {
 		title: 'How it works, in practice',
 		items: [
-			{ src: '/screenshots/screenshot-1.png', alt: 'Public booking calendar with monthly view and time slots' },
-			{ src: '/screenshots/screenshot-2.png', alt: 'Calendars panel to create and customize your services' },
-			{ src: '/screenshots/screenshot-3.png', alt: 'Statistics dashboard with revenue and monthly trends' },
+			{
+				src: '/screenshots/screenshot-2.png',
+				alt: 'Calendars panel to create and customize your services',
+				caption: 'Set up your service and organize your schedule',
+			},
+			{
+				src: '/screenshots/screenshot-1.png',
+				alt: 'Public booking calendar with monthly view and time slots',
+				caption: 'Share your calendar to start receiving bookings and payments',
+			},
+			{
+				src: '/screenshots/screenshot-3.png',
+				alt: 'Statistics dashboard with revenue and monthly trends',
+				caption: 'Check your stats to see what works and what doesn’t',
+			},
 		],
 	},
 	audience: {

@@ -74,9 +74,21 @@ const es: Dictionary = {
 	screenshots: {
 		title: 'Cómo funciona, en la práctica',
 		items: [
-			{ src: '/screenshots/screenshot-1.png', alt: 'Calendario de reservas público con vista mensual y franjas horarias' },
-			{ src: '/screenshots/screenshot-2.png', alt: 'Panel Calendarios para crear y personalizar tus servicios' },
-			{ src: '/screenshots/screenshot-3.png', alt: 'Panel Estadísticas con ingresos y evolución mensual' },
+			{
+				src: '/screenshots/screenshot-2.png',
+				alt: 'Panel Calendarios para crear y personalizar tus servicios',
+				caption: 'Crea tu producto y organiza tu agenda',
+			},
+			{
+				src: '/screenshots/screenshot-1.png',
+				alt: 'Calendario de reservas público con vista mensual y franjas horarias',
+				caption: 'Comparte tu calendario para recibir reservas y pagos',
+			},
+			{
+				src: '/screenshots/screenshot-3.png',
+				alt: 'Panel Estadísticas con ingresos y evolución mensual',
+				caption: 'Consulta tus estadísticas para ver qué funciona y qué no',
+			},
 		],
 	},
 	audience: {

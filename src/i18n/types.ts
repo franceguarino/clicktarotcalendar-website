@@ -20,7 +20,7 @@ export interface Dictionary {
 	};
 	screenshots: {
 		title: string;
-		items: { src: string; alt: string }[];
+		items: { src: string; alt: string; caption: string }[];
 	};
 	audience: {
 		title: string;

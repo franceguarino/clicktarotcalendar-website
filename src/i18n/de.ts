@@ -74,9 +74,21 @@ const de: Dictionary = {
 	screenshots: {
 		title: 'So funktioniert es in der Praxis',
 		items: [
-			{ src: '/screenshots/screenshot-1.png', alt: 'Öffentlicher Buchungskalender mit Monatsansicht und Zeitfenstern' },
-			{ src: '/screenshots/screenshot-2.png', alt: 'Kalender-Panel zum Erstellen und Anpassen deiner Leistungen' },
-			{ src: '/screenshots/screenshot-3.png', alt: 'Statistik-Dashboard mit Umsätzen und monatlichem Verlauf' },
+			{
+				src: '/screenshots/screenshot-2.png',
+				alt: 'Kalender-Panel zum Erstellen und Anpassen deiner Leistungen',
+				caption: 'Richte deine Leistung ein und organisiere deinen Terminplan',
+			},
+			{
+				src: '/screenshots/screenshot-1.png',
+				alt: 'Öffentlicher Buchungskalender mit Monatsansicht und Zeitfenstern',
+				caption: 'Teile deinen Kalender und erhalte Buchungen und Zahlungen',
+			},
+			{
+				src: '/screenshots/screenshot-3.png',
+				alt: 'Statistik-Dashboard mit Umsätzen und monatlichem Verlauf',
+				caption: 'Behalte deine Zahlen im Blick und sieh, was funktioniert',
+			},
 		],
 	},
 	audience: {
