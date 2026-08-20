@@ -70,6 +70,14 @@ const it: Dictionary = {
 				title: '📊 Statistiche sugli incassi',
 				description: 'Guarda quanto guadagni ogni mese e quale servizio va meglio, in numeri veri, non a sensazione.',
 			},
+			{
+				title: '🗓️ Aggiungi al calendario',
+				description: 'Il cliente riceve un link nell’email di conferma che aggiunge l’appuntamento al suo calendario in un tocco: iPhone, Google, Outlook.',
+			},
+			{
+				title: '📥 Esportazione CSV',
+				description: 'Scarica tutte le prenotazioni in un file pronto per Excel o per il tuo commercialista, senza limiti di riga.',
+			},
 		],
 	},
 	screenshots: {

@@ -70,6 +70,14 @@ const de: Dictionary = {
 				title: '📊 Umsatzstatistiken',
 				description: 'Sieh direkt im Dashboard, was du jeden Monat verdienst und welcher Service am besten läuft, mit echten Zahlen statt Bauchgefühl.',
 			},
+			{
+				title: '🗓️ Zum Kalender hinzufügen',
+				description: 'Kund:innen erhalten in der Bestätigungs-E-Mail einen Link, der den Termin mit einem Klick zu ihrem Kalender hinzufügt: iPhone, Google, Outlook.',
+			},
+			{
+				title: '📥 CSV-Export',
+				description: 'Lade alle Buchungen in eine Datei herunter, bereit für Excel oder deine Steuerberatung, ohne Zeilenlimit.',
+			},
 		],
 	},
 	screenshots: {

@@ -116,7 +116,7 @@ const es: FeatureDetailDictionary = {
 		painPoint:
 			'Tu disponibilidad no es igual cada semana: un retiro, una urgencia familiar, un martes ya completo. Una herramienta de reservas que solo permite horarios semanales fijos te obliga a rechazar reservas que no puedes cumplir, o a escribir a mano a los clientes para cancelar.',
 		howItWorks:
-			'Configuras una vez tus horarios de trabajo semanales habituales, y luego bloqueas cualquier día o franja horaria cuando algo cambia: una cita médica, un taller al que asistes, una semana libre. El tiempo bloqueado simplemente desaparece de lo que los clientes pueden reservar, sin necesidad de cancelaciones aparte.',
+			'Configuras una vez tus horarios de trabajo semanales habituales, y luego bloqueas cualquier día o franja horaria cuando algo cambia: una cita médica, un taller al que asistes, una semana libre. El tiempo bloqueado simplemente desaparece de lo que los clientes pueden reservar, sin necesidad de cancelaciones aparte. Para una ausencia más larga, como unas vacaciones, no hace falta bloquear día por día: indicas una fecha de inicio y una de fin, y todos los días laborables de ese intervalo se bloquean automáticamente.',
 		benefit:
 			'Sigues teniendo el control de tu propio tiempo, sin convertirte en la administradora a tiempo completo de tu calendario. Bloqueas lo que necesitas, en unos clics, y vuelves a tu trabajo de verdad.',
 	},
@@ -155,6 +155,30 @@ const es: FeatureDetailDictionary = {
 			'Cada reserva confirmada y cada pago se registran automáticamente. Tu panel muestra los ingresos totales, ingresos por sesiones sueltas frente a bonos, reservas confirmadas, tu tasa de cancelación, una tendencia mes a mes y un desglose por cada calendario, sin contabilidad manual.',
 		benefit:
 			'Puedes tomar decisiones reales (subir un precio, retirar un servicio que no rinde, apostar por lo que funciona) basándote en números reales en vez de una intuición. Eso vale más de lo que cuesta el plugin por sí solo.',
+	},
+	addToCalendar: {
+		title: 'Añadir al Calendario',
+		tagline: 'El recordatorio que el cliente se añade solo, <span class="ct-accent">con un toque</span>.',
+		metaDescription:
+			'clickTarot Calendar añade un enlace "Añadir al calendario" en el email de confirmación: un archivo .ics universal más un enlace directo a Google Calendar.',
+		painPoint:
+			'Una cita confirmada que el cliente no anota en ningún sitio es una cita fácil de olvidar, sobre todo si se reservó con semanas de antelación. El resultado es un cliente que no aparece: una silla vacía que podrías haber vendido a otra persona.',
+		howItWorks:
+			'Cada email de confirmación y de recordatorio incluye un enlace "Añadir al calendario": un archivo .ics que funciona con cualquier app de calendario (iPhone/Calendario de Apple, Outlook, Google), más un segundo enlace directo para quien usa Google Calendar. Un clic, y la cita ya está en su calendario.',
+		benefit:
+			'Menos citas olvidadas, menos mensajes de última hora tipo "¿era hoy mi consulta?", menos sillas vacías que nadie pagó. Un detalle pequeño que solo se nota cuando falta.',
+	},
+	csvExport: {
+		title: 'Exportación CSV de Reservas',
+		tagline: 'Todos tus ingresos, <span class="ct-accent">listos para tu gestoría</span>.',
+		metaDescription:
+			'Exporta todas tus reservas a un archivo CSV listo para Excel o para tu gestoría, sin límite de filas.',
+		painPoint:
+			'¿Reconstruyes a mano, a fin de mes, cuánto has ganado, de qué clientes, con qué cupones aplicados? Copiar números de una pantalla a una hoja de cálculo es el tipo de tarea que aplazas hasta que se convierte en un problema más grande, como la declaración de la renta.',
+		howItWorks:
+			'Un botón "Exportar CSV" en la página de Reservas descarga todos los datos de facturación, contacto y pago de las reservas que cumplen los filtros elegidos (calendario, estado), sin el límite de filas de la vista en pantalla. Lo abres en Excel, Google Sheets, o se lo pasas directamente a tu gestoría.',
+		benefit:
+			'La contabilidad deja de ser un trabajo de copiar a mano. Un archivo, todos los números que necesitas, listo cuando lo necesitas, no solo una vez al año.',
 	},
 };
 

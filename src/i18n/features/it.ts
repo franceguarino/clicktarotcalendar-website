@@ -116,7 +116,7 @@ const it: FeatureDetailDictionary = {
 		painPoint:
 			'La tua disponibilità non è uguale ogni settimana: un ritiro, un imprevisto familiare, un martedì già pieno. Uno strumento di prenotazione che permette solo orari settimanali fissi ti costringe a rifiutare prenotazioni che non puoi onorare, oppure a scrivere a mano ai clienti per annullare.',
 		howItWorks:
-			'Imposti una volta i tuoi orari di lavoro settimanali standard, poi blocchi qualsiasi giorno o fascia oraria quando qualcosa cambia: una visita medica, un workshop a cui partecipi, una settimana di pausa. Il tempo bloccato scompare semplicemente da ciò che i clienti possono prenotare, senza bisogno di cancellazioni separate.',
+			'Imposti una volta i tuoi orari di lavoro settimanali standard, poi blocchi qualsiasi giorno o fascia oraria quando qualcosa cambia: una visita medica, un workshop a cui partecipi, una settimana di pausa. Il tempo bloccato scompare semplicemente da ciò che i clienti possono prenotare, senza bisogno di cancellazioni separate. Per un’assenza più lunga, come una vacanza, non serve bloccare giorno per giorno: indichi la data di inizio e quella di fine, e il sistema blocca in automatico tutte le giornate lavorative comprese nell’intervallo.',
 		benefit:
 			'Resti tu al comando del tuo tempo, senza diventare l’amministratore a tempo pieno del tuo calendario. Blocchi quello che ti serve, in pochi click, e torni al tuo lavoro vero.',
 	},
@@ -155,6 +155,30 @@ const it: FeatureDetailDictionary = {
 			'Ogni prenotazione confermata e ogni pagamento vengono tracciati in automatico. La tua dashboard mostra incasso totale, incasso da sedute singole rispetto ai pacchetti, prenotazioni confermate, tasso di cancellazione, un andamento mese per mese e una ripartizione per singolo calendario, nessuna contabilità manuale.',
 		benefit:
 			'Puoi prendere decisioni vere (alzare un prezzo, ritirare un servizio che non rende, puntare su ciò che funziona) basandoti su numeri reali invece che su una sensazione. Vale più di quanto costi il plugin da solo.',
+	},
+	addToCalendar: {
+		title: 'Aggiungi al Calendario',
+		tagline: 'Il cliente se lo aggiunge da solo, <span class="ct-accent">con un tocco</span>.',
+		metaDescription:
+			'clickTarot Calendar aggiunge un link "Aggiungi al calendario" nell’email di conferma: file .ics universale più un link diretto per Google Calendar.',
+		painPoint:
+			'Un appuntamento confermato via email che il cliente non trascrive da nessuna parte è un appuntamento che si dimentica facilmente, soprattutto se prenotato con settimane di anticipo. Il risultato è un no-show: una sedia vuota che potevi vendere a qualcun altro.',
+		howItWorks:
+			'Ogni email di conferma e di promemoria include un link "Aggiungi al calendario": un file .ics che funziona con qualunque app di calendario (iPhone/Apple Calendar, Outlook, Google), più un secondo link diretto pensato per chi usa Google Calendar. Il cliente clicca una volta, e l’appuntamento è già segnato.',
+		benefit:
+			'Meno dimenticanze, meno "scusa, a che ora era la mia consulenza?" all’ultimo minuto, meno sedie vuote che nessuno ha pagato. Un dettaglio piccolo, che si nota solo quando manca.',
+	},
+	csvExport: {
+		title: 'Esportazione CSV delle Prenotazioni',
+		tagline: 'Tutti i tuoi incassi, <span class="ct-accent">pronti per il commercialista</span>.',
+		metaDescription:
+			'Esporta tutte le tue prenotazioni in un file CSV pronto per Excel o per il tuo commercialista, senza limiti di riga.',
+		painPoint:
+			'A fine mese ricostruisci a mano quanto hai incassato, da quali clienti, con quali coupon applicati? Copiare numeri da uno schermo a un foglio di calcolo è il tipo di lavoro che rimandi finché non diventa un problema più grande, tipo la dichiarazione dei redditi.',
+		howItWorks:
+			'Un bottone "Esporta CSV" nella pagina Prenotazioni scarica in un file tutti i dati di fatturazione, contatto e pagamento delle prenotazioni che rispettano i filtri scelti (calendario, stato), senza il limite di righe della vista a schermo. Lo apri in Excel, Google Sheets, o lo giri direttamente al tuo commercialista.',
+		benefit:
+			'La contabilità smette di essere un lavoro di ricopiatura manuale. Un file, tutti i dati che ti servono, pronto quando ti serve, non solo a fine anno.',
 	},
 };
 

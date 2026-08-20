@@ -70,6 +70,14 @@ const es: Dictionary = {
 				title: '📊 Estadísticas de ingresos',
 				description: 'Mira cuánto ganas cada mes y qué servicio funciona mejor, con números reales, no a ojo.',
 			},
+			{
+				title: '🗓️ Añadir al calendario',
+				description: 'El cliente recibe un enlace en el email de confirmación que añade la cita a su calendario con un toque: iPhone, Google, Outlook.',
+			},
+			{
+				title: '📥 Exportación CSV',
+				description: 'Descarga todas las reservas en un archivo listo para Excel o para tu gestoría, sin límite de filas.',
+			},
 		],
 	},
 	screenshots: {

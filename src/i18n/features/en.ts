@@ -116,7 +116,7 @@ const en: FeatureDetailDictionary = {
 		painPoint:
 			"Your availability doesn't look the same every week: a retreat, a family emergency, a fully booked Tuesday. A booking tool that only lets you set fixed weekly hours forces you to either turn away bookings you can't honor, or manually message clients to cancel.",
 		howItWorks:
-			"Set your regular weekly working hours once, then block off any single day or time slot whenever something changes: a doctor's appointment, a workshop you're attending, a week off. Blocked time simply disappears from what clients can book, with no separate cancellation step.",
+			"Set your regular weekly working hours once, then block off any single day or time slot whenever something changes: a doctor's appointment, a workshop you're attending, a week off. Blocked time simply disappears from what clients can book, with no separate cancellation step. For a longer absence, like a holiday, you don't need to block day by day: enter a start date and an end date, and every working day in that range gets blocked automatically.",
 		benefit:
 			"You stay in control of your own time without becoming your calendar's full-time administrator. Block what you need to block, in a few clicks, and get back to your actual work.",
 	},
@@ -155,6 +155,30 @@ const en: FeatureDetailDictionary = {
 			'Every confirmed booking and payment is tracked automatically. Your dashboard shows total revenue, revenue from single sessions versus packages, confirmed bookings, your cancellation rate, a month-by-month trend, and a breakdown by individual calendar; no manual bookkeeping required.',
 		benefit:
 			"You can make real decisions (raise a price, retire an underperforming service, double down on what's working) based on actual numbers instead of a gut feeling. That's worth more than the plugin costs on its own.",
+	},
+	addToCalendar: {
+		title: 'Add to Calendar',
+		tagline: 'The reminder your client adds themselves, <span class="ct-accent">in one tap</span>.',
+		metaDescription:
+			'clickTarot Calendar adds an "Add to calendar" link to the confirmation email: a universal .ics file plus a direct Google Calendar link.',
+		painPoint:
+			"A confirmed appointment that the client never writes down anywhere is an appointment that's easy to forget, especially if it was booked weeks in advance. The result is a no-show: an empty chair you could have sold to someone else.",
+		howItWorks:
+			'Every confirmation and reminder email includes an "Add to calendar" link: an .ics file that works with any calendar app (iPhone/Apple Calendar, Outlook, Google), plus a second direct link for anyone who uses Google Calendar. One click, and the appointment is already on their calendar.',
+		benefit:
+			'Fewer forgotten appointments, fewer last-minute "wait, was my session today?" messages, fewer empty chairs nobody paid for. A small detail that only gets noticed when it’s missing.',
+	},
+	csvExport: {
+		title: 'Booking CSV Export',
+		tagline: 'All your revenue, <span class="ct-accent">ready for your accountant</span>.',
+		metaDescription:
+			'Export all your bookings into a CSV file ready for Excel or your accountant, with no row limit.',
+		painPoint:
+			'Do you rebuild by hand, at the end of every month, how much you earned and from which clients, with which coupons applied? Copying numbers from a screen into a spreadsheet is the kind of task you put off until it turns into a bigger problem, like your tax return.',
+		howItWorks:
+			'An "Export CSV" button on the Bookings page downloads every billing, contact and payment detail for the bookings matching your chosen filters (calendar, status), with no row limit like the on-screen view has. Open it in Excel, Google Sheets, or hand it straight to your accountant.',
+		benefit:
+			"Bookkeeping stops being manual copy work. One file, every number you need, ready whenever you need it, not just once a year.",
 	},
 };
 

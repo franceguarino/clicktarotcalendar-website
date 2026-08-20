@@ -116,7 +116,7 @@ const de: FeatureDetailDictionary = {
 		painPoint:
 			'Deine Verfügbarkeit sieht nicht jede Woche gleich aus: ein Retreat, ein familiärer Notfall, ein bereits voller Dienstag. Ein Buchungstool, das nur feste wöchentliche Zeiten erlaubt, zwingt dich entweder dazu, Buchungen abzulehnen, die du nicht einhalten kannst, oder Kund:innen manuell anzuschreiben, um abzusagen.',
 		howItWorks:
-			'Du legst deine regulären wöchentlichen Arbeitszeiten einmal fest und blockierst dann jeden einzelnen Tag oder Zeitraum, sobald sich etwas ändert: ein Arzttermin, ein Workshop, eine freie Woche. Blockierte Zeit verschwindet einfach aus dem, was Kund:innen buchen können, ganz ohne separate Stornierung.',
+			'Du legst deine regulären wöchentlichen Arbeitszeiten einmal fest und blockierst dann jeden einzelnen Tag oder Zeitraum, sobald sich etwas ändert: ein Arzttermin, ein Workshop, eine freie Woche. Blockierte Zeit verschwindet einfach aus dem, was Kund:innen buchen können, ganz ohne separate Stornierung. Für eine längere Abwesenheit, etwa Urlaub, musst du nicht Tag für Tag blockieren: Start- und Enddatum eingeben, und alle Arbeitstage in diesem Zeitraum werden automatisch blockiert.',
 		benefit:
 			'Du behältst die Kontrolle über deine eigene Zeit, ohne zur Vollzeit-Verwalterin deines Kalenders zu werden. Blockiere, was du blockieren musst, in wenigen Klicks, und widme dich wieder deiner eigentlichen Arbeit.',
 	},
@@ -155,6 +155,30 @@ const de: FeatureDetailDictionary = {
 			'Jede bestätigte Buchung und Zahlung wird automatisch erfasst. Dein Dashboard zeigt Gesamtumsatz, Umsatz aus Einzelsitzungen gegenüber Paketen, bestätigte Buchungen, deine Stornoquote, einen Monat-für-Monat-Trend und eine Aufschlüsselung nach einzelnem Kalender; ganz ohne manuelle Buchhaltung.',
 		benefit:
 			'Du kannst echte Entscheidungen treffen (einen Preis erhöhen, einen schwach laufenden Service einstellen, auf das setzen, was funktioniert) basierend auf echten Zahlen statt auf einem Bauchgefühl. Das ist mehr wert, als das Plugin selbst kostet.',
+	},
+	addToCalendar: {
+		title: 'Zum Kalender hinzufügen',
+		tagline: 'Die Erinnerung, die sich deine Kundschaft <span class="ct-accent">mit einem Klick</span> selbst einträgt.',
+		metaDescription:
+			'clickTarot Calendar fügt der Bestätigungs-E-Mail einen Link „Zum Kalender hinzufügen" hinzu: eine universelle .ics-Datei plus ein direkter Link zu Google Kalender.',
+		painPoint:
+			'Ein bestätigter Termin, den sich niemand irgendwo notiert, wird leicht vergessen, besonders wenn er Wochen im Voraus gebucht wurde. Das Ergebnis: ein verpasster Termin, ein leerer Platz, den du an jemand anderen hättest verkaufen können.',
+		howItWorks:
+			'Jede Bestätigungs- und Erinnerungs-E-Mail enthält einen Link „Zum Kalender hinzufügen": eine .ics-Datei, die mit jeder Kalender-App funktioniert (iPhone/Apple Kalender, Outlook, Google), dazu ein zweiter direkter Link für alle, die Google Kalender nutzen. Ein Klick, und der Termin steht bereits im Kalender.',
+		benefit:
+			'Weniger vergessene Termine, weniger Last-Minute-Nachrichten wie „Moment, war mein Termin heute?", weniger leere Plätze, die niemand bezahlt hat. Ein kleines Detail, das man erst bemerkt, wenn es fehlt.',
+	},
+	csvExport: {
+		title: 'CSV-Export der Buchungen',
+		tagline: 'Alle Umsätze, <span class="ct-accent">fertig für die Steuerberatung</span>.',
+		metaDescription:
+			'Exportiere alle Buchungen in eine CSV-Datei, bereit für Excel oder deine Steuerberatung, ohne Zeilenlimit.',
+		painPoint:
+			'Rekonstruierst du am Monatsende von Hand, was du eingenommen hast, von welchen Kund:innen, mit welchen Gutscheinen? Zahlen vom Bildschirm in eine Tabelle abzutippen ist genau die Art Aufgabe, die man aufschiebt, bis sie zu einem größeren Problem wird, etwa zur Steuererklärung.',
+		howItWorks:
+			'Ein Button „CSV exportieren" auf der Seite Buchungen lädt alle Rechnungs-, Kontakt- und Zahlungsdaten der Buchungen herunter, die deinen gewählten Filtern entsprechen (Kalender, Status), ohne das Zeilenlimit der Bildschirmansicht. Öffne die Datei in Excel, Google Sheets, oder gib sie direkt an deine Steuerberatung weiter.',
+		benefit:
+			'Buchhaltung ist keine manuelle Abtipparbeit mehr. Eine Datei, alle Zahlen, die du brauchst, verfügbar, wann immer du sie brauchst, nicht nur einmal im Jahr.',
 	},
 };
 

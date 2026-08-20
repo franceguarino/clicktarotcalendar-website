@@ -11,6 +11,8 @@ export const featureKeys = [
 	'notifications',
 	'socialLink',
 	'statistics',
+	'addToCalendar',
+	'csvExport',
 ] as const;
 export type FeatureKey = (typeof featureKeys)[number];
 
@@ -29,6 +31,8 @@ export const featureSlugs: Record<FeatureKey, string> = {
 	notifications: 'automatic-email-notifications',
 	socialLink: 'dedicated-booking-link',
 	statistics: 'revenue-statistics',
+	addToCalendar: 'add-to-calendar',
+	csvExport: 'csv-export',
 };
 
 export interface FeatureDetail {
