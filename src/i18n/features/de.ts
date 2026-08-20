@@ -44,7 +44,7 @@ const de: FeatureDetailDictionary = {
 		painPoint:
 			'Eine Rechnung zu stellen bedeutet meist, dem Kunden im Nachhinein zu schreiben und nach Steuernummer und Rechnungsadresse zu fragen, und auf die Antwort zu warten, bevor du überhaupt abrechnen kannst.',
 		howItWorks:
-			'Steuernummer (bzw. USt-IdNr. außerhalb Italiens) und Rechnungsadresse sind Pflichtfelder im Buchungsformular selbst. Sobald der Termin bestätigt ist, steht alles, was du für die Rechnung brauchst, bereits bei der Buchung.',
+			'Steuernummer/USt-IdNr. und Rechnungsadresse sind Pflichtfelder im Buchungsformular selbst, automatisch passend zum Land deiner Kundschaft. Sobald der Termin bestätigt ist, steht alles, was du für die Rechnung brauchst, bereits bei der Buchung.',
 		benefit:
 			'Kein Hin und Her für den Papierkram. Wenn du das als echtes Business betreibst, und wer für Software bezahlt, tut das meist, sollte korrekte Rechnungsstellung nicht der Teil sein, der dich ausbremst.',
 	},
@@ -88,13 +88,13 @@ const de: FeatureDetailDictionary = {
 		title: 'Abrechnung für internationale Kund:innen',
 		tagline: '<span class="ct-accent">Ein Formular</span>, korrekt für Kund:innen in Rom genauso wie in Berlin.',
 		metaDescription:
-			'clickTarot Calendar passt die Rechnungsfelder für Kund:innen außerhalb Italiens automatisch an: USt-IdNr., freie Postleitzahl und mehr.',
+			'clickTarot Calendar passt die Rechnungsfelder automatisch an das Land deiner Kundschaft an: USt-IdNr., Postleitzahlformat und mehr, egal woher sie kommen.',
 		painPoint:
 			'Rechnungsfelder, die nur für ein Land ausgelegt sind (italienische Steuernummer, italienisches Postleitzahlformat) funktionieren für Kund:innen im Ausland entweder nicht, oder erfassen still falsche, unbrauchbare Daten.',
 		howItWorks:
-			'Eine Länderauswahl im Buchungsformular passt die Felder automatisch an: Für Italien bleiben die Standardfelder Steuernummer, PLZ und Provinz; für jedes andere Land wechselt es zu optionaler USt-IdNr./Steuernummer, frei formatierbarer Postleitzahl und frei einzugebendem Bundesland oder Region.',
+			'Eine Länderauswahl im Buchungsformular zeigt automatisch die passenden Felder für das Land deiner Kundschaft: USt-IdNr./Steuernummer, Postleitzahl und Bundesland oder Region, angepasst an das, was dieses Land tatsächlich verlangt. Italien ist die eine Ausnahme mit einem strengeren, eigenen Format (feste Steuernummer, PLZ und Provinz), und auch das übernimmt das Formular automatisch.',
 		benefit:
-			'Du kannst überall Ja zu einem Kunden sagen, ohne Workaround. Wenn du eine internationale Praxis aufbaust, oder bereits hast; ist das der Unterschied zwischen einem Formular, das für alle funktioniert, und einem, das jeden außerhalb Italiens still abweist.',
+			'Du kannst überall Ja zu einem Kunden sagen, ohne Workaround. Wenn du eine internationale Praxis aufbaust, oder bereits hast; ist das der Unterschied zwischen einem Formular, das wirklich für alle funktioniert, und einem, das jeden still abweist, für dessen Land es einfach nicht gebaut wurde.',
 	},
 	multilingual: {
 		title: 'Mehrsprachiges Plugin',

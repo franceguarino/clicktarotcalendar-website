@@ -48,7 +48,7 @@ const en: Dictionary = {
 			},
 			{
 				title: '🌍 Billing for international customers too',
-				description: 'A Country selector on the form: VAT number/Tax ID, postal code and state adapt automatically outside Italy.',
+				description: 'A country selector on the form shows the right fields for wherever your client is billing from: VAT number/Tax ID, postal code and state, all adapted automatically.',
 			},
 			{
 				title: '🌐 Multilingual plugin',
@@ -95,7 +95,7 @@ const en: Dictionary = {
 	audience: {
 		title: 'You’re not a <span class="ct-accent">corporation</span>. Why should your booking tool treat you like one?',
 		body:
-			'Tarot readers, astrologers, holistic counselors and personal growth professionals: clickTarot Calendar handles exactly the workflow you need as a single practitioner taking clients online or in person, without the complexity of a tool built for corporate teams you’ll never be.',
+			'Tarot readers, astrologers, holistic counselors and personal growth professionals: clickTarot Calendar handles exactly the workflow you need as a single practitioner taking clients online or in person, without the complexity of a tool built for massive projects, one that’ll be full of bugs and stuff you’ll never use!',
 	},
 	pricing: {
 		eyebrow: 'Simple pricing',
@@ -142,7 +142,7 @@ const en: Dictionary = {
 			},
 			{
 				q: 'Does the billing form adapt for clients in different countries?',
-				a: 'Yes, a country selector adapts the billing fields automatically: the standard Tax Code, postal code and province fields for Italy, and a VAT number/Tax ID with a free-format postal code and region for every other country. The whole plugin is also available in English, Spanish, German and Italian.',
+				a: 'Yes, a country selector adapts the billing fields automatically to wherever your client is: a VAT number/Tax ID with a free-format postal code and region for most countries, and Italy’s own Tax Code, postal code and province format when that’s who you’re billing. The whole plugin is also available in English, Spanish, German and Italian.',
 			},
 			{
 				q: 'Is my data and my customers’ data safe?',

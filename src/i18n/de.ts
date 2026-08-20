@@ -48,7 +48,7 @@ const de: Dictionary = {
 			},
 			{
 				title: '🌍 Rechnungsstellung auch für internationale Kunden',
-				description: 'Länderauswahl im Formular: USt-IdNr./Steuer-ID, Postleitzahl und Bundesland passen sich außerhalb Italiens automatisch an.',
+				description: 'Länderauswahl im Formular: USt-IdNr./Steuer-ID, Postleitzahl und Bundesland passen sich automatisch an das Land deiner Kundschaft an.',
 			},
 			{
 				title: '🌐 Mehrsprachiges Plugin',
@@ -95,7 +95,7 @@ const de: Dictionary = {
 	audience: {
 		title: 'Du bist kein <span class="ct-accent">Konzern</span>. Warum sollte dein Buchungstool dich wie einen behandeln?',
 		body:
-			'Kartenleger:innen, Astrolog:innen, ganzheitliche Coaches und Fachleute für persönliche Weiterentwicklung: clickTarot Calendar deckt genau den Ablauf ab, den du als einzelne Beraterin mit Online- oder Präsenzterminen brauchst, ohne die Komplexität eines Tools, das für Unternehmensteams gebaut wurde, die du nie sein wirst.',
+			'Kartenleger:innen, Astrolog:innen, ganzheitliche Coaches und Fachleute für persönliche Weiterentwicklung: clickTarot Calendar deckt genau den Ablauf ab, den du als einzelne Beraterin mit Online- oder Präsenzterminen brauchst, ohne die Komplexität eines Tools, das für riesige Projekte gebaut wurde, aber voller Bugs und Kram steckt, den du nie benutzen wirst!',
 	},
 	pricing: {
 		eyebrow: 'Einfache Preise',
@@ -142,7 +142,7 @@ const de: Dictionary = {
 			},
 			{
 				q: 'Passt sich das Rechnungsformular für Kund:innen aus verschiedenen Ländern an?',
-				a: 'Ja, eine Länderauswahl passt die Felder automatisch an: die Standardfelder Steuernummer, Postleitzahl und Provinz für Italien, und eine USt-IdNr./Steuer-ID mit freiem Postleitzahlformat und Region für jedes andere Land. Das gesamte Plugin ist außerdem auf Deutsch, Englisch, Spanisch und Italienisch verfügbar.',
+				a: 'Ja, eine Länderauswahl passt die Felder automatisch an das Land deiner Kundschaft an: eine USt-IdNr./Steuer-ID mit freiem Postleitzahlformat und Region für die meisten Länder, und Italiens eigenes Format mit Steuernummer, Postleitzahl und Provinz, wenn du dorthin abrechnest. Das gesamte Plugin ist außerdem auf Deutsch, Englisch, Spanisch und Italienisch verfügbar.',
 			},
 			{
 				q: 'Sind meine Daten und die meiner Kunden sicher?',

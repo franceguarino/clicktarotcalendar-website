@@ -48,7 +48,7 @@ const es: Dictionary = {
 			},
 			{
 				title: '🌍 Facturación también para clientes internacionales',
-				description: 'Selector de país en el formulario: NIF/IVA, código postal y provincia se adaptan solos fuera de Italia.',
+				description: 'Selector de país en el formulario: NIF/IVA, código postal y provincia se adaptan solos al país de cada cliente.',
 			},
 			{
 				title: '🌐 Plugin multilingüe',
@@ -95,7 +95,7 @@ const es: Dictionary = {
 	audience: {
 		title: 'No eres una <span class="ct-accent">empresa</span>. ¿Por qué tu herramienta de reservas debería tratarte como si lo fueras?',
 		body:
-			'Tarotistas, astrólogos, counselors holísticos y profesionales del crecimiento personal: clickTarot Calendar gestiona exactamente el flujo que necesitas como profesional individual que atiende clientes online o presencialmente, sin la complejidad de una herramienta pensada para equipos corporativos que nunca serás.',
+			'Tarotistas, astrólogos, counselors holísticos y profesionales del crecimiento personal: clickTarot Calendar gestiona exactamente el flujo que necesitas como profesional individual que atiende clientes online o presencialmente, sin la complejidad de una herramienta pensada para proyectos enormes, ¡pero que estará llena de errores y cosas que nunca usarás!',
 	},
 	pricing: {
 		eyebrow: 'Precio sencillo',
@@ -142,7 +142,7 @@ const es: Dictionary = {
 			},
 			{
 				q: '¿El formulario de facturación se adapta a clientes de distintos países?',
-				a: 'Sí, un selector de país adapta los campos automáticamente: los campos estándar de Código Fiscal, código postal y provincia para Italia, y un NIF/número de IVA con código postal en formato libre y región para cualquier otro país. Todo el plugin está disponible además en español, inglés, alemán e italiano.',
+				a: 'Sí, un selector de país adapta los campos automáticamente al país de tu cliente: un NIF/número de IVA con código postal en formato libre y región para la mayoría de países, y el formato propio de Italia (Código Fiscal, código postal y provincia) cuando factures allí. Todo el plugin está disponible además en español, inglés, alemán e italiano.',
 			},
 			{
 				q: '¿Mis datos y los de mis clientes están seguros?',

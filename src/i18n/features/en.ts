@@ -44,7 +44,7 @@ const en: FeatureDetailDictionary = {
 		painPoint:
 			"Issuing an invoice usually means emailing the client afterward to ask for their tax ID and billing address, then waiting for a reply before you can actually bill them.",
 		howItWorks:
-			"Tax ID (or VAT number outside Italy) and billing address are required fields in the booking form itself. By the time the appointment is confirmed, everything you need to invoice is already recorded next to the booking.",
+			'Tax ID/VAT number and billing address are required fields in the booking form itself, automatically matched to your client’s country. By the time the appointment is confirmed, everything you need to invoice is already recorded next to the booking.',
 		benefit:
 			"No back-and-forth for paperwork. If you're running this as a real business, and if you're paying for software, you probably are; proper invoicing shouldn't be the part that slows you down.",
 	},
@@ -88,13 +88,13 @@ const en: FeatureDetailDictionary = {
 		title: 'Billing for International Customers',
 		tagline: '<span class="ct-accent">One form</span>, correct for a client in Rome and a client in Berlin.',
 		metaDescription:
-			'clickTarot Calendar adapts its billing fields automatically for clients outside Italy: VAT/Tax ID, free-format postal code and more.',
+			'clickTarot Calendar automatically adapts its billing fields to your client’s country: VAT/Tax ID, postal code format and more, wherever they’re based.',
 		painPoint:
 			"Billing fields built for only one country (an Italian Tax Code, an Italian postal code format) either don't work for a client abroad, or quietly collect wrong, unusable data from them.",
 		howItWorks:
-			"A country selector on the booking form adapts the fields automatically: Italy keeps the standard Tax Code, ZIP and province fields; every other country switches to an optional VAT/Tax ID, a free-format postal code, and a free-text state or province.",
+			'A country selector on the booking form shows the right fields automatically for wherever your client is billing from: a VAT number/Tax ID, postal code and state or region, matched to what that country actually requires. Italy is the one exception, with its own stricter format (a specific Tax Code, ZIP and province), and the form handles that automatically too.',
 		benefit:
-			"You can say yes to a client anywhere without a workaround. If you're building an international practice, or already have one; this is the difference between a form that works for everyone and one that quietly turns away anyone outside Italy.",
+			'You can say yes to a client anywhere without a workaround. If you’re building an international practice, or already have one; this is the difference between a form that works for everyone, everywhere, and one that quietly turns away anyone whose country it wasn’t built for.',
 	},
 	multilingual: {
 		title: 'Multilingual Plugin',

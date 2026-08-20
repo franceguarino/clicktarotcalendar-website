@@ -44,7 +44,7 @@ const es: FeatureDetailDictionary = {
 		painPoint:
 			'Emitir una factura suele significar escribir al cliente después para pedirle el NIF y la dirección de facturación, y esperar la respuesta antes de poder facturar de verdad.',
 		howItWorks:
-			'El NIF (o número de IVA fuera de Italia) y la dirección de facturación son campos obligatorios en el propio formulario de reserva. Cuando la cita queda confirmada, todo lo que necesitas para facturar ya está registrado junto a la reserva.',
+			'El NIF/número de IVA y la dirección de facturación son campos obligatorios en el propio formulario de reserva, adaptados automáticamente al país de tu cliente. Cuando la cita queda confirmada, todo lo que necesitas para facturar ya está registrado junto a la reserva.',
 		benefit:
 			'Sin idas y vueltas para el papeleo. Si lo llevas como un negocio de verdad (y si pagas por un software probablemente sea así) facturar correctamente no debería ser la parte que te frena.',
 	},
@@ -88,13 +88,13 @@ const es: FeatureDetailDictionary = {
 		title: 'Facturación para Clientes Internacionales',
 		tagline: '<span class="ct-accent">Un solo formulario</span>, correcto tanto para un cliente en Roma como en Berlín.',
 		metaDescription:
-			'clickTarot Calendar adapta los campos de facturación automáticamente para clientes fuera de Italia: NIF/IVA, código postal libre y más.',
+			'clickTarot Calendar adapta los campos de facturación automáticamente al país de tu cliente: NIF/IVA, formato de código postal y más, venga de donde venga.',
 		painPoint:
 			'Los campos de facturación pensados solo para un país (NIF italiano, formato de código postal italiano) o no funcionan para un cliente en el extranjero, o recogen silenciosamente datos erróneos o inutilizables.',
 		howItWorks:
-			'Un selector de país en el formulario de reserva adapta los campos automáticamente: para Italia se mantienen los campos estándar de NIF, código postal y provincia; para cualquier otro país cambia a NIF/IVA opcional, código postal en formato libre y provincia o región en texto libre.',
+			'Un selector de país en el formulario de reserva muestra automáticamente los campos correctos para el país de tu cliente: NIF/IVA, código postal y provincia o región, ajustados a lo que ese país realmente exige. Italia es la única excepción, con un formato propio más estricto (Código Fiscal, código postal y provincia fijos), y el formulario también lo gestiona solo.',
 		benefit:
-			'Puedes decir sí a un cliente en cualquier parte, sin soluciones improvisadas. Si estás construyendo una clientela internacional (o ya la tienes) esta es la diferencia entre un formulario que funciona para todos y uno que silenciosamente rechaza a quien está fuera de Italia.',
+			'Puedes decir sí a un cliente en cualquier parte, sin soluciones improvisadas. Si estás construyendo una clientela internacional (o ya la tienes) esta es la diferencia entre un formulario que funciona de verdad para todos y uno que silenciosamente rechaza a quien viene de un país para el que no fue pensado.',
 	},
 	multilingual: {
 		title: 'Plugin Multilingüe',
