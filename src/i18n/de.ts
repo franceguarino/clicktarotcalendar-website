@@ -78,6 +78,22 @@ const de: Dictionary = {
 				title: '📥 CSV-Export',
 				description: 'Lade alle Buchungen in eine Datei herunter, bereit für Excel oder deine Steuerberatung, ohne Zeilenlimit.',
 			},
+			{
+				title: '🏖️ Ganzen Zeitraum mit einem Klick blockieren',
+				description: 'Blockiere einen kompletten Datumsbereich auf einmal, nicht Tag für Tag: Urlaub und Pausen in Sekunden erledigt.',
+			},
+			{
+				title: '📁 Mehrere Kalender, einer pro Service',
+				description: 'Erstelle für jeden Service einen eigenen Kalender mit eigenem Preis, eigener Dauer und eigenen Zeiten: kein Einheitsformular für alles.',
+			},
+			{
+				title: '🎨 Anpassbare Farbe',
+				description: 'Der Kalender übernimmt mit einem Klick die Farbe deiner Marke: er fügt sich in deine Website ein, statt wie ein fremdes Widget zu wirken.',
+			},
+			{
+				title: '🚀 Geführte Einrichtung',
+				description: 'Keine technischen Kenntnisse nötig: folge der Schritt-für-Schritt-Anleitung, und dein Kalender ist in wenigen Minuten startklar.',
+			},
 		],
 	},
 	screenshots: {

@@ -78,6 +78,22 @@ const it: Dictionary = {
 				title: '📥 Esportazione CSV',
 				description: 'Scarica tutte le prenotazioni in un file pronto per Excel o per il tuo commercialista, senza limiti di riga.',
 			},
+			{
+				title: '🏖️ Blocco ferie in un click',
+				description: 'Blocca un intero intervallo di date in un colpo solo, non un giorno alla volta: ferie e pause gestite in pochi secondi.',
+			},
+			{
+				title: '📁 Più calendari, un servizio ciascuno',
+				description: 'Crea un calendario per ogni servizio che offri, ognuno con il proprio prezzo, durata e orari: niente form unico per tutto.',
+			},
+			{
+				title: '🎨 Colore personalizzabile',
+				description: 'Il calendario prende il colore del tuo brand in un click: si integra nel tuo sito, non sembra un widget esterno.',
+			},
+			{
+				title: '🚀 Installazione guidata',
+				description: 'Nessuna competenza tecnica richiesta: segui la guida passo passo e il tuo calendario è pronto in pochi minuti.',
+			},
 		],
 	},
 	screenshots: {

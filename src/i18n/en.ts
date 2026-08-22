@@ -78,6 +78,22 @@ const en: Dictionary = {
 				title: '📥 CSV export',
 				description: 'Download every booking into a file ready for Excel or your accountant, with no row limit.',
 			},
+			{
+				title: '🏖️ Block off a whole period in one click',
+				description: 'Block an entire date range at once, not one day at a time: vacations and breaks handled in seconds.',
+			},
+			{
+				title: '📁 Multiple calendars, one per service',
+				description: 'Create a calendar for each service you offer, each with its own price, duration and hours: no one-size-fits-all form.',
+			},
+			{
+				title: '🎨 Customizable color',
+				description: 'The calendar takes on your brand color in one click: it blends into your site instead of looking like a bolted-on widget.',
+			},
+			{
+				title: '🚀 Guided setup',
+				description: 'No tech skills required: follow the step-by-step guide and your calendar is ready in minutes.',
+			},
 		],
 	},
 	screenshots: {

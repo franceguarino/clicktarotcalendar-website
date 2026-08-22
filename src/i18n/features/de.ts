@@ -180,6 +180,54 @@ const de: FeatureDetailDictionary = {
 		benefit:
 			'Buchhaltung ist keine manuelle Abtipparbeit mehr. Eine Datei, alle Zahlen, die du brauchst, verfügbar, wann immer du sie brauchst, nicht nur einmal im Jahr.',
 	},
+	vacationBlock: {
+		title: 'Ganzen Zeitraum mit einem Klick blockieren',
+		tagline: 'Fahr in den Urlaub, <span class="ct-accent">ohne deinen Buchungskalender mitzunehmen</span>.',
+		metaDescription:
+			'Blockiere mit clickTarot Calendar einen ganzen Urlaubs- oder Pausenzeitraum auf einmal, statt jeden Tag einzeln zu sperren.',
+		painPoint:
+			'Bevor du für zwei Wochen in den Urlaub fährst, ist das Letzte, was du willst, den Kalender zu öffnen und vierzehn Tage einzeln zu blockieren – mit dem Risiko, einen zu vergessen und nach der Rückkehr eine Buchung vorzufinden, die du nicht einhalten kannst.',
+		howItWorks:
+			'Im Verfügbarkeits-Panel wählst du ein Start- und ein Enddatum: Das Plugin blockiert automatisch alle Arbeitstage in diesem Zeitraum, in einem einzigen Schritt. In dieser Zeit kann keine Buchung eingehen, und wenn du zurück bist, läuft dein Kalender genau dort weiter, wo du aufgehört hast.',
+		benefit:
+			'Du bist im Urlaub wirklich abgeschaltet, ohne vorher noch den Kalender prüfen oder korrigieren zu müssen. Was früher Minuten gedauert hat, ist jetzt ein einziger Klick.',
+	},
+	multiCalendar: {
+		title: 'Mehrere Kalender, einer pro Service',
+		tagline: 'Ein eigener Kalender für <span class="ct-accent">jeden Service, den du anbietest</span>, mit eigenen Regeln.',
+		metaDescription:
+			'Erstelle mit clickTarot Calendar separate Kalender für jeden Service: eigener Preis, eigene Dauer und eigene Zeiten für jeden Einzelnen, ohne Kompromisse.',
+		painPoint:
+			'Nicht alle deine Services sind gleich: Eine kurze Lesung dauert 20 Minuten, eine Beratungssitzung eine Stunde; die eine kostet 30€, die andere 90€. Ein einziger Kalender mit festem Preis und fester Dauer zwingt dich, einen der beiden Services zu benachteiligen.',
+		howItWorks:
+			'Du erstellst für jeden Service einen eigenen Kalender, jeweils mit eigenem Preis, eigener Dauer und eigenen Verfügbarkeitszeiten. Jeder Kalender bekommt seinen eigenen Shortcode und seinen eigenen öffentlichen Link, sodass du sie einzeln bewerben oder alle zusammen auf derselben Seite zeigen kannst.',
+		benefit:
+			'Du bietest genau die Services an, die du willst, jeder richtig eingerichtet, statt alles in ein einziges Formular zu zwingen, das für keinen so richtig passt.',
+	},
+	customColor: {
+		title: 'Anpassbare Farbe',
+		tagline: 'Der Kalender übernimmt <span class="ct-accent">die Farben deiner Marke</span>, nicht die eines generischen Plugins.',
+		metaDescription:
+			'Passe die Farbe deines clickTarot-Calendar-Buchungswidgets mit einem Klick an, damit es wie ein Teil deiner Website aussieht, nicht wie ein aufgesetztes Plugin.',
+		painPoint:
+			'Ein Buchungsformular in den Standardfarben eines Plugins fällt inmitten deiner restlichen Website unangenehm auf und untergräbt Vertrauen genau in dem Moment, in dem dein Kunde gleich bezahlen will.',
+		howItWorks:
+			'In den Kalendereinstellungen wählst du deine Hauptfarbe: Buttons, ausgewählte Tage und andere visuelle Details passen sich automatisch an deine Palette an, ganz ohne CSS.',
+		benefit:
+			'Der Kalender wirkt, als wäre er für deine Website gebaut worden, nicht draufgeklebt. Ein kleines Detail, das Kund:innen bemerken, auch wenn sie nicht sagen könnten, warum sie mehr Vertrauen haben.',
+	},
+	guidedSetup: {
+		title: 'Geführte Einrichtung',
+		tagline: 'Vom ersten Kalender zur ersten Buchung <span class="ct-accent">in wenigen Minuten</span>, ganz ohne Entwickler.',
+		metaDescription:
+			'clickTarot Calendar richtet sich ohne technische Kenntnisse ein: Eine Schritt-für-Schritt-Anleitung führt dich durch alles.',
+		painPoint:
+			'Viele Buchungsplugins brauchen stundenlange Konfiguration, technische Dokumentation zum Durchlesen oder eine Entwicklerin, die du nur dafür bezahlst, damit überhaupt ein funktionierender Kalender auf deiner Website erscheint.',
+		howItWorks:
+			'Nach der Aktivierung des Plugins führt dich eine integrierte Anleitung Schritt für Schritt: erstelle deinen ersten Kalender, verbinde die Zahlungen, kopiere den Shortcode auf die richtige Seite. Dieselbe Anleitung findest du jederzeit unter clickTarot → Hilfe, falls du sie noch einmal nachlesen willst.',
+		benefit:
+			'Du kommst von der Installation zur ersten echten Buchung in wenigen Minuten, nicht an einem ganzen Nachmittag, und ohne jemanden um Hilfe bitten zu müssen.',
+	},
 };
 
 export default de;
