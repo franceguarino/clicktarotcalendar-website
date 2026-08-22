@@ -180,6 +180,54 @@ const en: FeatureDetailDictionary = {
 		benefit:
 			"Bookkeeping stops being manual copy work. One file, every number you need, ready whenever you need it, not just once a year.",
 	},
+	vacationBlock: {
+		title: 'Block Time Off in One Click',
+		tagline: 'Go on vacation <span class="ct-accent">without dragging your booking calendar along</span>.',
+		metaDescription:
+			'Block off an entire vacation or break period at once with clickTarot Calendar, without closing every single day one by one.',
+		painPoint:
+			"Before leaving for two weeks off, the last thing you want to do is open the calendar and block fourteen days one at a time, risking missing one and coming back to a booking you can't honor.",
+		howItWorks:
+			"From the Availability panel, pick a start date and an end date: the plugin automatically blocks every working day in that range, in a single step. No booking can land in that period, and when you're back, your calendar picks up right where you left it.",
+		benefit:
+			'You actually disconnect on vacation, without worrying about checking or fixing the calendar before you leave. What used to take minutes now takes one click.',
+	},
+	multiCalendar: {
+		title: 'Multiple Calendars, One Per Service',
+		tagline: 'A different calendar for <span class="ct-accent">every service you offer</span>, each with its own rules.',
+		metaDescription:
+			'Create separate calendars for each service with clickTarot Calendar: its own price, duration and hours for each one, no compromises.',
+		painPoint:
+			'Not all your services are the same: a quick reading takes 20 minutes, a counseling session takes an hour; one costs €30, the other €90. A single calendar with one fixed price and duration forces you to pick which service gets shortchanged.',
+		howItWorks:
+			'You create a separate calendar for each service, each with its own price, duration and available hours. Every calendar gets its own shortcode and dedicated public link, so you can promote them separately or show them all together on the same page.',
+		benefit:
+			"You offer exactly the services you want, each set up properly, instead of forcing everything into one form that doesn't quite fit any of them.",
+	},
+	customColor: {
+		title: 'Customizable Color',
+		tagline: "The calendar takes on <span class=\"ct-accent\">your brand's colors</span>, not a generic plugin's.",
+		metaDescription:
+			'Customize the color of your clickTarot Calendar booking widget in one click, so it looks like part of your site, not a bolted-on plugin.',
+		painPoint:
+			"A booking form in a plugin's default colors sticks out against the rest of your site, and it undercuts trust at the exact moment your client is about to pay.",
+		howItWorks:
+			'From the calendar settings, pick your main color: buttons, selected days and other visual details update automatically to match your palette, no CSS required.',
+		benefit:
+			"The calendar looks like it was built for your site, not pasted on top of it. A small detail clients notice, even if they couldn't say why they trust it more.",
+	},
+	guidedSetup: {
+		title: 'Guided Setup',
+		tagline: 'From your first calendar to your first booking <span class="ct-accent">in minutes</span>, no developer needed.',
+		metaDescription:
+			'clickTarot Calendar sets itself up with no technical skills required: a step-by-step guide walks you through everything.',
+		painPoint:
+			'Plenty of booking plugins need hours of configuration, technical documentation to read, or a developer you have to pay just to get a working calendar on your site.',
+		howItWorks:
+			'Once you activate the plugin, a built-in guide walks you through it step by step: create your first calendar, connect payments, copy the shortcode into the right page. The same guide is always available from clickTarot → Help whenever you need to check it again.',
+		benefit:
+			"You go from installing the plugin to your first real booking in minutes, not an afternoon, and without asking anyone for help.",
+	},
 };
 
 export default en;

@@ -78,6 +78,22 @@ const es: Dictionary = {
 				title: '📥 Exportación CSV',
 				description: 'Descarga todas las reservas en un archivo listo para Excel o para tu gestoría, sin límite de filas.',
 			},
+			{
+				title: '🏖️ Bloquea un periodo entero con un clic',
+				description: 'Bloquea un rango de fechas completo de una vez, no día a día: vacaciones y pausas resueltas en segundos.',
+			},
+			{
+				title: '📁 Varios calendarios, uno por servicio',
+				description: 'Crea un calendario para cada servicio que ofreces, cada uno con su propio precio, duración y horario: nada de un formulario único para todo.',
+			},
+			{
+				title: '🎨 Color personalizable',
+				description: 'El calendario adopta el color de tu marca con un clic: se integra en tu web en lugar de parecer un widget externo.',
+			},
+			{
+				title: '🚀 Instalación guiada',
+				description: 'No necesitas conocimientos técnicos: sigue la guía paso a paso y tu calendario estará listo en minutos.',
+			},
 		],
 	},
 	screenshots: {

@@ -180,6 +180,54 @@ const it: FeatureDetailDictionary = {
 		benefit:
 			'La contabilità smette di essere un lavoro di ricopiatura manuale. Un file, tutti i dati che ti servono, pronto quando ti serve, non solo a fine anno.',
 	},
+	vacationBlock: {
+		title: 'Blocco Ferie in un Click',
+		tagline: 'Vai in vacanza <span class="ct-accent">senza portarti dietro</span> il calendario prenotazioni.',
+		metaDescription:
+			'Blocca un intero periodo di ferie o pausa in un click con clickTarot Calendar, senza dover chiudere ogni giorno singolarmente.',
+		painPoint:
+			'Prima di partire per due settimane di ferie, l’ultima cosa che vuoi fare è aprire il calendario e bloccare quattordici giorni uno alla volta, rischiando di dimenticartene uno e ritrovarti una prenotazione che non puoi onorare.',
+		howItWorks:
+			'Dal pannello Disponibilità scegli una data di inizio e una data di fine: il plugin blocca in automatico tutte le giornate lavorative comprese nell’intervallo, in un solo passaggio. Nessuna prenotazione può finire in quel periodo, e quando torni, il tuo calendario riprende esattamente da dove lo avevi lasciato.',
+		benefit:
+			'Vai in ferie davvero staccato, senza il pensiero di dover controllare o correggere il calendario prima di partire. Un’operazione che prima richiedeva minuti diventa un solo click.',
+	},
+	multiCalendar: {
+		title: 'Più Calendari, un Servizio Ciascuno',
+		tagline: 'Un calendario diverso per <span class="ct-accent">ogni servizio che offri</span>, ognuno con le sue regole.',
+		metaDescription:
+			'Crea calendari separati per ogni servizio con clickTarot Calendar: prezzo, durata e orari propri per ciascuno, senza compromessi.',
+		painPoint:
+			'Non tutti i tuoi servizi sono uguali: una lettura veloce dura 20 minuti, una sessione di counseling un’ora; una costa 30€, l’altra 90€. Un solo calendario con un prezzo e una durata fissi ti costringe a scegliere quale servizio penalizzare.',
+		howItWorks:
+			'Crei un calendario distinto per ogni servizio, ciascuno con il proprio prezzo, la propria durata e i propri orari di disponibilità. Ogni calendario ha il suo shortcode e il suo link pubblico dedicato, così puoi promuoverli separatamente o mostrarli tutti insieme sulla stessa pagina.',
+		benefit:
+			'Offri esattamente i servizi che vuoi, ognuno configurato come si deve, senza dover forzare tutto dentro un modulo unico che non va bene per nessuno in particolare.',
+	},
+	customColor: {
+		title: 'Colore Personalizzabile',
+		tagline: 'Il calendario prende <span class="ct-accent">i colori del tuo brand</span>, non quelli di un plugin generico.',
+		metaDescription:
+			'Personalizza il colore del calendario di prenotazione di clickTarot Calendar in un click, per farlo sembrare parte del tuo sito, non un widget esterno.',
+		painPoint:
+			'Un modulo di prenotazione con i colori di default di un plugin salta all’occhio in mezzo al resto del tuo sito, e trasmette meno fiducia proprio nel momento in cui il cliente sta per pagare.',
+		howItWorks:
+			'Dalle impostazioni del calendario scegli il colore principale: bottoni, giorni selezionati e dettagli grafici si aggiornano automaticamente con la tua palette, senza toccare una riga di CSS.',
+		benefit:
+			'Il calendario sembra costruito apposta per il tuo sito, non incollato sopra. Un dettaglio piccolo che il cliente nota, anche se non saprebbe dire perché si fida di più.',
+	},
+	guidedSetup: {
+		title: 'Installazione Guidata',
+		tagline: 'Dal primo calendario alla prima prenotazione <span class="ct-accent">in pochi minuti</span>, senza sviluppatori.',
+		metaDescription:
+			'clickTarot Calendar si installa e configura da solo, senza competenze tecniche: una guida passo passo ti accompagna dalla A alla Z.',
+		painPoint:
+			'Molti plugin di prenotazione richiedono ore di configurazione, documentazione tecnica da leggere, o un webmaster da pagare solo per far apparire un calendario funzionante sul sito.',
+		howItWorks:
+			'Dopo aver attivato il plugin, una guida integrata ti accompagna passo passo: crea il primo calendario, collega i pagamenti, copia lo shortcode nella pagina giusta. Trovi la stessa guida disponibile in ogni momento da clickTarot → Guida, se vuoi rivederla.',
+		benefit:
+			'Passi dall’installazione alla prima prenotazione reale in pochi minuti, non in un pomeriggio, e senza dover chiedere aiuto a nessuno.',
+	},
 };
 
 export default it;

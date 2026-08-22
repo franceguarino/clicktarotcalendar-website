@@ -13,6 +13,10 @@ export const featureKeys = [
 	'statistics',
 	'addToCalendar',
 	'csvExport',
+	'vacationBlock',
+	'multiCalendar',
+	'customColor',
+	'guidedSetup',
 ] as const;
 export type FeatureKey = (typeof featureKeys)[number];
 
@@ -33,6 +37,10 @@ export const featureSlugs: Record<FeatureKey, string> = {
 	statistics: 'revenue-statistics',
 	addToCalendar: 'add-to-calendar',
 	csvExport: 'csv-export',
+	vacationBlock: 'block-time-off',
+	multiCalendar: 'multiple-calendars',
+	customColor: 'custom-calendar-color',
+	guidedSetup: 'guided-setup',
 };
 
 export interface FeatureDetail {
