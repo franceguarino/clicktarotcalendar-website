@@ -125,8 +125,8 @@ const en: Dictionary = {
 		recommendedLabel: 'Recommended',
 		tiers: [
 			{ label: 'Monthly', price: '$16.99', period: '/month', note: 'Pay as you go, cancel anytime.', highlighted: false },
-			{ label: 'Annual', price: '$180', period: '/year', note: 'Best value, works out to $15/month.', highlighted: true },
-			{ label: 'Lifetime', price: '$1,499', period: 'one-time', note: 'Pay once, use it for as long as you like.', highlighted: false },
+			{ label: 'Annual', price: '$189.99', period: '/year', note: 'Best value, works out to about $15.83/month.', highlighted: true },
+			{ label: 'Lifetime', price: '$509.99', period: 'one-time', note: 'Pay once, use it for as long as you like.', highlighted: false },
 		],
 	},
 	faq: {

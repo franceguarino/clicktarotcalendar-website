@@ -124,9 +124,9 @@ const de: Dictionary = {
 		guarantee: 'Geld-zurück-Garantie, direkt von Freemius beim Checkout abgewickelt.',
 		recommendedLabel: 'Empfohlen',
 		tiers: [
-			{ label: 'Monatlich', price: '16,99 $', period: '/Monat', note: 'Monat für Monat zahlen, jederzeit kündbar.', highlighted: false },
-			{ label: 'Jährlich', price: '180 $', period: '/Jahr', note: 'Bestes Preis-Leistungs-Verhältnis, entspricht 15 $/Monat.', highlighted: true },
-			{ label: 'Lifetime', price: '1.499 $', period: 'einmalig', note: 'Einmal zahlen, für immer nutzen.', highlighted: false },
+			{ label: 'Monatlich', price: '14,72 €', period: '/Monat', note: 'Monat für Monat zahlen, jederzeit kündbar.', highlighted: false },
+			{ label: 'Jährlich', price: '155,95 €', period: '/Jahr', note: 'Bestes Preis-Leistungs-Verhältnis, entspricht etwa 13 €/Monat.', highlighted: true },
+			{ label: 'Lifetime', price: '499,99 €', period: 'einmalig', note: 'Einmal zahlen, für immer nutzen.', highlighted: false },
 		],
 	},
 	faq: {
