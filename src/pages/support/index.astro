@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SupportContent from '../../sections/SupportContent.astro';
+import { getDictionary } from '../../i18n';
+import { faqPageSchema } from '../../lib/schema';
+const locale = 'en' as const;
+const dict = getDictionary(locale);
+const schema = [faqPageSchema(dict.support.faq)];
+---
+<BaseLayout locale={locale} page="support" title={`${dict.support.title} — clickTarot Calendar`} description={dict.support.intro} schema={schema}>
+	<SupportContent locale={locale} />
+</BaseLayout>

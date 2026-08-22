@@ -174,11 +174,133 @@ const it: Dictionary = {
 			},
 		],
 	},
+	support: {
+		eyebrow: 'Centro assistenza',
+		title: 'Guida a clickTarot Calendar',
+		intro:
+			'Tutto quello che ti serve per creare il tuo calendario, incassare i primi pagamenti e gestire le prenotazioni senza sorprese. Se non trovi quello che cerchi, in fondo alla pagina puoi scriverci direttamente.',
+		tocLabel: 'Indice',
+		sections: [
+			{
+				id: 'first-calendar',
+				title: 'Crea il tuo primo calendario',
+				paragraphs: [
+					'Ogni calendario che crei rappresenta un servizio prenotabile: una singola lettura, una sessione di counseling, un pacchetto specifico. Vai su clickTarot → Calendari e compila il form "Crea nuovo calendario": in pochi minuti hai un calendario pronto da pubblicare.',
+					'I campi che contano davvero sono la durata della sessione (insieme alla pausa tra un appuntamento e l’altro decide ogni quanto si aprono gli slot in giornata), il prezzo (metti 0 per un calendario gratuito, senza richiesta di pagamento), il preavviso minimo e il periodo massimo prenotabile (evitano prenotazioni dell’ultimo minuto o troppo lontane nel tempo), e gli orari di lavoro, giorno per giorno.',
+				],
+				tip: 'Puoi creare più calendari per servizi diversi, ad esempio "Consulto breve" e "Consulto approfondito": ognuno ha il proprio shortcode e le proprie regole, indipendenti dagli altri.',
+			},
+			{
+				id: 'publish-calendar',
+				title: 'Pubblica il calendario sul sito',
+				paragraphs: [
+					'Ogni calendario genera automaticamente uno shortcode, che trovi nella tabella "Calendari esistenti": incollalo in qualunque pagina o articolo del tuo sito WordPress (in un blocco Shortcode o Codice breve) e lì comparirà il form di prenotazione completo, con vista mensile e fasce orarie.',
+					'Non serve costruire una pagina apposta: se preferisci, ogni calendario ha anche un link pubblico dedicato pronto da condividere direttamente (vedi "Link pubblico e colore personalizzato" più sotto).',
+				],
+			},
+			{
+				id: 'payments',
+				title: 'Attiva i pagamenti',
+				paragraphs: [
+					'Se hai impostato un prezzo maggiore di zero su almeno un calendario, vai su clickTarot → Pagamenti e collega almeno un metodo. Con PayPal basta l’email del tuo account Business, nessuna chiave da configurare. Con Stripe inserisci Publishable Key e Secret Key dalla tua dashboard Stripe, poi copia l’URL webhook mostrato nella pagina e incollalo su Stripe (Sviluppatori → Webhook, evento checkout.session.completed).',
+				],
+				tip: 'Senza il Webhook Signing Secret configurato, i pagamenti Stripe restano in sospeso e non vengono confermati automaticamente. Se non attivi nessun metodo di pagamento, i calendari a pagamento mostrano un avviso al cliente: solo i calendari gratuiti restano prenotabili.',
+			},
+			{
+				id: 'availability',
+				title: 'Gestisci la disponibilità',
+				paragraphs: [
+					'Su clickTarot → Disponibilità scegli il calendario e naviga fino al mese che ti interessa: la vista mensile mostra subito quali giorni sono aperti, chiusi, parzialmente prenotati o completamente bloccati. Clicca su un giorno per bloccarlo per intero, oppure per deselezionare solo alcune fasce orarie specifiche.',
+				],
+				tip: 'Per un’assenza più lunga (ferie, una pausa) non serve aprire ogni giorno uno per uno: sotto il calendario mensile trovi "Blocca un periodo". Indichi la data di inizio e quella di fine, e il sistema blocca in automatico tutte le giornate lavorative comprese nell’intervallo.',
+			},
+			{
+				id: 'bookings',
+				title: 'Gestisci le prenotazioni ricevute',
+				paragraphs: [
+					'Su clickTarot → Prenotazioni trovi l’elenco completo, filtrabile per calendario e stato: Pending (in attesa di pagamento, si libera da sola dopo un’ora se il cliente non paga), Confirmed (pagamento ricevuto, o calendario gratuito), Cancelled (annullata manualmente) ed Expired (scaduta senza pagamento).',
+					'La colonna Fatturazione riporta già codice fiscale e indirizzo del cliente, raccolti obbligatoriamente in fase di prenotazione: tutto ciò che ti serve per fatturare è lì, senza doverlo richiedere via email.',
+				],
+				tip: 'Il bottone "Esporta CSV" scarica in un file, pronto per Excel o per il tuo commercialista, tutte le prenotazioni che rispettano i filtri scelti, senza il limite di righe della vista a schermo.',
+			},
+			{
+				id: 'emails',
+				title: 'Personalizza le email',
+				paragraphs: [
+					'Nella pagina di modifica di ogni calendario trovi le sezioni Email e Promemoria: lascia i campi vuoti per usare il testo predefinito, oppure scrivi il tuo usando i segnaposto {{name}}, {{email}}, {{phone}}, {{service}}, {{date}}, {{time}}, {{manage_link}}, {{add_to_calendar_link}} e {{google_calendar_link}}, sostituiti automaticamente con i dati reali della prenotazione.',
+					'{{manage_link}} è il link con cui il cliente sposta o annulla da solo l’appuntamento (vedi il punto successivo). {{add_to_calendar_link}} scarica un file .ics compatibile con qualunque calendario (iPhone, Outlook, Google); {{google_calendar_link}} fa lo stesso ma con un click diretto su Google Calendar. Sono già inclusi nel testo predefinito.',
+				],
+				tip: 'Il promemoria, se lo attivi, parte automaticamente un numero di ore a tua scelta prima dell’appuntamento.',
+			},
+			{
+				id: 'public-link-color',
+				title: 'Link pubblico e colore personalizzato',
+				paragraphs: [
+					'Ogni calendario può generare un link pubblico dedicato, del tipo tuosito.it/prenota/nome-servizio/: pronto da mettere in bio su Instagram o TikTok, o da mandare via WhatsApp, senza bisogno di creare nessuna pagina su WordPress. Lo trovi anche nella tabella "Calendari esistenti", con il bottone "Copia link".',
+					'Nella stessa pagina puoi anche scegliere il colore del form pubblico con un selettore colore, senza toccare una riga di codice: se lo lasci sul valore predefinito, viene usato il colore standard di clickTarot.',
+				],
+			},
+			{
+				id: 'coupons',
+				title: 'Coupon sconto',
+				paragraphs: [
+					'Su clickTarot → Coupon crei codici sconto da comunicare ai tuoi clienti, ad esempio per una promozione sui social: percentuale o importo fisso, validi su un calendario specifico o su tutti, con un numero massimo di utilizzi e una data di scadenza, entrambi opzionali.',
+					'Il cliente inserisce il codice nel form di prenotazione, sotto "Hai un codice sconto?": il nuovo prezzo si aggiorna subito, prima di pagare.',
+				],
+			},
+			{
+				id: 'packages',
+				title: 'Pacchetti prepagati',
+				paragraphs: [
+					'Su clickTarot → Pacchetti crei pacchetti multi-sessione per un calendario, ad esempio "3x Consulto" a un prezzo scontato rispetto a tre prenotazioni singole. Il cliente paga il pacchetto intero su una pagina dedicata, senza scegliere subito una data, e in seguito prenota le sue sessioni quando vuole: se il sistema riconosce la sua email tra i pacchetti pagati, il pagamento viene saltato in automatico.',
+				],
+				tip: 'Nella tabella "Acquisti e crediti clienti" vedi quante sessioni restano a ciascun cliente, e puoi regalarne una in più con un click, ad esempio per fidelizzare qualcuno senza creare un pacchetto apposta.',
+			},
+			{
+				id: 'self-service',
+				title: 'Riprogrammazione e cancellazione self-service',
+				paragraphs: [
+					'Ogni email di conferma e di promemoria include un link "gestisci la tua prenotazione": da lì il cliente sposta l’appuntamento a un altro orario libero o lo annulla da solo, senza scriverti.',
+				],
+				tip: 'Funziona solo finché manca almeno il preavviso minimo impostato sul calendario (lo stesso usato per bloccare le prenotazioni last-minute): sotto quella soglia, il cliente viene invitato a contattarti direttamente. Trovi lo stesso link anche accanto a ogni prenotazione confermata in clickTarot → Prenotazioni, utile se un cliente te lo chiede via WhatsApp.',
+			},
+			{
+				id: 'statistics',
+				title: 'Statistiche',
+				paragraphs: [
+					'Su clickTarot → Statistiche trovi l’incassato, diviso tra prenotazioni singole e pacchetti così non si sovrappongono, l’andamento mese per mese e il dettaglio per calendario: quale servizio rende di più, quante prenotazioni confermate hai ricevuto. Numeri reali, non sensazioni, per decidere cosa alzare di prezzo o cosa ritirare.',
+				],
+			},
+		],
+		faqTitle: 'Domande frequenti',
+		faq: [
+			{
+				q: 'Un cliente dice di non aver ricevuto l’email di conferma. Cosa controllo?',
+				a: 'Prima la cartella spam del cliente, poi lo stato della prenotazione in clickTarot → Prenotazioni: se è ancora "Pending", l’email non è partita perché il pagamento non è stato completato.',
+			},
+			{
+				q: 'Devo chiudere per qualche giorno di ferie, come faccio?',
+				a: 'Vai su clickTarot → Disponibilità e usa "Blocca un periodo": indichi data di inizio e fine, non serve aprire ogni giorno uno per uno né modificare gli orari di lavoro del calendario.',
+			},
+			{
+				q: 'I dati di PayPal e Stripe che inserisco sono al sicuro?',
+				a: 'Sì: restano salvati solo sul tuo sito, non vengono mai condivisi con terzi, e la Secret Key di Stripe non viene più mostrata una volta salvata.',
+			},
+			{
+				q: 'Posso avere più calendari con prezzi diversi?',
+				a: 'Sì, crea un calendario per ogni servizio: ognuno ha il proprio shortcode, il proprio prezzo, la propria durata e le proprie impostazioni, indipendenti dagli altri.',
+			},
+		],
+		contactTitle: 'Non hai trovato quello che cercavi?',
+		contactBody: 'Scrivici direttamente: rispondiamo alle richieste di supporto entro un giorno lavorativo.',
+		contactCta: 'Contattaci',
+	},
 	footer: {
 		tagline:
 			'Il calendario di prenotazione per professionisti dei consulti di Tarocchi (e non solo) by Francesco <span style="color:var(--ct-primary-dark);font-weight:700">Guarino</span>.',
 		freemiusNote: 'Vendite e fatturazione gestite da Freemius, rivenditore ufficiale.',
 		contactLabel: 'Contatti',
+		supportLabel: 'Supporto',
 		privacy: 'Privacy',
 		terms: 'Termini',
 		rights: 'Tutti i diritti riservati.',
