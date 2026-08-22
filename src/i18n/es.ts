@@ -140,9 +140,9 @@ const es: Dictionary = {
 		guarantee: 'Garantía de devolución gestionada directamente por Freemius en el checkout.',
 		recommendedLabel: 'Recomendado',
 		tiers: [
-			{ label: 'Mensual', price: '16,99$', period: '/mes', note: 'Pagas mes a mes, cancela cuando quieras.', highlighted: false },
-			{ label: 'Anual', price: '180$', period: '/año', note: 'La mejor relación calidad-precio: equivale a 15$/mes.', highlighted: true },
-			{ label: 'Lifetime', price: '1.499$', period: 'pago único', note: 'Pagas una vez y lo usas para siempre.', highlighted: false },
+			{ label: 'Mensual', price: '14,72€', period: '/mes', note: 'Pagas mes a mes, cancela cuando quieras.', highlighted: false },
+			{ label: 'Anual', price: '155,95€', period: '/año', note: 'La mejor relación calidad-precio: equivale a unos 13€/mes.', highlighted: true },
+			{ label: 'Lifetime', price: '499,99€', period: 'pago único', note: 'Pagas una vez y lo usas para siempre.', highlighted: false },
 		],
 	},
 	faq: {

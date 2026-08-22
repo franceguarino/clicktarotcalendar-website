@@ -140,9 +140,9 @@ const it: Dictionary = {
 		guarantee: 'Garanzia soddisfatti o rimborsati gestita direttamente da Freemius al momento del checkout.',
 		recommendedLabel: 'Consigliato',
 		tiers: [
-			{ label: 'Mensile', price: '16,99$', period: '/mese', note: 'Paghi mese per mese, disdici quando vuoi.', highlighted: false },
-			{ label: 'Annuale', price: '180$', period: '/anno', note: 'Il più conveniente, equivale a 15$/mese.', highlighted: true },
-			{ label: 'Lifetime', price: '1.499$', period: 'pagamento unico', note: 'Paghi una volta sola, lo usi per sempre.', highlighted: false },
+			{ label: 'Mensile', price: '14,72€', period: '/mese', note: 'Paghi mese per mese, disdici quando vuoi.', highlighted: false },
+			{ label: 'Annuale', price: '155,95€', period: '/anno', note: 'Il più conveniente, equivale a circa 13€/mese.', highlighted: true },
+			{ label: 'Lifetime', price: '499,99€', period: 'pagamento unico', note: 'Paghi una volta sola, lo usi per sempre.', highlighted: false },
 		],
 	},
 	faq: {
