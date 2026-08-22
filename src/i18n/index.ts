@@ -20,7 +20,7 @@ export function getDictionary(locale: Locale): Dictionary {
 	return dictionaries[locale];
 }
 
-export type PageKey = 'home' | 'pricing' | 'compare' | 'faq' | 'privacy' | 'terms' | 'feature' | 'about';
+export type PageKey = 'home' | 'pricing' | 'compare' | 'faq' | 'support' | 'privacy' | 'terms' | 'feature' | 'about';
 
 // Un'unica fonte di verità per gli slug per pagina/lingua: l'inglese è la
 // lingua di default (mercato primario), quindi è quella "senza slug tradotto"
@@ -33,6 +33,7 @@ const slugs: Record<Exclude<PageKey, 'home'>, Record<Locale, string>> = {
 	pricing: { it: 'prezzi', en: 'pricing', de: 'pricing', es: 'pricing' },
 	compare: { it: 'vs', en: 'vs', de: 'vs', es: 'vs' },
 	faq: { it: 'faq', en: 'faq', de: 'faq', es: 'faq' },
+	support: { it: 'supporto', en: 'support', de: 'support', es: 'support' },
 	privacy: { it: 'privacy', en: 'privacy', de: 'privacy', es: 'privacy' },
 	terms: { it: 'termini', en: 'terms', de: 'terms', es: 'terms' },
 	feature: { it: 'features', en: 'features', de: 'features', es: 'features' },

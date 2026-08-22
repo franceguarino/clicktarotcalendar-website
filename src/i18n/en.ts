@@ -174,11 +174,133 @@ const en: Dictionary = {
 			},
 		],
 	},
+	support: {
+		eyebrow: 'Help center',
+		title: 'clickTarot Calendar guide',
+		intro:
+			'Everything you need to set up your calendar, take your first payment and manage bookings without surprises. If you can’t find what you’re looking for, you can reach us directly at the bottom of this page.',
+		tocLabel: 'Contents',
+		sections: [
+			{
+				id: 'first-calendar',
+				title: 'Create your first calendar',
+				paragraphs: [
+					'Every calendar you create represents one bookable service: a single reading, a counseling session, a specific package. Go to clickTarot → Calendars and fill in the "Create new calendar" form: you’ll have a calendar ready to publish in a few minutes.',
+					'The fields that really matter are the session duration (together with the buffer between appointments, it decides how often slots open up during the day), the price (set it to 0 for a free calendar, no payment required), the minimum notice and how far ahead clients can book (these keep out last-minute or too-far-out bookings), and your working hours, day by day.',
+				],
+				tip: 'You can create multiple calendars for different services, e.g. "Short reading" and "In-depth reading": each one has its own shortcode and its own rules, independent of the others.',
+			},
+			{
+				id: 'publish-calendar',
+				title: 'Publish the calendar on your site',
+				paragraphs: [
+					'Every calendar automatically generates a shortcode, which you’ll find in the "Existing calendars" table: paste it into any WordPress page or post (in a Shortcode block) and the full booking form appears there, with monthly view and time slots.',
+					'You don’t need to build a dedicated page: if you’d rather, every calendar also gets its own public link ready to share directly (see "Public link and custom color" below).',
+				],
+			},
+			{
+				id: 'payments',
+				title: 'Turn on payments',
+				paragraphs: [
+					'If you’ve set a price above zero on at least one calendar, go to clickTarot → Payments and connect at least one method. With PayPal, all you need is your Business account email, no keys to configure. With Stripe, enter the Publishable Key and Secret Key from your Stripe dashboard, then copy the webhook URL shown on the page and paste it into Stripe (Developers → Webhooks, event checkout.session.completed).',
+				],
+				tip: 'Without the Webhook Signing Secret configured, Stripe payments stay pending and never get confirmed automatically. If you don’t turn on any payment method, paid calendars show clients a notice instead: only free calendars stay bookable.',
+			},
+			{
+				id: 'availability',
+				title: 'Manage your availability',
+				paragraphs: [
+					'Go to clickTarot → Availability, pick a calendar and navigate to the month you need: the monthly view shows at a glance which days are open, closed, partly booked or fully blocked. Click a day to block it entirely, or to deselect just a few specific time slots.',
+				],
+				tip: 'For a longer absence (vacation, a break), you don’t need to open every day one by one: below the monthly calendar you’ll find "Block a period". Enter a start and end date, and the system automatically blocks every working day in that range.',
+			},
+			{
+				id: 'bookings',
+				title: 'Manage the bookings you receive',
+				paragraphs: [
+					'Go to clickTarot → Bookings for the full list, filterable by calendar and status: Pending (awaiting payment, frees itself up after an hour if the client doesn’t pay), Confirmed (payment received, or a free calendar), Cancelled (cancelled manually) and Expired (timed out without payment).',
+					'The Billing column already shows the client’s Tax ID and address, collected as a required field at booking time: everything you need to issue an invoice is right there, no need to email and ask.',
+				],
+				tip: 'The "Export CSV" button downloads every booking matching your chosen filters into a file ready for Excel or your accountant, with no row limit like the on-screen view has.',
+			},
+			{
+				id: 'emails',
+				title: 'Customize your emails',
+				paragraphs: [
+					'On each calendar’s edit page you’ll find the Email and Reminder sections: leave the fields empty to use the default text, or write your own using the placeholders {{name}}, {{email}}, {{phone}}, {{service}}, {{date}}, {{time}}, {{manage_link}}, {{add_to_calendar_link}} and {{google_calendar_link}}, automatically replaced with the real booking details.',
+					'{{manage_link}} is the link clients use to move or cancel their own appointment (see the next section). {{add_to_calendar_link}} downloads an .ics file that works with any calendar app (iPhone, Outlook, Google); {{google_calendar_link}} does the same with one direct click into Google Calendar. Both are already included in the default text.',
+				],
+				tip: 'The reminder, if you turn it on, goes out automatically a number of hours before the appointment, your choice.',
+			},
+			{
+				id: 'public-link-color',
+				title: 'Public link and custom color',
+				paragraphs: [
+					'Every calendar can generate a dedicated public link, something like yoursite.com/book/service-name/: ready to drop into your Instagram or TikTok bio, or send over WhatsApp, with no WordPress page to build. You’ll also find it in the "Existing calendars" table, with a "Copy link" button.',
+					'On the same page you can also pick the color of the public form with a color picker, no code involved: leave it at the default and clickTarot’s standard color is used.',
+				],
+			},
+			{
+				id: 'coupons',
+				title: 'Discount coupons',
+				paragraphs: [
+					'On clickTarot → Coupons you create discount codes to share with your clients, for a social media promo for example: percentage or fixed amount, valid on one specific calendar or all of them, with an optional maximum number of uses and an optional expiry date.',
+					'The client enters the code on the booking form, under "Got a discount code?": the new price updates immediately, before they pay.',
+				],
+			},
+			{
+				id: 'packages',
+				title: 'Prepaid packages',
+				paragraphs: [
+					'On clickTarot → Packages you create multi-session packages for a calendar, e.g. "3x Reading" at a discount compared to three separate bookings. The client pays for the whole package on a dedicated page, without picking a date yet, then books their sessions whenever they like: if the system recognizes their email among paid packages, payment is skipped automatically.',
+				],
+				tip: 'The "Customer purchases and credits" table shows how many sessions each client has left, and you can gift them an extra one with a click, for example to reward a loyal client without setting up a whole new package.',
+			},
+			{
+				id: 'self-service',
+				title: 'Self-service rescheduling and cancellation',
+				paragraphs: [
+					'Every confirmation and reminder email includes a "manage your booking" link: from there, the client moves the appointment to another open slot or cancels it themselves, without writing to you.',
+				],
+				tip: 'It only works as long as the calendar’s minimum notice period hasn’t passed yet (the same one used to block last-minute bookings): below that threshold, the client is invited to contact you directly. You’ll find the same link next to every confirmed booking in clickTarot → Bookings too, handy if a client asks for it over WhatsApp.',
+			},
+			{
+				id: 'statistics',
+				title: 'Statistics',
+				paragraphs: [
+					'On clickTarot → Statistics you’ll find your revenue, split between single bookings and packages so they don’t overlap, month-by-month trends, and a breakdown per calendar: which service earns the most, how many confirmed bookings you’ve received. Real numbers, not gut feeling, to decide what to raise the price on or what to retire.',
+				],
+			},
+		],
+		faqTitle: 'Frequently asked questions',
+		faq: [
+			{
+				q: 'A client says they never got the confirmation email. What do I check?',
+				a: 'First, the client’s spam folder, then the booking status in clickTarot → Bookings: if it’s still "Pending", the email never went out because payment wasn’t completed.',
+			},
+			{
+				q: 'I need to close for a few days off. How do I do that?',
+				a: 'Go to clickTarot → Availability and use "Block a period": enter a start and end date, no need to open every day one by one or touch the calendar’s working hours.',
+			},
+			{
+				q: 'Is the PayPal and Stripe data I enter safe?',
+				a: 'Yes: it stays saved only on your own site, is never shared with third parties, and Stripe’s Secret Key is never shown again once it’s saved.',
+			},
+			{
+				q: 'Can I have multiple calendars at different prices?',
+				a: 'Yes, create a calendar for each service: each one has its own shortcode, price, duration and settings, independent of the others.',
+			},
+		],
+		contactTitle: 'Couldn’t find what you needed?',
+		contactBody: 'Reach out directly: we reply to support requests within one business day.',
+		contactCta: 'Contact us',
+	},
 	footer: {
 		tagline:
 			'The booking calendar for Tarot consultation professionals (and not only) by Francesco <span style="color:var(--ct-primary-dark);font-weight:700">Guarino</span>.',
 		freemiusNote: 'Sales and billing handled by Freemius, our official reseller.',
 		contactLabel: 'Contact',
+		supportLabel: 'Support',
 		privacy: 'Privacy',
 		terms: 'Terms',
 		rights: 'All rights reserved.',

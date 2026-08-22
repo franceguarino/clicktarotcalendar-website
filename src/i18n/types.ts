@@ -43,10 +43,23 @@ export interface Dictionary {
 		title: string;
 		items: { q: string; a: string }[];
 	};
+	support: {
+		eyebrow: string;
+		title: string;
+		intro: string;
+		tocLabel: string;
+		sections: { id: string; title: string; paragraphs: string[]; tip?: string }[];
+		faqTitle: string;
+		faq: { q: string; a: string }[];
+		contactTitle: string;
+		contactBody: string;
+		contactCta: string;
+	};
 	footer: {
 		tagline: string;
 		freemiusNote: string;
 		contactLabel: string;
+		supportLabel: string;
 		privacy: string;
 		terms: string;
 		rights: string;

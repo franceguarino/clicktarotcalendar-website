@@ -174,11 +174,133 @@ const es: Dictionary = {
 			},
 		],
 	},
+	support: {
+		eyebrow: 'Centro de ayuda',
+		title: 'Guía de clickTarot Calendar',
+		intro:
+			'Todo lo que necesitas para configurar tu calendario, cobrar tu primer pago y gestionar las reservas sin sorpresas. Si no encuentras lo que buscas, al final de esta página puedes escribirnos directamente.',
+		tocLabel: 'Índice',
+		sections: [
+			{
+				id: 'first-calendar',
+				title: 'Crea tu primer calendario',
+				paragraphs: [
+					'Cada calendario que creas representa un servicio reservable: una lectura individual, una sesión de counseling, un paquete concreto. Ve a clickTarot → Calendarios y rellena el formulario "Crear nuevo calendario": en pocos minutos tendrás un calendario listo para publicar.',
+					'Los campos que realmente importan son la duración de la sesión (junto con la pausa entre citas, decide cada cuánto se abren los huecos horarios en el día), el precio (pon 0 para un calendario gratuito, sin pedir pago), el aviso mínimo y hasta cuándo se puede reservar (evitan reservas de última hora o demasiado lejanas en el tiempo), y tu horario laboral, día a día.',
+				],
+				tip: 'Puedes crear varios calendarios para servicios distintos, por ejemplo "Lectura breve" y "Lectura en profundidad": cada uno tiene su propio shortcode y sus propias reglas, independientes de los demás.',
+			},
+			{
+				id: 'publish-calendar',
+				title: 'Publica el calendario en tu web',
+				paragraphs: [
+					'Cada calendario genera automáticamente un shortcode, que encuentras en la tabla "Calendarios existentes": pégalo en cualquier página o entrada de WordPress (en un bloque de shortcode) y ahí aparecerá el formulario de reserva completo, con vista mensual y franjas horarias.',
+					'No necesitas crear una página aparte: si lo prefieres, cada calendario tiene también su propio enlace público listo para compartir directamente (ver "Enlace público y color personalizado" más abajo).',
+				],
+			},
+			{
+				id: 'payments',
+				title: 'Activa los pagos',
+				paragraphs: [
+					'Si has puesto un precio superior a cero en al menos un calendario, ve a clickTarot → Pagos y conecta al menos un método. Con PayPal basta con el email de tu cuenta Business, sin claves que configurar. Con Stripe introduces la Publishable Key y la Secret Key de tu panel de Stripe, luego copias la URL del webhook que aparece en la página y la pegas en Stripe (Desarrolladores → Webhooks, evento checkout.session.completed).',
+				],
+				tip: 'Sin el Webhook Signing Secret configurado, los pagos de Stripe se quedan pendientes y no se confirman automáticamente. Si no activas ningún método de pago, los calendarios de pago muestran un aviso al cliente: solo los calendarios gratuitos siguen siendo reservables.',
+			},
+			{
+				id: 'availability',
+				title: 'Gestiona tu disponibilidad',
+				paragraphs: [
+					'Ve a clickTarot → Disponibilidad, elige un calendario y navega hasta el mes que te interese: la vista mensual muestra de un vistazo qué días están abiertos, cerrados, parcialmente reservados o totalmente bloqueados. Haz clic en un día para bloquearlo entero, o para deseleccionar solo algunas franjas horarias concretas.',
+				],
+				tip: 'Para una ausencia más larga (vacaciones, un descanso) no hace falta abrir cada día uno por uno: debajo del calendario mensual encontrarás "Bloquear un periodo". Indicas la fecha de inicio y la de fin, y el sistema bloquea automáticamente todos los días laborables de ese rango.',
+			},
+			{
+				id: 'bookings',
+				title: 'Gestiona las reservas recibidas',
+				paragraphs: [
+					'En clickTarot → Reservas tienes el listado completo, filtrable por calendario y estado: Pending (pendiente de pago, se libera sola pasada una hora si el cliente no paga), Confirmed (pago recibido, o calendario gratuito), Cancelled (cancelada manualmente) y Expired (caducada sin pago).',
+					'La columna Facturación ya muestra el NIF y la dirección del cliente, recogidos obligatoriamente al reservar: todo lo que necesitas para facturar está ahí, sin tener que pedirlo por correo.',
+				],
+				tip: 'El botón "Exportar CSV" descarga en un archivo, listo para Excel o para tu gestoría, todas las reservas que cumplan los filtros elegidos, sin el límite de filas de la vista en pantalla.',
+			},
+			{
+				id: 'emails',
+				title: 'Personaliza tus correos',
+				paragraphs: [
+					'En la página de edición de cada calendario encontrarás las secciones Email y Recordatorio: deja los campos vacíos para usar el texto predeterminado, o escribe el tuyo usando los marcadores {{name}}, {{email}}, {{phone}}, {{service}}, {{date}}, {{time}}, {{manage_link}}, {{add_to_calendar_link}} y {{google_calendar_link}}, que se sustituyen automáticamente por los datos reales de la reserva.',
+					'{{manage_link}} es el enlace con el que el cliente cambia o cancela su cita por su cuenta (ver el siguiente apartado). {{add_to_calendar_link}} descarga un archivo .ics compatible con cualquier calendario (iPhone, Outlook, Google); {{google_calendar_link}} hace lo mismo con un clic directo en Google Calendar. Ambos ya están incluidos en el texto predeterminado.',
+				],
+				tip: 'El recordatorio, si lo activas, se envía automáticamente un número de horas antes de la cita, a tu elección.',
+			},
+			{
+				id: 'public-link-color',
+				title: 'Enlace público y color personalizado',
+				paragraphs: [
+					'Cada calendario puede generar un enlace público propio, del tipo tuweb.com/reservar/nombre-servicio/: listo para poner en tu bio de Instagram o TikTok, o enviar por WhatsApp, sin necesidad de crear ninguna página en WordPress. Lo encuentras también en la tabla "Calendarios existentes", con el botón "Copiar enlace".',
+					'En la misma página también puedes elegir el color del formulario público con un selector de color, sin tocar código: si lo dejas en el valor predeterminado, se usa el color estándar de clickTarot.',
+				],
+			},
+			{
+				id: 'coupons',
+				title: 'Cupones de descuento',
+				paragraphs: [
+					'En clickTarot → Cupones creas códigos de descuento para compartir con tus clientes, por ejemplo para una promo en redes sociales: porcentaje o importe fijo, válidos en un calendario concreto o en todos, con un número máximo de usos y una fecha de caducidad, ambos opcionales.',
+					'El cliente introduce el código en el formulario de reserva, bajo "¿Tienes un código de descuento?": el nuevo precio se actualiza al momento, antes de pagar.',
+				],
+			},
+			{
+				id: 'packages',
+				title: 'Paquetes prepagados',
+				paragraphs: [
+					'En clickTarot → Paquetes creas paquetes multisesión para un calendario, por ejemplo "3x Lectura" a un precio con descuento frente a tres reservas separadas. El cliente paga el paquete entero en una página dedicada, sin elegir fecha todavía, y después reserva sus sesiones cuando quiera: si el sistema reconoce su email entre los paquetes pagados, el pago se salta automáticamente.',
+				],
+				tip: 'La tabla "Compras y créditos de clientes" muestra cuántas sesiones le quedan a cada cliente, y puedes regalarle una más con un clic, por ejemplo para fidelizar a alguien sin crear un paquete aparte.',
+			},
+			{
+				id: 'self-service',
+				title: 'Reprogramación y cancelación de autoservicio',
+				paragraphs: [
+					'Cada email de confirmación y de recordatorio incluye un enlace "gestiona tu reserva": desde ahí, el cliente cambia la cita a otro hueco libre o la cancela por su cuenta, sin escribirte.',
+				],
+				tip: 'Solo funciona mientras no se haya superado el aviso mínimo configurado en el calendario (el mismo que bloquea las reservas de última hora): por debajo de ese umbral, se invita al cliente a contactarte directamente. Encuentras el mismo enlace junto a cada reserva confirmada en clickTarot → Reservas, útil si un cliente te lo pide por WhatsApp.',
+			},
+			{
+				id: 'statistics',
+				title: 'Estadísticas',
+				paragraphs: [
+					'En clickTarot → Estadísticas tienes lo ingresado, separado entre reservas individuales y paquetes para que no se solapen, la evolución mes a mes y el desglose por calendario: qué servicio rinde más, cuántas reservas confirmadas has recibido. Números reales, no sensaciones, para decidir qué subir de precio o qué retirar.',
+				],
+			},
+		],
+		faqTitle: 'Preguntas frecuentes',
+		faq: [
+			{
+				q: 'Un cliente dice que no ha recibido el email de confirmación. ¿Qué reviso?',
+				a: 'Primero la carpeta de spam del cliente, luego el estado de la reserva en clickTarot → Reservas: si sigue en "Pending", el email no salió porque el pago no se completó.',
+			},
+			{
+				q: 'Tengo que cerrar unos días de vacaciones, ¿cómo lo hago?',
+				a: 'Ve a clickTarot → Disponibilidad y usa "Bloquear un periodo": indicas fecha de inicio y de fin, sin necesidad de abrir cada día uno por uno ni tocar el horario laboral del calendario.',
+			},
+			{
+				q: '¿Los datos de PayPal y Stripe que introduzco están seguros?',
+				a: 'Sí: quedan guardados solo en tu propia web, nunca se comparten con terceros, y la Secret Key de Stripe no vuelve a mostrarse una vez guardada.',
+			},
+			{
+				q: '¿Puedo tener varios calendarios con precios distintos?',
+				a: 'Sí, crea un calendario para cada servicio: cada uno tiene su propio shortcode, precio, duración y ajustes, independientes de los demás.',
+			},
+		],
+		contactTitle: '¿No has encontrado lo que buscabas?',
+		contactBody: 'Escríbenos directamente: respondemos a las solicitudes de soporte en un día laborable.',
+		contactCta: 'Contáctanos',
+	},
 	footer: {
 		tagline:
 			'El calendario de reservas para profesionales de la consulta de Tarot (y no solo) by Francesco <span style="color:var(--ct-primary-dark);font-weight:700">Guarino</span>.',
 		freemiusNote: 'Ventas y facturación gestionadas por Freemius, nuestro distribuidor oficial.',
 		contactLabel: 'Contacto',
+		supportLabel: 'Soporte',
 		privacy: 'Privacidad',
 		terms: 'Términos',
 		rights: 'Todos los derechos reservados.',
