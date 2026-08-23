@@ -94,6 +94,10 @@ const es: Dictionary = {
 				title: '🚀 Instalación guiada',
 				description: 'No necesitas conocimientos técnicos: sigue la guía paso a paso y tu calendario estará listo en minutos.',
 			},
+			{
+				title: '🔮 Tarot Gratis',
+				description: 'Una sección dedicada a consultas gratuitas: recoge nuevos contactos y conviértelos en clientes, con propina opcional integrada.',
+			},
 		],
 	},
 	screenshots: {
@@ -271,12 +275,25 @@ const es: Dictionary = {
 					'En clickTarot → Estadísticas tienes lo ingresado, separado entre reservas individuales y paquetes para que no se solapen, la evolución mes a mes y el desglose por calendario: qué servicio rinde más, cuántas reservas confirmadas has recibido. Números reales, no sensaciones, para decidir qué subir de precio o qué retirar.',
 				],
 			},
+			{
+				id: 'free-readings',
+				title: 'Tarot Gratis y propina',
+				paragraphs: [
+					'Desde clickTarot → Tarot Gratis activas una sección donde cualquiera puede hacerte una pregunta gratis, sin reservar un hueco de calendario: ya tienes lista la página tusitio.com/tarocchi-gratis/, o puedes pegar el shortcode [ctcal_free_reading] donde prefieras.',
+					'Eliges una única forma de responder - WhatsApp, email desde el panel de WordPress, o tu propio correo - y es exactamente lo que el formulario público promete a quien escribe, pidiendo solo el contacto que esa modalidad necesita.',
+				],
+				tip: 'También puedes activar la propina opcional: cuando marcas una pregunta como respondida, el consultante recibe (si quiere) la invitación a dejarte algo a cambio, con pago por PayPal/Stripe e importe a su elección.',
+			},
 		],
 		faqTitle: 'Preguntas frecuentes',
 		faq: [
 			{
 				q: 'Un cliente dice que no ha recibido el email de confirmación. ¿Qué reviso?',
 				a: 'Primero la carpeta de spam del cliente, luego el estado de la reserva en clickTarot → Reservas: si sigue en "Pending", el email no salió porque el pago no se completó.',
+			},
+			{
+				q: '¿Las preguntas gratuitas me quitan tiempo de los clientes que pagan?',
+				a: 'No: respondes cuando quieres, con la modalidad que prefieras, y puedes desactivar la sección en cualquier momento quitando el shortcode de tus páginas.',
 			},
 			{
 				q: 'Tengo que cerrar unos días de vacaciones, ¿cómo lo hago?',

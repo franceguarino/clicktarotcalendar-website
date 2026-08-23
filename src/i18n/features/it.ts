@@ -228,6 +228,18 @@ const it: FeatureDetailDictionary = {
 		benefit:
 			'Passi dall’installazione alla prima prenotazione reale in pochi minuti, non in un pomeriggio, e senza dover chiedere aiuto a nessuno.',
 	},
+	freeReadings: {
+		title: 'Tarocchi Gratis',
+		tagline: 'Trasforma i curiosi in clienti: una domanda gratuita oggi, <span class="ct-accent">una prenotazione pagante</span> domani.',
+		metaDescription:
+			'Offri consulti gratuiti in una sezione dedicata del tuo sito: raccogli contatti, rispondi come preferisci, e lascia che chi apprezza la risposta ti lasci volentieri una mancia.',
+		painPoint:
+			'Regalare qualche consulto gratuito è un modo collaudato per farti conoscere, ma senza uno strumento dedicato finisce gestito a mano tra DM sparsi, email e messaggi WhatsApp che si perdono: nessun modo per tenere traccia di chi ha già scritto, né per trasformare quel primo contatto gratuito in un cliente pagante.',
+		howItWorks:
+			'Attivi una pagina dedicata (o incolli lo shortcode dove vuoi) dove chiunque può farti una domanda gratuita. Scegli tu come rispondere — dal pannello WordPress, dalla tua email, o su WhatsApp — e il modulo pubblico si adatta da solo, chiedendo solo il contatto che ti serve davvero. Ogni richiesta resta in un unico elenco, esportabile in CSV quando vuoi.',
+		benefit:
+			'Costruisci fiducia con chi ancora non ti conosce, senza perdere il controllo dei contatti raccolti: e se la tua risposta lascia il segno, puoi anche ricevere una piccola mancia facoltativa, con pagamento PayPal/Stripe già integrato.',
+	},
 };
 
 export default it;

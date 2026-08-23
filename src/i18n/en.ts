@@ -94,6 +94,10 @@ const en: Dictionary = {
 				title: '🚀 Guided setup',
 				description: 'No tech skills required: follow the step-by-step guide and your calendar is ready in minutes.',
 			},
+			{
+				title: '🔮 Free Tarot Readings',
+				description: 'A dedicated section for free readings: collect new contacts and turn them into clients, with an optional built-in tip.',
+			},
 		],
 	},
 	screenshots: {
@@ -271,12 +275,25 @@ const en: Dictionary = {
 					'On clickTarot → Statistics you’ll find your revenue, split between single bookings and packages so they don’t overlap, month-by-month trends, and a breakdown per calendar: which service earns the most, how many confirmed bookings you’ve received. Real numbers, not gut feeling, to decide what to raise the price on or what to retire.',
 				],
 			},
+			{
+				id: 'free-readings',
+				title: 'Free Tarot Readings and tipping',
+				paragraphs: [
+					'From clickTarot → Free Readings you turn on a section where anyone can ask you a free question, without booking a calendar slot: a ready-made page at yoursite.com/tarocchi-gratis/ is already there, or you can drop the [ctcal_free_reading] shortcode wherever you like.',
+					"Pick a single way to answer - WhatsApp, email from the WordPress panel, or your own inbox - and that's exactly what the public form promises whoever writes in, asking only for the contact info that mode needs.",
+				],
+				tip: "You can also turn on an optional tip: when you mark a question as answered, the client gets an invitation (if they want) to leave you something in return, with PayPal/Stripe payment and an amount of their choice.",
+			},
 		],
 		faqTitle: 'Frequently asked questions',
 		faq: [
 			{
 				q: 'A client says they never got the confirmation email. What do I check?',
 				a: 'First, the client’s spam folder, then the booking status in clickTarot → Bookings: if it’s still "Pending", the email never went out because payment wasn’t completed.',
+			},
+			{
+				q: 'Do free questions eat into time I could spend on paying clients?',
+				a: "No: you answer whenever you want, in whichever mode you prefer, and you can turn the section off any time by removing the shortcode from your pages.",
 			},
 			{
 				q: 'I need to close for a few days off. How do I do that?',

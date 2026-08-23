@@ -94,6 +94,10 @@ const it: Dictionary = {
 				title: '🚀 Installazione guidata',
 				description: 'Nessuna competenza tecnica richiesta: segui la guida passo passo e il tuo calendario è pronto in pochi minuti.',
 			},
+			{
+				title: '🔮 Tarocchi Gratis',
+				description: 'Una sezione dedicata per consulti gratuiti: raccogli nuovi contatti e trasformali in clienti, con mancia facoltativa integrata.',
+			},
 		],
 	},
 	screenshots: {
@@ -271,12 +275,25 @@ const it: Dictionary = {
 					'Su clickTarot → Statistiche trovi l’incassato, diviso tra prenotazioni singole e pacchetti così non si sovrappongono, l’andamento mese per mese e il dettaglio per calendario: quale servizio rende di più, quante prenotazioni confermate hai ricevuto. Numeri reali, non sensazioni, per decidere cosa alzare di prezzo o cosa ritirare.',
 				],
 			},
+			{
+				id: 'free-readings',
+				title: 'Tarocchi Gratis e mancia',
+				paragraphs: [
+					'Da clickTarot → Tarocchi Gratis attivi una sezione dove chiunque può farti una domanda gratuita, senza prenotare uno slot di calendario: trovi già pronta la pagina tuosito.it/tarocchi-gratis/, oppure incolli lo shortcode [ctcal_free_reading] dove preferisci.',
+					'Scegli un solo modo per rispondere - WhatsApp, email dal pannello WordPress, o dalla tua casella personale - ed è quello che il modulo pubblico promette a chi scrive, chiedendo solo il contatto necessario per quella modalità.',
+				],
+				tip: 'Puoi attivare anche la mancia facoltativa: quando segni una domanda come risposta, il consultante riceve (se vuole) l\'invito a lasciarti qualcosa in cambio, con pagamento PayPal/Stripe e importo a sua scelta.',
+			},
 		],
 		faqTitle: 'Domande frequenti',
 		faq: [
 			{
 				q: 'Un cliente dice di non aver ricevuto l’email di conferma. Cosa controllo?',
 				a: 'Prima la cartella spam del cliente, poi lo stato della prenotazione in clickTarot → Prenotazioni: se è ancora "Pending", l’email non è partita perché il pagamento non è stato completato.',
+			},
+			{
+				q: 'Le domande gratuite tolgono tempo ai clienti paganti?',
+				a: 'No: rispondi quando vuoi, con la modalità che preferisci, e puoi disattivare la sezione in qualsiasi momento rimuovendo lo shortcode dalle tue pagine.',
 			},
 			{
 				q: 'Devo chiudere per qualche giorno di ferie, come faccio?',

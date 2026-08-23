@@ -228,6 +228,18 @@ const de: FeatureDetailDictionary = {
 		benefit:
 			'Du kommst von der Installation zur ersten echten Buchung in wenigen Minuten, nicht an einem ganzen Nachmittag, und ohne jemanden um Hilfe bitten zu müssen.',
 	},
+	freeReadings: {
+		title: 'Kostenlose Tarot-Lesungen',
+		tagline: 'Aus Neugierigen werden Kundinnen: heute eine kostenlose Frage, <span class="ct-accent">morgen eine bezahlte Buchung</span>.',
+		metaDescription:
+			'Biete kostenlose Lesungen in einem eigenen Bereich deiner Website an: sammle Kontakte, antworte wie du möchtest, und lass zufriedene Kundinnen dir ein Trinkgeld hinterlassen.',
+		painPoint:
+			'Ein paar kostenlose Lesungen zu verschenken ist ein bewährter Weg, um bekannt zu werden — aber ohne ein eigenes Werkzeug landet das am Ende in verstreuten DMs, E-Mails und WhatsApp-Nachrichten, die untergehen: kein Überblick, wer schon geschrieben hat, und keine Möglichkeit, aus diesem ersten kostenlosen Kontakt eine zahlende Kundin zu machen.',
+		howItWorks:
+			'Du aktivierst eine eigene Seite (oder fügst den Shortcode ein, wo du willst), auf der dir jede*r eine kostenlose Frage stellen kann. Du entscheidest, wie du antwortest — aus dem WordPress-Panel, von deiner eigenen E-Mail oder auf WhatsApp — und das öffentliche Formular passt sich automatisch an und fragt nur den Kontakt ab, den du wirklich brauchst. Jede Anfrage bleibt in einer einzigen Liste, jederzeit als CSV exportierbar.',
+		benefit:
+			'Du baust Vertrauen bei Menschen auf, die dich noch nicht kennen, ohne den Überblick über die gesammelten Kontakte zu verlieren: und wenn deine Antwort ankommt, kannst du zusätzlich ein freiwilliges Trinkgeld erhalten, mit bereits integrierter PayPal-/Stripe-Zahlung.',
+	},
 };
 
 export default de;

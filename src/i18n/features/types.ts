@@ -17,6 +17,7 @@ export const featureKeys = [
 	'multiCalendar',
 	'customColor',
 	'guidedSetup',
+	'freeReadings',
 ] as const;
 export type FeatureKey = (typeof featureKeys)[number];
 
@@ -41,6 +42,7 @@ export const featureSlugs: Record<FeatureKey, string> = {
 	multiCalendar: 'multiple-calendars',
 	customColor: 'custom-calendar-color',
 	guidedSetup: 'guided-setup',
+	freeReadings: 'free-tarot-readings',
 };
 
 export interface FeatureDetail {

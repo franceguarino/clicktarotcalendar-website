@@ -228,6 +228,18 @@ const es: FeatureDetailDictionary = {
 		benefit:
 			'Pasas de instalar el plugin a tu primera reserva real en minutos, no en toda una tarde, y sin tener que pedirle ayuda a nadie.',
 	},
+	freeReadings: {
+		title: 'Tarot Gratis',
+		tagline: 'Convierte a los curiosos en clientes: hoy una pregunta gratis, <span class="ct-accent">mañana una reserva de pago</span>.',
+		metaDescription:
+			'Ofrece consultas gratuitas en una sección dedicada de tu web: recoge contactos, responde como prefieras, y deja que quien aprecie tu respuesta te deje una propina.',
+		painPoint:
+			'Regalar algunas consultas gratuitas es una forma probada de darte a conocer, pero sin una herramienta dedicada acaba gestionándose a mano entre DMs sueltos, correos y mensajes de WhatsApp que se pierden: sin forma de saber quién ya escribió, ni de convertir ese primer contacto gratuito en un cliente de pago.',
+		howItWorks:
+			'Activas una página dedicada (o pegas el shortcode donde quieras) donde cualquiera puede hacerte una pregunta gratis. Tú eliges cómo responder — desde el panel de WordPress, desde tu propio correo, o por WhatsApp — y el formulario público se adapta solo, pidiendo únicamente el contacto que realmente necesitas. Cada solicitud queda en una única lista, exportable a CSV cuando quieras.',
+		benefit:
+			'Generas confianza con quien todavía no te conoce, sin perder el control de los contactos que recoges: y si tu respuesta deja huella, también puedes recibir una propina opcional, con pago por PayPal/Stripe ya integrado.',
+	},
 };
 
 export default es;

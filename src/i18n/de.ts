@@ -94,6 +94,10 @@ const de: Dictionary = {
 				title: '🚀 Geführte Einrichtung',
 				description: 'Keine technischen Kenntnisse nötig: folge der Schritt-für-Schritt-Anleitung, und dein Kalender ist in wenigen Minuten startklar.',
 			},
+			{
+				title: '🔮 Kostenlose Tarot-Lesungen',
+				description: 'Ein eigener Bereich für kostenlose Lesungen: sammle neue Kontakte und mach sie zu Kundinnen, mit optionalem integriertem Trinkgeld.',
+			},
 		],
 	},
 	screenshots: {
@@ -271,12 +275,25 @@ const de: Dictionary = {
 					'Unter clickTarot → Statistiken findest du deinen Umsatz, aufgeteilt nach Einzelbuchungen und Paketen, damit sie sich nicht überschneiden, die monatliche Entwicklung und die Aufschlüsselung pro Kalender: welcher Service am meisten einbringt, wie viele bestätigte Buchungen du erhalten hast. Echte Zahlen statt Bauchgefühl, um zu entscheiden, wo du den Preis erhöhst oder was du einstellst.',
 				],
 			},
+			{
+				id: 'free-readings',
+				title: 'Kostenlose Tarot-Lesungen und Trinkgeld',
+				paragraphs: [
+					'Unter clickTarot → Kostenlose Lesungen aktivierst du einen Bereich, in dem dir jede*r eine kostenlose Frage stellen kann, ganz ohne Kalender-Termin zu buchen: die fertige Seite deineseite.de/tarocchi-gratis/ ist schon da, oder du fügst den Shortcode [ctcal_free_reading] ein, wo du willst.',
+					'Du wählst genau einen Weg zu antworten - WhatsApp, E-Mail aus dem WordPress-Panel, oder deine eigene E-Mail - und genau das verspricht das öffentliche Formular allen, die schreiben, es fragt nur den Kontakt ab, den dieser Modus wirklich braucht.',
+				],
+				tip: 'Du kannst zusätzlich ein freiwilliges Trinkgeld aktivieren: Wenn du eine Frage als beantwortet markierst, bekommt der/die Kund*in (falls gewünscht) die Einladung, dir im Gegenzug etwas dazulassen, mit PayPal-/Stripe-Zahlung und einem selbst gewählten Betrag.',
+			},
 		],
 		faqTitle: 'Häufig gestellte Fragen',
 		faq: [
 			{
 				q: 'Ein Kunde sagt, er habe die Bestätigungs-E-Mail nie erhalten. Was prüfe ich?',
 				a: 'Zuerst den Spam-Ordner des Kunden, dann den Buchungsstatus unter clickTarot → Buchungen: Steht er noch auf „Pending", ist die E-Mail nicht rausgegangen, weil die Zahlung nicht abgeschlossen wurde.',
+			},
+			{
+				q: 'Kosten kostenlose Fragen mich Zeit, die zahlenden Kund*innen fehlt?',
+				a: 'Nein: Du antwortest, wann du willst, in dem Modus, den du bevorzugst, und kannst den Bereich jederzeit deaktivieren, indem du den Shortcode von deinen Seiten entfernst.',
 			},
 			{
 				q: 'Ich muss für ein paar Urlaubstage schließen. Wie mache ich das?',
