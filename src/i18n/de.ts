@@ -280,7 +280,7 @@ const de: Dictionary = {
 				title: 'Kostenlose Tarot-Lesungen und Trinkgeld',
 				paragraphs: [
 					'Unter clickTarot → Kostenlose Lesungen aktivierst du einen Bereich, in dem dir jede*r eine kostenlose Frage stellen kann, ganz ohne Kalender-Termin zu buchen: die fertige Seite deineseite.de/tarocchi-gratis/ ist schon da, oder du fügst den Shortcode [ctcal_free_reading] ein, wo du willst.',
-					'Du wählst genau einen Weg zu antworten - WhatsApp, E-Mail aus dem WordPress-Panel, oder deine eigene E-Mail - und genau das verspricht das öffentliche Formular allen, die schreiben, es fragt nur den Kontakt ab, den dieser Modus wirklich braucht.',
+					'Du wählst genau einen Weg zu antworten - WhatsApp, E-Mail aus dem WordPress-Panel, oder deine eigene E-Mail - und genau das verspricht das öffentliche Formular allen, die schreiben.',
 				],
 				tip: 'Du kannst zusätzlich ein freiwilliges Trinkgeld aktivieren: Wenn du eine Frage als beantwortet markierst, bekommt der/die Kund*in (falls gewünscht) die Einladung, dir im Gegenzug etwas dazulassen, mit PayPal-/Stripe-Zahlung und einem selbst gewählten Betrag.',
 			},

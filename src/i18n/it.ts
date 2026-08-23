@@ -280,7 +280,7 @@ const it: Dictionary = {
 				title: 'Tarocchi Gratis e mancia',
 				paragraphs: [
 					'Da clickTarot → Tarocchi Gratis attivi una sezione dove chiunque può farti una domanda gratuita, senza prenotare uno slot di calendario: trovi già pronta la pagina tuosito.it/tarocchi-gratis/, oppure incolli lo shortcode [ctcal_free_reading] dove preferisci.',
-					'Scegli un solo modo per rispondere - WhatsApp, email dal pannello WordPress, o dalla tua casella personale - ed è quello che il modulo pubblico promette a chi scrive, chiedendo solo il contatto necessario per quella modalità.',
+					'Scegli un solo modo per rispondere - WhatsApp, email dal pannello WordPress, o dalla tua casella personale - ed è quello che il modulo pubblico promette a chi scrive.',
 				],
 				tip: 'Puoi attivare anche la mancia facoltativa: quando segni una domanda come risposta, il consultante riceve (se vuole) l\'invito a lasciarti qualcosa in cambio, con pagamento PayPal/Stripe e importo a sua scelta.',
 			},

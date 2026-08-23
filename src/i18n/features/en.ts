@@ -236,7 +236,7 @@ const en: FeatureDetailDictionary = {
 		painPoint:
 			"Giving away a few free readings is a proven way to get noticed, but without a dedicated tool it ends up managed by hand across scattered DMs, emails, and WhatsApp messages that get lost — no way to track who already wrote in, and no way to turn that first free contact into a paying client.",
 		howItWorks:
-			"You turn on a dedicated page (or drop the shortcode anywhere you like) where anyone can ask you a free question. You choose how to answer — from the WordPress panel, from your own email, or on WhatsApp — and the public form adapts on its own, asking only for the contact info it actually needs. Every request stays in one list, exportable to CSV whenever you want.",
+			"You turn on a dedicated page (or drop the shortcode anywhere you like) where anyone can ask you a free question. You choose how to answer — from the WordPress panel, from your own email, or on WhatsApp — and the public form adapts accordingly. Every request stays in one list, exportable to CSV whenever you want.",
 		benefit:
 			"You build trust with people who don't know you yet, without losing track of the contacts you collect: and if your answer leaves a mark, you can also receive an optional tip, with PayPal/Stripe payment already built in.",
 	},

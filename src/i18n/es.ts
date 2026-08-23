@@ -280,7 +280,7 @@ const es: Dictionary = {
 				title: 'Tarot Gratis y propina',
 				paragraphs: [
 					'Desde clickTarot → Tarot Gratis activas una sección donde cualquiera puede hacerte una pregunta gratis, sin reservar un hueco de calendario: ya tienes lista la página tusitio.com/tarocchi-gratis/, o puedes pegar el shortcode [ctcal_free_reading] donde prefieras.',
-					'Eliges una única forma de responder - WhatsApp, email desde el panel de WordPress, o tu propio correo - y es exactamente lo que el formulario público promete a quien escribe, pidiendo solo el contacto que esa modalidad necesita.',
+					'Eliges una única forma de responder - WhatsApp, email desde el panel de WordPress, o tu propio correo - y es exactamente lo que el formulario público promete a quien escribe.',
 				],
 				tip: 'También puedes activar la propina opcional: cuando marcas una pregunta como respondida, el consultante recibe (si quiere) la invitación a dejarte algo a cambio, con pago por PayPal/Stripe e importe a su elección.',
 			},

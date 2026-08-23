@@ -236,7 +236,7 @@ const it: FeatureDetailDictionary = {
 		painPoint:
 			'Regalare qualche consulto gratuito è un modo collaudato per farti conoscere, ma senza uno strumento dedicato finisce gestito a mano tra DM sparsi, email e messaggi WhatsApp che si perdono: nessun modo per tenere traccia di chi ha già scritto, né per trasformare quel primo contatto gratuito in un cliente pagante.',
 		howItWorks:
-			'Attivi una pagina dedicata (o incolli lo shortcode dove vuoi) dove chiunque può farti una domanda gratuita. Scegli tu come rispondere — dal pannello WordPress, dalla tua email, o su WhatsApp — e il modulo pubblico si adatta da solo, chiedendo solo il contatto che ti serve davvero. Ogni richiesta resta in un unico elenco, esportabile in CSV quando vuoi.',
+			'Attivi una pagina dedicata (o incolli lo shortcode dove vuoi) dove chiunque può farti una domanda gratuita. Scegli tu come rispondere — dal pannello WordPress, dalla tua email, o su WhatsApp — e il modulo pubblico si adatta di conseguenza. Ogni richiesta resta in un unico elenco, esportabile in CSV quando vuoi.',
 		benefit:
 			'Costruisci fiducia con chi ancora non ti conosce, senza perdere il controllo dei contatti raccolti: e se la tua risposta lascia il segno, puoi anche ricevere una piccola mancia facoltativa, con pagamento PayPal/Stripe già integrato.',
 	},
