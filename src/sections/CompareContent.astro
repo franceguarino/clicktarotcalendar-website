@@ -2,7 +2,7 @@
 import { getDictionary, type Locale } from '../i18n';
 import { competitorKeys, competitorNames, competitorPath, bookneticSaasPath, type CompetitorDetail, type CompetitorKey } from '../i18n/competitors';
 import CtaButton from '../components/CtaButton.astro';
-import { CHECKOUT_URL } from '../config';
+import { getCheckoutUrl } from '../config';
 
 interface Props {
 	locale: Locale;
@@ -94,7 +94,7 @@ const [, competitorTitleName] = c.title.split(' vs ');
 	<div class="ct-container ct-final-cta">
 		<h2>{c.ctaTitle}</h2>
 		<p class="ct-hint">{c.ctaBody}</p>
-		<CtaButton href={CHECKOUT_URL} external>{dict.pricing.ctaLabel}</CtaButton>
+		<CtaButton href={getCheckoutUrl(locale)} external>{dict.pricing.ctaLabel}</CtaButton>
 	</div>
 </section>
 

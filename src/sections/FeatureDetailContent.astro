@@ -2,7 +2,7 @@
 import { getDictionary, pagePath, type Locale } from '../i18n';
 import { featureKeys, featurePath, getFeatureUi, type FeatureDetail, type FeatureKey } from '../i18n/features';
 import CtaButton from '../components/CtaButton.astro';
-import { CHECKOUT_URL } from '../config';
+import { getCheckoutUrl } from '../config';
 
 interface Props {
 	locale: Locale;
@@ -44,7 +44,7 @@ const otherKeys = featureKeys.filter((k) => k !== featureKey);
 		<h2>{ui.ctaTitle}</h2>
 		<p class="ct-hint">{ui.ctaBody}</p>
 		<div class="ct-feature-cta-actions">
-			<CtaButton href={CHECKOUT_URL} external>{dict.pricing.ctaLabel}</CtaButton>
+			<CtaButton href={getCheckoutUrl(locale)} external>{dict.pricing.ctaLabel}</CtaButton>
 			<CtaButton href={pagePath(locale, 'home')} variant="secondary">{ui.backToHome}</CtaButton>
 		</div>
 	</div>

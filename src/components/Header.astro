@@ -1,7 +1,7 @@
 ---
 import { locales, localeNames, pagePath, type Locale, type PageKey } from '../i18n';
 import { getDictionary } from '../i18n';
-import { CHECKOUT_URL } from '../config';
+import { getCheckoutUrl } from '../config';
 
 interface Props {
 	locale: Locale;
@@ -33,7 +33,7 @@ const dict = getDictionary(locale);
 					))}
 				</select>
 			</label>
-			<a class="ct-btn ct-btn-primary ct-header-cta" href={CHECKOUT_URL} target="_blank" rel="noopener">
+			<a class="ct-btn ct-btn-primary ct-header-cta" href={getCheckoutUrl(locale)} target="_blank" rel="noopener">
 				{dict.pricing.ctaLabel}
 			</a>
 			<button type="button" class="ct-menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="ct-mobile-nav">
@@ -48,7 +48,7 @@ const dict = getDictionary(locale);
 		<a href={pagePath(locale, 'pricing')}>{dict.nav.pricing}</a>
 		<a href={pagePath(locale, 'faq')}>{dict.nav.faq}</a>
 		<a href={pagePath(locale, 'about')}>{dict.nav.about}</a>
-		<a class="ct-btn ct-btn-primary ct-mobile-cta" href={CHECKOUT_URL} target="_blank" rel="noopener">
+		<a class="ct-btn ct-btn-primary ct-mobile-cta" href={getCheckoutUrl(locale)} target="_blank" rel="noopener">
 			{dict.pricing.ctaLabel}
 		</a>
 	</div>

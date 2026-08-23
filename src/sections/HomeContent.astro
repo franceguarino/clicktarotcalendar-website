@@ -3,7 +3,7 @@ import { getDictionary, pagePath, type Locale } from '../i18n';
 import CtaButton from '../components/CtaButton.astro';
 import FeatureCard from '../components/FeatureCard.astro';
 import { featureKeys, featurePath } from '../i18n/features';
-import { CHECKOUT_URL } from '../config';
+import { getCheckoutUrl } from '../config';
 
 interface Props {
 	locale: Locale;
@@ -18,7 +18,7 @@ const dict = getDictionary(locale);
 			<h1 set:html={dict.hero.title} />
 			<p class="ct-hero-subtitle">{dict.hero.subtitle}</p>
 			<div class="ct-hero-actions">
-				<CtaButton href={CHECKOUT_URL} external>{dict.pricing.ctaLabel}</CtaButton>
+				<CtaButton href={getCheckoutUrl(locale)} external>{dict.pricing.ctaLabel}</CtaButton>
 			</div>
 		</div>
 		<div class="ct-hero-image">
@@ -70,7 +70,7 @@ const dict = getDictionary(locale);
 	<div class="ct-container ct-final-cta">
 		<h2 set:html={dict.pricing.title} />
 		<p class="ct-hint">{dict.pricing.subtitle}</p>
-		<CtaButton href={CHECKOUT_URL} external>{dict.pricing.ctaLabel}</CtaButton>
+		<CtaButton href={getCheckoutUrl(locale)} external>{dict.pricing.ctaLabel}</CtaButton>
 	</div>
 </section>
 

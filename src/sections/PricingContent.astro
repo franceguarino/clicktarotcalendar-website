@@ -1,7 +1,7 @@
 ---
 import { getDictionary, type Locale } from '../i18n';
 import CtaButton from '../components/CtaButton.astro';
-import { CHECKOUT_URL } from '../config';
+import { getCheckoutUrl } from '../config';
 
 interface Props {
 	locale: Locale;
@@ -27,7 +27,7 @@ const dict = getDictionary(locale);
 				</p>
 				<p class="ct-hint ct-tier-note">{tier.note}</p>
 				<div class="ct-pricing-cta">
-					<CtaButton href={CHECKOUT_URL} external variant={tier.highlighted ? 'primary' : 'secondary'}>{dict.pricing.ctaLabel}</CtaButton>
+					<CtaButton href={getCheckoutUrl(locale)} external variant={tier.highlighted ? 'primary' : 'secondary'}>{dict.pricing.ctaLabel}</CtaButton>
 				</div>
 			</div>
 		))}
