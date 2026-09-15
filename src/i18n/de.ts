@@ -101,22 +101,32 @@ const de: Dictionary = {
 		],
 	},
 	screenshots: {
-		title: 'So funktioniert es in der Praxis',
+		title: 'Ein genauerer Blick',
 		items: [
 			{
-				src: '/screenshots/screenshot-2.png',
-				alt: 'Kalender-Panel zum Erstellen und Anpassen deiner Leistungen',
-				caption: 'Richte deine Leistung ein und organisiere deinen Terminplan',
+				src: '/screenshots/feature-create-calendar.png',
+				alt: 'Neuen Kalender erstellen: Dauer, Preis und öffentlicher Link in einem Formular',
+				caption: 'Neuen Kalender in einem einzigen Formular erstellen',
 			},
 			{
-				src: '/screenshots/screenshot-1.png',
-				alt: 'Öffentlicher Buchungskalender mit Monatsansicht und Zeitfenstern',
-				caption: 'Teile deinen Kalender und erhalte Buchungen und Zahlungen',
+				src: '/screenshots/feature-payments.png',
+				alt: 'Zahlungseinstellungen: PayPal und Stripe verbinden',
+				caption: 'PayPal und Stripe verbinden',
 			},
 			{
-				src: '/screenshots/screenshot-3.png',
-				alt: 'Statistik-Dashboard mit Umsätzen und monatlichem Verlauf',
-				caption: 'Behalte deine Zahlen im Blick und sieh, was funktioniert',
+				src: '/screenshots/feature-emails.png',
+				alt: 'Anpassbare Bestätigungs-, Admin- und Erinnerungs-E-Mails',
+				caption: 'Vollständig anpassbare E-Mails',
+			},
+			{
+				src: '/screenshots/feature-order-bump.png',
+				alt: 'Order Bump: kostenpflichtigen Zusatz im Buchungsformular anbieten',
+				caption: 'Kostenpflichtigen Zusatz mit Order Bump anbieten',
+			},
+			{
+				src: '/screenshots/feature-coupons.png',
+				alt: 'Rabattgutscheine für deine Kunden',
+				caption: 'Rabattgutscheine für deine Kunden erstellen',
 			},
 		],
 	},

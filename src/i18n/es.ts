@@ -101,22 +101,32 @@ const es: Dictionary = {
 		],
 	},
 	screenshots: {
-		title: 'Cómo funciona, en la práctica',
+		title: 'Un vistazo más de cerca',
 		items: [
 			{
-				src: '/screenshots/screenshot-2.png',
-				alt: 'Panel Calendarios para crear y personalizar tus servicios',
-				caption: 'Crea tu producto y organiza tu agenda',
+				src: '/screenshots/feature-create-calendar.png',
+				alt: 'Crea un nuevo calendario: duración, precio y enlace público en un formulario',
+				caption: 'Crea un nuevo calendario en un solo formulario',
 			},
 			{
-				src: '/screenshots/screenshot-1.png',
-				alt: 'Calendario de reservas público con vista mensual y franjas horarias',
-				caption: 'Comparte tu calendario para recibir reservas y pagos',
+				src: '/screenshots/feature-payments.png',
+				alt: 'Ajustes de pagos: conecta PayPal y Stripe',
+				caption: 'Conecta PayPal y Stripe',
 			},
 			{
-				src: '/screenshots/screenshot-3.png',
-				alt: 'Panel Estadísticas con ingresos y evolución mensual',
-				caption: 'Consulta tus estadísticas para ver qué funciona y qué no',
+				src: '/screenshots/feature-emails.png',
+				alt: 'Correos de confirmación, aviso al administrador y recordatorio personalizables',
+				caption: 'Correos totalmente personalizables',
+			},
+			{
+				src: '/screenshots/feature-order-bump.png',
+				alt: 'Order bump: ofrece un extra de pago en el formulario de reserva',
+				caption: 'Ofrece un extra de pago con order bump',
+			},
+			{
+				src: '/screenshots/feature-coupons.png',
+				alt: 'Cupones de descuento para tus clientes',
+				caption: 'Crea cupones de descuento para tus clientes',
 			},
 		],
 	},

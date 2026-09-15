@@ -101,22 +101,32 @@ const en: Dictionary = {
 		],
 	},
 	screenshots: {
-		title: 'How it works, in practice',
+		title: 'A closer look',
 		items: [
 			{
-				src: '/screenshots/screenshot-2.png',
-				alt: 'Calendars panel to create and customize your services',
-				caption: 'Set up your service and organize your schedule',
+				src: '/screenshots/feature-create-calendar.png',
+				alt: 'Create a new calendar: duration, price and public link in one form',
+				caption: 'Create a new calendar in one simple form',
 			},
 			{
-				src: '/screenshots/screenshot-1.png',
-				alt: 'Public booking calendar with monthly view and time slots',
-				caption: 'Share your calendar to start receiving bookings and payments',
+				src: '/screenshots/feature-payments.png',
+				alt: 'Payments settings: connect PayPal and Stripe',
+				caption: 'Connect PayPal and Stripe',
 			},
 			{
-				src: '/screenshots/screenshot-3.png',
-				alt: 'Statistics dashboard with revenue and monthly trends',
-				caption: 'Check your stats to see what works and what doesn’t',
+				src: '/screenshots/feature-emails.png',
+				alt: 'Customizable confirmation, admin and reminder emails',
+				caption: 'Fully customizable emails',
+			},
+			{
+				src: '/screenshots/feature-order-bump.png',
+				alt: 'Order bump: offer a paid add-on in the booking form',
+				caption: 'Offer a paid add-on with order bump',
+			},
+			{
+				src: '/screenshots/feature-coupons.png',
+				alt: 'Discount coupons for your customers',
+				caption: 'Create discount coupons for your clients',
 			},
 		],
 	},
