@@ -43,6 +43,7 @@ const dict = getDictionary(locale);
 				))}
 			</ul>
 			<p class="ct-hint ct-guarantee">{dict.pricing.guarantee}</p>
+			<p class="ct-hint ct-free-note" set:html={dict.pricing.freeVersionNote} />
 		</div>
 	</div>
 </section>
@@ -141,6 +142,11 @@ const dict = getDictionary(locale);
 	}
 	.ct-guarantee {
 		margin: 16px 0 0;
+		font-size: 13px;
+		text-align: center;
+	}
+	.ct-free-note {
+		margin: 6px 0 0;
 		font-size: 13px;
 		text-align: center;
 	}

@@ -36,6 +36,7 @@ export interface Dictionary {
 		ctaLabel: string;
 		included: string[];
 		guarantee: string;
+		freeVersionNote: string;
 		recommendedLabel: string;
 		tiers: { label: string; price: string; period: string; note: string; highlighted: boolean }[];
 	};

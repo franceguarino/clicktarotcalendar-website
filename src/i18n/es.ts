@@ -142,6 +142,8 @@ const es: Dictionary = {
 			'Actualizaciones y soporte incluidos',
 		],
 		guarantee: 'Garantía de devolución gestionada directamente por Freemius en el checkout.',
+		freeVersionNote:
+			'¿Prefieres probarlo gratis primero? <a href="https://wordpress.org/plugins/francesco-guarino-booking-calendar/" target="_blank" rel="noopener">Consíguelo en WordPress.org</a>.',
 		recommendedLabel: 'Recomendado',
 		tiers: [
 			{ label: 'Mensual', price: '14,72€', period: '/mes', note: 'Pagas mes a mes, cancela cuando quieras.', highlighted: false },
