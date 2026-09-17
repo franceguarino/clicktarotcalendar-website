@@ -191,6 +191,80 @@ const it: CompetitorDictionary = {
 		],
 		otherComparisonsTitle: 'Scopri come ci confrontiamo con altri strumenti di prenotazione',
 	},
+	dailytarot: {
+		eyebrow: 'Confronto',
+		title: 'clickTarot Calendar vs Daily Tarot',
+		subtitle:
+			'Daily Tarot è principalmente uno strumento per pubblicare letture, mazzi e spread di tarocchi, con la prenotazione come una delle tante funzionalità, ancora agli inizi. clickTarot Calendar è costruito da zero attorno alla prenotazione e all’incasso dei consulti.',
+		colFeature: 'Funzionalità',
+		colClicktarot: 'clickTarot Calendar',
+		colCompetitor: 'Daily Tarot',
+		rows: [
+			{ feature: 'Scopo principale', clicktarot: 'Prenotazione e incasso dei consulti', competitor: 'Pubblicazione di letture, mazzi e spread di tarocchi; la prenotazione è un modulo secondario' },
+			{ feature: 'Intervallo di modifica del calendario (versione gratuita)', clicktarot: 'Illimitato, qualsiasi data futura', competitor: 'La versione gratuita permette di modificare solo oggi e domani; date successive richiedono l’upgrade a Pro' },
+			{ feature: 'Far pagare una prenotazione (versione gratuita)', clicktarot: 'PayPal incluso', competitor: 'Non disponibile; le opzioni di pagamento sono una funzionalità solo Pro' },
+			{ feature: 'Raccolta dati fatturazione (Codice Fiscale/Partita IVA, indirizzo)', clicktarot: 'Automatica, inclusa', competitor: 'Non offerta in nessun piano' },
+			{ feature: 'Pacchetti prepagati di sedute', clicktarot: 'Incluso', competitor: 'Non offerto' },
+			{ feature: 'Dove gira', clicktarot: 'Sul tuo sito WordPress', competitor: 'Anche sul tuo sito WordPress' },
+		],
+		painPointsTitle: 'Cosa sapere prima di scegliere Daily Tarot per le prenotazioni',
+		painPointsIntro: 'La scheda di Daily Tarot su WordPress.org mostra un software agli inizi, in questo simile a clickTarot Calendar. Vale la pena sapere cosa include davvero la versione gratuita prima di costruirci sopra un flusso di prenotazione.',
+		painPoints: [
+			'La versione gratuita limita la modifica del calendario a oggi e domani; programmare oltre richiede l’upgrade a Pro.',
+			'I pagamenti delle prenotazioni (PayPal o Stripe) sono una funzionalità solo Pro; la versione gratuita accetta richieste di prenotazione ma non può farle pagare.',
+			'Non c’è fatturazione, raccolta di Codice Fiscale/Partita IVA né sistema di pacchetti prepagati in nessun piano: funzionalità di cui uno studio di consulenza a pagamento ha bisogno presto, non dopo.',
+		],
+		ctaTitle: 'Pronto a provare qualcosa fatto apposta per te?',
+		ctaBody: 'Installa clickTarot Calendar sul tuo sito WordPress in pochi minuti, senza competenze tecniche.',
+		faq: [
+			{
+				q: 'Posso far pagare le prenotazioni con la versione gratuita di Daily Tarot?',
+				a: 'No. I metodi di pagamento (PayPal e Stripe) sono disponibili solo nel piano Pro a pagamento di Daily Tarot; la versione gratuita accetta richieste di prenotazione ma non può farle pagare. clickTarot Calendar accetta pagamenti PayPal già nella versione gratuita, con Stripe su Premium.',
+			},
+			{
+				q: 'Daily Tarot è pensato per le prenotazioni, come clickTarot Calendar?',
+				a: 'Non principalmente. Il focus principale di Daily Tarot è la pubblicazione di letture, mazzi e spread di tarocchi, con un modulo di prenotazione tra le varie funzionalità. clickTarot Calendar è costruito da zero attorno alla prenotazione e all’incasso dei consulti.',
+			},
+		],
+		otherComparisonsTitle: 'Scopri come ci confrontiamo con altri strumenti di prenotazione',
+	},
+	ozapp: {
+		eyebrow: 'Confronto',
+		title: 'clickTarot Calendar vs Ozapp',
+		subtitle:
+			'Ozapp (in precedenza Book Appointment Online PRO) è un plugin di appuntamenti generico, multi-dipendente, venduto su CodeCanyon, con una pagina rivolta ad astrologi e psychic tra le tante nicchie coperte. clickTarot Calendar è costruito da zero per un singolo professionista dei consulti.',
+		colFeature: 'Funzionalità',
+		colClicktarot: 'clickTarot Calendar',
+		colCompetitor: 'Ozapp',
+		rows: [
+			{ feature: 'Pensato per', clicktarot: 'Un singolo professionista dei consulti', competitor: 'Team con più collaboratori e sedi; la pagina astrologia/psychic è una delle tante landing di nicchia per lo stesso strumento generico' },
+			{ feature: 'Distribuzione', clicktarot: 'WordPress.org, con una versione gratuita reale e permanente', competitor: 'Solo marketplace CodeCanyon; nessuna scheda WordPress.org, nessun piano gratuito' },
+			{ feature: 'Modello di prezzo', clicktarot: 'Un piano, tutte le funzionalità incluse: mensile, annuale o lifetime, con un piano gratuito che resta gratuito', competitor: 'Licenza regolare da 79$ una tantum, supporto incluso per 6 mesi, estendibile a pagamento' },
+			{ feature: 'Raccolta dati fatturazione (Codice Fiscale/Partita IVA, indirizzo)', clicktarot: 'Automatica, inclusa', competitor: 'Non presente tra le funzionalità elencate' },
+			{ feature: 'Pacchetti prepagati di sedute', clicktarot: 'Incluso', competitor: 'Non disponibile; una funzione carrello per raggruppare più sedute è elencata come sviluppo futuro' },
+			{ feature: 'Metodi di pagamento', clicktarot: 'PayPal (gratuito), Stripe (Premium): i due più comuni per un consulente singolo', competitor: 'Stripe, PayPal, WooCommerce, Square, Yandex Kassa: ampia scelta, ma pensata per attività multi-mercato e multi-dipendente' },
+		],
+		painPointsTitle: 'Cosa sapere prima di scegliere Ozapp per uno studio da soli',
+		painPointsIntro: 'Ozapp è un sistema di appuntamenti ampio e capace, costruito prima di tutto per attività con più collaboratori, non per un singolo professionista dei consulti.',
+		painPoints: [
+			'È venduto solo su CodeCanyon: nessuna scheda WordPress.org, nessun modo di provare una vera versione gratuita prima di pagare 79$, e il supporto oltre i primi 6 mesi costa extra.',
+			'L’insieme di funzionalità (gestione dipendenti, un branch manager in roadmap, videochiamate) è costruito attorno ai team; un tarologo o astrologo che lavora da solo paga per molte funzionalità pensate per un altro tipo di attività.',
+			'Non ci sono fatturazione/raccolta Codice Fiscale né pacchetti prepagati di sedute, due cose di cui uno studio di consulenza ha bisogno presto.',
+		],
+		ctaTitle: 'Pronto a provare qualcosa fatto apposta per te?',
+		ctaBody: 'Installa clickTarot Calendar sul tuo sito WordPress in pochi minuti, senza competenze tecniche.',
+		faq: [
+			{
+				q: 'Posso provare Ozapp gratis prima di pagare?',
+				a: 'No. Ozapp è venduto come licenza una tantum da 79$ su CodeCanyon, senza piano gratuito né scheda WordPress.org. clickTarot Calendar ha una versione gratuita reale e permanente, installabile direttamente da WordPress.org.',
+			},
+			{
+				q: 'Ozapp è pensato per un tarologo o astrologo che lavora da solo?',
+				a: 'Non specificamente. Ozapp è un sistema di appuntamenti generico e multi-dipendente; la sua pagina astrologia/psychic è una delle tante landing di nicchia per lo stesso strumento generico. clickTarot Calendar è costruito da zero attorno al flusso di lavoro di un singolo professionista dei consulti.',
+			},
+		],
+		otherComparisonsTitle: 'Scopri come ci confrontiamo con altri strumenti di prenotazione',
+	},
 };
 
 export const bookneticSaasClarification = {

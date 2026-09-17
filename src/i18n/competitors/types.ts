@@ -2,7 +2,10 @@
 // (è una piattaforma white-label per rivendere booking-as-a-service ad altre
 // attività, non uno strumento per gestire le proprie prenotazioni). Ha invece
 // una pagina "chiarificatrice" dedicata — vedi ClarificationDetail più sotto.
-export const competitorKeys = ['calendly', 'acuity', 'simplybook', 'tidycal', 'booknetic'] as const;
+// 'dailytarot' e 'ozapp' sono gli unici due competitor realmente di nicchia
+// (tarot/astrologia/psychic su WordPress), a differenza degli scheduler
+// generici sopra (Calendly, Acuity, SimplyBook.me, TidyCal, Booknetic).
+export const competitorKeys = ['calendly', 'acuity', 'simplybook', 'tidycal', 'booknetic', 'dailytarot', 'ozapp'] as const;
 export type CompetitorKey = (typeof competitorKeys)[number];
 
 export const competitorNames: Record<CompetitorKey, string> = {
@@ -11,6 +14,8 @@ export const competitorNames: Record<CompetitorKey, string> = {
 	simplybook: 'SimplyBook.me',
 	tidycal: 'TidyCal',
 	booknetic: 'Booknetic',
+	dailytarot: 'Daily Tarot',
+	ozapp: 'Ozapp',
 };
 
 // Stesso slug in inglese per tutte le lingue, come per le pagine funzionalità:
@@ -21,6 +26,8 @@ export const competitorSlugs: Record<CompetitorKey, string> = {
 	simplybook: 'simplybook-me',
 	tidycal: 'tidycal',
 	booknetic: 'booknetic',
+	dailytarot: 'daily-tarot',
+	ozapp: 'ozapp',
 };
 
 export interface CompetitorRow {
