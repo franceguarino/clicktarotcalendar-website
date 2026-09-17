@@ -20,23 +20,26 @@ export function getDictionary(locale: Locale): Dictionary {
 	return dictionaries[locale];
 }
 
-export type PageKey = 'home' | 'pricing' | 'compare' | 'faq' | 'support' | 'privacy' | 'terms' | 'feature' | 'about';
+export type PageKey = 'home' | 'pricing' | 'compare' | 'guides' | 'faq' | 'support' | 'privacy' | 'terms' | 'feature' | 'guide' | 'about';
 
 // Un'unica fonte di verità per gli slug per pagina/lingua: l'inglese è la
 // lingua di default (mercato primario), quindi è quella "senza slug tradotto"
 // in root; solo l'italiano ha slug localizzati (prezzi, termini).
-// 'feature' e 'compare' non hanno una pagina indice propria: gli slug qui sono
-// solo un fallback perché il tipo PageKey lo richiede — i percorsi reali delle
-// singole pagine funzionalità/confronto sono calcolati da featurePath() in
-// ./features/index.ts e da competitorPath() in ./competitors/index.ts.
+// 'feature', 'compare' e 'guide' non hanno una pagina indice propria: gli slug
+// qui sono solo un fallback perché il tipo PageKey lo richiede — i percorsi
+// reali delle singole pagine funzionalità/confronto/guida sono calcolati da
+// featurePath() in ./features/index.ts, competitorPath() in
+// ./competitors/index.ts e guidePath() in ./guides/index.ts.
 const slugs: Record<Exclude<PageKey, 'home'>, Record<Locale, string>> = {
 	pricing: { it: 'prezzi', en: 'pricing', de: 'pricing', es: 'pricing' },
 	compare: { it: 'vs', en: 'vs', de: 'vs', es: 'vs' },
+	guides: { it: 'guides', en: 'guides', de: 'guides', es: 'guides' },
 	faq: { it: 'faq', en: 'faq', de: 'faq', es: 'faq' },
 	support: { it: 'supporto', en: 'support', de: 'support', es: 'support' },
 	privacy: { it: 'privacy', en: 'privacy', de: 'privacy', es: 'privacy' },
 	terms: { it: 'termini', en: 'terms', de: 'terms', es: 'terms' },
 	feature: { it: 'features', en: 'features', de: 'features', es: 'features' },
+	guide: { it: 'guides', en: 'guides', de: 'guides', es: 'guides' },
 	about: { it: 'chi-siamo', en: 'about', de: 'about', es: 'about' },
 };
 

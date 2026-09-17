@@ -7,6 +7,7 @@ export interface Dictionary {
 		home: string;
 		pricing: string;
 		compare: string;
+		guides: string;
 		faq: string;
 		about: string;
 	};
@@ -42,6 +43,13 @@ export interface Dictionary {
 		tiers: { label: string; price: string; period: string; note: string; highlighted: boolean }[];
 	};
 	compareIndex: {
+		eyebrow: string;
+		title: string;
+		subtitle: string;
+		ctaTitle: string;
+		ctaBody: string;
+	};
+	guidesIndex: {
 		eyebrow: string;
 		title: string;
 		subtitle: string;

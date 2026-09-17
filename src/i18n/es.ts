@@ -10,6 +10,7 @@ const es: Dictionary = {
 		home: 'Inicio',
 		pricing: 'Precios',
 		compare: 'Comparativas',
+		guides: 'Guías',
 		faq: 'FAQ',
 		about: 'Sobre mí',
 	},
@@ -169,6 +170,14 @@ const es: Dictionary = {
 			'clickTarot Calendar está pensado para quienes venden consultas de pago, no para equipos genéricos. Así se compara con las herramientas de programación que quizá ya estés considerando.',
 		ctaTitle: '¿No sabes cuál elegir? Pruébalo tú mismo.',
 		ctaBody: 'Todos los planes incluyen todas las funciones. Instala la versión gratuita desde WordPress.org, o pasa directamente a un plan de pago cuando estés listo.',
+	},
+	guidesIndex: {
+		eyebrow: 'Guías',
+		title: 'Guías para tarotistas y astrólogos que gestionan un negocio de consultas',
+		subtitle:
+			'Guías prácticas, sin relleno, para configurar y gestionar reservas online de consultas de pago, no consejos genéricos de pequeño negocio.',
+		ctaTitle: '¿Lista para ponerlo en práctica?',
+		ctaBody: 'Instala clickTarot Calendar gratis desde WordPress.org y sigue la guía.',
 	},
 	faq: {
 		title: 'Preguntas frecuentes',

@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import GuideDetailContent from '../../../sections/GuideDetailContent.astro';
+import { guideKeys, guideSlugs, guideAlternateLinks, getGuideDetail } from '../../../i18n/guides';
+
+export function getStaticPaths() {
+	return guideKeys.map((guideKey) => ({
+		params: { slug: guideSlugs[guideKey] },
+		props: { guideKey },
+	}));
+}
+
+const locale = 'de' as const;
+const { guideKey } = Astro.props;
+const detail = getGuideDetail(locale, guideKey);
+const alternates = guideAlternateLinks(guideKey);
+const langLinks = Object.fromEntries(alternates.map((a) => [a.locale, a.href]));
+---
+<BaseLayout
+	locale={locale}
+	page="guide"
+	title={detail.title}
+	description={detail.metaDescription}
+	alternates={alternates}
+	langLinks={langLinks}
+>
+	<GuideDetailContent locale={locale} guideKey={guideKey} detail={detail} />
+</BaseLayout>

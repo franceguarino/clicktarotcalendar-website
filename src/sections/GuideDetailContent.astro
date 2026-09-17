@@ -1,0 +1,186 @@
+---
+import { getDictionary, pagePath, type Locale } from '../i18n';
+import { guideKeys, guidePath, getGuideUi, getGuideDetail, type GuideDetail, type GuideKey } from '../i18n/guides';
+import { competitorKeys, competitorNames, competitorPath, getCompetitorDetail } from '../i18n/competitors';
+import CtaButton from '../components/CtaButton.astro';
+import { getCheckoutUrl } from '../config';
+
+interface Props {
+	locale: Locale;
+	guideKey: GuideKey;
+	detail: GuideDetail;
+}
+const { locale, guideKey, detail } = Astro.props;
+const dict = getDictionary(locale);
+const ui = getGuideUi(locale);
+const otherKeys = guideKeys.filter((k) => k !== guideKey);
+---
+<section class="ct-section ct-guide-hero">
+	<div class="ct-container ct-guide-head">
+		<p class="ct-eyebrow">{ui.eyebrow}</p>
+		<h1>{detail.title}</h1>
+		<p class="ct-hint ct-guide-tagline">{detail.tagline}</p>
+	</div>
+</section>
+
+<section class="ct-section">
+	<div class="ct-container ct-guide-body">
+		<p class="ct-guide-intro">{detail.intro}</p>
+		{detail.sections.map((s) => (
+			<article class="ct-guide-block">
+				<h2>{s.heading}</h2>
+				<p>{s.body}</p>
+			</article>
+		))}
+	</div>
+</section>
+
+{detail.showComparisons && (
+	<section class="ct-section ct-section-alt">
+		<div class="ct-container">
+			<h2>{ui.comparisonsTitle}</h2>
+			<ul class="ct-guide-compare-list">
+				{competitorKeys.map((key) => {
+					const c = getCompetitorDetail(locale, key);
+					return (
+						<li>
+							<a class="ct-card ct-guide-compare-card" href={competitorPath(locale, key)}>
+								<h3>vs {competitorNames[key]}</h3>
+								<p class="ct-hint">{c.subtitle}</p>
+							</a>
+						</li>
+					);
+				})}
+			</ul>
+		</div>
+	</section>
+)}
+
+<section class="ct-section ct-section-alt">
+	<div class="ct-container ct-final-cta">
+		<h2>{detail.ctaTitle}</h2>
+		<p class="ct-hint">{detail.ctaBody}</p>
+		<div class="ct-guide-cta-actions">
+			<CtaButton href={getCheckoutUrl(locale)} external>{dict.pricing.ctaLabel}</CtaButton>
+			<CtaButton href={pagePath(locale, 'home')} variant="secondary">{ui.backToHome}</CtaButton>
+		</div>
+		<p class="ct-hint ct-free-note" set:html={dict.pricing.freeVersionNote} />
+	</div>
+</section>
+
+{otherKeys.length > 0 && (
+	<section class="ct-section">
+		<div class="ct-container">
+			<h2>{ui.otherGuidesTitle}</h2>
+			<ul class="ct-other-guides-list">
+				{otherKeys.map((k) => (
+					<li>
+						<a href={guidePath(locale, k)}>{getGuideDetail(locale, k).title}</a>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
+)}
+
+<style>
+	.ct-guide-hero {
+		padding-bottom: 0;
+	}
+	.ct-guide-head {
+		text-align: center;
+		max-width: 720px;
+		margin: 0 auto;
+	}
+	.ct-guide-head h1 {
+		font-size: clamp(26px, 4vw, 36px);
+		margin: 8px 0 16px;
+	}
+	.ct-guide-tagline {
+		font-size: 18px;
+	}
+	.ct-guide-body {
+		max-width: 700px;
+		margin: 0 auto;
+		display: grid;
+		gap: 24px;
+	}
+	.ct-guide-intro {
+		font-size: 17px;
+		color: var(--ct-ink-soft);
+	}
+	.ct-guide-block h2 {
+		margin: 0 0 8px;
+		font-size: 19px;
+	}
+	.ct-guide-block p {
+		margin: 0;
+		color: var(--ct-ink-soft);
+	}
+	.ct-guide-compare-list {
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 16px;
+		margin: 24px 0 0;
+		padding: 0;
+	}
+	.ct-guide-compare-card {
+		display: block;
+		color: var(--ct-ink);
+		text-decoration: none;
+		height: 100%;
+	}
+	.ct-guide-compare-card h3 {
+		margin: 0 0 8px;
+		font-size: 16px;
+	}
+	.ct-guide-compare-card p {
+		margin: 0;
+	}
+	.ct-guide-compare-card:hover {
+		border-color: var(--ct-primary-dark);
+	}
+	.ct-guide-compare-card:hover h3 {
+		color: var(--ct-primary-dark);
+	}
+	.ct-final-cta {
+		text-align: center;
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	.ct-final-cta p {
+		margin: 12px 0 24px;
+	}
+	.ct-guide-cta-actions {
+		display: flex;
+		justify-content: center;
+		gap: 14px;
+		flex-wrap: wrap;
+	}
+	.ct-free-note {
+		margin: 12px 0 0;
+		font-size: 13px;
+	}
+	.ct-other-guides-list {
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 12px;
+		margin: 24px 0 0;
+		padding: 0;
+	}
+	.ct-other-guides-list a {
+		display: block;
+		padding: 14px 16px;
+		border: 1px solid var(--ct-border);
+		border-radius: var(--ct-radius);
+		color: var(--ct-ink);
+		text-decoration: none;
+		font-weight: 600;
+	}
+	.ct-other-guides-list a:hover {
+		border-color: var(--ct-primary-dark);
+		color: var(--ct-primary-dark);
+	}
+</style>

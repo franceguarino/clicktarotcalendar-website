@@ -10,6 +10,7 @@ const it: Dictionary = {
 		home: 'Home',
 		pricing: 'Prezzi',
 		compare: 'Confronti',
+		guides: 'Guide',
 		faq: 'FAQ',
 		about: 'Chi siamo',
 	},
@@ -159,6 +160,14 @@ const it: Dictionary = {
 			'clickTarot Calendar è pensato per chi vende consulenze a pagamento, non per team generici. Ecco come si confronta con gli strumenti di scheduling che potresti già star valutando.',
 		ctaTitle: 'Non sai quale scegliere? Provalo di persona.',
 		ctaBody: 'Ogni piano include tutte le funzionalità. Installa la versione gratuita da WordPress.org, oppure passa subito a un piano a pagamento quando sei pronto.',
+	},
+	guidesIndex: {
+		eyebrow: 'Guide',
+		title: 'Guide per tarologi e astrologi che gestiscono un’attività di consulti',
+		subtitle:
+			'Guide pratiche, senza fronzoli, su come attivare e gestire le prenotazioni online per consulti a pagamento, non consigli generici da piccola impresa.',
+		ctaTitle: 'Pronta a mettere in pratica?',
+		ctaBody: 'Installa clickTarot Calendar gratis da WordPress.org e segui la guida.',
 	},
 	faq: {
 		title: 'Domande frequenti',

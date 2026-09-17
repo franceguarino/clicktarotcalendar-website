@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import GuideIndexContent from '../../../sections/GuideIndexContent.astro';
+import { getDictionary } from '../../../i18n';
+
+const locale = 'de' as const;
+const dict = getDictionary(locale);
+---
+<BaseLayout locale={locale} page="guides" title={dict.guidesIndex.title} description={dict.guidesIndex.subtitle}>
+	<GuideIndexContent locale={locale} />
+</BaseLayout>

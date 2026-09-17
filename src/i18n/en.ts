@@ -10,6 +10,7 @@ const en: Dictionary = {
 		home: 'Home',
 		pricing: 'Pricing',
 		compare: 'Compare',
+		guides: 'Guides',
 		faq: 'FAQ',
 		about: 'About',
 	},
@@ -169,6 +170,14 @@ const en: Dictionary = {
 			'clickTarot Calendar is built specifically for people selling paid consultations, not generic teams. Here is how it stacks up against the scheduling tools you might already be considering.',
 		ctaTitle: 'Not sure which one fits? Try it yourself.',
 		ctaBody: 'Every plan includes every feature. Install the free version on WordPress.org, or go straight to a paid plan when you are ready.',
+	},
+	guidesIndex: {
+		eyebrow: 'Guides',
+		title: 'Guides for tarot readers and astrologers running a booking business',
+		subtitle:
+			'Practical, no-fluff guides on setting up and running online bookings for paid consultations, not generic small-business advice.',
+		ctaTitle: 'Ready to put this into practice?',
+		ctaBody: 'Install clickTarot Calendar for free from WordPress.org and follow along.',
 	},
 	faq: {
 		title: 'Frequently asked questions',

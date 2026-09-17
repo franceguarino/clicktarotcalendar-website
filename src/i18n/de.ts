@@ -10,6 +10,7 @@ const de: Dictionary = {
 		home: 'Start',
 		pricing: 'Preise',
 		compare: 'Vergleich',
+		guides: 'Anleitungen',
 		faq: 'FAQ',
 		about: 'Über uns',
 	},
@@ -169,6 +170,14 @@ const de: Dictionary = {
 			'clickTarot Calendar ist speziell für Menschen gebaut, die kostenpflichtige Beratungen verkaufen, nicht für generische Teams. So schlägt es sich gegen Terminplanungs-Tools, die du vielleicht schon in Betracht ziehst.',
 		ctaTitle: 'Nicht sicher, was passt? Probier es einfach aus.',
 		ctaBody: 'Jeder Plan enthält alle Funktionen. Installiere die kostenlose Version von WordPress.org, oder wechsle direkt zu einem kostenpflichtigen Plan, wenn du bereit bist.',
+	},
+	guidesIndex: {
+		eyebrow: 'Anleitungen',
+		title: 'Anleitungen für Kartenlegerinnen und Astrolog:innen mit eigenem Buchungsgeschäft',
+		subtitle:
+			'Praktische, unkomplizierte Anleitungen zum Einrichten und Betreiben von Online-Buchungen für bezahlte Beratungen, keine allgemeinen Kleinunternehmens-Tipps.',
+		ctaTitle: 'Bereit, es in die Praxis umzusetzen?',
+		ctaBody: 'Installiere clickTarot Calendar kostenlos von WordPress.org und mach mit.',
 	},
 	faq: {
 		title: 'Häufig gestellte Fragen',
