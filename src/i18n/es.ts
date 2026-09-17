@@ -9,6 +9,7 @@ const es: Dictionary = {
 	nav: {
 		home: 'Inicio',
 		pricing: 'Precios',
+		compare: 'Comparativas',
 		faq: 'FAQ',
 		about: 'Sobre mí',
 	},
@@ -160,6 +161,14 @@ const es: Dictionary = {
 			{ label: 'Anual', price: '155,95€', period: '/año', note: 'La mejor relación calidad-precio: equivale a unos 13€/mes.', highlighted: true },
 			{ label: 'Lifetime', price: '499,99€', period: 'pago único', note: 'Pagas una vez y lo usas para siempre.', highlighted: false },
 		],
+	},
+	compareIndex: {
+		eyebrow: 'Comparativas',
+		title: 'Cómo se compara clickTarot Calendar',
+		subtitle:
+			'clickTarot Calendar está pensado para quienes venden consultas de pago, no para equipos genéricos. Así se compara con las herramientas de programación que quizá ya estés considerando.',
+		ctaTitle: '¿No sabes cuál elegir? Pruébalo tú mismo.',
+		ctaBody: 'Todos los planes incluyen todas las funciones. Instala la versión gratuita desde WordPress.org, o pasa directamente a un plan de pago cuando estés listo.',
 	},
 	faq: {
 		title: 'Preguntas frecuentes',

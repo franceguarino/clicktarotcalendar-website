@@ -47,6 +47,7 @@ const otherKeys = featureKeys.filter((k) => k !== featureKey);
 			<CtaButton href={getCheckoutUrl(locale)} external>{dict.pricing.ctaLabel}</CtaButton>
 			<CtaButton href={pagePath(locale, 'home')} variant="secondary">{ui.backToHome}</CtaButton>
 		</div>
+		<p class="ct-hint ct-free-note" set:html={dict.pricing.freeVersionNote} />
 	</div>
 </section>
 
@@ -104,6 +105,10 @@ const otherKeys = featureKeys.filter((k) => k !== featureKey);
 		justify-content: center;
 		gap: 14px;
 		flex-wrap: wrap;
+	}
+	.ct-free-note {
+		margin: 12px 0 0;
+		font-size: 13px;
 	}
 	.ct-feature-list {
 		list-style: none;

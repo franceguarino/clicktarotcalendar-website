@@ -95,6 +95,7 @@ const [, competitorTitleName] = c.title.split(' vs ');
 		<h2>{c.ctaTitle}</h2>
 		<p class="ct-hint">{c.ctaBody}</p>
 		<CtaButton href={getCheckoutUrl(locale)} external>{dict.pricing.ctaLabel}</CtaButton>
+		<p class="ct-hint ct-free-note" set:html={dict.pricing.freeVersionNote} />
 	</div>
 </section>
 
@@ -220,6 +221,10 @@ const [, competitorTitleName] = c.title.split(' vs ');
 	}
 	.ct-final-cta p {
 		margin: 12px 0 24px;
+	}
+	.ct-free-note {
+		margin: 12px 0 0;
+		font-size: 13px;
 	}
 	.ct-other-compare-list {
 		list-style: none;

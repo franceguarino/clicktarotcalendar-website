@@ -18,6 +18,7 @@ const dict = getDictionary(locale);
 		<nav class="ct-nav" aria-label="Main">
 			<a href={pagePath(locale, 'home')}>{dict.nav.home}</a>
 			<a href={pagePath(locale, 'pricing')}>{dict.nav.pricing}</a>
+			<a href={pagePath(locale, 'compare')}>{dict.nav.compare}</a>
 			<a href={pagePath(locale, 'faq')}>{dict.nav.faq}</a>
 			<a href={pagePath(locale, 'about')}>{dict.nav.about}</a>
 		</nav>
@@ -46,6 +47,7 @@ const dict = getDictionary(locale);
 	<div class="ct-mobile-nav" id="ct-mobile-nav" data-mobile-nav>
 		<a href={pagePath(locale, 'home')}>{dict.nav.home}</a>
 		<a href={pagePath(locale, 'pricing')}>{dict.nav.pricing}</a>
+		<a href={pagePath(locale, 'compare')}>{dict.nav.compare}</a>
 		<a href={pagePath(locale, 'faq')}>{dict.nav.faq}</a>
 		<a href={pagePath(locale, 'about')}>{dict.nav.about}</a>
 		<a class="ct-btn ct-btn-primary ct-mobile-cta" href={getCheckoutUrl(locale)} target="_blank" rel="noopener">

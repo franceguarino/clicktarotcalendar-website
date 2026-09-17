@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CompareIndexContent from '../../sections/CompareIndexContent.astro';
+import { getDictionary } from '../../i18n';
+
+const locale = 'en' as const;
+const dict = getDictionary(locale);
+---
+<BaseLayout locale={locale} page="compare" title={dict.compareIndex.title} description={dict.compareIndex.subtitle}>
+	<CompareIndexContent locale={locale} />
+</BaseLayout>

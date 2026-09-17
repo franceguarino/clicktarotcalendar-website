@@ -20,6 +20,7 @@ const dict = getDictionary(locale);
 			<div class="ct-hero-actions">
 				<CtaButton href={getCheckoutUrl(locale)} external>{dict.pricing.ctaLabel}</CtaButton>
 			</div>
+			<p class="ct-hint ct-free-note" set:html={dict.pricing.freeVersionNote} />
 		</div>
 		<div class="ct-hero-image">
 			<img src="/hero-customer.png" alt={dict.hero.imageAlt} />
@@ -71,6 +72,7 @@ const dict = getDictionary(locale);
 		<h2 set:html={dict.pricing.title} />
 		<p class="ct-hint">{dict.pricing.subtitle}</p>
 		<CtaButton href={getCheckoutUrl(locale)} external>{dict.pricing.ctaLabel}</CtaButton>
+		<p class="ct-hint ct-free-note" set:html={dict.pricing.freeVersionNote} />
 	</div>
 </section>
 
@@ -94,6 +96,10 @@ const dict = getDictionary(locale);
 		display: flex;
 		gap: 14px;
 		flex-wrap: wrap;
+	}
+	.ct-free-note {
+		margin: 12px 0 0;
+		font-size: 13px;
 	}
 	.ct-hero-image img {
 		border-radius: var(--ct-radius);

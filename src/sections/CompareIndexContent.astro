@@ -1,0 +1,100 @@
+---
+import { getDictionary, type Locale } from '../i18n';
+import { competitorKeys, competitorNames, competitorPath, bookneticSaasPath, getCompetitorDetail, getBookneticSaasClarification } from '../i18n/competitors';
+import CtaButton from '../components/CtaButton.astro';
+import { getCheckoutUrl } from '../config';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const dict = getDictionary(locale);
+const clarification = getBookneticSaasClarification(locale);
+---
+<section class="ct-section">
+	<div class="ct-container ct-compare-index-head">
+		<p class="ct-eyebrow">{dict.compareIndex.eyebrow}</p>
+		<h1>{dict.compareIndex.title}</h1>
+		<p class="ct-hint">{dict.compareIndex.subtitle}</p>
+	</div>
+</section>
+
+<section class="ct-section">
+	<div class="ct-container">
+		<ul class="ct-compare-index-list">
+			{competitorKeys.map((key) => {
+				const c = getCompetitorDetail(locale, key);
+				return (
+					<li>
+						<a class="ct-card ct-compare-index-card" href={competitorPath(locale, key)}>
+							<h2>vs {competitorNames[key]}</h2>
+							<p class="ct-hint">{c.subtitle}</p>
+						</a>
+					</li>
+				);
+			})}
+			<li>
+				<a class="ct-card ct-compare-index-card" href={bookneticSaasPath(locale)}>
+					<h2>{clarification.title}</h2>
+					<p class="ct-hint">{clarification.subtitle}</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="ct-section ct-section-alt">
+	<div class="ct-container ct-final-cta">
+		<h2>{dict.compareIndex.ctaTitle}</h2>
+		<p class="ct-hint">{dict.compareIndex.ctaBody}</p>
+		<CtaButton href={getCheckoutUrl(locale)} external>{dict.pricing.ctaLabel}</CtaButton>
+		<p class="ct-hint ct-free-note" set:html={dict.pricing.freeVersionNote} />
+	</div>
+</section>
+
+<style>
+	.ct-compare-index-head {
+		text-align: center;
+		max-width: 720px;
+		margin: 0 auto;
+	}
+	.ct-compare-index-list {
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 16px;
+		margin: 0;
+		padding: 0;
+	}
+	.ct-compare-index-card {
+		display: block;
+		color: var(--ct-ink);
+		text-decoration: none;
+		height: 100%;
+	}
+	.ct-compare-index-card h2 {
+		margin: 0 0 8px;
+		font-size: 18px;
+	}
+	.ct-compare-index-card p {
+		margin: 0;
+	}
+	.ct-compare-index-card:hover {
+		border-color: var(--ct-primary-dark);
+	}
+	.ct-compare-index-card:hover h2 {
+		color: var(--ct-primary-dark);
+	}
+	.ct-final-cta {
+		text-align: center;
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	.ct-final-cta p {
+		margin: 12px 0 24px;
+	}
+	.ct-free-note {
+		margin: 12px 0 0;
+		font-size: 13px;
+	}
+</style>
