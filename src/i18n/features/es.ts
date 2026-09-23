@@ -224,7 +224,7 @@ const es: FeatureDetailDictionary = {
 		painPoint:
 			'Muchos plugins de reservas exigen horas de configuración, documentación técnica que leer, o pagar a alguien solo para que aparezca un calendario funcionando en tu web.',
 		howItWorks:
-			'Después de activar el plugin, una guía integrada te acompaña paso a paso: creas tu primer calendario, conectas los pagos, copias el shortcode en la página adecuada. Encuentras la misma guía disponible en cualquier momento desde clickTarot → Ayuda, por si quieres repasarla.',
+			'Después de activar el plugin, una guía integrada te acompaña paso a paso: creas tu primer calendario, conectas los pagos, copias el shortcode en la página adecuada. Encuentras la misma guía disponible en cualquier momento desde Booking Calendar → Ayuda, por si quieres repasarla.',
 		benefit:
 			'Pasas de instalar el plugin a tu primera reserva real en minutos, no en toda una tarde, y sin tener que pedirle ayuda a nadie.',
 	},

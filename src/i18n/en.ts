@@ -183,6 +183,10 @@ const en: Dictionary = {
 		title: 'Frequently asked questions',
 		items: [
 			{
+				q: 'I bought Premium: where do I enter the license key?',
+				a: 'In the Professional version, not in the free one from WordPress.org, which has no license field. Download Professional from the link in your purchase email, upload it from Plugins → Add New Plugin → Upload Plugin and activate it: the free version is deactivated automatically, your data stay as they are, and Professional asks for the key. Step-by-step instructions are in the Help center.',
+			},
+			{
 				q: 'Do I need to know how to code to use it?',
 				a: 'No, installation and setup are designed for people with no technical skills: just a few clicks.',
 			},
@@ -216,10 +220,20 @@ const en: Dictionary = {
 		tocLabel: 'Contents',
 		sections: [
 			{
+				id: 'activate-premium',
+				title: 'Bought Premium? How to activate it',
+				paragraphs: [
+					'If you started from the free version on WordPress.org, you won’t find a field for the license key inside it: Premium is a separate version of the plugin, called "Professional", and the key is entered there.',
+					'Open the purchase email from Freemius and click "Download the plugin’s Professional version" (you can download it again anytime from the Freemius customer portal, linked in the same email). Then, in WordPress, go to Plugins → Add New Plugin → Upload Plugin, choose the .zip file, install it and click Activate.',
+					'The free version is deactivated automatically, and your calendars, bookings and settings stay exactly as they are. Professional then asks for the license key: paste the one from the purchase email and click Activate License. After that you can delete the free version.',
+				],
+				tip: 'Using Safari on a Mac? It may unzip the download automatically: upload the .zip file, not the folder.',
+			},
+			{
 				id: 'first-calendar',
 				title: 'Create your first calendar',
 				paragraphs: [
-					'Every calendar you create represents one bookable service: a single reading, a counseling session, a specific package. Go to clickTarot → Calendars and fill in the "Create new calendar" form: you’ll have a calendar ready to publish in a few minutes.',
+					'Every calendar you create represents one bookable service: a single reading, a counseling session, a specific package. Go to Booking Calendar → Calendars and fill in the "Create new calendar" form: you’ll have a calendar ready to publish in a few minutes.',
 					'The fields that really matter are the session duration (together with the buffer between appointments, it decides how often slots open up during the day), the price (set it to 0 for a free calendar, no payment required), the minimum notice and how far ahead clients can book (these keep out last-minute or too-far-out bookings), and your working hours, day by day.',
 				],
 				tip: 'You can create multiple calendars for different services, e.g. "Short reading" and "In-depth reading": each one has its own shortcode and its own rules, independent of the others.',
@@ -236,7 +250,7 @@ const en: Dictionary = {
 				id: 'payments',
 				title: 'Turn on payments',
 				paragraphs: [
-					'If you’ve set a price above zero on at least one calendar, go to clickTarot → Payments and connect at least one method. With PayPal, all you need is your Business account email, no keys to configure. With Stripe, enter the Publishable Key and Secret Key from your Stripe dashboard, then copy the webhook URL shown on the page and paste it into Stripe (Developers → Webhooks, event checkout.session.completed).',
+					'If you’ve set a price above zero on at least one calendar, go to Booking Calendar → Payments and connect at least one method. With PayPal, all you need is your Business account email, no keys to configure. With Stripe, enter the Publishable Key and Secret Key from your Stripe dashboard, then copy the webhook URL shown on the page and paste it into Stripe (Developers → Webhooks, event checkout.session.completed).',
 				],
 				tip: 'Without the Webhook Signing Secret configured, Stripe payments stay pending and never get confirmed automatically. If you don’t turn on any payment method, paid calendars show clients a notice instead: only free calendars stay bookable.',
 			},
@@ -244,7 +258,7 @@ const en: Dictionary = {
 				id: 'availability',
 				title: 'Manage your availability',
 				paragraphs: [
-					'Go to clickTarot → Availability, pick a calendar and navigate to the month you need: the monthly view shows at a glance which days are open, closed, partly booked or fully blocked. Click a day to block it entirely, or to deselect just a few specific time slots.',
+					'Go to Booking Calendar → Availability, pick a calendar and navigate to the month you need: the monthly view shows at a glance which days are open, closed, partly booked or fully blocked. Click a day to block it entirely, or to deselect just a few specific time slots.',
 				],
 				tip: 'For a longer absence (vacation, a break), you don’t need to open every day one by one: below the monthly calendar you’ll find "Block a period". Enter a start and end date, and the system automatically blocks every working day in that range.',
 			},
@@ -252,7 +266,7 @@ const en: Dictionary = {
 				id: 'bookings',
 				title: 'Manage the bookings you receive',
 				paragraphs: [
-					'Go to clickTarot → Bookings for the full list, filterable by calendar and status: Pending (awaiting payment, frees itself up after an hour if the client doesn’t pay), Confirmed (payment received, or a free calendar), Cancelled (cancelled manually) and Expired (timed out without payment).',
+					'Go to Booking Calendar → Bookings for the full list, filterable by calendar and status: Pending (awaiting payment, frees itself up after an hour if the client doesn’t pay), Confirmed (payment received, or a free calendar), Cancelled (cancelled manually) and Expired (timed out without payment).',
 					'The Billing column already shows the client’s Tax ID and address, collected as a required field at booking time: everything you need to issue an invoice is right there, no need to email and ask.',
 				],
 				tip: 'The "Export CSV" button downloads every booking matching your chosen filters into a file ready for Excel or your accountant, with no row limit like the on-screen view has.',
@@ -278,7 +292,7 @@ const en: Dictionary = {
 				id: 'coupons',
 				title: 'Discount coupons',
 				paragraphs: [
-					'On clickTarot → Coupons you create discount codes to share with your clients, for a social media promo for example: percentage or fixed amount, valid on one specific calendar or all of them, with an optional maximum number of uses and an optional expiry date.',
+					'On Booking Calendar → Coupons you create discount codes to share with your clients, for a social media promo for example: percentage or fixed amount, valid on one specific calendar or all of them, with an optional maximum number of uses and an optional expiry date.',
 					'The client enters the code on the booking form, under "Got a discount code?": the new price updates immediately, before they pay.',
 				],
 			},
@@ -286,7 +300,7 @@ const en: Dictionary = {
 				id: 'packages',
 				title: 'Prepaid packages',
 				paragraphs: [
-					'On clickTarot → Packages you create multi-session packages for a calendar, e.g. "3x Reading" at a discount compared to three separate bookings. The client pays for the whole package on a dedicated page, without picking a date yet, then books their sessions whenever they like: if the system recognizes their email among paid packages, payment is skipped automatically.',
+					'On Booking Calendar → Packages you create multi-session packages for a calendar, e.g. "3x Reading" at a discount compared to three separate bookings. The client pays for the whole package on a dedicated page, without picking a date yet, then books their sessions whenever they like: if the system recognizes their email among paid packages, payment is skipped automatically.',
 				],
 				tip: 'The "Customer purchases and credits" table shows how many sessions each client has left, and you can gift them an extra one with a click, for example to reward a loyal client without setting up a whole new package.',
 			},
@@ -296,20 +310,20 @@ const en: Dictionary = {
 				paragraphs: [
 					'Every confirmation and reminder email includes a "manage your booking" link: from there, the client moves the appointment to another open slot or cancels it themselves, without writing to you.',
 				],
-				tip: 'It only works as long as the calendar’s minimum notice period hasn’t passed yet (the same one used to block last-minute bookings): below that threshold, the client is invited to contact you directly. You’ll find the same link next to every confirmed booking in clickTarot → Bookings too, handy if a client asks for it over WhatsApp.',
+				tip: 'It only works as long as the calendar’s minimum notice period hasn’t passed yet (the same one used to block last-minute bookings): below that threshold, the client is invited to contact you directly. You’ll find the same link next to every confirmed booking in Booking Calendar → Bookings too, handy if a client asks for it over WhatsApp.',
 			},
 			{
 				id: 'statistics',
 				title: 'Statistics',
 				paragraphs: [
-					'On clickTarot → Statistics you’ll find your revenue, split between single bookings and packages so they don’t overlap, month-by-month trends, and a breakdown per calendar: which service earns the most, how many confirmed bookings you’ve received. Real numbers, not gut feeling, to decide what to raise the price on or what to retire.',
+					'On Booking Calendar → Statistics you’ll find your revenue, split between single bookings and packages so they don’t overlap, month-by-month trends, and a breakdown per calendar: which service earns the most, how many confirmed bookings you’ve received. Real numbers, not gut feeling, to decide what to raise the price on or what to retire.',
 				],
 			},
 			{
 				id: 'free-readings',
 				title: 'Free Tarot Readings and tipping',
 				paragraphs: [
-					'From clickTarot → Free Readings you turn on a section where anyone can ask you a free question, without booking a calendar slot: a ready-made page at yoursite.com/tarocchi-gratis/ is already there, or you can drop the [ctcal_free_reading] shortcode wherever you like.',
+					'From Booking Calendar → Free Readings you turn on a section where anyone can ask you a free question, without booking a calendar slot: a ready-made page at yoursite.com/tarocchi-gratis/ is already there, or you can drop the [ctcal_free_reading] shortcode wherever you like.',
 					"Pick a single way to answer - WhatsApp, email from the WordPress panel, or your own inbox - and that's exactly what the public form promises whoever writes in.",
 				],
 				tip: "You can also turn on an optional tip: when you mark a question as answered, the client gets an invitation (if they want) to leave you something in return, with PayPal/Stripe payment and an amount of their choice.",
@@ -318,8 +332,12 @@ const en: Dictionary = {
 		faqTitle: 'Frequently asked questions',
 		faq: [
 			{
+				q: 'I bought Premium: where do I enter the license key?',
+				a: 'In the Professional version, not in the free one from WordPress.org, which has no license field. Download Professional from the link in your purchase email, upload it from Plugins → Add New Plugin → Upload Plugin and activate it: the free version is deactivated automatically, your data stay as they are, and Professional asks for the key. Step-by-step instructions are in the Help center.',
+			},
+			{
 				q: 'A client says they never got the confirmation email. What do I check?',
-				a: 'First, the client’s spam folder, then the booking status in clickTarot → Bookings: if it’s still "Pending", the email never went out because payment wasn’t completed.',
+				a: 'First, the client’s spam folder, then the booking status in Booking Calendar → Bookings: if it’s still "Pending", the email never went out because payment wasn’t completed.',
 			},
 			{
 				q: 'Do free questions eat into time I could spend on paying clients?',
@@ -327,7 +345,7 @@ const en: Dictionary = {
 			},
 			{
 				q: 'I need to close for a few days off. How do I do that?',
-				a: 'Go to clickTarot → Availability and use "Block a period": enter a start and end date, no need to open every day one by one or touch the calendar’s working hours.',
+				a: 'Go to Booking Calendar → Availability and use "Block a period": enter a start and end date, no need to open every day one by one or touch the calendar’s working hours.',
 			},
 			{
 				q: 'Is the PayPal and Stripe data I enter safe?',

@@ -224,7 +224,7 @@ const de: FeatureDetailDictionary = {
 		painPoint:
 			'Viele Buchungsplugins brauchen stundenlange Konfiguration, technische Dokumentation zum Durchlesen oder eine Entwicklerin, die du nur dafür bezahlst, damit überhaupt ein funktionierender Kalender auf deiner Website erscheint.',
 		howItWorks:
-			'Nach der Aktivierung des Plugins führt dich eine integrierte Anleitung Schritt für Schritt: erstelle deinen ersten Kalender, verbinde die Zahlungen, kopiere den Shortcode auf die richtige Seite. Dieselbe Anleitung findest du jederzeit unter clickTarot → Hilfe, falls du sie noch einmal nachlesen willst.',
+			'Nach der Aktivierung des Plugins führt dich eine integrierte Anleitung Schritt für Schritt: erstelle deinen ersten Kalender, verbinde die Zahlungen, kopiere den Shortcode auf die richtige Seite. Dieselbe Anleitung findest du jederzeit unter Booking Calendar → Hilfe, falls du sie noch einmal nachlesen willst.',
 		benefit:
 			'Du kommst von der Installation zur ersten echten Buchung in wenigen Minuten, nicht an einem ganzen Nachmittag, und ohne jemanden um Hilfe bitten zu müssen.',
 	},

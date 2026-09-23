@@ -224,7 +224,7 @@ const it: FeatureDetailDictionary = {
 		painPoint:
 			'Molti plugin di prenotazione richiedono ore di configurazione, documentazione tecnica da leggere, o un webmaster da pagare solo per far apparire un calendario funzionante sul sito.',
 		howItWorks:
-			'Dopo aver attivato il plugin, una guida integrata ti accompagna passo passo: crea il primo calendario, collega i pagamenti, copia lo shortcode nella pagina giusta. Trovi la stessa guida disponibile in ogni momento da clickTarot → Guida, se vuoi rivederla.',
+			'Dopo aver attivato il plugin, una guida integrata ti accompagna passo passo: crea il primo calendario, collega i pagamenti, copia lo shortcode nella pagina giusta. Trovi la stessa guida disponibile in ogni momento da Booking Calendar → Guida, se vuoi rivederla.',
 		benefit:
 			'Passi dall’installazione alla prima prenotazione reale in pochi minuti, non in un pomeriggio, e senza dover chiedere aiuto a nessuno.',
 	},

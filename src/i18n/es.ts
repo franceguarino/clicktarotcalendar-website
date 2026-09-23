@@ -183,6 +183,10 @@ const es: Dictionary = {
 		title: 'Preguntas frecuentes',
 		items: [
 			{
+				q: 'He comprado Premium: ¿dónde introduzco la clave de licencia?',
+				a: 'En la versión Professional, no en la gratuita de WordPress.org, que no tiene campo de licencia. Descarga Professional desde el enlace de tu correo de compra, súbela desde Plugins → Añadir nuevo plugin → Subir plugin y actívala: la versión gratuita se desactiva automáticamente, tus datos se mantienen y Professional te pide la clave. Las instrucciones paso a paso están en el Centro de ayuda.',
+			},
+			{
 				q: '¿Necesito saber programar para usarlo?',
 				a: 'No, la instalación y la configuración están pensadas para quien no tiene conocimientos técnicos: bastan unos pocos clics.',
 			},
@@ -216,10 +220,20 @@ const es: Dictionary = {
 		tocLabel: 'Índice',
 		sections: [
 			{
+				id: 'activate-premium',
+				title: '¿Has comprado Premium? Así se activa',
+				paragraphs: [
+					'Si empezaste con la versión gratuita de WordPress.org, dentro no encontrarás un campo para la clave de licencia: Premium es una versión separada del plugin, llamada "Professional", y la clave se introduce ahí.',
+					'Abre el correo de compra de Freemius y haz clic en "Download the plugin’s Professional version" (puedes volver a descargarla cuando quieras desde el portal de clientes de Freemius, enlazado en el mismo correo). Después, en WordPress, ve a Plugins → Añadir nuevo plugin → Subir plugin, elige el archivo .zip, instálalo y haz clic en Activar.',
+					'La versión gratuita se desactiva automáticamente, y tus calendarios, reservas y ajustes se mantienen exactamente igual. Después Professional te pide la clave de licencia: pega la del correo de compra y haz clic en Activar licencia. Luego puedes eliminar la versión gratuita.',
+				],
+				tip: '¿Usas Safari en un Mac? Puede descomprimir la descarga automáticamente: sube el archivo .zip, no la carpeta.',
+			},
+			{
 				id: 'first-calendar',
 				title: 'Crea tu primer calendario',
 				paragraphs: [
-					'Cada calendario que creas representa un servicio reservable: una lectura individual, una sesión de counseling, un paquete concreto. Ve a clickTarot → Calendarios y rellena el formulario "Crear nuevo calendario": en pocos minutos tendrás un calendario listo para publicar.',
+					'Cada calendario que creas representa un servicio reservable: una lectura individual, una sesión de counseling, un paquete concreto. Ve a Booking Calendar → Calendarios y rellena el formulario "Crear nuevo calendario": en pocos minutos tendrás un calendario listo para publicar.',
 					'Los campos que realmente importan son la duración de la sesión (junto con la pausa entre citas, decide cada cuánto se abren los huecos horarios en el día), el precio (pon 0 para un calendario gratuito, sin pedir pago), el aviso mínimo y hasta cuándo se puede reservar (evitan reservas de última hora o demasiado lejanas en el tiempo), y tu horario laboral, día a día.',
 				],
 				tip: 'Puedes crear varios calendarios para servicios distintos, por ejemplo "Lectura breve" y "Lectura en profundidad": cada uno tiene su propio shortcode y sus propias reglas, independientes de los demás.',
@@ -236,7 +250,7 @@ const es: Dictionary = {
 				id: 'payments',
 				title: 'Activa los pagos',
 				paragraphs: [
-					'Si has puesto un precio superior a cero en al menos un calendario, ve a clickTarot → Pagos y conecta al menos un método. Con PayPal basta con el email de tu cuenta Business, sin claves que configurar. Con Stripe introduces la Publishable Key y la Secret Key de tu panel de Stripe, luego copias la URL del webhook que aparece en la página y la pegas en Stripe (Desarrolladores → Webhooks, evento checkout.session.completed).',
+					'Si has puesto un precio superior a cero en al menos un calendario, ve a Booking Calendar → Pagos y conecta al menos un método. Con PayPal basta con el email de tu cuenta Business, sin claves que configurar. Con Stripe introduces la Publishable Key y la Secret Key de tu panel de Stripe, luego copias la URL del webhook que aparece en la página y la pegas en Stripe (Desarrolladores → Webhooks, evento checkout.session.completed).',
 				],
 				tip: 'Sin el Webhook Signing Secret configurado, los pagos de Stripe se quedan pendientes y no se confirman automáticamente. Si no activas ningún método de pago, los calendarios de pago muestran un aviso al cliente: solo los calendarios gratuitos siguen siendo reservables.',
 			},
@@ -244,7 +258,7 @@ const es: Dictionary = {
 				id: 'availability',
 				title: 'Gestiona tu disponibilidad',
 				paragraphs: [
-					'Ve a clickTarot → Disponibilidad, elige un calendario y navega hasta el mes que te interese: la vista mensual muestra de un vistazo qué días están abiertos, cerrados, parcialmente reservados o totalmente bloqueados. Haz clic en un día para bloquearlo entero, o para deseleccionar solo algunas franjas horarias concretas.',
+					'Ve a Booking Calendar → Disponibilidad, elige un calendario y navega hasta el mes que te interese: la vista mensual muestra de un vistazo qué días están abiertos, cerrados, parcialmente reservados o totalmente bloqueados. Haz clic en un día para bloquearlo entero, o para deseleccionar solo algunas franjas horarias concretas.',
 				],
 				tip: 'Para una ausencia más larga (vacaciones, un descanso) no hace falta abrir cada día uno por uno: debajo del calendario mensual encontrarás "Bloquear un periodo". Indicas la fecha de inicio y la de fin, y el sistema bloquea automáticamente todos los días laborables de ese rango.',
 			},
@@ -252,7 +266,7 @@ const es: Dictionary = {
 				id: 'bookings',
 				title: 'Gestiona las reservas recibidas',
 				paragraphs: [
-					'En clickTarot → Reservas tienes el listado completo, filtrable por calendario y estado: Pending (pendiente de pago, se libera sola pasada una hora si el cliente no paga), Confirmed (pago recibido, o calendario gratuito), Cancelled (cancelada manualmente) y Expired (caducada sin pago).',
+					'En Booking Calendar → Reservas tienes el listado completo, filtrable por calendario y estado: Pending (pendiente de pago, se libera sola pasada una hora si el cliente no paga), Confirmed (pago recibido, o calendario gratuito), Cancelled (cancelada manualmente) y Expired (caducada sin pago).',
 					'La columna Facturación ya muestra el NIF y la dirección del cliente, recogidos obligatoriamente al reservar: todo lo que necesitas para facturar está ahí, sin tener que pedirlo por correo.',
 				],
 				tip: 'El botón "Exportar CSV" descarga en un archivo, listo para Excel o para tu gestoría, todas las reservas que cumplan los filtros elegidos, sin el límite de filas de la vista en pantalla.',
@@ -278,7 +292,7 @@ const es: Dictionary = {
 				id: 'coupons',
 				title: 'Cupones de descuento',
 				paragraphs: [
-					'En clickTarot → Cupones creas códigos de descuento para compartir con tus clientes, por ejemplo para una promo en redes sociales: porcentaje o importe fijo, válidos en un calendario concreto o en todos, con un número máximo de usos y una fecha de caducidad, ambos opcionales.',
+					'En Booking Calendar → Cupones creas códigos de descuento para compartir con tus clientes, por ejemplo para una promo en redes sociales: porcentaje o importe fijo, válidos en un calendario concreto o en todos, con un número máximo de usos y una fecha de caducidad, ambos opcionales.',
 					'El cliente introduce el código en el formulario de reserva, bajo "¿Tienes un código de descuento?": el nuevo precio se actualiza al momento, antes de pagar.',
 				],
 			},
@@ -286,7 +300,7 @@ const es: Dictionary = {
 				id: 'packages',
 				title: 'Paquetes prepagados',
 				paragraphs: [
-					'En clickTarot → Paquetes creas paquetes multisesión para un calendario, por ejemplo "3x Lectura" a un precio con descuento frente a tres reservas separadas. El cliente paga el paquete entero en una página dedicada, sin elegir fecha todavía, y después reserva sus sesiones cuando quiera: si el sistema reconoce su email entre los paquetes pagados, el pago se salta automáticamente.',
+					'En Booking Calendar → Paquetes creas paquetes multisesión para un calendario, por ejemplo "3x Lectura" a un precio con descuento frente a tres reservas separadas. El cliente paga el paquete entero en una página dedicada, sin elegir fecha todavía, y después reserva sus sesiones cuando quiera: si el sistema reconoce su email entre los paquetes pagados, el pago se salta automáticamente.',
 				],
 				tip: 'La tabla "Compras y créditos de clientes" muestra cuántas sesiones le quedan a cada cliente, y puedes regalarle una más con un clic, por ejemplo para fidelizar a alguien sin crear un paquete aparte.',
 			},
@@ -296,20 +310,20 @@ const es: Dictionary = {
 				paragraphs: [
 					'Cada email de confirmación y de recordatorio incluye un enlace "gestiona tu reserva": desde ahí, el cliente cambia la cita a otro hueco libre o la cancela por su cuenta, sin escribirte.',
 				],
-				tip: 'Solo funciona mientras no se haya superado el aviso mínimo configurado en el calendario (el mismo que bloquea las reservas de última hora): por debajo de ese umbral, se invita al cliente a contactarte directamente. Encuentras el mismo enlace junto a cada reserva confirmada en clickTarot → Reservas, útil si un cliente te lo pide por WhatsApp.',
+				tip: 'Solo funciona mientras no se haya superado el aviso mínimo configurado en el calendario (el mismo que bloquea las reservas de última hora): por debajo de ese umbral, se invita al cliente a contactarte directamente. Encuentras el mismo enlace junto a cada reserva confirmada en Booking Calendar → Reservas, útil si un cliente te lo pide por WhatsApp.',
 			},
 			{
 				id: 'statistics',
 				title: 'Estadísticas',
 				paragraphs: [
-					'En clickTarot → Estadísticas tienes lo ingresado, separado entre reservas individuales y paquetes para que no se solapen, la evolución mes a mes y el desglose por calendario: qué servicio rinde más, cuántas reservas confirmadas has recibido. Números reales, no sensaciones, para decidir qué subir de precio o qué retirar.',
+					'En Booking Calendar → Estadísticas tienes lo ingresado, separado entre reservas individuales y paquetes para que no se solapen, la evolución mes a mes y el desglose por calendario: qué servicio rinde más, cuántas reservas confirmadas has recibido. Números reales, no sensaciones, para decidir qué subir de precio o qué retirar.',
 				],
 			},
 			{
 				id: 'free-readings',
 				title: 'Tarot Gratis y propina',
 				paragraphs: [
-					'Desde clickTarot → Tarot Gratis activas una sección donde cualquiera puede hacerte una pregunta gratis, sin reservar un hueco de calendario: ya tienes lista la página tusitio.com/tarocchi-gratis/, o puedes pegar el shortcode [ctcal_free_reading] donde prefieras.',
+					'Desde Booking Calendar → Tarot Gratis activas una sección donde cualquiera puede hacerte una pregunta gratis, sin reservar un hueco de calendario: ya tienes lista la página tusitio.com/tarocchi-gratis/, o puedes pegar el shortcode [ctcal_free_reading] donde prefieras.',
 					'Eliges una única forma de responder - WhatsApp, email desde el panel de WordPress, o tu propio correo - y es exactamente lo que el formulario público promete a quien escribe.',
 				],
 				tip: 'También puedes activar la propina opcional: cuando marcas una pregunta como respondida, el consultante recibe (si quiere) la invitación a dejarte algo a cambio, con pago por PayPal/Stripe e importe a su elección.',
@@ -318,8 +332,12 @@ const es: Dictionary = {
 		faqTitle: 'Preguntas frecuentes',
 		faq: [
 			{
+				q: 'He comprado Premium: ¿dónde introduzco la clave de licencia?',
+				a: 'En la versión Professional, no en la gratuita de WordPress.org, que no tiene campo de licencia. Descarga Professional desde el enlace de tu correo de compra, súbela desde Plugins → Añadir nuevo plugin → Subir plugin y actívala: la versión gratuita se desactiva automáticamente, tus datos se mantienen y Professional te pide la clave. Las instrucciones paso a paso están en el Centro de ayuda.',
+			},
+			{
 				q: 'Un cliente dice que no ha recibido el email de confirmación. ¿Qué reviso?',
-				a: 'Primero la carpeta de spam del cliente, luego el estado de la reserva en clickTarot → Reservas: si sigue en "Pending", el email no salió porque el pago no se completó.',
+				a: 'Primero la carpeta de spam del cliente, luego el estado de la reserva en Booking Calendar → Reservas: si sigue en "Pending", el email no salió porque el pago no se completó.',
 			},
 			{
 				q: '¿Las preguntas gratuitas me quitan tiempo de los clientes que pagan?',
@@ -327,7 +345,7 @@ const es: Dictionary = {
 			},
 			{
 				q: 'Tengo que cerrar unos días de vacaciones, ¿cómo lo hago?',
-				a: 'Ve a clickTarot → Disponibilidad y usa "Bloquear un periodo": indicas fecha de inicio y de fin, sin necesidad de abrir cada día uno por uno ni tocar el horario laboral del calendario.',
+				a: 'Ve a Booking Calendar → Disponibilidad y usa "Bloquear un periodo": indicas fecha de inicio y de fin, sin necesidad de abrir cada día uno por uno ni tocar el horario laboral del calendario.',
 			},
 			{
 				q: '¿Los datos de PayPal y Stripe que introduzco están seguros?',

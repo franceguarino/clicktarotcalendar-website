@@ -224,7 +224,7 @@ const en: FeatureDetailDictionary = {
 		painPoint:
 			'Plenty of booking plugins need hours of configuration, technical documentation to read, or a developer you have to pay just to get a working calendar on your site.',
 		howItWorks:
-			'Once you activate the plugin, a built-in guide walks you through it step by step: create your first calendar, connect payments, copy the shortcode into the right page. The same guide is always available from clickTarot → Help whenever you need to check it again.',
+			'Once you activate the plugin, a built-in guide walks you through it step by step: create your first calendar, connect payments, copy the shortcode into the right page. The same guide is always available from Booking Calendar → Help whenever you need to check it again.',
 		benefit:
 			"You go from installing the plugin to your first real booking in minutes, not an afternoon, and without asking anyone for help.",
 	},
