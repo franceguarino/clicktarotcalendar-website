@@ -1,0 +1,126 @@
+---
+// Landing per le inserzioni Meta della versione gratuita (solo inglese, target
+// USA/UK/CA/AU). Il pulsante principale porta alla scheda WordPress.org: il
+// clic fa scattare l'evento Lead del Pixel (vedi components/ConsentPixel.astro),
+// che è l'evento su cui sono ottimizzate le campagne. Non è nel menu.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CtaButton from '../../components/CtaButton.astro';
+import { pagePath } from '../../i18n';
+
+const WPORG_URL = 'https://wordpress.org/plugins/francesco-guarino-booking-calendar/';
+const features = [
+	{ title: 'Clients book on their own', body: 'A monthly calendar with your real availability. No more "are you free on Thursday?" in your DMs.' },
+	{ title: 'Paid at booking', body: 'PayPal payments go straight to your own account. No middleman, no platform fee.' },
+	{ title: 'A link for your bio', body: 'Every calendar gets its own booking page, ready for your Instagram or TikTok bio.' },
+	{ title: 'Automatic emails', body: 'Confirmation and reminder emails go out by themselves, with text you can customize.' },
+	{ title: 'Self-service rescheduling', body: 'Clients move or cancel their appointment from the email link, without writing to you.' },
+	{ title: 'Coupons and add-ons', body: 'Discount codes with expiry, and paid extras like a voice recording of the reading.' },
+];
+---
+<BaseLayout
+	locale="en"
+	page="home"
+	alternates={[{ locale: 'en', href: '/free/' }]}
+	title="Free WordPress Booking Plugin for Tarot Readers | clickTarot Calendar"
+	description="Let clients pick a time and pay at booking, right on your WordPress site. Free plugin for tarot readers, astrologers and holistic practitioners."
+>
+	<section class="ct-section ct-free-hero">
+		<div class="ct-container ct-free-grid">
+			<div>
+				<p class="ct-eyebrow">Free WordPress plugin</p>
+				<h1>Still booking readings <span class="ct-accent">in your DMs?</span></h1>
+				<p class="ct-free-sub">Clients pick a time and pay on their own, right on your website. Built by a working tarot reader for tarot readers, astrologers and holistic practitioners.</p>
+				<div class="ct-free-actions">
+					<CtaButton href={WPORG_URL} external>Get it free on WordPress.org</CtaButton>
+				</div>
+				<p class="ct-hint ct-free-small">Free forever, not a trial. Unlimited calendars and bookings.</p>
+			</div>
+			<div class="ct-free-image">
+				<img src="/free-booking-calendar.png" alt="Booking calendar for a tarot reading with available dates and times" width="480" height="767" />
+			</div>
+		</div>
+	</section>
+
+	<section class="ct-section ct-section-alt">
+		<div class="ct-container">
+			<h2>What you get in the free version</h2>
+			<div class="ct-free-features">
+				{features.map((f) => (
+					<div class="ct-card">
+						<h3>{f.title}</h3>
+						<p class="ct-hint">{f.body}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="ct-section">
+		<div class="ct-container ct-free-final">
+			<h2>Ready to stop chasing clients?</h2>
+			<p class="ct-hint">Install it from your WordPress dashboard in two minutes. Need Stripe card payments, prepaid packages or statistics? <a href={pagePath('en', 'pricing')}>See Professional</a>.</p>
+			<CtaButton href={WPORG_URL} external>Get it free on WordPress.org</CtaButton>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.ct-free-grid {
+		display: grid;
+		grid-template-columns: 1.1fr 1fr;
+		gap: 40px;
+		align-items: center;
+	}
+	.ct-free-hero h1 {
+		font-size: clamp(32px, 4vw, 46px);
+		margin: 0 0 16px;
+	}
+	.ct-free-sub {
+		font-size: 18px;
+		color: var(--ct-ink-soft);
+		margin: 0 0 28px;
+	}
+	.ct-free-small {
+		margin: 12px 0 0;
+		font-size: 14px;
+	}
+	.ct-free-image {
+		display: flex;
+		justify-content: center;
+	}
+	.ct-free-image img {
+		max-width: 100%;
+		height: auto;
+		max-height: 620px;
+		width: auto;
+		border-radius: var(--ct-radius);
+		box-shadow: var(--ct-shadow);
+		border: 1px solid var(--ct-border);
+	}
+	.ct-free-features {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 20px;
+		margin-top: 32px;
+	}
+	.ct-free-features h3 {
+		margin: 0 0 8px;
+		font-size: 18px;
+	}
+	.ct-free-features p {
+		margin: 0;
+	}
+	.ct-free-final {
+		text-align: center;
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	.ct-free-final p {
+		margin: 12px 0 24px;
+	}
+	@media (max-width: 780px) {
+		.ct-free-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
