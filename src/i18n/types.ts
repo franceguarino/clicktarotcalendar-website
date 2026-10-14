@@ -80,7 +80,15 @@ export interface Dictionary {
 		supportLabel: string;
 		privacy: string;
 		terms: string;
+		cookieSettings: string;
 		rights: string;
+	};
+	consent: {
+		label: string;
+		message: string;
+		privacyLabel: string;
+		accept: string;
+		reject: string;
 	};
 	legal: {
 		privacyTitle: string;

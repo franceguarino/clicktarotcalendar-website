@@ -363,7 +363,15 @@ const it: Dictionary = {
 		supportLabel: 'Supporto',
 		privacy: 'Privacy',
 		terms: 'Termini',
+		cookieSettings: 'Impostazioni cookie',
 		rights: 'Tutti i diritti riservati.',
+	},
+	consent: {
+		label: 'Consenso ai cookie',
+		message: 'Vorremmo usare il Pixel di Meta per misurare le nostre inserzioni e mostrarle a chi potrebbe trovare utile il plugin. Si attiva solo se accetti.',
+		privacyLabel: 'Privacy Policy',
+		accept: 'Accetta',
+		reject: 'Rifiuta',
 	},
 	legal: {
 		privacyTitle: 'Informativa sulla privacy',
@@ -377,6 +385,10 @@ const it: Dictionary = {
 			{
 				heading: 'Statistiche',
 				body: 'Usiamo Cloudflare Web Analytics, un servizio di statistiche senza cookie e senza tracciamento individuale del visitatore: non richiede consenso tramite banner.',
+			},
+			{
+				heading: 'Pubblicità (Pixel di Meta)',
+				body: 'Solo se clicchi Accetta nel banner dei cookie, carichiamo il Pixel di Meta (Meta Platforms Ireland Ltd.), che imposta cookie pubblicitari per misurare i risultati delle nostre inserzioni su Facebook e Instagram, per esempio i clic verso la pagina del plugin su WordPress.org o verso il checkout, e per mostrare le inserzioni a chi potrebbe trovare utile il plugin. Se rifiuti, il Pixel non viene caricato. Puoi cambiare scelta in qualsiasi momento dal link Impostazioni cookie in fondo a ogni pagina.',
 			},
 			{
 				heading: 'Pagamenti',

@@ -5,6 +5,10 @@ export const CHECKOUT_URL = 'https://checkout.freemius.com/plugin/36819/plan/610
 export const CONTACT_EMAIL = 'clicktarot@clicktarot.net';
 export const SITE_URL = 'https://clicktarotcalendar.com';
 
+// Dataset Meta dedicato a questo sito (BM ClickTarot, separato dal Pixel di
+// Scuola TdM). Caricato solo dopo il consenso: vedi components/ConsentPixel.astro.
+export const META_PIXEL_ID = '1102255532532312';
+
 // Il checkout Freemius mostra USD/inglese di default se non gli si passano
 // valuta e lingua esplicite. Le abbiniamo alla lingua della pagina (coerente
 // coi prezzi già mostrati nei dizionari i18n: EN in USD, IT/DE/ES in EUR)

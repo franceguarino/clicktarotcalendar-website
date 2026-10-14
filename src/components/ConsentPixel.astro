@@ -1,0 +1,125 @@
+---
+import { getDictionary, pagePath, type Locale } from '../i18n';
+import { META_PIXEL_ID } from '../config';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const dict = getDictionary(locale);
+---
+<!--
+	Meta Pixel caricato SOLO dopo "Accept" (GDPR: è un cookie pubblicitario).
+	Scelta salvata in localStorage 'ct_consent' = 'granted' | 'denied'; il link
+	"Cookie settings" nel footer (data-consent-open) riapre il banner.
+	Eventi: Lead sul clic verso la scheda WordPress.org (installazione free,
+	è l'evento su cui ottimizzano le campagne), InitiateCheckout sul clic verso
+	il checkout Freemius. Eventi standard e non personalizzati: Meta blocca gli
+	eventi personalizzati finché non vengono confermati in Gestione eventi.
+-->
+<div class="ct-consent" data-consent-banner hidden role="dialog" aria-live="polite" aria-label={dict.consent.label}>
+	<p>
+		{dict.consent.message}{' '}
+		<a href={pagePath(locale, 'privacy')}>{dict.consent.privacyLabel}</a>
+	</p>
+	<div class="ct-consent-actions">
+		<button type="button" class="ct-btn ct-btn-secondary" data-consent="denied">{dict.consent.reject}</button>
+		<button type="button" class="ct-btn ct-btn-primary" data-consent="granted">{dict.consent.accept}</button>
+	</div>
+</div>
+
+<script is:inline define:vars={{ pixelId: META_PIXEL_ID }}>
+	(function () {
+		var KEY = 'ct_consent';
+		var banner = document.querySelector('[data-consent-banner]');
+		var loaded = false;
+
+		function read() {
+			try { return localStorage.getItem(KEY); } catch (e) { return null; }
+		}
+		function save(v) {
+			try { localStorage.setItem(KEY, v); } catch (e) {}
+		}
+		function loadPixel() {
+			if (loaded) return;
+			loaded = true;
+			!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+			n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+			document,'script','https://connect.facebook.net/en_US/fbevents.js');
+			window.fbq('init', pixelId);
+			window.fbq('track', 'PageView');
+		}
+		function choose(v) {
+			save(v);
+			banner.hidden = true;
+			if (v === 'granted') loadPixel();
+			// Revoca: il Pixel già caricato resta in memoria fino al prossimo
+			// caricamento di pagina, poi non viene più inizializzato.
+		}
+
+		var state = read();
+		if (state === 'granted') loadPixel();
+		else if (state !== 'denied') banner.hidden = false;
+
+		banner.addEventListener('click', function (e) {
+			var btn = e.target.closest('[data-consent]');
+			if (btn) choose(btn.getAttribute('data-consent'));
+		});
+
+		document.addEventListener('click', function (e) {
+			var open = e.target.closest('[data-consent-open]');
+			if (open) {
+				e.preventDefault();
+				banner.hidden = false;
+				return;
+			}
+			var a = e.target.closest('a[href]');
+			if (!a || !window.fbq || read() !== 'granted') return;
+			if (a.href.indexOf('wordpress.org/plugins/francesco-guarino-booking-calendar') !== -1) {
+				window.fbq('track', 'Lead', { content_name: 'wporg_free_download' });
+			} else if (a.href.indexOf('checkout.freemius.com') !== -1) {
+				window.fbq('track', 'InitiateCheckout', { content_name: a.href.indexOf('FOUNDING100') !== -1 ? 'founding100' : 'professional' });
+			}
+		});
+	})();
+</script>
+
+<style>
+	.ct-consent {
+		position: fixed;
+		left: 16px;
+		right: 16px;
+		bottom: 16px;
+		z-index: 1000;
+		max-width: 560px;
+		margin: 0 auto;
+		background: var(--ct-surface);
+		border: 1px solid var(--ct-border);
+		border-radius: var(--ct-radius);
+		box-shadow: var(--ct-shadow);
+		padding: 16px 20px;
+		font-size: 14px;
+	}
+	.ct-consent[hidden] {
+		display: none;
+	}
+	.ct-consent p {
+		margin: 0 0 12px;
+		color: var(--ct-ink);
+	}
+	.ct-consent a {
+		color: var(--ct-primary-dark);
+	}
+	.ct-consent .ct-btn {
+		padding: 9px 18px;
+		font-size: 14px;
+	}
+	.ct-consent-actions {
+		display: flex;
+		gap: 10px;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+	}
+</style>

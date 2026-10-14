@@ -373,7 +373,15 @@ const de: Dictionary = {
 		supportLabel: 'Support',
 		privacy: 'Datenschutz',
 		terms: 'Nutzungsbedingungen',
+		cookieSettings: 'Cookie-Einstellungen',
 		rights: 'Alle Rechte vorbehalten.',
+	},
+	consent: {
+		label: 'Cookie-Einwilligung',
+		message: 'Wir möchten das Meta-Pixel verwenden, um unsere Anzeigen zu messen und sie Personen zu zeigen, für die das Plugin nützlich sein könnte. Es wird nur geladen, wenn du zustimmst.',
+		privacyLabel: 'Datenschutzerklärung',
+		accept: 'Akzeptieren',
+		reject: 'Ablehnen',
 	},
 	legal: {
 		privacyTitle: 'Datenschutzerklärung',
@@ -387,6 +395,10 @@ const de: Dictionary = {
 			{
 				heading: 'Statistiken',
 				body: 'Wir nutzen Cloudflare Web Analytics, einen cookielosen Analysedienst ohne individuelle Besucherverfolgung: es ist kein Consent-Banner erforderlich.',
+			},
+			{
+				heading: 'Werbung (Meta-Pixel)',
+				body: 'Nur wenn du im Cookie-Banner auf Akzeptieren klickst, laden wir das Meta-Pixel (Meta Platforms Ireland Ltd.). Es setzt Werbe-Cookies, um die Ergebnisse unserer Anzeigen auf Facebook und Instagram zu messen, zum Beispiel Klicks auf die Plugin-Seite bei WordPress.org oder zum Checkout, und um unsere Anzeigen Personen zu zeigen, für die das Plugin nützlich sein könnte. Wenn du ablehnst, wird das Pixel nicht geladen. Du kannst deine Wahl jederzeit über den Link Cookie-Einstellungen unten auf jeder Seite ändern.',
 			},
 			{
 				heading: 'Zahlungen',
