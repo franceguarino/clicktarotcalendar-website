@@ -1,7 +1,7 @@
 ---
 import { getDictionary, type Locale } from '../i18n';
 import CtaButton from '../components/CtaButton.astro';
-import { getCheckoutUrl } from '../config';
+import { getCheckoutUrl, getFoundingCheckoutUrl, FOUNDING_ENDS } from '../config';
 
 interface Props {
 	locale: Locale;
@@ -32,6 +32,22 @@ const dict = getDictionary(locale);
 			</div>
 		))}
 	</div>
+
+	{new Date() < new Date(FOUNDING_ENDS) && (
+		<div class="ct-container ct-founding-wrap" data-founding-ends={FOUNDING_ENDS}>
+			<div class="ct-card ct-founding">
+				<h2>{dict.pricing.founding.title}</h2>
+				<p set:html={dict.pricing.founding.body} />
+				<CtaButton href={getFoundingCheckoutUrl(locale)} external variant="secondary">{dict.pricing.founding.cta}</CtaButton>
+			</div>
+		</div>
+	)}
+	<script is:inline>
+		// La pagina è statica: senza una nuova build dopo la scadenza il riquadro resterebbe visibile.
+		document.querySelectorAll('[data-founding-ends]').forEach((el) => {
+			if (Date.now() >= Date.parse(el.dataset.foundingEnds)) el.remove();
+		});
+	</script>
 
 	<div class="ct-container ct-pricing-card-wrap">
 		<div class="ct-card ct-pricing-card">
@@ -109,6 +125,25 @@ const dict = getDictionary(locale);
 	.ct-pricing-cta .ct-btn {
 		min-width: 160px;
 		text-align: center;
+	}
+	.ct-founding-wrap {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+	.ct-founding {
+		max-width: 640px;
+		width: 100%;
+		text-align: center;
+		background: var(--ct-primary-tint);
+		border: 1px dashed var(--ct-primary);
+	}
+	.ct-founding h2 {
+		margin: 0 0 8px;
+		font-size: 20px;
+	}
+	.ct-founding p {
+		margin: 0 0 16px;
 	}
 	.ct-pricing-card-wrap {
 		display: flex;

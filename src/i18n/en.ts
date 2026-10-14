@@ -156,6 +156,11 @@ const en: Dictionary = {
 		guarantee: 'Money-back guarantee handled directly by Freemius at checkout.',
 		freeVersionNote:
 			'Prefer to try it free first? <a href="https://wordpress.org/plugins/francesco-guarino-booking-calendar/" target="_blank" rel="noopener">Get it on WordPress.org</a>.',
+		founding: {
+			title: 'Founding members offer',
+			body: 'The first 20 people who choose the annual plan with the code <strong>FOUNDING100</strong> get their first year free. It then renews at the regular price, and you can cancel anytime before. Valid until December 31, 2026.',
+			cta: 'Claim your free year',
+		},
 		recommendedLabel: 'Recommended',
 		tiers: [
 			{ label: 'Monthly', price: '$16.99', period: '/month', note: 'Pay as you go, cancel anytime.', highlighted: false },

@@ -21,6 +21,16 @@ export function getCheckoutUrl(locale: Locale): string {
 	return `${CHECKOUT_URL}?currency=${CHECKOUT_CURRENCY[locale]}&language=${locale}`;
 }
 
+// Offerta Founding members: coupon Freemius FOUNDING100 (100% sul primo
+// pagamento, solo piano annuale, max 20 utilizzi). Scade il 31/12/2026 00:00
+// GMT come il coupon: il riquadro in /pricing/ si nasconde da solo dopo
+// quella data anche senza una nuova build (vedi PricingContent.astro).
+export const FOUNDING_ENDS = '2026-12-31T00:00:00Z';
+
+export function getFoundingCheckoutUrl(locale: Locale): string {
+	return `${getCheckoutUrl(locale)}&billing_cycle=annual&coupon=FOUNDING100`;
+}
+
 export const SOCIAL_LINKS = {
 	instagram: 'https://www.instagram.com/franceguarino/',
 	facebook: 'https://www.facebook.com/scuolatdm',

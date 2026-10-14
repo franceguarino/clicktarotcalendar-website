@@ -39,6 +39,7 @@ export interface Dictionary {
 		included: string[];
 		guarantee: string;
 		freeVersionNote: string;
+		founding: { title: string; body: string; cta: string };
 		recommendedLabel: string;
 		tiers: { label: string; price: string; period: string; note: string; highlighted: boolean }[];
 	};

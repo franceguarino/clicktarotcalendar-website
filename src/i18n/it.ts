@@ -146,6 +146,11 @@ const it: Dictionary = {
 		guarantee: 'Garanzia soddisfatti o rimborsati gestita direttamente da Freemius al momento del checkout.',
 		freeVersionNote:
 			'Preferisci provarlo prima gratis? <a href="https://wordpress.org/plugins/francesco-guarino-booking-calendar/" target="_blank" rel="noopener">Scaricalo da WordPress.org</a>.',
+		founding: {
+			title: 'Offerta soci fondatori',
+			body: 'Le prime 20 persone che scelgono il piano annuale con il codice <strong>FOUNDING100</strong> ricevono gratis il primo anno. Poi si rinnova al prezzo normale, e puoi disdire in qualsiasi momento prima. Valida fino al 31 dicembre 2026.',
+			cta: 'Ottieni l’anno gratis',
+		},
 		recommendedLabel: 'Consigliato',
 		tiers: [
 			{ label: 'Mensile', price: '14,72€', period: '/mese', note: 'Paghi mese per mese, disdici quando vuoi.', highlighted: false },
