@@ -237,7 +237,7 @@ const it: Dictionary = {
 				id: 'publish-calendar',
 				title: 'Pubblica il calendario sul sito',
 				paragraphs: [
-					'Ogni calendario genera automaticamente uno shortcode, che trovi nella tabella "Calendari esistenti": incollalo in qualunque pagina o articolo del tuo sito WordPress (in un blocco Shortcode o Codice breve) e lì comparirà il form di prenotazione completo, con vista mensile e fasce orarie.',
+					'Ogni calendario genera automaticamente uno shortcode, che trovi nella tabella "Calendari esistenti": incollalo in qualunque pagina o articolo del tuo sito WordPress (in un blocco Shortcode o Codice breve) e lì comparirà il form di prenotazione completo, con vista mensile e fasce orarie. Per una pagina larga copia invece la versione "Due colonne (pagine larghe)": calendario a sinistra, dati e pagamento a destra.',
 					'Non serve costruire una pagina apposta: se preferisci, ogni calendario ha anche un link pubblico dedicato pronto da condividere direttamente (vedi "Link pubblico e colore personalizzato" più sotto).',
 				],
 			},
@@ -349,6 +349,10 @@ const it: Dictionary = {
 			{
 				q: 'Posso avere più calendari con prezzi diversi?',
 				a: 'Sì, crea un calendario per ogni servizio: ognuno ha il proprio shortcode, il proprio prezzo, la propria durata e le proprie impostazioni, indipendenti dagli altri.',
+			},
+			{
+				q: 'Il calendario è troppo stretto nella mia pagina. Posso allargarlo?',
+				a: 'Sì: nella tabella "Calendari esistenti" copia lo shortcode "Due colonne (pagine larghe)", es. [ctcal_booking calendar="1" layout="wide"]. Il form appare su due colonne, al centro della pagina. Da telefono e nelle colonne strette torna da solo a una colonna.',
 			},
 		],
 		contactTitle: 'Non hai trovato quello che cercavi?',

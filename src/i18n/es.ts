@@ -247,7 +247,7 @@ const es: Dictionary = {
 				id: 'publish-calendar',
 				title: 'Publica el calendario en tu web',
 				paragraphs: [
-					'Cada calendario genera automáticamente un shortcode, que encuentras en la tabla "Calendarios existentes": pégalo en cualquier página o entrada de WordPress (en un bloque de shortcode) y ahí aparecerá el formulario de reserva completo, con vista mensual y franjas horarias.',
+					'Cada calendario genera automáticamente un shortcode, que encuentras en la tabla "Calendarios existentes": pégalo en cualquier página o entrada de WordPress (en un bloque de shortcode) y ahí aparecerá el formulario de reserva completo, con vista mensual y franjas horarias. Para una página ancha copia en su lugar la versión "Dos columnas (páginas anchas)": calendario a la izquierda, datos y pago a la derecha.',
 					'No necesitas crear una página aparte: si lo prefieres, cada calendario tiene también su propio enlace público listo para compartir directamente (ver "Enlace público y color personalizado" más abajo).',
 				],
 			},
@@ -359,6 +359,10 @@ const es: Dictionary = {
 			{
 				q: '¿Puedo tener varios calendarios con precios distintos?',
 				a: 'Sí, crea un calendario para cada servicio: cada uno tiene su propio shortcode, precio, duración y ajustes, independientes de los demás.',
+			},
+			{
+				q: 'El calendario se ve demasiado estrecho en mi página. ¿Puedo ensancharlo?',
+				a: 'Sí: en la tabla "Calendarios existentes" copia el shortcode "Dos columnas (páginas anchas)", p. ej. [ctcal_booking calendar="1" layout="wide"]. El formulario aparece en dos columnas, centrado en la página. En el móvil y en columnas estrechas vuelve solo a una columna.',
 			},
 		],
 		contactTitle: '¿No has encontrado lo que buscabas?',

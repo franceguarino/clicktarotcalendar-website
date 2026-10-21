@@ -247,7 +247,7 @@ const en: Dictionary = {
 				id: 'publish-calendar',
 				title: 'Publish the calendar on your site',
 				paragraphs: [
-					'Every calendar automatically generates a shortcode, which you’ll find in the "Existing calendars" table: paste it into any WordPress page or post (in a Shortcode block) and the full booking form appears there, with monthly view and time slots.',
+					'Every calendar automatically generates a shortcode, which you’ll find in the "Existing calendars" table: paste it into any WordPress page or post (in a Shortcode block) and the full booking form appears there, with monthly view and time slots. For a wide page, copy the "Two columns (wide pages)" version instead: calendar on the left, details and payment on the right.',
 					'You don’t need to build a dedicated page: if you’d rather, every calendar also gets its own public link ready to share directly (see "Public link and custom color" below).',
 				],
 			},
@@ -359,6 +359,10 @@ const en: Dictionary = {
 			{
 				q: 'Can I have multiple calendars at different prices?',
 				a: 'Yes, create a calendar for each service: each one has its own shortcode, price, duration and settings, independent of the others.',
+			},
+			{
+				q: 'The calendar looks too narrow on my page. Can I make it wider?',
+				a: 'Yes: in the "Existing calendars" table, copy the "Two columns (wide pages)" shortcode, e.g. [ctcal_booking calendar="1" layout="wide"]. The form is shown in two columns, centered on the page. On phones and in narrow columns it goes back to a single column on its own.',
 			},
 		],
 		contactTitle: 'Couldn’t find what you needed?',

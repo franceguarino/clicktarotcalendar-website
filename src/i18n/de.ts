@@ -247,7 +247,7 @@ const de: Dictionary = {
 				id: 'publish-calendar',
 				title: 'Veröffentliche den Kalender auf deiner Website',
 				paragraphs: [
-					'Jeder Kalender erzeugt automatisch einen Shortcode, den du in der Tabelle „Vorhandene Kalender" findest: Füge ihn in eine beliebige WordPress-Seite oder einen Beitrag ein (in einen Shortcode-Block), und dort erscheint das vollständige Buchungsformular mit Monatsansicht und Zeitfenstern.',
+					'Jeder Kalender erzeugt automatisch einen Shortcode, den du in der Tabelle „Vorhandene Kalender" findest: Füge ihn in eine beliebige WordPress-Seite oder einen Beitrag ein (in einen Shortcode-Block), und dort erscheint das vollständige Buchungsformular mit Monatsansicht und Zeitfenstern. Für eine breite Seite kopiere stattdessen die Version „Zwei Spalten (breite Seiten)": Kalender links, Daten und Zahlung rechts.',
 					'Du musst dafür keine eigene Seite bauen: Wenn du willst, bekommt jeder Kalender auch einen eigenen öffentlichen Link, den du direkt teilen kannst (siehe „Öffentlicher Link und individuelle Farbe" weiter unten).',
 				],
 			},
@@ -359,6 +359,10 @@ const de: Dictionary = {
 			{
 				q: 'Kann ich mehrere Kalender mit unterschiedlichen Preisen haben?',
 				a: 'Ja, erstelle für jede Leistung einen eigenen Kalender: Jeder hat seinen eigenen Shortcode, Preis, Dauer und eigene Einstellungen, unabhängig von den anderen.',
+			},
+			{
+				q: 'Der Kalender ist auf meiner Seite zu schmal. Kann ich ihn breiter machen?',
+				a: 'Ja: Kopiere in der Tabelle „Vorhandene Kalender" den Shortcode „Zwei Spalten (breite Seiten)", z. B. [ctcal_booking calendar="1" layout="wide"]. Das Formular erscheint in zwei Spalten, mittig auf der Seite. Auf dem Smartphone und in schmalen Spalten wechselt es von selbst zu einer Spalte.',
 			},
 		],
 		contactTitle: 'Nicht gefunden, wonach du gesucht hast?',
