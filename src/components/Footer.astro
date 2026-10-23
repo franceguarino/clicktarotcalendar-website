@@ -16,14 +16,24 @@ const year = new Date().getFullYear();
 		<div>
 			<div class="ct-logo">clickTarot <span>Calendar</span></div>
 			<p class="ct-hint" set:html={dict.footer.tagline} />
-			<a
-				class="ct-footer-badge"
-				href="https://alternativeto.net/software/clicktarot-calendar/about/?utm_source=badge&utm_medium=referral"
-				target="_blank"
-				rel="noopener"
-			>
-				<img src="/media/alternativeto-badge.svg" alt="clickTarot Calendar | AlternativeTo" width="150" height="49" loading="lazy" />
-			</a>
+			<div class="ct-footer-badges">
+				<a
+					class="ct-footer-badge"
+					href="https://alternativeto.net/software/clicktarot-calendar/about/?utm_source=badge&utm_medium=referral"
+					target="_blank"
+					rel="noopener"
+				>
+					<img src="/media/alternativeto-badge.svg" alt="clickTarot Calendar | AlternativeTo" width="150" height="49" loading="lazy" />
+				</a>
+				<a
+					class="ct-footer-badge"
+					href="https://www.saashub.com/clicktarot-calendar?utm_source=badge&utm_campaign=badge&utm_content=clicktarot-calendar&utm_medium=badge"
+					target="_blank"
+					rel="noopener"
+				>
+					<img src="/media/saashub-badge.png" alt="clickTarot Calendar | Approved on SaaSHub" width="150" height="50" loading="lazy" />
+				</a>
+			</div>
 		</div>
 		<div class="ct-footer-links">
 			<a href={`mailto:${CONTACT_EMAIL}`}>{dict.footer.contactLabel}</a>
@@ -80,9 +90,14 @@ const year = new Date().getFullYear();
 	.ct-footer .ct-logo span {
 		color: var(--ct-primary-dark);
 	}
+	.ct-footer-badges {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		margin-top: 12px;
+	}
 	.ct-footer-badge {
 		display: inline-block;
-		margin-top: 12px;
 	}
 	.ct-footer-badge img {
 		display: block;
